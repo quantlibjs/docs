@@ -1,0 +1,525 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>EvolutionDescription | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html">&quot;ql/models/marketmodels/evolutiondescription&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html">EvolutionDescription</a>
+				</li>
+			</ul>
+			<h1>Class EvolutionDescription</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Market-model evolution description</p>
+					</div>
+					<p>This class stores:
+						-# evolutionTimes = the times at which the rates need to be known,
+						-# rateTimes = the times defining the rates that are to be evolved,
+					-# relevanceRates = which rates need to be known at each time.</p>
+					<p> This class is really just a tuple of evolution and rate times;</p>
+					<ul>
+						<li>there will be n+1 rate times expressing payment and reset
+						times of forward rates.</li>
+						<li>there will be any number of evolution times.</li>
+						<li>we also store which part of the rates are relevant for
+							pricing via relevance rates. The important part for the i-th
+							step will then range from relevanceRates[i].first to
+							relevanceRates[i].second. Default values for relevance rates
+						will be 0 and n.</li>
+						<li>example for n = 5:<pre><code>  <span class="hljs-title">|-----|</span>-----<span class="hljs-title">|-----|</span>-----<span class="hljs-title">|-----|</span>      (size = <span class="hljs-number">6</span>)
+  t0    t1    t2    t3    t4    t5     rateTimes
+  <span class="hljs-built_in">f0</span>    <span class="hljs-built_in">f1</span>    <span class="hljs-built_in">f2</span>    <span class="hljs-built_in">f3</span>    <span class="hljs-built_in">f4</span>           forwardRates
+  <span class="hljs-built_in">d0</span>    <span class="hljs-built_in">d1</span>    <span class="hljs-built_in">d2</span>    <span class="hljs-built_in">d3</span>    <span class="hljs-built_in">d4</span>    <span class="hljs-built_in">d5</span>     discountBonds
+  <span class="hljs-built_in">d0</span>/<span class="hljs-built_in">d0</span> <span class="hljs-built_in">d1</span>/<span class="hljs-built_in">d0</span> <span class="hljs-built_in">d2</span>/<span class="hljs-built_in">d0</span> <span class="hljs-built_in">d3</span>/<span class="hljs-built_in">d0</span> <span class="hljs-built_in">d4</span>/<span class="hljs-built_in">d0</span> <span class="hljs-built_in">d5</span>/<span class="hljs-built_in">d0</span>  discountRatios
+  sr0   sr1   sr2   sr3   sr4          coterminalSwaps</code></pre></li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">EvolutionDescription</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_evolutiontimes" class="tsd-kind-icon">_evolution<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_firstaliverate" class="tsd-kind-icon">_first<wbr>Alive<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_numberofrates" class="tsd-kind-icon">_number<wbr>OfRates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_ratetaus" class="tsd-kind-icon">_rate<wbr>Taus</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_ratetimes" class="tsd-kind-icon">_rate<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_relevancerates" class="tsd-kind-icon">_relevance<wbr>Rates</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#evolutiontimes" class="tsd-kind-icon">evolution<wbr>Times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#firstaliverate" class="tsd-kind-icon">first<wbr>Alive<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#numberofrates" class="tsd-kind-icon">number<wbr>OfRates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#numberofsteps" class="tsd-kind-icon">number<wbr>OfSteps</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#ratetaus" class="tsd-kind-icon">rate<wbr>Taus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#ratetimes" class="tsd-kind-icon">rate<wbr>Times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#relevancerates" class="tsd-kind-icon">relevance<wbr>Rates</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Evolution<wbr>Description<span class="tsd-signature-symbol">(</span>rateTimes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span>, evolutionTimes<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span>, relevanceRates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html" class="tsd-signature-type">EvolutionDescription</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:38</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rateTimes: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> evolutionTimes: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> relevanceRates: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html" class="tsd-signature-type">EvolutionDescription</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evolutiontimes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _evolution<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">_evolution<wbr>Times<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:114</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_firstaliverate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _first<wbr>Alive<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_first<wbr>Alive<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:117</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_numberofrates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _number<wbr>OfRates</h3>
+					<div class="tsd-signature tsd-kind-icon">_number<wbr>OfRates<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:112</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_ratetaus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _rate<wbr>Taus</h3>
+					<div class="tsd-signature tsd-kind-icon">_rate<wbr>Taus<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:116</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_ratetimes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _rate<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">_rate<wbr>Times<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:113</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_relevancerates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _relevance<wbr>Rates</h3>
+					<div class="tsd-signature tsd-kind-icon">_relevance<wbr>Rates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/evolutiondescription.ts:115</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="evolutiontimes" class="tsd-anchor"></a>
+					<h3>evolution<wbr>Times</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">evolution<wbr>Times<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:95</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="firstaliverate" class="tsd-anchor"></a>
+					<h3>first<wbr>Alive<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">first<wbr>Alive<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:99</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numberofrates" class="tsd-anchor"></a>
+					<h3>number<wbr>OfRates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>OfRates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:105</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numberofsteps" class="tsd-anchor"></a>
+					<h3>number<wbr>OfSteps</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>OfSteps<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:108</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ratetaus" class="tsd-anchor"></a>
+					<h3>rate<wbr>Taus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">rate<wbr>Taus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:92</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ratetimes" class="tsd-anchor"></a>
+					<h3>rate<wbr>Times</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">rate<wbr>Times<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:89</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="relevancerates" class="tsd-anchor"></a>
+					<h3>relevance<wbr>Rates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">relevance<wbr>Rates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/evolutiondescription.ts:102</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html">"ql/models/marketmodels/evolutiondescription"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html" class="tsd-kind-icon">Evolution<wbr>Description</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_evolutiontimes" class="tsd-kind-icon">_evolution<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_firstaliverate" class="tsd-kind-icon">_first<wbr>Alive<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_numberofrates" class="tsd-kind-icon">_number<wbr>OfRates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_ratetaus" class="tsd-kind-icon">_rate<wbr>Taus</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_ratetimes" class="tsd-kind-icon">_rate<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#_relevancerates" class="tsd-kind-icon">_relevance<wbr>Rates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#evolutiontimes" class="tsd-kind-icon">evolution<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#firstaliverate" class="tsd-kind-icon">first<wbr>Alive<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#numberofrates" class="tsd-kind-icon">number<wbr>OfRates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#numberofsteps" class="tsd-kind-icon">number<wbr>OfSteps</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#ratetaus" class="tsd-kind-icon">rate<wbr>Taus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#ratetimes" class="tsd-kind-icon">rate<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_evolutiondescription_.evolutiondescription.html#relevancerates" class="tsd-kind-icon">relevance<wbr>Rates</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#checkcompatibility" class="tsd-kind-icon">check<wbr>Compatibility</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#isinmoneymarketmeasure" class="tsd-kind-icon">is<wbr>InMoney<wbr>Market<wbr>Measure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#isinmoneymarketplusmeasure" class="tsd-kind-icon">is<wbr>InMoney<wbr>Market<wbr>Plus<wbr>Measure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#isinterminalmeasure" class="tsd-kind-icon">is<wbr>InTerminal<wbr>Measure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#moneymarketmeasure" class="tsd-kind-icon">money<wbr>Market<wbr>Measure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#moneymarketplusmeasure" class="tsd-kind-icon">money<wbr>Market<wbr>Plus<wbr>Measure</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_ql_models_marketmodels_evolutiondescription_.html#terminalmeasure" class="tsd-kind-icon">terminal<wbr>Measure</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

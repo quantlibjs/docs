@@ -1,0 +1,2052 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GaussianLHPLossModel | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_experimental_credit_gaussianlhplossmodel_.html">&quot;ql/experimental/credit/gaussianlhplossmodel&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html">GaussianLHPLossModel</a>
+				</li>
+			</ul>
+			<h1>Class GaussianLHPLossModel</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Portfolio loss model with analytical expected tranche loss for a large
+							homogeneous pool with Gaussian one-factor copula. See for example
+							&quot;The Normal Inverse Gaussian Distribution for Synthetic CDO pricing.&quot;,
+							Anna Kalemanova, Bernd Schmid, Ralf Werner,
+							Journal of Derivatives, Vol. 14, No. 3, (Spring 2007), pp. 80-93.
+						<a href="http://www.defaultrisk.com/pp_crdrv_91.htm">http://www.defaultrisk.com/pp_crdrv_91.htm</a></p>
+					</div>
+					<p>It can be used to price a credit derivative or to provide risk metrics of
+					a portfolio.</p>
+					<dl class="tsd-comment-tags">
+						<dt>todo</dt>
+						<dd><p>It should be checking that basket exposures are deterministic (fixed
+							or programmed amortizing) otherwise the model is not fit for the basket.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>Bugging on tranched baskets with upper limit over maximum
+							attainable loss?</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html" class="tsd-signature-type">DefaultLossModelLatentModel</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GaussianLHPLossModel</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_experimental_credit_defaultlossmodel_.defaultlossmodel.html" class="tsd-signature-type">DefaultLossModel</a></li>
+					<li><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_basket" class="tsd-kind-icon">_basket</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_beta" class="tsd-kind-icon">_beta</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_biphi" class="tsd-kind-icon">_biphi</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_cachedmktfactor" class="tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_copula" class="tsd-kind-icon">_copula</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_correl" class="tsd-kind-icon">_correl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_factorweights" class="tsd-kind-icon">_factor<wbr>Weights</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_idiosyncfctrs" class="tsd-kind-icon">_idiosync<wbr>Fctrs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_nfactors" class="tsd-kind-icon">_n<wbr>Factors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_nvariables" class="tsd-kind-icon">_n<wbr>Variables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_rrquotes" class="tsd-kind-icon">_rr<wbr>Quotes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_sqrt1minuscorrel" class="tsd-kind-icon">_sqrt1minuscorrel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#copulapolicy" class="tsd-kind-icon">copula<wbr>Policy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#cumulativez" class="tsd-kind-icon">cumulativeZ</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#defaultcorrelation" class="tsd-kind-icon">default<wbr>Correlation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#density" class="tsd-kind-icon">density</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#densitytrancheloss" class="tsd-kind-icon">density<wbr>Tranche<wbr>Loss</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#integratedexpectedvalue1" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#integratedexpectedvalue2" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#inversecumulativey" class="tsd-kind-icon">inverse<wbr>CumulativeY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#inversecumulativez" class="tsd-kind-icon">inverse<wbr>CumulativeZ</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit1" class="tsd-kind-icon">lm<wbr>Init1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit2" class="tsd-kind-icon">lm<wbr>Init2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit3" class="tsd-kind-icon">lm<wbr>Init3</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit4" class="tsd-kind-icon">lm<wbr>Init4</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lossdistribution" class="tsd-kind-icon">loss<wbr>Distribution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#numfactors" class="tsd-kind-icon">num<wbr>Factors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#numtotalfactors" class="tsd-kind-icon">num<wbr>Total<wbr>Factors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#probatleastnevents" class="tsd-kind-icon">prob<wbr>AtLeastNEvents</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#probsbeingnthevent" class="tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#setbasket" class="tsd-kind-icon">set<wbr>Basket</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#splitesflevel" class="tsd-kind-icon">splitESFLevel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#splitvarlevel" class="tsd-kind-icon">split<wbr>VaRLevel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_phi" class="tsd-kind-icon">_phi</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#averageprob" class="tsd-kind-icon">average<wbr>Prob</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#averagerecovery" class="tsd-kind-icon">average<wbr>Recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedrecovery" class="tsd-kind-icon">expected<wbr>Recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedshortfall" class="tsd-kind-icon">expected<wbr>Shortfall</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedtrancheloss" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedtranchelossimpl" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit1" class="tsd-kind-icon">glhpm<wbr>Init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit2" class="tsd-kind-icon">glhpm<wbr>Init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit3" class="tsd-kind-icon">glhpm<wbr>Init3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#percentile" class="tsd-kind-icon">percentile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#percentileportfoliolossfraction" class="tsd-kind-icon">percentile<wbr>Portfolio<wbr>Loss<wbr>Fraction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#proboverloss" class="tsd-kind-icon">prob<wbr>Over<wbr>Loss</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#resetmodel" class="tsd-kind-icon">reset<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_basket" class="tsd-anchor"></a>
+					<h3>_basket</h3>
+					<div class="tsd-signature tsd-kind-icon">_basket<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.relinkablehandle.html" class="tsd-signature-type">RelinkableHandle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_basket">_basket</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:94</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_beta" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _beta</h3>
+					<div class="tsd-signature tsd-kind-icon">_beta<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:337</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_biphi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _biphi</h3>
+					<div class="tsd-signature tsd-kind-icon">_biphi<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_distributions_bivariatenormaldistribution_.html#bivariatecumulativenormaldistribution" class="tsd-signature-type">BivariateCumulativeNormalDistribution</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:338</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_cachedmktfactor" class="tsd-anchor"></a>
+					<h3>_cached<wbr>Mkt<wbr>Factor</h3>
+					<div class="tsd-signature tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_cachedmktfactor">_cachedMktFactor</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:99</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_copula" class="tsd-anchor"></a>
+					<h3>_copula</h3>
+					<div class="tsd-signature tsd-kind-icon">_copula<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_copula">_copula</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:104</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_correl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _correl</h3>
+					<div class="tsd-signature tsd-kind-icon">_correl<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:334</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_factorweights" class="tsd-anchor"></a>
+					<h3>_factor<wbr>Weights</h3>
+					<div class="tsd-signature tsd-kind-icon">_factor<wbr>Weights<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_factorweights">_factorWeights</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:98</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_idiosyncfctrs" class="tsd-anchor"></a>
+					<h3>_idiosync<wbr>Fctrs</h3>
+					<div class="tsd-signature tsd-kind-icon">_idiosync<wbr>Fctrs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_idiosyncfctrs">_idiosyncFctrs</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:100</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:87</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_nfactors" class="tsd-anchor"></a>
+					<h3>_n<wbr>Factors</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Factors<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_nfactors">_nFactors</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:101</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_nvariables" class="tsd-anchor"></a>
+					<h3>_n<wbr>Variables</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Variables<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_nvariables">_nVariables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:102</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:92</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:90</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_rrquotes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _rr<wbr>Quotes</h3>
+					<div class="tsd-signature tsd-kind-icon">_rr<wbr>Quotes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_experimental_credit_recoveryratequote_.recoveryratequote.html" class="tsd-signature-type">RecoveryRateQuote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:335</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_sqrt1minuscorrel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _sqrt1minuscorrel</h3>
+					<div class="tsd-signature tsd-kind-icon">_sqrt1minuscorrel<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:332</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="copulapolicy" class="tsd-anchor"></a>
+					<h3>copula<wbr>Policy</h3>
+					<div class="tsd-signature tsd-kind-icon">copula<wbr>Policy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#copulapolicy">copulaPolicy</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:97</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="cumulativez" class="tsd-anchor"></a>
+					<h3>cumulativeZ</h3>
+					<div class="tsd-signature tsd-kind-icon">cumulativeZ<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#cumulativez">cumulativeZ</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:81</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>z<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>z: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#deepupdate">deepUpdate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="defaultcorrelation" class="tsd-anchor"></a>
+					<h3>default<wbr>Correlation</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Correlation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#defaultcorrelation">defaultCorrelation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, jName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5>jName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="density" class="tsd-anchor"></a>
+					<h3>density</h3>
+					<div class="tsd-signature tsd-kind-icon">density<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#density">density</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:82</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>m<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>m: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="densitytrancheloss" class="tsd-anchor"></a>
+					<h3>density<wbr>Tranche<wbr>Loss</h3>
+					<div class="tsd-signature tsd-kind-icon">density<wbr>Tranche<wbr>Loss<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#densitytrancheloss">densityTrancheLoss</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, lossFraction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>lossFraction: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:86</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#init">init</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:62</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>copulaPolicyImpl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>copulaPolicyImpl: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="integratedexpectedvalue1" class="tsd-anchor"></a>
+					<h3>integrated<wbr>Expected<wbr>Value1</h3>
+					<div class="tsd-signature tsd-kind-icon">integrated<wbr>Expected<wbr>Value1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#integratedexpectedvalue1">integratedExpectedValue1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:79</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>f: <a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="integratedexpectedvalue2" class="tsd-anchor"></a>
+					<h3>integrated<wbr>Expected<wbr>Value2</h3>
+					<div class="tsd-signature tsd-kind-icon">integrated<wbr>Expected<wbr>Value2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#integratedexpectedvalue2">integratedExpectedValue2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:80</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>f: <a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="inversecumulativey" class="tsd-anchor"></a>
+					<h3>inverse<wbr>CumulativeY</h3>
+					<div class="tsd-signature tsd-kind-icon">inverse<wbr>CumulativeY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#inversecumulativey">inverseCumulativeY</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:77</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a>, iVariable<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>p: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+											</li>
+											<li>
+												<h5>iVariable: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="inversecumulativez" class="tsd-anchor"></a>
+					<h3>inverse<wbr>CumulativeZ</h3>
+					<div class="tsd-signature tsd-kind-icon">inverse<wbr>CumulativeZ<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#inversecumulativez">inverseCumulativeZ</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:78</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>p: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:85</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lminit1" class="tsd-anchor"></a>
+					<h3>lm<wbr>Init1</h3>
+					<div class="tsd-signature tsd-kind-icon">lm<wbr>Init1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#lminit1">lmInit1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:64</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>factorsWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>factorsWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> ini: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lminit2" class="tsd-anchor"></a>
+					<h3>lm<wbr>Init2</h3>
+					<div class="tsd-signature tsd-kind-icon">lm<wbr>Init2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#lminit2">lmInit2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:66</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>factorsWeight<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>factorsWeight: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> ini: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lminit3" class="tsd-anchor"></a>
+					<h3>lm<wbr>Init3</h3>
+					<div class="tsd-signature tsd-kind-icon">lm<wbr>Init3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#lminit3">lmInit3</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:68</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>correlSqr<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, nVariables<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>correlSqr: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+											<li>
+												<h5>nVariables: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> ini: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lminit4" class="tsd-anchor"></a>
+					<h3>lm<wbr>Init4</h3>
+					<div class="tsd-signature tsd-kind-icon">lm<wbr>Init4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#lminit4">lmInit4</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>singleFactorCorrel<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, nVariables<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>singleFactorCorrel: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+											<li>
+												<h5>nVariables: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> ini: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="lossdistribution" class="tsd-anchor"></a>
+					<h3>loss<wbr>Distribution</h3>
+					<div class="tsd-signature tsd-kind-icon">loss<wbr>Distribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#lossdistribution">lossDistribution</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:48</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:21</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numfactors" class="tsd-anchor"></a>
+					<h3>num<wbr>Factors</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Factors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#numfactors">numFactors</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:75</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="numtotalfactors" class="tsd-anchor"></a>
+					<h3>num<wbr>Total<wbr>Factors</h3>
+					<div class="tsd-signature tsd-kind-icon">num<wbr>Total<wbr>Factors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#numtotalfactors">numTotalFactors</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:76</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="probatleastnevents" class="tsd-anchor"></a>
+					<h3>prob<wbr>AtLeastNEvents</h3>
+					<div class="tsd-signature tsd-kind-icon">prob<wbr>AtLeastNEvents<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#probatleastnevents">probAtLeastNEvents</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="probsbeingnthevent" class="tsd-anchor"></a>
+					<h3>probs<wbr>Being<wbr>Nth<wbr>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#probsbeingnthevent">probsBeingNthEvent</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:50</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:22</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="setbasket" class="tsd-anchor"></a>
+					<h3>set<wbr>Basket</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Basket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#setbasket">setBasket</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:56</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>bskt<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>bskt: <a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#size">size</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="splitesflevel" class="tsd-anchor"></a>
+					<h3>splitESFLevel</h3>
+					<div class="tsd-signature tsd-kind-icon">splitESFLevel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#splitesflevel">splitESFLevel</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:47</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, loss<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>loss: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="splitvarlevel" class="tsd-anchor"></a>
+					<h3>split<wbr>VaRLevel</h3>
+					<div class="tsd-signature tsd-kind-icon">split<wbr>VaRLevel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#splitvarlevel">splitVaRLevel</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:46</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, loss<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>loss: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/experimental/defaultlossmodellatentmodel.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="_phi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> _phi</h3>
+					<div class="tsd-signature tsd-kind-icon">_phi<span class="tsd-signature-symbol">:</span> <a href="_ql_math_distributions_normaldistribution_.cumulativenormaldistribution.html" class="tsd-signature-type">CumulativeNormalDistribution</a><span class="tsd-signature-symbol"> =&nbsp;new CumulativeNormalDistribution()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:340</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="averageprob" class="tsd-anchor"></a>
+					<h3>average<wbr>Prob</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">average<wbr>Prob<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:233</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="averagerecovery" class="tsd-anchor"></a>
+					<h3>average<wbr>Recovery</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">average<wbr>Recovery<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:244</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="expectedrecovery" class="tsd-anchor"></a>
+					<h3>expected<wbr>Recovery</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Recovery<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, ik<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#expectedrecovery">expectedRecovery</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:285</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>ik: <a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="expectedshortfall" class="tsd-anchor"></a>
+					<h3>expected<wbr>Shortfall</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Shortfall<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, perctl<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#expectedshortfall">expectedShortfall</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:185</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>perctl: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="expectedtrancheloss" class="tsd-anchor"></a>
+					<h3>expected<wbr>Tranche<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Tranche<wbr>Loss<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#expectedtrancheloss">expectedTrancheLoss</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:114</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="expectedtranchelossimpl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> expected<wbr>Tranche<wbr>Loss<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Tranche<wbr>Loss<wbr>Impl<span class="tsd-signature-symbol">(</span>remainingNot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, prob<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, averageRR<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, attachLimit<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, detachLimit<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:291</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>remainingNot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>prob: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>averageRR: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>attachLimit: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>detachLimit: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="glhpminit1" class="tsd-anchor"></a>
+					<h3>glhpm<wbr>Init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">glhpm<wbr>Init1<span class="tsd-signature-symbol">(</span>correlQuote<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, quotes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_experimental_credit_recoveryratequote_.recoveryratequote.html" class="tsd-signature-type">RecoveryRateQuote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:39</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>correlQuote: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>quotes: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_experimental_credit_recoveryratequote_.recoveryratequote.html" class="tsd-signature-type">RecoveryRateQuote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="glhpminit2" class="tsd-anchor"></a>
+					<h3>glhpm<wbr>Init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">glhpm<wbr>Init2<span class="tsd-signature-symbol">(</span>correlation<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, recoveries<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:63</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>correlation: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>recoveries: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="glhpminit3" class="tsd-anchor"></a>
+					<h3>glhpm<wbr>Init3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">glhpm<wbr>Init3<span class="tsd-signature-symbol">(</span>correlQuote<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, recoveries<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:83</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>correlQuote: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>recoveries: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-signature-type">GaussianLHPLossModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="percentile" class="tsd-anchor"></a>
+					<h3>percentile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">percentile<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, perctl<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#percentile">percentile</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:218</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>perctl: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="percentileportfoliolossfraction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> percentile<wbr>Portfolio<wbr>Loss<wbr>Fraction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">percentile<wbr>Portfolio<wbr>Loss<wbr>Fraction<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, perctl<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:265</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>perctl: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="proboverloss" class="tsd-anchor"></a>
+					<h3>prob<wbr>Over<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">prob<wbr>Over<wbr>Loss<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, remainingLossFraction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#proboverloss">probOverLoss</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:136</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>remainingLossFraction: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="resetmodel" class="tsd-anchor"></a>
+					<h3>reset<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#resetmodel">resetModel</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:289</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html">DefaultLossModelLatentModel</a>.<a href="_mixins_ql_experimental_defaultlossmodellatentmodel_.defaultlossmodellatentmodel.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/gaussianlhplossmodel.ts:104</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_experimental_credit_gaussianlhplossmodel_.html">"ql/experimental/credit/gaussianlhplossmodel"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html" class="tsd-kind-icon">GaussianLHPLoss<wbr>Model</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_basket" class="tsd-kind-icon">_basket</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_beta" class="tsd-kind-icon">_beta</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_biphi" class="tsd-kind-icon">_biphi</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_cachedmktfactor" class="tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_copula" class="tsd-kind-icon">_copula</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_correl" class="tsd-kind-icon">_correl</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_factorweights" class="tsd-kind-icon">_factor<wbr>Weights</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_idiosyncfctrs" class="tsd-kind-icon">_idiosync<wbr>Fctrs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_nfactors" class="tsd-kind-icon">_n<wbr>Factors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_nvariables" class="tsd-kind-icon">_n<wbr>Variables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_rrquotes" class="tsd-kind-icon">_rr<wbr>Quotes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_sqrt1minuscorrel" class="tsd-kind-icon">_sqrt1minuscorrel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#copulapolicy" class="tsd-kind-icon">copula<wbr>Policy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#cumulativez" class="tsd-kind-icon">cumulativeZ</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#defaultcorrelation" class="tsd-kind-icon">default<wbr>Correlation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#density" class="tsd-kind-icon">density</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#densitytrancheloss" class="tsd-kind-icon">density<wbr>Tranche<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#integratedexpectedvalue1" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#integratedexpectedvalue2" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#inversecumulativey" class="tsd-kind-icon">inverse<wbr>CumulativeY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#inversecumulativez" class="tsd-kind-icon">inverse<wbr>CumulativeZ</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit1" class="tsd-kind-icon">lm<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit2" class="tsd-kind-icon">lm<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit3" class="tsd-kind-icon">lm<wbr>Init3</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lminit4" class="tsd-kind-icon">lm<wbr>Init4</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#lossdistribution" class="tsd-kind-icon">loss<wbr>Distribution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#numfactors" class="tsd-kind-icon">num<wbr>Factors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#numtotalfactors" class="tsd-kind-icon">num<wbr>Total<wbr>Factors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#probatleastnevents" class="tsd-kind-icon">prob<wbr>AtLeastNEvents</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#probsbeingnthevent" class="tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#setbasket" class="tsd-kind-icon">set<wbr>Basket</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#splitesflevel" class="tsd-kind-icon">splitESFLevel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#splitvarlevel" class="tsd-kind-icon">split<wbr>VaRLevel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#_phi" class="tsd-kind-icon">_phi</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#averageprob" class="tsd-kind-icon">average<wbr>Prob</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#averagerecovery" class="tsd-kind-icon">average<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedrecovery" class="tsd-kind-icon">expected<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedshortfall" class="tsd-kind-icon">expected<wbr>Shortfall</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedtrancheloss" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#expectedtranchelossimpl" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit1" class="tsd-kind-icon">glhpm<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit2" class="tsd-kind-icon">glhpm<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#glhpminit3" class="tsd-kind-icon">glhpm<wbr>Init3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#percentile" class="tsd-kind-icon">percentile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#percentileportfoliolossfraction" class="tsd-kind-icon">percentile<wbr>Portfolio<wbr>Loss<wbr>Fraction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#proboverloss" class="tsd-kind-icon">prob<wbr>Over<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#resetmodel" class="tsd-kind-icon">reset<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_gaussianlhplossmodel_.gaussianlhplossmodel.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

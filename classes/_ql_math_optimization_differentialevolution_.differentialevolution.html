@@ -1,0 +1,735 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DifferentialEvolution | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_math_optimization_differentialevolution_.html">&quot;ql/math/optimization/differentialevolution&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html">DifferentialEvolution</a>
+				</li>
+			</ul>
+			<h1>Class DifferentialEvolution</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Differential Evolution configuration object</p>
+					</div>
+					<p>The algorithm and strategy names are taken from here:</p>
+					<p>Price, K., Storn, R., 1997. Differential Evolution -
+						A Simple and Efficient Heuristic for Global Optimization
+						over Continuous Spaces.
+						Journal of Global Optimization, Kluwer Academic Publishers,
+					1997, Vol. 11, pp. 341 - 359.</p>
+					<p>There are seven basic strategies for creating mutant population
+						currently implemented. Three basic crossover types are also
+					available.</p>
+					<p>Future development:</p>
+					<p>1) base element type to be extracted
+						2) L differences to be used instead of fixed number
+						3) various weights distributions for the differences (dither etc.)
+					4) printFullInfo parameter usage to track the algorithm</p>
+					<dl class="tsd-comment-tags">
+						<dt>warning</dt>
+						<dd><p>This was reported to fail tests on Mac OS X 10.8.4.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_math_optimization_method_.optimizationmethod.html" class="tsd-signature-type">OptimizationMethod</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DifferentialEvolution</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_math_optimization_differentialevolution_.differentialevolution.crossovertype.html" class="tsd-kind-icon">Crossover<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_math_optimization_differentialevolution_.differentialevolution.strategy.html" class="tsd-kind-icon">Strategy</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-kind-icon">Candidate</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-kind-icon">Configuration</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_bestmemberever" class="tsd-kind-icon">_best<wbr>Member<wbr>Ever</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_configuration" class="tsd-kind-icon">_configuration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_currgencrossover" class="tsd-kind-icon">_curr<wbr>Gen<wbr>Crossover</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_currgensizeweights" class="tsd-kind-icon">_curr<wbr>Gen<wbr>Size<wbr>Weights</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_lowerbound" class="tsd-kind-icon">_lower<wbr>Bound</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_rng" class="tsd-kind-icon">_rng</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_upperbound" class="tsd-kind-icon">_upper<wbr>Bound</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#adaptcrossover" class="tsd-kind-icon">adapt<wbr>Crossover</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#adaptsizeweights" class="tsd-kind-icon">adapt<wbr>Size<wbr>Weights</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#calculatenextgeneration" class="tsd-kind-icon">calculate<wbr>Next<wbr>Generation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#configuration-1" class="tsd-kind-icon">configuration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#crossover" class="tsd-kind-icon">crossover</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#fillinitialpopulation" class="tsd-kind-icon">fill<wbr>Initial<wbr>Population</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#getcrossovermask" class="tsd-kind-icon">get<wbr>Crossover<wbr>Mask</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#getmutationprobabilities" class="tsd-kind-icon">get<wbr>Mutation<wbr>Probabilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#minimize" class="tsd-kind-icon">minimize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#rotatearray" class="tsd-kind-icon">rotate<wbr>Array</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Differential<wbr>Evolution<span class="tsd-signature-symbol">(</span>configuration<span class="tsd-signature-symbol">?: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-signature-type">Configuration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.html" class="tsd-signature-type">DifferentialEvolution</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:38</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> configuration: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-signature-type">Configuration</a><span class="tsd-signature-symbol"> =&nbsp;new DifferentialEvolution.Configuration()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_optimization_differentialevolution_.differentialevolution.html" class="tsd-signature-type">DifferentialEvolution</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_bestmemberever" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _best<wbr>Member<wbr>Ever</h3>
+					<div class="tsd-signature tsd-kind-icon">_best<wbr>Member<wbr>Ever<span class="tsd-signature-symbol">:</span> <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:442</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_configuration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _configuration</h3>
+					<div class="tsd-signature tsd-kind-icon">_configuration<span class="tsd-signature-symbol">:</span> <a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-signature-type">Configuration</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:437</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_currgencrossover" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _curr<wbr>Gen<wbr>Crossover</h3>
+					<div class="tsd-signature tsd-kind-icon">_curr<wbr>Gen<wbr>Crossover<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:441</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_currgensizeweights" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _curr<wbr>Gen<wbr>Size<wbr>Weights</h3>
+					<div class="tsd-signature tsd-kind-icon">_curr<wbr>Gen<wbr>Size<wbr>Weights<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:440</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_lowerbound" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _lower<wbr>Bound</h3>
+					<div class="tsd-signature tsd-kind-icon">_lower<wbr>Bound<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:439</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_rng" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _rng</h3>
+					<div class="tsd-signature tsd-kind-icon">_rng<span class="tsd-signature-symbol">:</span> <a href="_ql_math_randomnumbers_mt19937uniformrng_.mersennetwisteruniformrng.html" class="tsd-signature-type">MersenneTwisterUniformRng</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:443</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_upperbound" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _upper<wbr>Bound</h3>
+					<div class="tsd-signature tsd-kind-icon">_upper<wbr>Bound<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/optimization/differentialevolution.ts:438</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_math_optimization_method_.optimizationmethod.html">OptimizationMethod</a>.<a href="_ql_math_optimization_method_.optimizationmethod.html#isdisposed">isDisposed</a></p>
+								<ul>
+									<li>Defined in ql/math/optimization/method.ts:17</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="adaptcrossover" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> adapt<wbr>Crossover</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">adapt<wbr>Crossover<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:413</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="adaptsizeweights" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> adapt<wbr>Size<wbr>Weights</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">adapt<wbr>Size<wbr>Weights<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:397</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="calculatenextgeneration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> calculate<wbr>Next<wbr>Generation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Next<wbr>Generation<span class="tsd-signature-symbol">(</span>population<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, costFunction<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_costfunction_.costfunction.html" class="tsd-signature-type">CostFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:99</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>population: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>costFunction: <a href="_ql_math_optimization_costfunction_.costfunction.html" class="tsd-signature-type">CostFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="configuration-1" class="tsd-anchor"></a>
+					<h3>configuration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-signature-type">Configuration</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:47</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-signature-type">Configuration</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="crossover" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> crossover</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">crossover<span class="tsd-signature-symbol">(</span>oldPopulation<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, population<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, mutantPopulation<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, mirrorPopulation<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, costFunction<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_costfunction_.costfunction.html" class="tsd-signature-type">CostFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:289</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldPopulation: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>population: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mutantPopulation: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mirrorPopulation: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>costFunction: <a href="_ql_math_optimization_costfunction_.costfunction.html" class="tsd-signature-type">CostFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_math_optimization_method_.optimizationmethod.html">OptimizationMethod</a>.<a href="_ql_math_optimization_method_.optimizationmethod.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in ql/math/optimization/method.ts:21</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="fillinitialpopulation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fill<wbr>Initial<wbr>Population</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">fill<wbr>Initial<wbr>Population<span class="tsd-signature-symbol">(</span>population<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span>, p<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_problem_.problem.html" class="tsd-signature-type">Problem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:422</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>population: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>p: <a href="_ql_math_optimization_problem_.problem.html" class="tsd-signature-type">Problem</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getcrossovermask" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Crossover<wbr>Mask</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Crossover<wbr>Mask<span class="tsd-signature-symbol">(</span>crossoverMask<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, invCrossoverMask<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, mutationProbabilities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:348</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>crossoverMask: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>invCrossoverMask: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mutationProbabilities: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getmutationprobabilities" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Mutation<wbr>Probabilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mutation<wbr>Probabilities<span class="tsd-signature-symbol">(</span>population<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:362</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>population: <a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-signature-type">Candidate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="minimize" class="tsd-anchor"></a>
+					<h3>minimize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">minimize<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_problem_.problem.html" class="tsd-signature-type">Problem</a>, endCriteria<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_endcriteria_.endcriteria.html" class="tsd-signature-type">EndCriteria</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_math_optimization_endcriteria_.endcriteria.type.html" class="tsd-signature-type">Type</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_math_optimization_method_.optimizationmethod.html">OptimizationMethod</a>.<a href="_ql_math_optimization_method_.optimizationmethod.html#minimize">minimize</a></p>
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:51</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_math_optimization_problem_.problem.html" class="tsd-signature-type">Problem</a></h5>
+								</li>
+								<li>
+									<h5>endCriteria: <a href="_ql_math_optimization_endcriteria_.endcriteria.html" class="tsd-signature-type">EndCriteria</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_math_optimization_endcriteria_.endcriteria.type.html" class="tsd-signature-type">Type</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="rotatearray" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rotate<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">rotate<wbr>Array<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/optimization/differentialevolution.ts:392</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_math_optimization_differentialevolution_.html">"ql/math/optimization/differentialevolution"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html" class="tsd-kind-icon">Differential<wbr>Evolution</a>
+						<ul>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_math_optimization_differentialevolution_.differentialevolution.crossovertype.html" class="tsd-kind-icon">Crossover<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_math_optimization_differentialevolution_.differentialevolution.strategy.html" class="tsd-kind-icon">Strategy</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.candidate.html" class="tsd-kind-icon">Candidate</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.configuration.html" class="tsd-kind-icon">Configuration</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_bestmemberever" class="tsd-kind-icon">_best<wbr>Member<wbr>Ever</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_configuration" class="tsd-kind-icon">_configuration</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_currgencrossover" class="tsd-kind-icon">_curr<wbr>Gen<wbr>Crossover</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_currgensizeweights" class="tsd-kind-icon">_curr<wbr>Gen<wbr>Size<wbr>Weights</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_lowerbound" class="tsd-kind-icon">_lower<wbr>Bound</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_rng" class="tsd-kind-icon">_rng</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#_upperbound" class="tsd-kind-icon">_upper<wbr>Bound</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#adaptcrossover" class="tsd-kind-icon">adapt<wbr>Crossover</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#adaptsizeweights" class="tsd-kind-icon">adapt<wbr>Size<wbr>Weights</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#calculatenextgeneration" class="tsd-kind-icon">calculate<wbr>Next<wbr>Generation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#configuration-1" class="tsd-kind-icon">configuration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#crossover" class="tsd-kind-icon">crossover</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#fillinitialpopulation" class="tsd-kind-icon">fill<wbr>Initial<wbr>Population</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#getcrossovermask" class="tsd-kind-icon">get<wbr>Crossover<wbr>Mask</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#getmutationprobabilities" class="tsd-kind-icon">get<wbr>Mutation<wbr>Probabilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#minimize" class="tsd-kind-icon">minimize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_math_optimization_differentialevolution_.differentialevolution.html#rotatearray" class="tsd-kind-icon">rotate<wbr>Array</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_math_optimization_differentialevolution_.html#clonepopulation" class="tsd-kind-icon">clone<wbr>Population</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_math_optimization_differentialevolution_.html#partial_sort" class="tsd-kind-icon">partial_<wbr>sort</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_math_optimization_differentialevolution_.html#randomize" class="tsd-kind-icon">randomize</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

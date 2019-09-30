@@ -1,0 +1,998 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BlackScholesLattice | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_methods_lattices_bsmlattice_.html">&quot;ql/methods/lattices/bsmlattice&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html">BlackScholesLattice</a>
+				</li>
+			</ul>
+			<h1>Class BlackScholesLattice&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Simple binomial lattice approximating the Black-Scholes model</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_methods_lattices_lattice_.treelatticeimpl.html" class="tsd-signature-type">TreeLatticeImpl</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_methods_lattices_lattice1d_.treelattice1d.html" class="tsd-signature-type">TreeLattice1D</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">BlackScholesLattice</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_ql_experimental_convertiblebonds_tflattice_.tsiveriotisfernandeslattice.html" class="tsd-signature-type">TsiveriotisFernandesLattice</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_numericalmethod_.lattice.html" class="tsd-signature-type">Lattice</a></li>
+					<li><a href="_ql_patterns_curiouslyrecurring_.curiouslyrecurringtemplate.html" class="tsd-signature-type">CuriouslyRecurringTemplate</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html" class="tsd-signature-type">ITreeLattice</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_discount" class="tsd-kind-icon">_discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_dt" class="tsd-kind-icon">_dt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_pd" class="tsd-kind-icon">_pd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_pu" class="tsd-kind-icon">_pu</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_riskfreerate" class="tsd-kind-icon">_risk<wbr>Free<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_stateprices" class="tsd-kind-icon">_state<wbr>Prices</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_t" class="tsd-kind-icon">_t</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_tree" class="tsd-kind-icon">_tree</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#impl" class="tsd-kind-icon">impl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#timegrid" class="tsd-kind-icon">time<wbr>Grid</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#computestateprices" class="tsd-kind-icon">compute<wbr>State<wbr>Prices</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#descendant" class="tsd-kind-icon">descendant</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#discount" class="tsd-kind-icon">discount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#dt" class="tsd-kind-icon">dt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#grid" class="tsd-kind-icon">grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#init1d" class="tsd-kind-icon">init1D</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#partialrollback" class="tsd-kind-icon">partial<wbr>Rollback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#presentvalue" class="tsd-kind-icon">present<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#probability" class="tsd-kind-icon">probability</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#rollback" class="tsd-kind-icon">rollback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stateprices" class="tsd-kind-icon">state<wbr>Prices</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stepback" class="tsd-kind-icon">stepback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stepback1" class="tsd-kind-icon">stepback1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#underlying" class="tsd-kind-icon">underlying</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Black<wbr>Scholes<wbr>Lattice<span class="tsd-signature-symbol">(</span>tree<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, riskFreeRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, end<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, steps<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:15</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tree: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>riskFreeRate: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>end: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>steps: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_discount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:66</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_dt" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _dt</h3>
+					<div class="tsd-signature tsd-kind-icon">_dt<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:65</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_pd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _pd</h3>
+					<div class="tsd-signature tsd-kind-icon">_pd<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:67</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_pu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _pu</h3>
+					<div class="tsd-signature tsd-kind-icon">_pu<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:68</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_riskfreerate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _risk<wbr>Free<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:64</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_stateprices" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _state<wbr>Prices</h3>
+					<div class="tsd-signature tsd-kind-icon">_state<wbr>Prices<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#_stateprices">_statePrices</a></p>
+						<ul>
+							<li>Defined in ql/methods/lattices/lattice.ts:145</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_t" class="tsd-anchor"></a>
+					<h3>_t</h3>
+					<div class="tsd-signature tsd-kind-icon">_t<span class="tsd-signature-symbol">:</span> <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#_t">_t</a></p>
+						<ul>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_tree" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _tree</h3>
+					<div class="tsd-signature tsd-kind-icon">_tree<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/methods/lattices/bsmlattice.ts:63</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="impl" class="tsd-anchor"></a>
+					<h3>impl</h3>
+					<div class="tsd-signature tsd-kind-icon">impl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#impl">impl</a></p>
+						<ul>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="timegrid" class="tsd-anchor"></a>
+					<h3>time<wbr>Grid</h3>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>Grid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#timegrid">timeGrid</a></p>
+						<ul>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="computestateprices" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> compute<wbr>State<wbr>Prices</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>State<wbr>Prices<span class="tsd-signature-symbol">(</span>until<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#computestateprices">computeStatePrices</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:128</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>until: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="descendant" class="tsd-anchor"></a>
+					<h3>descendant</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">descendant<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, branch<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:55</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>branch: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="discount" class="tsd-anchor"></a>
+					<h3>discount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">discount<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dt" class="tsd-anchor"></a>
+					<h3>dt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dt<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:32</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="grid" class="tsd-anchor"></a>
+					<h3>grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice1d_.treelattice1d.html">TreeLattice1D</a>.<a href="_ql_methods_lattices_lattice1d_.treelattice1d.html#grid">grid</a></p>
+								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#grid">grid</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice1d.ts:26</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>timeGrid<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#init">init</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:55</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeGrid: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
+								</li>
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init1d" class="tsd-anchor"></a>
+					<h3>init1D</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init1D<span class="tsd-signature-symbol">(</span>timeGrid<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_lattices_lattice1d_.treelattice1d.html" class="tsd-signature-type">TreeLattice1D</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice1d_.treelattice1d.html">TreeLattice1D</a>.<a href="_ql_methods_lattices_lattice1d_.treelattice1d.html#init1d">init1D</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice1d.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeGrid: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
+								</li>
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_lattices_lattice1d_.treelattice1d.html" class="tsd-signature-type">TreeLattice1D</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-signature-type">BlackScholesLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3>initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span>asset<span class="tsd-signature-symbol">: </span><a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a>, t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#initialize">initialize</a></p>
+								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#initialize">initialize</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:78</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>asset: <a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a></h5>
+								</li>
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="partialrollback" class="tsd-anchor"></a>
+					<h3>partial<wbr>Rollback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">partial<wbr>Rollback<span class="tsd-signature-symbol">(</span>asset<span class="tsd-signature-symbol">: </span><a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a>, to<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#partialrollback">partialRollback</a></p>
+								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#partialrollback">partialRollback</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:89</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>asset: <a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a></h5>
+								</li>
+								<li>
+									<h5>to: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="presentvalue" class="tsd-anchor"></a>
+					<h3>present<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">present<wbr>Value<span class="tsd-signature-symbol">(</span>asset<span class="tsd-signature-symbol">: </span><a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#presentvalue">presentValue</a></p>
+								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#presentvalue">presentValue</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:73</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>asset: <a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="probability" class="tsd-anchor"></a>
+					<h3>probability</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">probability<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, branch<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>branch: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="riskfreerate" class="tsd-anchor"></a>
+					<h3>risk<wbr>Free<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:28</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="rollback" class="tsd-anchor"></a>
+					<h3>rollback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rollback<span class="tsd-signature-symbol">(</span>asset<span class="tsd-signature-symbol">: </span><a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a>, to<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#rollback">rollback</a></p>
+								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#rollback">rollback</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:84</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>asset: <a href="_ql_discretizedasset_.discretizedasset.html" class="tsd-signature-type">DiscretizedAsset</a></h5>
+								</li>
+								<li>
+									<h5>to: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="stateprices" class="tsd-anchor"></a>
+					<h3>state<wbr>Prices</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">state<wbr>Prices<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html">ITreeLattice</a>.<a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html#stateprices">statePrices</a></p>
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#stateprices">statePrices</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:66</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="stepback" class="tsd-anchor"></a>
+					<h3>stepback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">stepback<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, values<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, newValues<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html">ITreeLattice</a>.<a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html#stepback">stepback</a></p>
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#stepback">stepback</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:116</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>values: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>newValues: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="stepback1" class="tsd-anchor"></a>
+					<h3>stepback1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">stepback1<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, values<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, newValues<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:44</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>values: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>newValues: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="underlying" class="tsd-anchor"></a>
+					<h3>underlying</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">underlying<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_methods_lattices_lattice1d_.treelattice1d.html">TreeLattice1D</a>.<a href="_ql_methods_lattices_lattice1d_.treelattice1d.html#underlying">underlying</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/bsmlattice.ts:51</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_methods_lattices_bsmlattice_.html">"ql/methods/lattices/bsmlattice"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html" class="tsd-kind-icon">Black<wbr>Scholes<wbr>Lattice</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_discount" class="tsd-kind-icon">_discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_dt" class="tsd-kind-icon">_dt</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_pd" class="tsd-kind-icon">_pd</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_pu" class="tsd-kind-icon">_pu</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_riskfreerate" class="tsd-kind-icon">_risk<wbr>Free<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_stateprices" class="tsd-kind-icon">_state<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_t" class="tsd-kind-icon">_t</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#_tree" class="tsd-kind-icon">_tree</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#impl" class="tsd-kind-icon">impl</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#timegrid" class="tsd-kind-icon">time<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#computestateprices" class="tsd-kind-icon">compute<wbr>State<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#descendant" class="tsd-kind-icon">descendant</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#discount" class="tsd-kind-icon">discount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#dt" class="tsd-kind-icon">dt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#grid" class="tsd-kind-icon">grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#init1d" class="tsd-kind-icon">init1D</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#initialize" class="tsd-kind-icon">initialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#partialrollback" class="tsd-kind-icon">partial<wbr>Rollback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#presentvalue" class="tsd-kind-icon">present<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#probability" class="tsd-kind-icon">probability</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#rollback" class="tsd-kind-icon">rollback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stateprices" class="tsd-kind-icon">state<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stepback" class="tsd-kind-icon">stepback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#stepback1" class="tsd-kind-icon">stepback1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_methods_lattices_bsmlattice_.blackscholeslattice.html#underlying" class="tsd-kind-icon">underlying</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

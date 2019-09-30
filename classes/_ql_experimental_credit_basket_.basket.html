@@ -1,0 +1,2363 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Basket | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_experimental_credit_basket_.html">&quot;ql/experimental/credit/basket&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_experimental_credit_basket_.basket.html">Basket</a>
+				</li>
+			</ul>
+			<h1>Class Basket</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Credit Basket</p>
+					</div>
+					<p>A basket is a collection of credit names, represented by a
+						unique identifier (a text string), associated notional
+						amounts, a pool and tranche information. The pool is a map of
+						&quot;names&quot; to issuers.  The Basket structure is motivated by CDO
+						squared instruments containing various underlying inner CDOs
+						which can be represented by respective baskets including their
+						tranche structure.  The role of the Pool is providing a unique
+						list of relevant issuers while names may appear multiple times
+					across different baskets (overlap).</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_patterns_lazyobject_.lazyobject.html" class="tsd-signature-type">LazyObject</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Basket</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_attachmentamount" class="tsd-kind-icon">_attachment<wbr>Amount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_attachmentratio" class="tsd-kind-icon">_attachment<wbr>Ratio</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_basketnotional" class="tsd-kind-icon">_basket<wbr>Notional</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_claim" class="tsd-kind-icon">_claim</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_detachmentamount" class="tsd-kind-icon">_detachment<wbr>Amount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_detachmentratio" class="tsd-kind-icon">_detachment<wbr>Ratio</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldateattachamount" class="tsd-kind-icon">_eval<wbr>Date<wbr>Attach<wbr>Amount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatedetachammount" class="tsd-kind-icon">_eval<wbr>Date<wbr>Detach<wbr>Ammount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivekeys" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivelist" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>List</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivenames" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Names</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivenotionals" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Notionals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldateremainingnot" class="tsd-kind-icon">_eval<wbr>Date<wbr>Remaining<wbr>Not</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_evaldatesettledloss" class="tsd-kind-icon">_eval<wbr>Date<wbr>Settled<wbr>Loss</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_lossmodel" class="tsd-kind-icon">_loss<wbr>Model</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_notionals" class="tsd-kind-icon">_notionals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_pool" class="tsd-kind-icon">_pool</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_refdate" class="tsd-kind-icon">_ref<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_basket_.basket.html#_tranchenotional" class="tsd-kind-icon">_tranche<wbr>Notional</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#attachmentamount" class="tsd-kind-icon">attachment<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#attachmentratio" class="tsd-kind-icon">attachment<wbr>Ratio</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#basketnotional" class="tsd-kind-icon">basket<wbr>Notional</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#claim" class="tsd-kind-icon">claim</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#computebasket" class="tsd-kind-icon">compute<wbr>Basket</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#cumulatedloss1" class="tsd-kind-icon">cumulated<wbr>Loss1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#cumulatedloss2" class="tsd-kind-icon">cumulated<wbr>Loss2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#defaultcorrelation" class="tsd-kind-icon">default<wbr>Correlation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#defaultkeys" class="tsd-kind-icon">default<wbr>Keys</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#detachmentamount" class="tsd-kind-icon">detachment<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#detachmentratio" class="tsd-kind-icon">detachment<wbr>Ratio</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#expectedshortfall" class="tsd-kind-icon">expected<wbr>Shortfall</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#expectedtrancheloss" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#exposure" class="tsd-kind-icon">exposure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#livelist1" class="tsd-kind-icon">live<wbr>List1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#livelist2" class="tsd-kind-icon">live<wbr>List2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#lossdistribution" class="tsd-kind-icon">loss<wbr>Distribution</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#names" class="tsd-kind-icon">names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#notionals" class="tsd-kind-icon">notionals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#percentile" class="tsd-kind-icon">percentile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_basket_.basket.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#pool" class="tsd-kind-icon">pool</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#probatleastnevents" class="tsd-kind-icon">prob<wbr>AtLeastNEvents</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#proboverloss" class="tsd-kind-icon">prob<wbr>Over<wbr>Loss</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#probabilities" class="tsd-kind-icon">probabilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#probsbeingnthevent" class="tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#recoveryrate" class="tsd-kind-icon">recovery<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#refdate" class="tsd-kind-icon">ref<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingattachmentamount1" class="tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingattachmentamount2" class="tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingdefaultkeys1" class="tsd-kind-icon">remaining<wbr>Default<wbr>Keys1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingdefaultkeys2" class="tsd-kind-icon">remaining<wbr>Default<wbr>Keys2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingdetachmentamount1" class="tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingdetachmentamount2" class="tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnames1" class="tsd-kind-icon">remaining<wbr>Names1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnames2" class="tsd-kind-icon">remaining<wbr>Names2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnotional1" class="tsd-kind-icon">remaining<wbr>Notional1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnotional2" class="tsd-kind-icon">remaining<wbr>Notional2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnotionals1" class="tsd-kind-icon">remaining<wbr>Notionals1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingnotionals2" class="tsd-kind-icon">remaining<wbr>Notionals2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingprobabilities" class="tsd-kind-icon">remaining<wbr>Probabilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingsize1" class="tsd-kind-icon">remaining<wbr>Size1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingtranchenotional" class="tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#remainingtranchenotional2" class="tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#setlossmodel" class="tsd-kind-icon">set<wbr>Loss<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#settledloss1" class="tsd-kind-icon">settled<wbr>Loss1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#settledloss2" class="tsd-kind-icon">settled<wbr>Loss2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#splitvarlevel" class="tsd-kind-icon">split<wbr>VaRLevel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_basket_.basket.html#tranchenotional" class="tsd-kind-icon">tranche<wbr>Notional</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_basket_.basket.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_basket_.basket.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:144</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_attachmentamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _attachment<wbr>Amount</h3>
+					<div class="tsd-signature tsd-kind-icon">_attachment<wbr>Amount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:527</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_attachmentratio" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _attachment<wbr>Ratio</h3>
+					<div class="tsd-signature tsd-kind-icon">_attachment<wbr>Ratio<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:523</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_basketnotional" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _basket<wbr>Notional</h3>
+					<div class="tsd-signature tsd-kind-icon">_basket<wbr>Notional<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:525</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_claim" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _claim</h3>
+					<div class="tsd-signature tsd-kind-icon">_claim<span class="tsd-signature-symbol">:</span> <a href="_ql_instruments_claim_.claim.html" class="tsd-signature-type">Claim</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:521</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_detachmentamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _detachment<wbr>Amount</h3>
+					<div class="tsd-signature tsd-kind-icon">_detachment<wbr>Amount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:528</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_detachmentratio" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _detachment<wbr>Ratio</h3>
+					<div class="tsd-signature tsd-kind-icon">_detachment<wbr>Ratio<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:524</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldateattachamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Attach<wbr>Amount</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Attach<wbr>Amount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:533</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatedetachammount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Detach<wbr>Ammount</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Detach<wbr>Ammount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:534</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatelivekeys" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Live<wbr>Keys</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Keys<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:539</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatelivelist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Live<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>List<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:536</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatelivenames" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Live<wbr>Names</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:538</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatelivenotionals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Live<wbr>Notionals</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Notionals<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:537</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldateremainingnot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Remaining<wbr>Not</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Remaining<wbr>Not<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:532</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_evaldatesettledloss" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _eval<wbr>Date<wbr>Settled<wbr>Loss</h3>
+					<div class="tsd-signature tsd-kind-icon">_eval<wbr>Date<wbr>Settled<wbr>Loss<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:531</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:143</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_lossmodel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _loss<wbr>Model</h3>
+					<div class="tsd-signature tsd-kind-icon">_loss<wbr>Model<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_credit_defaultlossmodel_.defaultlossmodel.html" class="tsd-signature-type">DefaultLossModel</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:543</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_notionals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _notionals</h3>
+					<div class="tsd-signature tsd-kind-icon">_notionals<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:519</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_pool" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _pool</h3>
+					<div class="tsd-signature tsd-kind-icon">_pool<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_credit_pool_.pool.html" class="tsd-signature-type">Pool</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:520</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_refdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _ref<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_ref<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:541</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tranchenotional" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tranche<wbr>Notional</h3>
+					<div class="tsd-signature tsd-kind-icon">_tranche<wbr>Notional<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/basket.ts:529</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method causes the object to forward all
+										notifications, even when not calculated.  The default
+										behavior is to forward the first notification received,
+										and discard the others until recalculated; the rationale
+										is that observers were already notified, and don&#39;t need
+										further notification until they recalculate, at which
+										point this object would be recalculated too.  After
+										recalculation, this object would again forward the first
+									notification received.</p>
+								</div>
+								<p>warning Forwarding all notifications will cause a
+									performance hit, and should be used only when
+									discarding notifications cause an incorrect
+								behavior.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attachmentamount" class="tsd-anchor"></a>
+					<h3>attachment<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attachment<wbr>Amount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:172</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attachmentratio" class="tsd-anchor"></a>
+					<h3>attachment<wbr>Ratio</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attachment<wbr>Ratio<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:156</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="basketnotional" class="tsd-anchor"></a>
+					<h3>basket<wbr>Notional</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">basket<wbr>Notional<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:164</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#calculate">calculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:118</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method performs all needed calculations by calling
+									the <code>performCalculations</code> method.</p>
+								</div>
+								<p>warning Objects cache the results of the previous
+									calculation. Such results will be returned upon
+									later invocations of
+									<code>calculate</code>. When the results depend
+									on arguments which could change between
+									invocations, the lazy object must register itself
+									as observer of such objects for the calculations
+								to be performed again when they change.</p>
+								<p>warning Should this method be redefined in derived
+									classes, LazyObject.calculate() should be called
+								in the overriding method.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="claim" class="tsd-anchor"></a>
+					<h3>claim</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">claim<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_claim_.claim.html" class="tsd-signature-type">Claim</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:180</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_claim_.claim.html" class="tsd-signature-type">Claim</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="computebasket" class="tsd-anchor"></a>
+					<h3>compute<wbr>Basket</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Basket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:87</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="cumulatedloss1" class="tsd-anchor"></a>
+					<h3>cumulated<wbr>Loss1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cumulated<wbr>Loss1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:228</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="cumulatedloss2" class="tsd-anchor"></a>
+					<h3>cumulated<wbr>Loss2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cumulated<wbr>Loss2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:232</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#deepupdate">deepUpdate</a></p>
+								<ul>
+									<li>Defined in mixins/ql/patterns/observerobservable.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="defaultcorrelation" class="tsd-anchor"></a>
+					<h3>default<wbr>Correlation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Correlation<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, jName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:472</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>jName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="defaultkeys" class="tsd-anchor"></a>
+					<h3>default<wbr>Keys</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">default<wbr>Keys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:148</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detachmentamount" class="tsd-anchor"></a>
+					<h3>detachment<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detachment<wbr>Amount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detachmentratio" class="tsd-anchor"></a>
+					<h3>detachment<wbr>Ratio</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detachment<wbr>Ratio<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expectedshortfall" class="tsd-anchor"></a>
+					<h3>expected<wbr>Shortfall</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Shortfall<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, prob<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:455</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>prob: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expectedtrancheloss" class="tsd-anchor"></a>
+					<h3>expected<wbr>Tranche<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Tranche<wbr>Loss<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:414</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="exposure" class="tsd-anchor"></a>
+					<h3>exposure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">exposure<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, d<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:119</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> d: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#freeze">freeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method constrains the object to return the presently
+										cached results on successive invocations, even if
+									arguments upon which they depend should change.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>refDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, names<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, notionals<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, pool<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_pool_.pool.html" class="tsd-signature-type">Pool</a>, attachment<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, detachment<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, claim<span class="tsd-signature-symbol">?: </span><a href="_ql_instruments_claim_.claim.html" class="tsd-signature-type">Claim</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:31</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>refDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>names: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>notionals: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>pool: <a href="_ql_experimental_credit_pool_.pool.html" class="tsd-signature-type">Pool</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> attachment: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> detachment: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> claim: <a href="_ql_instruments_claim_.claim.html" class="tsd-signature-type">Claim</a><span class="tsd-signature-symbol"> =&nbsp;new FaceValueClaim()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="livelist1" class="tsd-anchor"></a>
+					<h3>live<wbr>List1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">live<wbr>List1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:384</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="livelist2" class="tsd-anchor"></a>
+					<h3>live<wbr>List2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">live<wbr>List2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:388</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lossdistribution" class="tsd-anchor"></a>
+					<h3>loss<wbr>Distribution</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">loss<wbr>Distribution<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:465</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="names" class="tsd-anchor"></a>
+					<h3>names</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">names<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:109</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="notionals" class="tsd-anchor"></a>
+					<h3>notionals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">notionals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:113</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="percentile" class="tsd-anchor"></a>
+					<h3>percentile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">percentile<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, prob<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:442</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>prob: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:499</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pool" class="tsd-anchor"></a>
+					<h3>pool</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">pool<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_pool_.pool.html" class="tsd-signature-type">Pool</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:144</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_pool_.pool.html" class="tsd-signature-type">Pool</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="probatleastnevents" class="tsd-anchor"></a>
+					<h3>prob<wbr>AtLeastNEvents</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">prob<wbr>AtLeastNEvents<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:488</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="proboverloss" class="tsd-anchor"></a>
+					<h3>prob<wbr>Over<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">prob<wbr>Over<wbr>Loss<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, lossFraction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:419</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>lossFraction: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="probabilities" class="tsd-anchor"></a>
+					<h3>probabilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">probabilities<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:184</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="probsbeingnthevent" class="tsd-anchor"></a>
+					<h3>probs<wbr>Being<wbr>Nth<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:477</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#recalculate">recalculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:42</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method force the recalculation of any results which
+										would otherwise be cached. It is not declared as
+										<code>const</code> since it needs to call the
+									non-<code>const</code> <code>notifyObservers</code> method.</p>
+								</div>
+								<p>note Explicit invocation of this method is <b>not</b>
+									necessary if the object registered itself as
+									observer with the structures on which such results
+									depend.  It is strongly advised to follow this
+								policy when possible.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="recoveryrate" class="tsd-anchor"></a>
+					<h3>recovery<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">recovery<wbr>Rate<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:493</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="refdate" class="tsd-anchor"></a>
+					<h3>ref<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">ref<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:152</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingattachmentamount1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Attachment<wbr>Amount1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:350</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingattachmentamount2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Attachment<wbr>Amount2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:354</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingdefaultkeys1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Default<wbr>Keys1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Default<wbr>Keys1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:311</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingdefaultkeys2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Default<wbr>Keys2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Default<wbr>Keys2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:315</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_defaultprobabilitykey_.defaultprobkey.html" class="tsd-signature-type">DefaultProbKey</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingdetachmentamount1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Detachment<wbr>Amount1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:365</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingdetachmentamount2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Detachment<wbr>Amount2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount2<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:369</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnames1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Names1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Names1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:293</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnames2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Names2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Names2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:297</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnotional1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Notional1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Notional1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:260</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnotional2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Notional2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Notional2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:264</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnotionals1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Notionals1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Notionals1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:276</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingnotionals2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Notionals2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Notionals2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:280</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingprobabilities" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Probabilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Probabilities<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:334</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingsize1" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Size1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Size1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:328</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingtranchenotional" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Tranche<wbr>Notional</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:373</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="remainingtranchenotional2" class="tsd-anchor"></a>
+					<h3>remaining<wbr>Tranche<wbr>Notional2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:378</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setlossmodel" class="tsd-anchor"></a>
+					<h3>set<wbr>Loss<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Loss<wbr>Model<span class="tsd-signature-symbol">(</span>lossModel<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_defaultlossmodel_.defaultlossmodel.html" class="tsd-signature-type">DefaultLossModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:401</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lossModel: <a href="_ql_experimental_credit_defaultlossmodel_.defaultlossmodel.html" class="tsd-signature-type">DefaultLossModel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="settledloss1" class="tsd-anchor"></a>
+					<h3>settled<wbr>Loss1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">settled<wbr>Loss1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:196</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="settledloss2" class="tsd-anchor"></a>
+					<h3>settled<wbr>Loss2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">settled<wbr>Loss2<span class="tsd-signature-symbol">(</span>endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:200</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:105</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="splitvarlevel" class="tsd-anchor"></a>
+					<h3>split<wbr>VaRLevel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">split<wbr>VaRLevel<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, loss<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:460</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>loss: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tranchenotional" class="tsd-anchor"></a>
+					<h3>tranche<wbr>Notional</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">tranche<wbr>Notional<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:168</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#unfreeze">unfreeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method reverts the effect of the <code>freeze</code>
+									method, thus re-enabling recalculations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/basket.ts:82</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_experimental_credit_basket_.html">"ql/experimental/credit/basket"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_credit_basket_.basket.html" class="tsd-kind-icon">Basket</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_attachmentamount" class="tsd-kind-icon">_attachment<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_attachmentratio" class="tsd-kind-icon">_attachment<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_basketnotional" class="tsd-kind-icon">_basket<wbr>Notional</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_claim" class="tsd-kind-icon">_claim</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_detachmentamount" class="tsd-kind-icon">_detachment<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_detachmentratio" class="tsd-kind-icon">_detachment<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldateattachamount" class="tsd-kind-icon">_eval<wbr>Date<wbr>Attach<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatedetachammount" class="tsd-kind-icon">_eval<wbr>Date<wbr>Detach<wbr>Ammount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivekeys" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Keys</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivelist" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivenames" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatelivenotionals" class="tsd-kind-icon">_eval<wbr>Date<wbr>Live<wbr>Notionals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldateremainingnot" class="tsd-kind-icon">_eval<wbr>Date<wbr>Remaining<wbr>Not</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_evaldatesettledloss" class="tsd-kind-icon">_eval<wbr>Date<wbr>Settled<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_lossmodel" class="tsd-kind-icon">_loss<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_notionals" class="tsd-kind-icon">_notionals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_pool" class="tsd-kind-icon">_pool</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_refdate" class="tsd-kind-icon">_ref<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_basket_.basket.html#_tranchenotional" class="tsd-kind-icon">_tranche<wbr>Notional</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#attachmentamount" class="tsd-kind-icon">attachment<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#attachmentratio" class="tsd-kind-icon">attachment<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#basketnotional" class="tsd-kind-icon">basket<wbr>Notional</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#claim" class="tsd-kind-icon">claim</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#computebasket" class="tsd-kind-icon">compute<wbr>Basket</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#cumulatedloss1" class="tsd-kind-icon">cumulated<wbr>Loss1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#cumulatedloss2" class="tsd-kind-icon">cumulated<wbr>Loss2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#defaultcorrelation" class="tsd-kind-icon">default<wbr>Correlation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#defaultkeys" class="tsd-kind-icon">default<wbr>Keys</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#detachmentamount" class="tsd-kind-icon">detachment<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#detachmentratio" class="tsd-kind-icon">detachment<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#expectedshortfall" class="tsd-kind-icon">expected<wbr>Shortfall</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#expectedtrancheloss" class="tsd-kind-icon">expected<wbr>Tranche<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#exposure" class="tsd-kind-icon">exposure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#livelist1" class="tsd-kind-icon">live<wbr>List1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#livelist2" class="tsd-kind-icon">live<wbr>List2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#lossdistribution" class="tsd-kind-icon">loss<wbr>Distribution</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#names" class="tsd-kind-icon">names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#notionals" class="tsd-kind-icon">notionals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#percentile" class="tsd-kind-icon">percentile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_basket_.basket.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#pool" class="tsd-kind-icon">pool</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#probatleastnevents" class="tsd-kind-icon">prob<wbr>AtLeastNEvents</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#proboverloss" class="tsd-kind-icon">prob<wbr>Over<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#probabilities" class="tsd-kind-icon">probabilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#probsbeingnthevent" class="tsd-kind-icon">probs<wbr>Being<wbr>Nth<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#recoveryrate" class="tsd-kind-icon">recovery<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#refdate" class="tsd-kind-icon">ref<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingattachmentamount1" class="tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingattachmentamount2" class="tsd-kind-icon">remaining<wbr>Attachment<wbr>Amount2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingdefaultkeys1" class="tsd-kind-icon">remaining<wbr>Default<wbr>Keys1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingdefaultkeys2" class="tsd-kind-icon">remaining<wbr>Default<wbr>Keys2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingdetachmentamount1" class="tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingdetachmentamount2" class="tsd-kind-icon">remaining<wbr>Detachment<wbr>Amount2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnames1" class="tsd-kind-icon">remaining<wbr>Names1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnames2" class="tsd-kind-icon">remaining<wbr>Names2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnotional1" class="tsd-kind-icon">remaining<wbr>Notional1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnotional2" class="tsd-kind-icon">remaining<wbr>Notional2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnotionals1" class="tsd-kind-icon">remaining<wbr>Notionals1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingnotionals2" class="tsd-kind-icon">remaining<wbr>Notionals2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingprobabilities" class="tsd-kind-icon">remaining<wbr>Probabilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingsize1" class="tsd-kind-icon">remaining<wbr>Size1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingtranchenotional" class="tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#remainingtranchenotional2" class="tsd-kind-icon">remaining<wbr>Tranche<wbr>Notional2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#setlossmodel" class="tsd-kind-icon">set<wbr>Loss<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#settledloss1" class="tsd-kind-icon">settled<wbr>Loss1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#settledloss2" class="tsd-kind-icon">settled<wbr>Loss2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#splitvarlevel" class="tsd-kind-icon">split<wbr>VaRLevel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_basket_.basket.html#tranchenotional" class="tsd-kind-icon">tranche<wbr>Notional</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_basket_.basket.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_basket_.basket.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

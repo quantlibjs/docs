@@ -1,0 +1,1461 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ExtendedOrnsteinUhlenbeckProcess | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.html">&quot;ql/experimental/processes/extendedornsteinuhlenbeckprocess&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html">ExtendedOrnsteinUhlenbeckProcess</a>
+				</li>
+			</ul>
+			<h1>Class ExtendedOrnsteinUhlenbeckProcess</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Extended Ornstein-Uhlenbeck process class</p>
+					</div>
+					<p>This class describes the Ornstein-Uhlenbeck process governed by
+						\f[
+						dx = a (b(t) - x_t) dt + \sigma dW_t.
+					\f]</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ExtendedOrnsteinUhlenbeckProcess</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.discretization.html" class="tsd-kind-icon">Discretization</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_b" class="tsd-kind-icon">_b</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_discretization" class="tsd-kind-icon">_discretization</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_inteps" class="tsd-kind-icon">_int<wbr>Eps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_ouprocess" class="tsd-kind-icon">_ou<wbr>Process</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_speed" class="tsd-kind-icon">_speed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_vol" class="tsd-kind-icon">_vol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#discretization_" class="tsd-kind-icon">discretization_</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#apply1" class="tsd-kind-icon">apply1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#apply2" class="tsd-kind-icon">apply2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#covariance" class="tsd-kind-icon">covariance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#diffusion1" class="tsd-kind-icon">diffusion1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#diffusion2" class="tsd-kind-icon">diffusion2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#drift1" class="tsd-kind-icon">drift1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#drift2" class="tsd-kind-icon">drift2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#evolve1" class="tsd-kind-icon">evolve1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#evolve2" class="tsd-kind-icon">evolve2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#expectation1" class="tsd-kind-icon">expectation1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#expectation2" class="tsd-kind-icon">expectation2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#factors" class="tsd-kind-icon">factors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#initialvalues" class="tsd-kind-icon">initial<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#speed" class="tsd-kind-icon">speed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#stddeviation1" class="tsd-kind-icon">std<wbr>Deviation1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#stddeviation2" class="tsd-kind-icon">std<wbr>Deviation2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#time" class="tsd-kind-icon">time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#variance" class="tsd-kind-icon">variance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#volatility" class="tsd-kind-icon">volatility</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#x0" class="tsd-kind-icon">x0</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Ornstein<wbr>Uhlenbeck<wbr>Process<span class="tsd-signature-symbol">(</span>speed<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, vol<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span>, discretization<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.discretization.html" class="tsd-signature-type">Discretization</a>, intEps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html" class="tsd-signature-type">ExtendedOrnsteinUhlenbeckProcess</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:19</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>speed: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>vol: <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> discretization: <a href="../enums/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.discretization.html" class="tsd-signature-type">Discretization</a><span class="tsd-signature-symbol"> =&nbsp;ExtendedOrnsteinUhlenbeckProcess.Discretization.MidPoint</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> intEps: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.0001</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html" class="tsd-signature-type">ExtendedOrnsteinUhlenbeckProcess</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_b" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _b</h3>
+					<div class="tsd-signature tsd-kind-icon">_b<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:97</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_discretization" class="tsd-anchor"></a>
+					<h3>_discretization</h3>
+					<div class="tsd-signature tsd-kind-icon">_discretization<span class="tsd-signature-symbol">:</span> <a href="_ql_stochasticprocess_.stochasticprocess.discretization.html" class="tsd-signature-type">discretization</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#_discretization">_discretization</a></p>
+						<ul>
+							<li>Defined in ql/stochasticprocess.ts:140</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_inteps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _int<wbr>Eps</h3>
+					<div class="tsd-signature tsd-kind-icon">_int<wbr>Eps<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:98</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_ouprocess" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _ou<wbr>Process</h3>
+					<div class="tsd-signature tsd-kind-icon">_ou<wbr>Process<span class="tsd-signature-symbol">:</span> <a href="_ql_processes_ornsteinuhlenbeckprocess_.ornsteinuhlenbeckprocess.html" class="tsd-signature-type">OrnsteinUhlenbeckProcess</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:99</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_speed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _speed</h3>
+					<div class="tsd-signature tsd-kind-icon">_speed<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:95</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_vol" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _vol</h3>
+					<div class="tsd-signature tsd-kind-icon">_vol<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:96</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="discretization_" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> discretization_</h3>
+					<div class="tsd-signature tsd-kind-icon">discretization_<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.discretization.html" class="tsd-signature-type">Discretization</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:100</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="apply1" class="tsd-anchor"></a>
+					<h3>apply1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">apply1<span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dx<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#apply1">apply1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#apply1">apply1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:335</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dx: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="apply2" class="tsd-anchor"></a>
+					<h3>apply2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">apply2<span class="tsd-signature-symbol">(</span>x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dx<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#apply2">apply2</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:264</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>applies a change to the asset value. By default, it
+									returns $ x + \Delta x $.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dx: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="covariance" class="tsd-anchor"></a>
+					<h3>covariance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">covariance<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#covariance">covariance</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#covariance">covariance</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:314</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#deepupdate">deepUpdate</a></p>
+								<ul>
+									<li>Defined in mixins/ql/patterns/observerobservable.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="diffusion1" class="tsd-anchor"></a>
+					<h3>diffusion1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">diffusion1<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#diffusion1">diffusion1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#diffusion1">diffusion1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:287</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="diffusion2" class="tsd-anchor"></a>
+					<h3>diffusion2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">diffusion2<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#diffusion2">diffusion2</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="drift1" class="tsd-anchor"></a>
+					<h3>drift1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">drift1<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#drift1">drift1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#drift1">drift1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:278</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="drift2" class="tsd-anchor"></a>
+					<h3>drift2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">drift2<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#drift2">drift2</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:52</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="evolve1" class="tsd-anchor"></a>
+					<h3>evolve1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">evolve1<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, dw<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#evolve1">evolve1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#evolve1">evolve1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:323</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>dw: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="evolve2" class="tsd-anchor"></a>
+					<h3>evolve2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">evolve2<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, dw<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#evolve2">evolve2</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:255</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the asset value after a time interval $ \Delta t $
+										according to the given discretization. By default, it
+										returns
+										$$
+										E(x_0,t_0,\Delta t) + S(x_0,t_0,\Delta t) \cdot \Delta w
+										$$
+										where $ E $ is the expectation and $ S $ the
+									standard deviation.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>dw: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="expectation1" class="tsd-anchor"></a>
+					<h3>expectation1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">expectation1<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#expectation1">expectation1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#expectation1">expectation1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:296</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="expectation2" class="tsd-anchor"></a>
+					<h3>expectation2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">expectation2<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#expectation2">expectation2</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:60</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="factors" class="tsd-anchor"></a>
+					<h3>factors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">factors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#factors">factors</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:35</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the number of independent factors of the process</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>disc<span class="tsd-signature-symbol">: </span><a href="_ql_stochasticprocess_.stochasticprocess.discretization.html" class="tsd-signature-type">discretization</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#init">init</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#init">init</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:183</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>disc: <a href="_ql_stochasticprocess_.stochasticprocess.discretization.html" class="tsd-signature-type">discretization</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="initialvalues" class="tsd-anchor"></a>
+					<h3>initial<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">initial<wbr>Values<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#initialvalues">initialValues</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#initialvalues">initialValues</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:274</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#size">size</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#size">size</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:270</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="speed" class="tsd-anchor"></a>
+					<h3>speed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">speed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:44</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="stddeviation1" class="tsd-anchor"></a>
+					<h3>std<wbr>Deviation1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">std<wbr>Deviation1<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#stddeviation1">stdDeviation1</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#stddeviation1">stdDeviation1</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:305</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="stddeviation2" class="tsd-anchor"></a>
+					<h3>std<wbr>Deviation2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">std<wbr>Deviation2<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#stddeviation2">stdDeviation2</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:87</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="time" class="tsd-anchor"></a>
+					<h3>time</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#time">time</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:132</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the time value corresponding to the given date
+									in the reference system of the stochastic process.</p>
+								</div>
+								<p>note As a number of processes might not need this
+									functionality, a default implementation is given
+								which raises an exception.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess.html">StochasticProcess</a>.<a href="_ql_stochasticprocess_.stochasticprocess.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/stochasticprocess.ts:136</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="variance" class="tsd-anchor"></a>
+					<h3>variance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">variance<span class="tsd-signature-symbol">(</span>t0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x0<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#variance">variance</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:91</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t0: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>x0: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="volatility" class="tsd-anchor"></a>
+					<h3>volatility</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">volatility<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:48</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="x0" class="tsd-anchor"></a>
+					<h3>x0</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">x0<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#x0">x0</a></p>
+								<ul>
+									<li>Defined in ql/experimental/processes/extendedornsteinuhlenbeckprocess.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.html">"ql/experimental/processes/extendedornsteinuhlenbeckprocess"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html" class="tsd-kind-icon">Extended<wbr>Ornstein<wbr>Uhlenbeck<wbr>Process</a>
+						<ul>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.discretization.html" class="tsd-kind-icon">Discretization</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_b" class="tsd-kind-icon">_b</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_discretization" class="tsd-kind-icon">_discretization</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_inteps" class="tsd-kind-icon">_int<wbr>Eps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_ouprocess" class="tsd-kind-icon">_ou<wbr>Process</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_speed" class="tsd-kind-icon">_speed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#_vol" class="tsd-kind-icon">_vol</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#discretization_" class="tsd-kind-icon">discretization_</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#apply1" class="tsd-kind-icon">apply1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#apply2" class="tsd-kind-icon">apply2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#covariance" class="tsd-kind-icon">covariance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#diffusion1" class="tsd-kind-icon">diffusion1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#diffusion2" class="tsd-kind-icon">diffusion2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#drift1" class="tsd-kind-icon">drift1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#drift2" class="tsd-kind-icon">drift2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#evolve1" class="tsd-kind-icon">evolve1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#evolve2" class="tsd-kind-icon">evolve2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#expectation1" class="tsd-kind-icon">expectation1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#expectation2" class="tsd-kind-icon">expectation2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#factors" class="tsd-kind-icon">factors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#initialvalues" class="tsd-kind-icon">initial<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#speed" class="tsd-kind-icon">speed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#stddeviation1" class="tsd-kind-icon">std<wbr>Deviation1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#stddeviation2" class="tsd-kind-icon">std<wbr>Deviation2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#time" class="tsd-kind-icon">time</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#variance" class="tsd-kind-icon">variance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#volatility" class="tsd-kind-icon">volatility</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html#x0" class="tsd-kind-icon">x0</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.integrand.html" class="tsd-kind-icon">integrand</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

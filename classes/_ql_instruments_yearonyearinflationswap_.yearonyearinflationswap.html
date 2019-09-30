@@ -1,0 +1,2307 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>YearOnYearInflationSwap | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_instruments_yearonyearinflationswap_.html">&quot;ql/instruments/yearonyearinflationswap&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html">YearOnYearInflationSwap</a>
+				</li>
+			</ul>
+			<h1>Class YearOnYearInflationSwap</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Year-on-year inflation-indexed swap</p>
+					</div>
+					<p>Quoted as a fixed rate $ K $.  At start:
+						$$
+						\sum_{i=1}^{M} P_n(0,t_i) N K =
+						\sum_{i=1}^{M} P_n(0,t_i) N \left[ \frac{I(t_i)}{I(t_i-1)} - 1 \right]
+						$$
+						where $ t_M $ is the maturity time, $ P_n(0,t) $ is the
+						nominal discount factor at time $ t $, $ N $ is the
+						notional, and $ I(t) $ is the inflation index value at
+					time $ t $.</p>
+					<p>note These instruments have now been changed to follow
+						typical VanillaSwap type design conventions
+					w.r.t. Schedules etc.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">YearOnYearInflationSwap</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-kind-icon">Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.arguments.html" class="tsd-kind-icon">Arguments</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.results.html" class="tsd-kind-icon">Results</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.engine.html" class="tsd-kind-icon">engine</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_npv" class="tsd-kind-icon">_NPV</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_additionalresults" class="tsd-kind-icon">_additional<wbr>Results</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_enddiscounts" class="tsd-kind-icon">_end<wbr>Discounts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_engine" class="tsd-kind-icon">_engine</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_errorestimate" class="tsd-kind-icon">_error<wbr>Estimate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fairrate" class="tsd-kind-icon">_fair<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fairspread" class="tsd-kind-icon">_fair<wbr>Spread</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixeddaycount" class="tsd-kind-icon">_fixed<wbr>Day<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixedrate" class="tsd-kind-icon">_fixed<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixedschedule" class="tsd-kind-icon">_fixed<wbr>Schedule</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legbps" class="tsd-kind-icon">_legBPS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legnpv" class="tsd-kind-icon">_legNPV</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legs" class="tsd-kind-icon">_legs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_nominal" class="tsd-kind-icon">_nominal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_npvdatediscount" class="tsd-kind-icon">_npv<wbr>Date<wbr>Discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observationlag" class="tsd-kind-icon">_observation<wbr>Lag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_payer" class="tsd-kind-icon">_payer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_paymentcalendar" class="tsd-kind-icon">_payment<wbr>Calendar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_paymentconvention" class="tsd-kind-icon">_payment<wbr>Convention</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_spread" class="tsd-kind-icon">_spread</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_startdiscounts" class="tsd-kind-icon">_start<wbr>Discounts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_type" class="tsd-kind-icon">_type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_valuationdate" class="tsd-kind-icon">_valuation<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoydaycount" class="tsd-kind-icon">_yoy<wbr>Day<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoyindex" class="tsd-kind-icon">_yoy<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoyschedule" class="tsd-kind-icon">_yoy<wbr>Schedule</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#npv" class="tsd-kind-icon">NPV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#additionalresults" class="tsd-kind-icon">additional<wbr>Results</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#enddiscounts" class="tsd-kind-icon">end<wbr>Discounts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#errorestimate" class="tsd-kind-icon">error<wbr>Estimate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fairrate" class="tsd-kind-icon">fair<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fairespread" class="tsd-kind-icon">faire<wbr>Spread</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fetchresults" class="tsd-kind-icon">fetch<wbr>Results</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixeddaycount" class="tsd-kind-icon">fixed<wbr>Day<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedleg" class="tsd-kind-icon">fixed<wbr>Leg</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedlegnpv" class="tsd-kind-icon">fixed<wbr>LegNPV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedrate" class="tsd-kind-icon">fixed<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedschedule" class="tsd-kind-icon">fixed<wbr>Schedule</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init2" class="tsd-kind-icon">init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init3" class="tsd-kind-icon">init3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#isexpired" class="tsd-kind-icon">is<wbr>Expired</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#leg" class="tsd-kind-icon">leg</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#legbps" class="tsd-kind-icon">legBPS</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#legnpv" class="tsd-kind-icon">legNPV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#nominal" class="tsd-kind-icon">nominal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#npvdatediscount" class="tsd-kind-icon">npv<wbr>Date<wbr>Discount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#observationlag" class="tsd-kind-icon">observation<wbr>Lag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#paymentcalendar" class="tsd-kind-icon">payment<wbr>Calendar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#paymentconvention" class="tsd-kind-icon">payment<wbr>Convention</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#result" class="tsd-kind-icon">result</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setpricingengine" class="tsd-kind-icon">set<wbr>Pricing<wbr>Engine</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setuparguments" class="tsd-kind-icon">setup<wbr>Arguments</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setupexpired" class="tsd-kind-icon">setup<wbr>Expired</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#spread" class="tsd-kind-icon">spread</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#startdate" class="tsd-kind-icon">start<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#startdiscounts" class="tsd-kind-icon">start<wbr>Discounts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#type-1" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#valuationdate" class="tsd-kind-icon">valuation<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoydaycount" class="tsd-kind-icon">yoy<wbr>Day<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyinflationindex" class="tsd-kind-icon">yoy<wbr>Inflation<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyleg" class="tsd-kind-icon">yoy<wbr>Leg</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoylegnpv" class="tsd-kind-icon">yoy<wbr>LegNPV</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyschedule" class="tsd-kind-icon">yoy<wbr>Schedule</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Year<wbr>OnYear<wbr>Inflation<wbr>Swap<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-signature-type">Type</a>, nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, fixedSchedule<span class="tsd-signature-symbol">: </span><a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, fixedRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, fixedDayCount<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, yoySchedule<span class="tsd-signature-symbol">: </span><a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, yoyIndex<span class="tsd-signature-symbol">: </span><a href="_ql_indexes_inflationindex_.yoyinflationindex.html" class="tsd-signature-type">YoYInflationIndex</a>, observationLag<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, spread<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a>, yoyDayCount<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, paymentCalendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, paymentConvention<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html" class="tsd-signature-type">YearOnYearInflationSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:38</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>fixedSchedule: <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h5>
+								</li>
+								<li>
+									<h5>fixedRate: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>fixedDayCount: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>yoySchedule: <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h5>
+								</li>
+								<li>
+									<h5>yoyIndex: <a href="_ql_indexes_inflationindex_.yoyinflationindex.html" class="tsd-signature-type">YoYInflationIndex</a></h5>
+								</li>
+								<li>
+									<h5>observationLag: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+								<li>
+									<h5>spread: <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h5>
+								</li>
+								<li>
+									<h5>yoyDayCount: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>paymentCalendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> paymentConvention: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a><span class="tsd-signature-symbol"> =&nbsp;BusinessDayConvention.ModifiedFollowing</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html" class="tsd-signature-type">YearOnYearInflationSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_npv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _NPV</h3>
+					<div class="tsd-signature tsd-kind-icon">_NPV<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_npv">_NPV</a></p>
+						<ul>
+							<li>Defined in ql/instrument.ts:154</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_additionalresults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _additional<wbr>Results</h3>
+					<div class="tsd-signature tsd-kind-icon">_additional<wbr>Results<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, any&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_additionalresults">_additionalResults</a></p>
+						<ul>
+							<li>Defined in ql/instrument.ts:158</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:144</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_enddiscounts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _end<wbr>Discounts</h3>
+					<div class="tsd-signature tsd-kind-icon">_end<wbr>Discounts<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_enddiscounts">_endDiscounts</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:255</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_engine" class="tsd-anchor"></a>
+					<h3>_engine</h3>
+					<div class="tsd-signature tsd-kind-icon">_engine<span class="tsd-signature-symbol">:</span> <a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_engine">_engine</a></p>
+						<ul>
+							<li>Defined in ql/instrument.ts:162</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_errorestimate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _error<wbr>Estimate</h3>
+					<div class="tsd-signature tsd-kind-icon">_error<wbr>Estimate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_errorestimate">_errorEstimate</a></p>
+						<ul>
+							<li>Defined in ql/instrument.ts:155</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fairrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fair<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_fair<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:295</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fairspread" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fair<wbr>Spread</h3>
+					<div class="tsd-signature tsd-kind-icon">_fair<wbr>Spread<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:296</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fixeddaycount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fixed<wbr>Day<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">_fixed<wbr>Day<wbr>Count<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:286</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fixedrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fixed<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_fixed<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:285</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fixedschedule" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fixed<wbr>Schedule</h3>
+					<div class="tsd-signature tsd-kind-icon">_fixed<wbr>Schedule<span class="tsd-signature-symbol">:</span> <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:284</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:143</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_legbps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _legBPS</h3>
+					<div class="tsd-signature tsd-kind-icon">_legBPS<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_legbps">_legBPS</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:253</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_legnpv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _legNPV</h3>
+					<div class="tsd-signature tsd-kind-icon">_legNPV<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_legnpv">_legNPV</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:252</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_legs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _legs</h3>
+					<div class="tsd-signature tsd-kind-icon">_legs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_legs">_legs</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:250</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_nominal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _nominal</h3>
+					<div class="tsd-signature tsd-kind-icon">_nominal<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:283</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_npvdatediscount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _npv<wbr>Date<wbr>Discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_npv<wbr>Date<wbr>Discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_npvdatediscount">_npvDateDiscount</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:256</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_observationlag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _observation<wbr>Lag</h3>
+					<div class="tsd-signature tsd-kind-icon">_observation<wbr>Lag<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:289</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_payer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _payer</h3>
+					<div class="tsd-signature tsd-kind-icon">_payer<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_payer">_payer</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:251</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_paymentcalendar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _payment<wbr>Calendar</h3>
+					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:292</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_paymentconvention" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _payment<wbr>Convention</h3>
+					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Convention<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:293</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_spread" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _spread</h3>
+					<div class="tsd-signature tsd-kind-icon">_spread<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:290</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_startdiscounts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _start<wbr>Discounts</h3>
+					<div class="tsd-signature tsd-kind-icon">_start<wbr>Discounts<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#_startdiscounts">_startDiscounts</a></p>
+						<ul>
+							<li>Defined in ql/instruments/swap.ts:254</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _type</h3>
+					<div class="tsd-signature tsd-kind-icon">_type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-signature-type">Type</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:282</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_valuationdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _valuation<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_valuation<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_valuationdate">_valuationDate</a></p>
+						<ul>
+							<li>Defined in ql/instrument.ts:156</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_yoydaycount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _yoy<wbr>Day<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">_yoy<wbr>Day<wbr>Count<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:291</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_yoyindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _yoy<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">_yoy<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="_ql_indexes_inflationindex_.yoyinflationindex.html" class="tsd-signature-type">YoYInflationIndex</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:288</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_yoyschedule" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _yoy<wbr>Schedule</h3>
+					<div class="tsd-signature tsd-kind-icon">_yoy<wbr>Schedule<span class="tsd-signature-symbol">:</span> <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/yearonyearinflationswap.ts:287</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="npv" class="tsd-anchor"></a>
+					<h3>NPV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">NPV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#npv">NPV</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the net present value of the instrument.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="additionalresults" class="tsd-anchor"></a>
+					<h3>additional<wbr>Results</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">additional<wbr>Results<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#additionalresults">additionalResults</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:145</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns all additional result returned by the pricing engine.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method causes the object to forward all
+										notifications, even when not calculated.  The default
+										behavior is to forward the first notification received,
+										and discard the others until recalculated; the rationale
+										is that observers were already notified, and don&#39;t need
+										further notification until they recalculate, at which
+										point this object would be recalculated too.  After
+										recalculation, this object would again forward the first
+									notification received.</p>
+								</div>
+								<p>warning Forwarding all notifications will cause a
+									performance hit, and should be used only when
+									discarding notifications cause an incorrect
+								behavior.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#calculate">calculate</a></p>
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#calculate">calculate</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:66</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#deepupdate">deepUpdate</a></p>
+								<ul>
+									<li>Defined in mixins/ql/patterns/observerobservable.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="enddiscounts" class="tsd-anchor"></a>
+					<h3>end<wbr>Discounts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">end<wbr>Discounts<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#enddiscounts">endDiscounts</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:140</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="errorestimate" class="tsd-anchor"></a>
+					<h3>error<wbr>Estimate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">error<wbr>Estimate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#errorestimate">errorEstimate</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:114</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the error estimate on the NPV when available.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fairrate" class="tsd-anchor"></a>
+					<h3>fair<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fair<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:104</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fairespread" class="tsd-anchor"></a>
+					<h3>faire<wbr>Spread</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">faire<wbr>Spread<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:120</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="fetchresults" class="tsd-anchor"></a>
+					<h3>fetch<wbr>Results</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Results<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="_ql_pricingengine_.pricingengine.results.html" class="tsd-signature-type">Results</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#fetchresults">fetchResults</a></p>
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:244</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>r: <a href="_ql_pricingengine_.pricingengine.results.html" class="tsd-signature-type">Results</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fixeddaycount" class="tsd-anchor"></a>
+					<h3>fixed<wbr>Day<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fixed<wbr>Day<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:144</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fixedleg" class="tsd-anchor"></a>
+					<h3>fixed<wbr>Leg</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fixed<wbr>Leg<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fixedlegnpv" class="tsd-anchor"></a>
+					<h3>fixed<wbr>LegNPV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fixed<wbr>LegNPV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:96</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fixedrate" class="tsd-anchor"></a>
+					<h3>fixed<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fixed<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:140</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fixedschedule" class="tsd-anchor"></a>
+					<h3>fixed<wbr>Schedule</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fixed<wbr>Schedule<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:136</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#freeze">freeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method constrains the object to return the presently
+										cached results on successive invocations, even if
+									arguments upon which they depend should change.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instrument_.instrument.html" class="tsd-signature-type">Instrument</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#init">init</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instrument_.instrument.html" class="tsd-signature-type">Instrument</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init1" class="tsd-anchor"></a>
+					<h3>init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>firstLeg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, secondLeg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#init1">init1</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:23</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>firstLeg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>secondLeg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init2" class="tsd-anchor"></a>
+					<h3>init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init2<span class="tsd-signature-symbol">(</span>legs<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">[]</span>, payer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#init2">init2</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:43</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>legs: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>payer: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init3" class="tsd-anchor"></a>
+					<h3>init3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init3<span class="tsd-signature-symbol">(</span>legs<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#init3">init3</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:73</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd><p>This constructor can be used by derived classes that will
+										build their legs themselves.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>legs: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_swap_.swap.html" class="tsd-signature-type">Swap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="isexpired" class="tsd-anchor"></a>
+					<h3>is<wbr>Expired</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Expired<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#isexpired">isExpired</a></p>
+								<p>Overrides <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#isexpired">isExpired</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:166</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="leg" class="tsd-anchor"></a>
+					<h3>leg</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">leg<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#leg">leg</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:159</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="legbps" class="tsd-anchor"></a>
+					<h3>legBPS</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">legBPS<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#legbps">legBPS</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:107</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="legnpv" class="tsd-anchor"></a>
+					<h3>legNPV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">legNPV<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#legnpv">legNPV</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:118</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="maturitydate" class="tsd-anchor"></a>
+					<h3>maturity<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">maturity<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#maturitydate">maturityDate</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:96</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="nominal" class="tsd-anchor"></a>
+					<h3>nominal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">nominal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:132</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="npvdatediscount" class="tsd-anchor"></a>
+					<h3>npv<wbr>Date<wbr>Discount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">npv<wbr>Date<wbr>Discount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#npvdatediscount">npvDateDiscount</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:151</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="observationlag" class="tsd-anchor"></a>
+					<h3>observation<wbr>Lag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">observation<wbr>Lag<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:156</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="paymentcalendar" class="tsd-anchor"></a>
+					<h3>payment<wbr>Calendar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">payment<wbr>Calendar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:168</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="paymentconvention" class="tsd-anchor"></a>
+					<h3>payment<wbr>Convention</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">payment<wbr>Convention<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:172</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#performcalculations">performCalculations</a></p>
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:75</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#recalculate">recalculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:42</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method force the recalculation of any results which
+										would otherwise be cached. It is not declared as
+										<code>const</code> since it needs to call the
+									non-<code>const</code> <code>notifyObservers</code> method.</p>
+								</div>
+								<p>note Explicit invocation of this method is <b>not</b>
+									necessary if the object registered itself as
+									observer with the structures on which such results
+									depend.  It is strongly advised to follow this
+								policy when possible.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#result">result</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:133</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns any additional result returned by the pricing engine.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tag: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setpricingengine" class="tsd-anchor"></a>
+					<h3>set<wbr>Pricing<wbr>Engine</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Pricing<wbr>Engine<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#setpricingengine">setPricingEngine</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:35</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>set the pricing engine to be used.</p>
+								</div>
+								<p>warning calling this method will have no effects in
+									case the <b>performCalculation</b> method
+								was overridden in a derived class.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setuparguments" class="tsd-anchor"></a>
+					<h3>setup<wbr>Arguments</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Arguments<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="_ql_pricingengine_.pricingengine.arguments.html" class="tsd-signature-type">Arguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#setuparguments">setupArguments</a></p>
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:191</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <a href="_ql_pricingengine_.pricingengine.arguments.html" class="tsd-signature-type">Arguments</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setupexpired" class="tsd-anchor"></a>
+					<h3>setup<wbr>Expired</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Expired<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#setupexpired">setupExpired</a></p>
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:184</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="spread" class="tsd-anchor"></a>
+					<h3>spread</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">spread<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="startdate" class="tsd-anchor"></a>
+					<h3>start<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#startdate">startDate</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:85</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="startdiscounts" class="tsd-anchor"></a>
+					<h3>start<wbr>Discounts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>Discounts<span class="tsd-signature-symbol">(</span>j<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instruments_swap_.swap.html">Swap</a>.<a href="_ql_instruments_swap_.swap.html#startdiscounts">startDiscounts</a></p>
+								<ul>
+									<li>Defined in ql/instruments/swap.ts:129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>j: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="type-1" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-signature-type">Type</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:128</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-signature-type">Type</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#unfreeze">unfreeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method reverts the effect of the <code>freeze</code>
+									method, thus re-enabling recalculations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Observer interface</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="valuationdate" class="tsd-anchor"></a>
+					<h3>valuation<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">valuation<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#valuationdate">valuationDate</a></p>
+								<ul>
+									<li>Defined in ql/instrument.ts:123</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns the date the net present value refers to.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="yoydaycount" class="tsd-anchor"></a>
+					<h3>yoy<wbr>Day<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">yoy<wbr>Day<wbr>Count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:164</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="yoyinflationindex" class="tsd-anchor"></a>
+					<h3>yoy<wbr>Inflation<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">yoy<wbr>Inflation<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_indexes_inflationindex_.yoyinflationindex.html" class="tsd-signature-type">YoYInflationIndex</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:152</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_indexes_inflationindex_.yoyinflationindex.html" class="tsd-signature-type">YoYInflationIndex</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="yoyleg" class="tsd-anchor"></a>
+					<h3>yoy<wbr>Leg</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">yoy<wbr>Leg<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:180</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="yoylegnpv" class="tsd-anchor"></a>
+					<h3>yoy<wbr>LegNPV</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">yoy<wbr>LegNPV<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:112</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="yoyschedule" class="tsd-anchor"></a>
+					<h3>yoy<wbr>Schedule</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">yoy<wbr>Schedule<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/yearonyearinflationswap.ts:148</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_instruments_yearonyearinflationswap_.html">"ql/instruments/yearonyearinflationswap"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html" class="tsd-kind-icon">Year<wbr>OnYear<wbr>Inflation<wbr>Swap</a>
+						<ul>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.type.html" class="tsd-kind-icon">Type</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.arguments.html" class="tsd-kind-icon">Arguments</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.results.html" class="tsd-kind-icon">Results</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.engine.html" class="tsd-kind-icon">engine</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_npv" class="tsd-kind-icon">_NPV</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_additionalresults" class="tsd-kind-icon">_additional<wbr>Results</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_enddiscounts" class="tsd-kind-icon">_end<wbr>Discounts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_engine" class="tsd-kind-icon">_engine</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_errorestimate" class="tsd-kind-icon">_error<wbr>Estimate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fairrate" class="tsd-kind-icon">_fair<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fairspread" class="tsd-kind-icon">_fair<wbr>Spread</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixeddaycount" class="tsd-kind-icon">_fixed<wbr>Day<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixedrate" class="tsd-kind-icon">_fixed<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_fixedschedule" class="tsd-kind-icon">_fixed<wbr>Schedule</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legbps" class="tsd-kind-icon">_legBPS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legnpv" class="tsd-kind-icon">_legNPV</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_legs" class="tsd-kind-icon">_legs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_nominal" class="tsd-kind-icon">_nominal</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_npvdatediscount" class="tsd-kind-icon">_npv<wbr>Date<wbr>Discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observationlag" class="tsd-kind-icon">_observation<wbr>Lag</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_payer" class="tsd-kind-icon">_payer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_paymentcalendar" class="tsd-kind-icon">_payment<wbr>Calendar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_paymentconvention" class="tsd-kind-icon">_payment<wbr>Convention</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_spread" class="tsd-kind-icon">_spread</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_startdiscounts" class="tsd-kind-icon">_start<wbr>Discounts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_type" class="tsd-kind-icon">_type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_valuationdate" class="tsd-kind-icon">_valuation<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoydaycount" class="tsd-kind-icon">_yoy<wbr>Day<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoyindex" class="tsd-kind-icon">_yoy<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#_yoyschedule" class="tsd-kind-icon">_yoy<wbr>Schedule</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#npv" class="tsd-kind-icon">NPV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#additionalresults" class="tsd-kind-icon">additional<wbr>Results</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#enddiscounts" class="tsd-kind-icon">end<wbr>Discounts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#errorestimate" class="tsd-kind-icon">error<wbr>Estimate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fairrate" class="tsd-kind-icon">fair<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fairespread" class="tsd-kind-icon">faire<wbr>Spread</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fetchresults" class="tsd-kind-icon">fetch<wbr>Results</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixeddaycount" class="tsd-kind-icon">fixed<wbr>Day<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedleg" class="tsd-kind-icon">fixed<wbr>Leg</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedlegnpv" class="tsd-kind-icon">fixed<wbr>LegNPV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedrate" class="tsd-kind-icon">fixed<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#fixedschedule" class="tsd-kind-icon">fixed<wbr>Schedule</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init1" class="tsd-kind-icon">init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init2" class="tsd-kind-icon">init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#init3" class="tsd-kind-icon">init3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#isexpired" class="tsd-kind-icon">is<wbr>Expired</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#leg" class="tsd-kind-icon">leg</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#legbps" class="tsd-kind-icon">legBPS</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#legnpv" class="tsd-kind-icon">legNPV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#nominal" class="tsd-kind-icon">nominal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#npvdatediscount" class="tsd-kind-icon">npv<wbr>Date<wbr>Discount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#observationlag" class="tsd-kind-icon">observation<wbr>Lag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#paymentcalendar" class="tsd-kind-icon">payment<wbr>Calendar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#paymentconvention" class="tsd-kind-icon">payment<wbr>Convention</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#result" class="tsd-kind-icon">result</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setpricingengine" class="tsd-kind-icon">set<wbr>Pricing<wbr>Engine</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setuparguments" class="tsd-kind-icon">setup<wbr>Arguments</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#setupexpired" class="tsd-kind-icon">setup<wbr>Expired</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#spread" class="tsd-kind-icon">spread</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#startdate" class="tsd-kind-icon">start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#startdiscounts" class="tsd-kind-icon">start<wbr>Discounts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#type-1" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#valuationdate" class="tsd-kind-icon">valuation<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoydaycount" class="tsd-kind-icon">yoy<wbr>Day<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyinflationindex" class="tsd-kind-icon">yoy<wbr>Inflation<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyleg" class="tsd-kind-icon">yoy<wbr>Leg</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoylegnpv" class="tsd-kind-icon">yoy<wbr>LegNPV</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_yearonyearinflationswap_.yearonyearinflationswap.html#yoyschedule" class="tsd-kind-icon">yoy<wbr>Schedule</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

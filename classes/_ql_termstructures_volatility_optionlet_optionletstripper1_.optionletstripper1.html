@@ -1,0 +1,1785 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OptionletStripper1 | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_termstructures_volatility_optionlet_optionletstripper1_.html">&quot;ql/termstructures/volatility/optionlet/optionletstripper1&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html">OptionletStripper1</a>
+				</li>
+			</ul>
+			<h1>Class OptionletStripper1</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Helper class to strip optionlet (i.e. caplet/floorlet) volatilities</p>
+					</div>
+					<p>(a.k.a. forward-forward volatilities) from the (cap/floor) term
+					volatilities of a CapFloorTermVolSurface.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html" class="tsd-signature-type">OptionletStripper</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">OptionletStripper1</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_accuracy" class="tsd-kind-icon">_accuracy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_atmoptionletrate" class="tsd-kind-icon">_atm<wbr>Optionlet<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorlengths" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Lengths</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorprices" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Prices</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorvols" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Vols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capletvols" class="tsd-kind-icon">_caplet<wbr>Vols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_discount" class="tsd-kind-icon">_discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_displacement" class="tsd-kind-icon">_displacement</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_dontthrow" class="tsd-kind-icon">_dont<wbr>Throw</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_floatingswitchstrike" class="tsd-kind-icon">_floating<wbr>Switch<wbr>Strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_iborindex" class="tsd-kind-icon">_ibor<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_maxiter" class="tsd-kind-icon">_max<wbr>Iter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_noptionlettenors" class="tsd-kind-icon">_n<wbr>Optionlet<wbr>Tenors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_nstrikes" class="tsd-kind-icon">_n<wbr>Strikes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletaccrualperiods" class="tsd-kind-icon">_optionlet<wbr>Accrual<wbr>Periods</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletdates" class="tsd-kind-icon">_optionlet<wbr>Dates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletpaymentdates" class="tsd-kind-icon">_optionlet<wbr>Payment<wbr>Dates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletprices" class="tsd-kind-icon">_optionlet<wbr>Prices</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletstdevs" class="tsd-kind-icon">_optionlet<wbr>StDevs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletstrikes" class="tsd-kind-icon">_optionlet<wbr>Strikes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionlettenors" class="tsd-kind-icon">_optionlet<wbr>Tenors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionlettimes" class="tsd-kind-icon">_optionlet<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletvolatilities" class="tsd-kind-icon">_optionlet<wbr>Volatilities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_switchstrike" class="tsd-kind-icon">_switch<wbr>Strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_termvolsurface" class="tsd-kind-icon">_term<wbr>Vol<wbr>Surface</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_volatilitytype" class="tsd-kind-icon">_volatility<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#atmoptionletrates" class="tsd-kind-icon">atm<wbr>Optionlet<wbr>Rates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#businessdayconvention" class="tsd-kind-icon">business<wbr>Day<wbr>Convention</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#calendar" class="tsd-kind-icon">calendar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capfloorprices" class="tsd-kind-icon">cap<wbr>Floor<wbr>Prices</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capfloorvolatilities" class="tsd-kind-icon">cap<wbr>Floor<wbr>Volatilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capletvols" class="tsd-kind-icon">caplet<wbr>Vols</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#displacement" class="tsd-kind-icon">displacement</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#iborindex" class="tsd-kind-icon">ibor<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletaccrualperiods" class="tsd-kind-icon">optionlet<wbr>Accrual<wbr>Periods</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingdates" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Dates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingtenors" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Tenors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingtimes" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletmaturities" class="tsd-kind-icon">optionlet<wbr>Maturities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletpaymentdates" class="tsd-kind-icon">optionlet<wbr>Payment<wbr>Dates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletprices" class="tsd-kind-icon">optionlet<wbr>Prices</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletstrikes" class="tsd-kind-icon">optionlet<wbr>Strikes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletvolatilities" class="tsd-kind-icon">optionlet<wbr>Volatilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#switchstrike" class="tsd-kind-icon">switch<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#termvolsurface" class="tsd-kind-icon">term<wbr>Vol<wbr>Surface</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#volatilitytype" class="tsd-kind-icon">volatility<wbr>Type</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Optionlet<wbr>Stripper1<span class="tsd-signature-symbol">(</span>termVolSurface<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a>, index<span class="tsd-signature-symbol">: </span><a href="_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a>, switchStrike<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIter<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, discount<span class="tsd-signature-symbol">?: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, type<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_termstructures_volatility_volatilitytype_.volatilitytype.html" class="tsd-signature-type">VolatilityType</a>, displacement<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dontThrow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html" class="tsd-signature-type">OptionletStripper1</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:34</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>termVolSurface: <a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> switchStrike: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.000001</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIter: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> discount: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Handle&lt;YieldTermStructure&gt;()</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <a href="../enums/_ql_termstructures_volatility_volatilitytype_.volatilitytype.html" class="tsd-signature-type">VolatilityType</a><span class="tsd-signature-symbol"> =&nbsp;VolatilityType.ShiftedLognormal</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> displacement: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dontThrow: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html" class="tsd-signature-type">OptionletStripper1</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_accuracy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _accuracy</h3>
+					<div class="tsd-signature tsd-kind-icon">_accuracy<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:216</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:144</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_atmoptionletrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _atm<wbr>Optionlet<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_atm<wbr>Optionlet<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_atmoptionletrate">_atmOptionletRate</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:183</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_capfloorlengths" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _cap<wbr>Floor<wbr>Lengths</h3>
+					<div class="tsd-signature tsd-kind-icon">_cap<wbr>Floor<wbr>Lengths<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_capfloorlengths">_capFloorLengths</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:187</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_capfloorprices" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cap<wbr>Floor<wbr>Prices</h3>
+					<div class="tsd-signature tsd-kind-icon">_cap<wbr>Floor<wbr>Prices<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:207</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_capfloorvols" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cap<wbr>Floor<wbr>Vols</h3>
+					<div class="tsd-signature tsd-kind-icon">_cap<wbr>Floor<wbr>Vols<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:209</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_capletvols" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _caplet<wbr>Vols</h3>
+					<div class="tsd-signature tsd-kind-icon">_caplet<wbr>Vols<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:211</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_discount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_discount<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_discount">_discount</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:173</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_displacement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _displacement</h3>
+					<div class="tsd-signature tsd-kind-icon">_displacement<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_displacement">_displacement</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:189</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_dontthrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dont<wbr>Throw</h3>
+					<div class="tsd-signature tsd-kind-icon">_dont<wbr>Throw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:218</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_floatingswitchstrike" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _floating<wbr>Switch<wbr>Strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_floating<wbr>Switch<wbr>Strike<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:213</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:143</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_iborindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _ibor<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">_ibor<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_iborindex">_iborIndex</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:172</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_maxiter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _max<wbr>Iter</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Iter<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:217</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_noptionlettenors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _n<wbr>Optionlet<wbr>Tenors</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Optionlet<wbr>Tenors<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_noptionlettenors">_nOptionletTenors</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:175</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_nstrikes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _n<wbr>Strikes</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Strikes<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_nstrikes">_nStrikes</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:174</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionletaccrualperiods" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Accrual<wbr>Periods</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Accrual<wbr>Periods<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionletaccrualperiods">_optionletAccrualPeriods</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:185</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionletdates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Dates</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionletdates">_optionletDates</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:181</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionletpaymentdates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Payment<wbr>Dates</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Payment<wbr>Dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionletpaymentdates">_optionletPaymentDates</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:184</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_optionletprices" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _optionlet<wbr>Prices</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Prices<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:208</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_optionletstdevs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _optionlet<wbr>StDevs</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>StDevs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:210</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionletstrikes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Strikes</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Strikes<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionletstrikes">_optionletStrikes</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:177</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionlettenors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Tenors</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Tenors<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionlettenors">_optionletTenors</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:182</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionlettimes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Times<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionlettimes">_optionletTimes</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:180</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_optionletvolatilities" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _optionlet<wbr>Volatilities</h3>
+					<div class="tsd-signature tsd-kind-icon">_optionlet<wbr>Volatilities<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_optionletvolatilities">_optionletVolatilities</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:178</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_switchstrike" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _switch<wbr>Strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_switch<wbr>Strike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:215</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_termvolsurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _term<wbr>Vol<wbr>Surface</h3>
+					<div class="tsd-signature tsd-kind-icon">_term<wbr>Vol<wbr>Surface<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_termvolsurface">_termVolSurface</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:171</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_volatilitytype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _volatility<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_volatility<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_termstructures_volatility_volatilitytype_.volatilitytype.html" class="tsd-signature-type">VolatilityType</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#_volatilitytype">_volatilityType</a></p>
+						<ul>
+							<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:188</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method causes the object to forward all
+										notifications, even when not calculated.  The default
+										behavior is to forward the first notification received,
+										and discard the others until recalculated; the rationale
+										is that observers were already notified, and don&#39;t need
+										further notification until they recalculate, at which
+										point this object would be recalculated too.  After
+										recalculation, this object would again forward the first
+									notification received.</p>
+								</div>
+								<p>warning Forwarding all notifications will cause a
+									performance hit, and should be used only when
+									discarding notifications cause an incorrect
+								behavior.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="atmoptionletrates" class="tsd-anchor"></a>
+					<h3>atm<wbr>Optionlet<wbr>Rates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">atm<wbr>Optionlet<wbr>Rates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#atmoptionletrates">atmOptionletRates</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#atmoptionletrates">atmOptionletRates</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:134</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="businessdayconvention" class="tsd-anchor"></a>
+					<h3>business<wbr>Day<wbr>Convention</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">business<wbr>Day<wbr>Convention<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#businessdayconvention">businessDayConvention</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#businessdayconvention">businessDayConvention</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:151</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#calculate">calculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:118</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method performs all needed calculations by calling
+									the <code>performCalculations</code> method.</p>
+								</div>
+								<p>warning Objects cache the results of the previous
+									calculation. Such results will be returned upon
+									later invocations of
+									<code>calculate</code>. When the results depend
+									on arguments which could change between
+									invocations, the lazy object must register itself
+									as observer of such objects for the calculations
+								to be performed again when they change.</p>
+								<p>warning Should this method be redefined in derived
+									classes, LazyObject.calculate() should be called
+								in the overriding method.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="calendar" class="tsd-anchor"></a>
+					<h3>calendar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calendar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#calendar">calendar</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#calendar">calendar</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:143</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="capfloorprices" class="tsd-anchor"></a>
+					<h3>cap<wbr>Floor<wbr>Prices</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cap<wbr>Floor<wbr>Prices<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:69</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="capfloorvolatilities" class="tsd-anchor"></a>
+					<h3>cap<wbr>Floor<wbr>Volatilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cap<wbr>Floor<wbr>Volatilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:74</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="capletvols" class="tsd-anchor"></a>
+					<h3>caplet<wbr>Vols</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">caplet<wbr>Vols<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:64</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="daycounter" class="tsd-anchor"></a>
+					<h3>day<wbr>Counter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">day<wbr>Counter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#daycounter">dayCounter</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#daycounter">dayCounter</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:139</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#deepupdate">deepUpdate</a></p>
+								<ul>
+									<li>Defined in mixins/ql/patterns/observerobservable.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="displacement" class="tsd-anchor"></a>
+					<h3>displacement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">displacement<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#displacement">displacement</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#displacement">displacement</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:163</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#freeze">freeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method constrains the object to return the presently
+										cached results on successive invocations, even if
+									arguments upon which they depend should change.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="iborindex" class="tsd-anchor"></a>
+					<h3>ibor<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">ibor<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#iborindex">iborIndex</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:159</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="optionletaccrualperiods" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Accrual<wbr>Periods</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Accrual<wbr>Periods<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletaccrualperiods">optionletAccrualPeriods</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="optionletfixingdates" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Fixing<wbr>Dates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Fixing<wbr>Dates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletfixingdates">optionletFixingDates</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#optionletfixingdates">optionletFixingDates</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:110</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="optionletfixingtenors" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Fixing<wbr>Tenors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Fixing<wbr>Tenors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletfixingtenors">optionletFixingTenors</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:106</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="optionletfixingtimes" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Fixing<wbr>Times</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Fixing<wbr>Times<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletfixingtimes">optionletFixingTimes</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#optionletfixingtimes">optionletFixingTimes</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:115</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="optionletmaturities" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Maturities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Maturities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletmaturities">optionletMaturities</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#optionletmaturities">optionletMaturities</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:120</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="optionletpaymentdates" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Payment<wbr>Dates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Payment<wbr>Dates<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletpaymentdates">optionletPaymentDates</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:124</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="optionletprices" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Prices</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Prices<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:79</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="optionletstrikes" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Strikes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Strikes<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletstrikes">optionletStrikes</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#optionletstrikes">optionletStrikes</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:86</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="optionletvolatilities" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Volatilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Volatilities<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#optionletvolatilities">optionletVolatilities</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#optionletvolatilities">optionletVolatilities</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:96</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>i: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:91</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#recalculate">recalculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:42</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method force the recalculation of any results which
+										would otherwise be cached. It is not declared as
+										<code>const</code> since it needs to call the
+									non-<code>const</code> <code>notifyObservers</code> method.</p>
+								</div>
+								<p>note Explicit invocation of this method is <b>not</b>
+									necessary if the object registered itself as
+									observer with the structures on which such results
+									depend.  It is strongly advised to follow this
+								policy when possible.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="settlementdays" class="tsd-anchor"></a>
+					<h3>settlement<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">settlement<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#settlementdays">settlementDays</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#settlementdays">settlementDays</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:147</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="switchstrike" class="tsd-anchor"></a>
+					<h3>switch<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">switch<wbr>Strike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper1.ts:84</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="termvolsurface" class="tsd-anchor"></a>
+					<h3>term<wbr>Vol<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">term<wbr>Vol<wbr>Surface<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#termvolsurface">termVolSurface</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:155</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#unfreeze">unfreeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method reverts the effect of the <code>freeze</code>
+									method, thus re-enabling recalculations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Observer interface</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="volatilitytype" class="tsd-anchor"></a>
+					<h3>volatility<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">volatility<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_termstructures_volatility_volatilitytype_.volatilitytype.html" class="tsd-signature-type">VolatilityType</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html">OptionletStripper</a>.<a href="_ql_termstructures_volatility_optionlet_optionletstripper_.optionletstripper.html#volatilitytype">volatilityType</a></p>
+								<p>Overrides <a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html">StrippedOptionletBase</a>.<a href="_ql_termstructures_volatility_optionlet_strippedoptionletbase_.strippedoptionletbase.html#volatilitytype">volatilityType</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/optionlet/optionletstripper.ts:167</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_termstructures_volatility_volatilitytype_.volatilitytype.html" class="tsd-signature-type">VolatilityType</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_termstructures_volatility_optionlet_optionletstripper1_.html">"ql/termstructures/volatility/optionlet/optionletstripper1"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html" class="tsd-kind-icon">Optionlet<wbr>Stripper1</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_accuracy" class="tsd-kind-icon">_accuracy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_atmoptionletrate" class="tsd-kind-icon">_atm<wbr>Optionlet<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorlengths" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Lengths</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorprices" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capfloorvols" class="tsd-kind-icon">_cap<wbr>Floor<wbr>Vols</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_capletvols" class="tsd-kind-icon">_caplet<wbr>Vols</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_discount" class="tsd-kind-icon">_discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_displacement" class="tsd-kind-icon">_displacement</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_dontthrow" class="tsd-kind-icon">_dont<wbr>Throw</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_floatingswitchstrike" class="tsd-kind-icon">_floating<wbr>Switch<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_iborindex" class="tsd-kind-icon">_ibor<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_maxiter" class="tsd-kind-icon">_max<wbr>Iter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_noptionlettenors" class="tsd-kind-icon">_n<wbr>Optionlet<wbr>Tenors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_nstrikes" class="tsd-kind-icon">_n<wbr>Strikes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletaccrualperiods" class="tsd-kind-icon">_optionlet<wbr>Accrual<wbr>Periods</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletdates" class="tsd-kind-icon">_optionlet<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletpaymentdates" class="tsd-kind-icon">_optionlet<wbr>Payment<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletprices" class="tsd-kind-icon">_optionlet<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletstdevs" class="tsd-kind-icon">_optionlet<wbr>StDevs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletstrikes" class="tsd-kind-icon">_optionlet<wbr>Strikes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionlettenors" class="tsd-kind-icon">_optionlet<wbr>Tenors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionlettimes" class="tsd-kind-icon">_optionlet<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_optionletvolatilities" class="tsd-kind-icon">_optionlet<wbr>Volatilities</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_switchstrike" class="tsd-kind-icon">_switch<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_termvolsurface" class="tsd-kind-icon">_term<wbr>Vol<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#_volatilitytype" class="tsd-kind-icon">_volatility<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#atmoptionletrates" class="tsd-kind-icon">atm<wbr>Optionlet<wbr>Rates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#businessdayconvention" class="tsd-kind-icon">business<wbr>Day<wbr>Convention</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#calendar" class="tsd-kind-icon">calendar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capfloorprices" class="tsd-kind-icon">cap<wbr>Floor<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capfloorvolatilities" class="tsd-kind-icon">cap<wbr>Floor<wbr>Volatilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#capletvols" class="tsd-kind-icon">caplet<wbr>Vols</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#displacement" class="tsd-kind-icon">displacement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#iborindex" class="tsd-kind-icon">ibor<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletaccrualperiods" class="tsd-kind-icon">optionlet<wbr>Accrual<wbr>Periods</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingdates" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingtenors" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Tenors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletfixingtimes" class="tsd-kind-icon">optionlet<wbr>Fixing<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletmaturities" class="tsd-kind-icon">optionlet<wbr>Maturities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletpaymentdates" class="tsd-kind-icon">optionlet<wbr>Payment<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletprices" class="tsd-kind-icon">optionlet<wbr>Prices</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletstrikes" class="tsd-kind-icon">optionlet<wbr>Strikes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#optionletvolatilities" class="tsd-kind-icon">optionlet<wbr>Volatilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#switchstrike" class="tsd-kind-icon">switch<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#termvolsurface" class="tsd-kind-icon">term<wbr>Vol<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_optionlet_optionletstripper1_.optionletstripper1.html#volatilitytype" class="tsd-kind-icon">volatility<wbr>Type</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

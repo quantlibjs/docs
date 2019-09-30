@@ -1,0 +1,1700 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BondFunctions | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_pricingengines_bond_bondfunctions_.html">&quot;ql/pricingengines/bond/bondfunctions&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html">BondFunctions</a>
+				</li>
+			</ul>
+			<h1>Class BondFunctions</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Bond adapters of CashFlows functions</p>
+					</div>
+					<p>See CashFlows for functions&#39; documentation.</p>
+					<p>These adapters calls into CashFlows functions passing as input the
+						Bond cashflows, the dirty price (i.e. npv) calculated from clean
+						price, the bond settlement date (unless another date is given), zero
+					ex-dividend days, and excluding any cashflow on the settlement date.</p>
+					<p>Prices are always clean, as per market convention.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BondFunctions</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#atmrate" class="tsd-kind-icon">atm<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#basispointvalue1" class="tsd-kind-icon">basis<wbr>Point<wbr>Value1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#basispointvalue2" class="tsd-kind-icon">basis<wbr>Point<wbr>Value2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps1" class="tsd-kind-icon">bps1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps2" class="tsd-kind-icon">bps2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps3" class="tsd-kind-icon">bps3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice1" class="tsd-kind-icon">clean<wbr>Price1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice2" class="tsd-kind-icon">clean<wbr>Price2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice3" class="tsd-kind-icon">clean<wbr>Price3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice4" class="tsd-kind-icon">clean<wbr>Price4</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#convexity1" class="tsd-kind-icon">convexity1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#convexity2" class="tsd-kind-icon">convexity2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#dirtyprice1" class="tsd-kind-icon">dirty<wbr>Price1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#dirtyprice2" class="tsd-kind-icon">dirty<wbr>Price2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#duration1" class="tsd-kind-icon">duration1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#duration2" class="tsd-kind-icon">duration2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#istradable" class="tsd-kind-icon">is<wbr>Tradable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflow1" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflow2" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflowamount" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflowdate" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcouponrate" class="tsd-kind-icon">next<wbr>Coupon<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflow1" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflow2" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflowamount" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflowdate" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscouponrate" class="tsd-kind-icon">previous<wbr>Coupon<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#startdate" class="tsd-kind-icon">start<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yield1" class="tsd-kind-icon">yield1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yield2" class="tsd-kind-icon">yield2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yieldvaluebasispoint1" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yieldvaluebasispoint2" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#zspread" class="tsd-kind-icon">z<wbr>Spread</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualdays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Days<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:204</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualenddate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>End<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>End<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualperiod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Period</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Period<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:190</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualstartdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Start<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Start<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:132</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accruedamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Amount<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:246</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrueddays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Days<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:232</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accruedperiod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Period</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Period<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:218</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="atmrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> atm<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">atm<wbr>Rate<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, cleanPrice<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:298</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> cleanPrice: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="basispointvalue1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> basis<wbr>Point<wbr>Value1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">basis<wbr>Point<wbr>Value1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:464</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="basispointvalue2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> basis<wbr>Point<wbr>Value2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">basis<wbr>Point<wbr>Value2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:480</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:280</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:362</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps3<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:377</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="cleanprice1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clean<wbr>Price1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Price1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:261</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="cleanprice2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clean<wbr>Price2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Price2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:324</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="cleanprice3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clean<wbr>Price3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Price3<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:330</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="cleanprice4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clean<wbr>Price4</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Price4<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, d<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, zSpread<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:510</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>d: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>zSpread: <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="convexity1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> convexity1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">convexity1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:442</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="convexity2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> convexity2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">convexity2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:457</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="dirtyprice1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> dirty<wbr>Price1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">dirty<wbr>Price1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:337</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="dirtyprice2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> dirty<wbr>Price2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">dirty<wbr>Price2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:355</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="duration1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> duration1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">duration1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, type<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:417</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol"> =&nbsp;Duration.Type.Modified</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="duration2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> duration2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">duration2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, type<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:434</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol"> =&nbsp;Duration.Type.Modified</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="istradable" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Tradable</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Tradable<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="maturitydate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> maturity<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">maturity<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflow1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:64</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflow2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:72</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflowamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:106</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflowdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:89</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcouponrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Coupon<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Coupon<wbr>Rate<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:124</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflow1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:48</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflow2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflowamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:97</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflowdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:80</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscouponrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Coupon<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Coupon<wbr>Rate<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:115</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="referenceperiodend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> reference<wbr>Period<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>End<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:175</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="referenceperiodstart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> reference<wbr>Period<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>Start<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="startdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> start<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:32</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yield1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, cleanPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:384</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>cleanPrice: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0.05</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yield2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield2<span class="tsd-signature-symbol">(</span>solver<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_math_solver1d_.isolver1d.html" class="tsd-signature-type">ISolver1D</a>, bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, cleanPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:394</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>solver: <a href="../interfaces/_ql_math_solver1d_.isolver1d.html" class="tsd-signature-type">ISolver1D</a></h5>
+								</li>
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>cleanPrice: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0.05</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yieldvaluebasispoint1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield<wbr>Value<wbr>Basis<wbr>Point1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:487</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yieldvaluebasispoint2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield<wbr>Value<wbr>Basis<wbr>Point2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:503</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="zspread" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> z<wbr>Spread</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">z<wbr>Spread<span class="tsd-signature-symbol">(</span>bond<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a>, cleanPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, d<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, settlement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/bond/bondfunctions.ts:530</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bond: <a href="_ql_instruments_bond_.bond.html" class="tsd-signature-type">Bond</a></h5>
+								</li>
+								<li>
+									<h5>cleanPrice: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>d: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlement: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_pricingengines_bond_bondfunctions_.html">"ql/pricingengines/bond/bondfunctions"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html" class="tsd-kind-icon">Bond<wbr>Functions</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#atmrate" class="tsd-kind-icon">atm<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#basispointvalue1" class="tsd-kind-icon">basis<wbr>Point<wbr>Value1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#basispointvalue2" class="tsd-kind-icon">basis<wbr>Point<wbr>Value2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps1" class="tsd-kind-icon">bps1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps2" class="tsd-kind-icon">bps2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#bps3" class="tsd-kind-icon">bps3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice1" class="tsd-kind-icon">clean<wbr>Price1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice2" class="tsd-kind-icon">clean<wbr>Price2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice3" class="tsd-kind-icon">clean<wbr>Price3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#cleanprice4" class="tsd-kind-icon">clean<wbr>Price4</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#convexity1" class="tsd-kind-icon">convexity1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#convexity2" class="tsd-kind-icon">convexity2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#dirtyprice1" class="tsd-kind-icon">dirty<wbr>Price1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#dirtyprice2" class="tsd-kind-icon">dirty<wbr>Price2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#duration1" class="tsd-kind-icon">duration1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#duration2" class="tsd-kind-icon">duration2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#istradable" class="tsd-kind-icon">is<wbr>Tradable</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflow1" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflow2" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflowamount" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcashflowdate" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#nextcouponrate" class="tsd-kind-icon">next<wbr>Coupon<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflow1" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflow2" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflowamount" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscashflowdate" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#previouscouponrate" class="tsd-kind-icon">previous<wbr>Coupon<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#startdate" class="tsd-kind-icon">start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yield1" class="tsd-kind-icon">yield1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yield2" class="tsd-kind-icon">yield2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yieldvaluebasispoint1" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#yieldvaluebasispoint2" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_pricingengines_bond_bondfunctions_.bondfunctions.html#zspread" class="tsd-kind-icon">z<wbr>Spread</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

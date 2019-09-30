@@ -1,0 +1,1582 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NumericHaganPricer | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_cashflows_conundrumpricer_.html">&quot;ql/cashflows/conundrumpricer&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html">NumericHaganPricer</a>
+				</li>
+			</ul>
+			<h1>Class NumericHaganPricer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>CMS-coupon pricer
+							Prices a cms coupon via static replication as in Hagan&#39;s
+							&quot;Conundrums...&quot; article via numerical integration based on
+						prices of vanilla swaptions</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_cashflows_conundrumpricer_.haganpricer.html" class="tsd-signature-type">HaganPricer</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">NumericHaganPricer</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a></li>
+					<li><a href="_ql_cashflows_couponpricer_.cmscouponpricer.html" class="tsd-signature-type">CmsCouponPricer</a></li>
+					<li><a href="_ql_cashflows_couponpricer_.meanrevertingpricer.html" class="tsd-signature-type">MeanRevertingPricer</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-kind-icon">Conundrum<wbr>Integrand</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.function.html" class="tsd-kind-icon">Function</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_annuity" class="tsd-kind-icon">_annuity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_coupon" class="tsd-kind-icon">_coupon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_cutoffforcaplet" class="tsd-kind-icon">_cutoff<wbr>For<wbr>Caplet</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_cutoffforfloorlet" class="tsd-kind-icon">_cutoff<wbr>For<wbr>Floorlet</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_discount" class="tsd-kind-icon">_discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_fixingdate" class="tsd-kind-icon">_fixing<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_gfunction" class="tsd-kind-icon">_g<wbr>Function</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_gearing" class="tsd-kind-icon">_gearing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_hardupperlimit" class="tsd-kind-icon">_hard<wbr>Upper<wbr>Limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_lowerlimit" class="tsd-kind-icon">_lower<wbr>Limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_meanreversion" class="tsd-kind-icon">_mean<wbr>Reversion</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_modelofyieldcurve" class="tsd-kind-icon">_model<wbr>OfYield<wbr>Curve</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_paymentdate" class="tsd-kind-icon">_payment<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_precision" class="tsd-kind-icon">_precision</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_ratecurve" class="tsd-kind-icon">_rate<wbr>Curve</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_refiningintegrationtolerance" class="tsd-kind-icon">_refining<wbr>Integration<wbr>Tolerance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_requiredstddeviations" class="tsd-kind-icon">_required<wbr>Std<wbr>Deviations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_spread" class="tsd-kind-icon">_spread</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_spreadlegvalue" class="tsd-kind-icon">_spread<wbr>Leg<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_stddeviationsforupperlimit" class="tsd-kind-icon">_std<wbr>Deviations<wbr>For<wbr>Upper<wbr>Limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swapratevalue" class="tsd-kind-icon">_swap<wbr>Rate<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swaptenor" class="tsd-kind-icon">_swap<wbr>Tenor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swaptionvol" class="tsd-kind-icon">_swaption<wbr>Vol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_upperlimit" class="tsd-kind-icon">_upper<wbr>Limit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_vanillaoptionpricer" class="tsd-kind-icon">_vanilla<wbr>Option<wbr>Pricer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#setswaptionvolatility" class="tsd-kind-icon">set<wbr>Swaption<wbr>Volatility</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swaptionvolatility" class="tsd-kind-icon">swaption<wbr>Volatility</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#capletprice" class="tsd-kind-icon">caplet<wbr>Price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#capletrate" class="tsd-kind-icon">caplet<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#floorletprice" class="tsd-kind-icon">floorlet<wbr>Price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#floorletrate" class="tsd-kind-icon">floorlet<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#integrate" class="tsd-kind-icon">integrate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#meanreversion" class="tsd-kind-icon">mean<wbr>Reversion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#optionletprice" class="tsd-kind-icon">optionlet<wbr>Price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#refineintegration" class="tsd-kind-icon">refine<wbr>Integration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#resetupperlimit" class="tsd-kind-icon">reset<wbr>Upper<wbr>Limit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#setmeanreversion" class="tsd-kind-icon">set<wbr>Mean<wbr>Reversion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#stddeviations" class="tsd-kind-icon">std<wbr>Deviations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swapletprice" class="tsd-kind-icon">swaplet<wbr>Price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swapletrate" class="tsd-kind-icon">swaplet<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#upperlimit" class="tsd-kind-icon">upper<wbr>Limit</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Numeric<wbr>Hagan<wbr>Pricer<span class="tsd-signature-symbol">(</span>swaptionVol<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span>, modelOfYieldCurve<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_conundrumpricer_.gfunctionfactory.yieldcurvemodel.html" class="tsd-signature-type">YieldCurveModel</a>, meanReversion<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, lowerLimit<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, upperLimit<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, precision<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, hardUpperLimit<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html" class="tsd-signature-type">NumericHaganPricer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:916</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>swaptionVol: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>modelOfYieldCurve: <a href="../enums/_ql_cashflows_conundrumpricer_.gfunctionfactory.yieldcurvemodel.html" class="tsd-signature-type">YieldCurveModel</a></h5>
+								</li>
+								<li>
+									<h5>meanReversion: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> lowerLimit: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> upperLimit: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> precision: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.000001</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> hardUpperLimit: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;QL_MAX_REAL</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html" class="tsd-signature-type">NumericHaganPricer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_annuity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _annuity</h3>
+					<div class="tsd-signature tsd-kind-icon">_annuity<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_annuity">_annuity</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:899</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_coupon" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _coupon</h3>
+					<div class="tsd-signature tsd-kind-icon">_coupon<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_cmscoupon_.cmscoupon.html" class="tsd-signature-type">CmsCoupon</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_coupon">_coupon</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:894</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_cutoffforcaplet" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _cutoff<wbr>For<wbr>Caplet</h3>
+					<div class="tsd-signature tsd-kind-icon">_cutoff<wbr>For<wbr>Caplet<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_cutoffforcaplet">_cutoffForCaplet</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:903</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_cutoffforfloorlet" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _cutoff<wbr>For<wbr>Floorlet</h3>
+					<div class="tsd-signature tsd-kind-icon">_cutoff<wbr>For<wbr>Floorlet<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_cutoffforfloorlet">_cutoffForFloorlet</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:904</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_discount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_discount">_discount</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:898</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_fixingdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _fixing<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_fixing<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_fixingdate">_fixingDate</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:896</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_gfunction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _g<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">_g<wbr>Function<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_conundrumpricer_.gfunction.html" class="tsd-signature-type">GFunction</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_gfunction">_gFunction</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:893</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_gearing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _gearing</h3>
+					<div class="tsd-signature tsd-kind-icon">_gearing<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_gearing">_gearing</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:900</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_hardupperlimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _hard<wbr>Upper<wbr>Limit</h3>
+					<div class="tsd-signature tsd-kind-icon">_hard<wbr>Upper<wbr>Limit<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1086</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:66</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_lowerlimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _lower<wbr>Limit</h3>
+					<div class="tsd-signature tsd-kind-icon">_lower<wbr>Limit<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1082</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_meanreversion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _mean<wbr>Reversion</h3>
+					<div class="tsd-signature tsd-kind-icon">_mean<wbr>Reversion<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_meanreversion">_meanReversion</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:905</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_modelofyieldcurve" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _model<wbr>OfYield<wbr>Curve</h3>
+					<div class="tsd-signature tsd-kind-icon">_model<wbr>OfYield<wbr>Curve<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_cashflows_conundrumpricer_.gfunctionfactory.yieldcurvemodel.html" class="tsd-signature-type">YieldCurveModel</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_modelofyieldcurve">_modelOfYieldCurve</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:892</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:71</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:69</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_paymentdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _payment<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_paymentdate">_paymentDate</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:895</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_precision" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _precision</h3>
+					<div class="tsd-signature tsd-kind-icon">_precision<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1084</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_ratecurve" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _rate<wbr>Curve</h3>
+					<div class="tsd-signature tsd-kind-icon">_rate<wbr>Curve<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_ratecurve">_rateCurve</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:891</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_refiningintegrationtolerance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _refining<wbr>Integration<wbr>Tolerance</h3>
+					<div class="tsd-signature tsd-kind-icon">_refining<wbr>Integration<wbr>Tolerance<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1085</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_requiredstddeviations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _required<wbr>Std<wbr>Deviations</h3>
+					<div class="tsd-signature tsd-kind-icon">_required<wbr>Std<wbr>Deviations<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1083</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_spread" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _spread</h3>
+					<div class="tsd-signature tsd-kind-icon">_spread<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_spread">_spread</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:901</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_spreadlegvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _spread<wbr>Leg<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">_spread<wbr>Leg<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_spreadlegvalue">_spreadLegValue</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:902</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_stddeviationsforupperlimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _std<wbr>Deviations<wbr>For<wbr>Upper<wbr>Limit</h3>
+					<div class="tsd-signature tsd-kind-icon">_std<wbr>Deviations<wbr>For<wbr>Upper<wbr>Limit<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1081</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_swapratevalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _swap<wbr>Rate<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">_swap<wbr>Rate<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_swapratevalue">_swapRateValue</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:897</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_swaptenor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _swap<wbr>Tenor</h3>
+					<div class="tsd-signature tsd-kind-icon">_swap<wbr>Tenor<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_swaptenor">_swapTenor</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:906</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_swaptionvol" class="tsd-anchor"></a>
+					<h3>_swaption<wbr>Vol</h3>
+					<div class="tsd-signature tsd-kind-icon">_swaption<wbr>Vol<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#_swaptionvol">_swaptionVol</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:73</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_upperlimit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _upper<wbr>Limit</h3>
+					<div class="tsd-signature tsd-kind-icon">_upper<wbr>Limit<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:1080</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_vanillaoptionpricer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _vanilla<wbr>Option<wbr>Pricer</h3>
+					<div class="tsd-signature tsd-kind-icon">_vanilla<wbr>Option<wbr>Pricer<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_conundrumpricer_.vanillaoptionpricer.html" class="tsd-signature-type">VanillaOptionPricer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#_vanillaoptionpricer">_vanillaOptionPricer</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/conundrumpricer.ts:907</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#deepupdate">deepUpdate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:65</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#init">init</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">?: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_couponpricer_.cmscouponpricer.html" class="tsd-signature-type">CmsCouponPricer</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> v: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_couponpricer_.cmscouponpricer.html" class="tsd-signature-type">CmsCouponPricer</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:64</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:24</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="setswaptionvolatility" class="tsd-anchor"></a>
+					<h3>set<wbr>Swaption<wbr>Volatility</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Swaption<wbr>Volatility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#setswaptionvolatility">setSwaptionVolatility</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:54</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>v: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="swaptionvolatility" class="tsd-anchor"></a>
+					<h3>swaption<wbr>Volatility</h3>
+					<div class="tsd-signature tsd-kind-icon">swaption<wbr>Volatility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#swaptionvolatility">swaptionVolatility</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:21</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<div class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#update">update</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/cmscouponpricermeanrevertingpricer.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="capletprice" class="tsd-anchor"></a>
+					<h3>caplet<wbr>Price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">caplet<wbr>Price<span class="tsd-signature-symbol">(</span>effectiveCap<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#capletprice">capletPrice</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#capletprice">capletPrice</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:736</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>effectiveCap: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="capletrate" class="tsd-anchor"></a>
+					<h3>caplet<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">caplet<wbr>Rate<span class="tsd-signature-symbol">(</span>effectiveCap<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#capletrate">capletRate</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#capletrate">capletRate</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:760</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>effectiveCap: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="floorletprice" class="tsd-anchor"></a>
+					<h3>floorlet<wbr>Price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">floorlet<wbr>Price<span class="tsd-signature-symbol">(</span>effectiveFloor<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#floorletprice">floorletPrice</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#floorletprice">floorletPrice</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:765</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>effectiveFloor: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="floorletrate" class="tsd-anchor"></a>
+					<h3>floorlet<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">floorlet<wbr>Rate<span class="tsd-signature-symbol">(</span>effectiveFloor<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#floorletrate">floorletRate</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#floorletrate">floorletRate</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:790</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>effectiveFloor: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3>initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span>coupon<span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#initialize">initialize</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#initialize">initialize</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:806</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>coupon: <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="integrate" class="tsd-anchor"></a>
+					<h3>integrate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">integrate<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, b<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, integrand<span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-signature-type">ConundrumIntegrand</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:940</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>integrand: <a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-signature-type">ConundrumIntegrand</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="meanreversion" class="tsd-anchor"></a>
+					<h3>mean<wbr>Reversion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">mean<wbr>Reversion<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#meanreversion">meanReversion</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#meanreversion">meanReversion</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:795</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="optionletprice" class="tsd-anchor"></a>
+					<h3>optionlet<wbr>Price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">optionlet<wbr>Price<span class="tsd-signature-symbol">(</span>optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a>, strike<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#optionletprice">optionletPrice</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:1003</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>strike: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="refineintegration" class="tsd-anchor"></a>
+					<h3>refine<wbr>Integration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">refine<wbr>Integration<span class="tsd-signature-symbol">(</span>integralValue<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, integrand<span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-signature-type">ConundrumIntegrand</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:1064</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>integralValue: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>integrand: <a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-signature-type">ConundrumIntegrand</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resetupperlimit" class="tsd-anchor"></a>
+					<h3>reset<wbr>Upper<wbr>Limit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Upper<wbr>Limit<span class="tsd-signature-symbol">(</span>stdDeviationsForUpperLimit<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:1055</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stdDeviationsForUpperLimit: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="setmeanreversion" class="tsd-anchor"></a>
+					<h3>set<wbr>Mean<wbr>Reversion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Mean<wbr>Reversion<span class="tsd-signature-symbol">(</span>meanReversion<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#setmeanreversion">setMeanReversion</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#setmeanreversion">setMeanReversion</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:799</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>meanReversion: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="stddeviations" class="tsd-anchor"></a>
+					<h3>std<wbr>Deviations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">std<wbr>Deviations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:936</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="swapletprice" class="tsd-anchor"></a>
+					<h3>swaplet<wbr>Price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">swaplet<wbr>Price<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#swapletprice">swapletPrice</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:1034</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="swapletrate" class="tsd-anchor"></a>
+					<h3>swaplet<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">swaplet<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_conundrumpricer_.haganpricer.html">HaganPricer</a>.<a href="_ql_cashflows_conundrumpricer_.haganpricer.html#swapletrate">swapletRate</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html">CmsCouponPricerMeanRevertingPricer</a>.<a href="_mixins_ql_cashflows_cmscouponpricermeanrevertingpricer_.cmscouponpricermeanrevertingpricer.html#swapletrate">swapletRate</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:731</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="upperlimit" class="tsd-anchor"></a>
+					<h3>upper<wbr>Limit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">upper<wbr>Limit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/conundrumpricer.ts:932</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_cashflows_conundrumpricer_.html">"ql/cashflows/conundrumpricer"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.analytichaganpricer.html" class="tsd-kind-icon">Analytic<wbr>Hagan<wbr>Pricer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.blackvanillaoptionpricer.html" class="tsd-kind-icon">Black<wbr>Vanilla<wbr>Option<wbr>Pricer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.gfunction.html" class="tsd-kind-icon">GFunction</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.gfunctionfactory.html" class="tsd-kind-icon">GFunction<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.haganpricer.html" class="tsd-kind-icon">Hagan<wbr>Pricer</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html" class="tsd-kind-icon">Numeric<wbr>Hagan<wbr>Pricer</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.conundrumintegrand.html" class="tsd-kind-icon">Conundrum<wbr>Integrand</a>
+							</li>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.function.html" class="tsd-kind-icon">Function</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_annuity" class="tsd-kind-icon">_annuity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_coupon" class="tsd-kind-icon">_coupon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_cutoffforcaplet" class="tsd-kind-icon">_cutoff<wbr>For<wbr>Caplet</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_cutoffforfloorlet" class="tsd-kind-icon">_cutoff<wbr>For<wbr>Floorlet</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_discount" class="tsd-kind-icon">_discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_fixingdate" class="tsd-kind-icon">_fixing<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_gfunction" class="tsd-kind-icon">_g<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_gearing" class="tsd-kind-icon">_gearing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_hardupperlimit" class="tsd-kind-icon">_hard<wbr>Upper<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_lowerlimit" class="tsd-kind-icon">_lower<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_meanreversion" class="tsd-kind-icon">_mean<wbr>Reversion</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_modelofyieldcurve" class="tsd-kind-icon">_model<wbr>OfYield<wbr>Curve</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_paymentdate" class="tsd-kind-icon">_payment<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_precision" class="tsd-kind-icon">_precision</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_ratecurve" class="tsd-kind-icon">_rate<wbr>Curve</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_refiningintegrationtolerance" class="tsd-kind-icon">_refining<wbr>Integration<wbr>Tolerance</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_requiredstddeviations" class="tsd-kind-icon">_required<wbr>Std<wbr>Deviations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_spread" class="tsd-kind-icon">_spread</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_spreadlegvalue" class="tsd-kind-icon">_spread<wbr>Leg<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_stddeviationsforupperlimit" class="tsd-kind-icon">_std<wbr>Deviations<wbr>For<wbr>Upper<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swapratevalue" class="tsd-kind-icon">_swap<wbr>Rate<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swaptenor" class="tsd-kind-icon">_swap<wbr>Tenor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_swaptionvol" class="tsd-kind-icon">_swaption<wbr>Vol</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_upperlimit" class="tsd-kind-icon">_upper<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#_vanillaoptionpricer" class="tsd-kind-icon">_vanilla<wbr>Option<wbr>Pricer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#setswaptionvolatility" class="tsd-kind-icon">set<wbr>Swaption<wbr>Volatility</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swaptionvolatility" class="tsd-kind-icon">swaption<wbr>Volatility</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#capletprice" class="tsd-kind-icon">caplet<wbr>Price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#capletrate" class="tsd-kind-icon">caplet<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#floorletprice" class="tsd-kind-icon">floorlet<wbr>Price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#floorletrate" class="tsd-kind-icon">floorlet<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#initialize" class="tsd-kind-icon">initialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#integrate" class="tsd-kind-icon">integrate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#meanreversion" class="tsd-kind-icon">mean<wbr>Reversion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#optionletprice" class="tsd-kind-icon">optionlet<wbr>Price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#refineintegration" class="tsd-kind-icon">refine<wbr>Integration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#resetupperlimit" class="tsd-kind-icon">reset<wbr>Upper<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#setmeanreversion" class="tsd-kind-icon">set<wbr>Mean<wbr>Reversion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#stddeviations" class="tsd-kind-icon">std<wbr>Deviations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swapletprice" class="tsd-kind-icon">swaplet<wbr>Price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#swapletrate" class="tsd-kind-icon">swaplet<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_cashflows_conundrumpricer_.numerichaganpricer.html#upperlimit" class="tsd-kind-icon">upper<wbr>Limit</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_conundrumpricer_.vanillaoptionpricer.html" class="tsd-kind-icon">Vanilla<wbr>Option<wbr>Pricer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_cashflows_conundrumpricer_.variablechange.html" class="tsd-kind-icon">Variable<wbr>Change</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

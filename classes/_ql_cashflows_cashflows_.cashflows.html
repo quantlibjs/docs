@@ -1,0 +1,2074 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CashFlows | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_cashflows_cashflows_.html">&quot;ql/cashflows/cashflows&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_cashflows_cashflows_.cashflows.html">CashFlows</a>
+				</li>
+			</ul>
+			<h1>Class CashFlows</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>cashflow-analysis functions</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>todo</dt>
+						<dd><p>add tests</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CashFlows</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_cashflows_cashflows_.cashflows.irrfinder.html" class="tsd-kind-icon">Irr<wbr>Finder</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/_ql_cashflows_cashflows_.cashflows.byref.html" class="tsd-kind-icon">by<wbr>Ref</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#atmrate" class="tsd-kind-icon">atm<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#basispointvalue1" class="tsd-kind-icon">basis<wbr>Point<wbr>Value1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#basispointvalue2" class="tsd-kind-icon">basis<wbr>Point<wbr>Value2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#bps1" class="tsd-kind-icon">bps1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#bps2" class="tsd-kind-icon">bps2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#bps3" class="tsd-kind-icon">bps3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#convexity1" class="tsd-kind-icon">convexity1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#convexity2" class="tsd-kind-icon">convexity2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#duration1" class="tsd-kind-icon">duration1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#duration2" class="tsd-kind-icon">duration2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#isexpired" class="tsd-kind-icon">is<wbr>Expired</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflow1" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflow2" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflowamount" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflowdate" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nextcouponrate" class="tsd-kind-icon">next<wbr>Coupon<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#nominal" class="tsd-kind-icon">nominal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#npv1" class="tsd-kind-icon">npv1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#npv2" class="tsd-kind-icon">npv2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#npv3" class="tsd-kind-icon">npv3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#npv4" class="tsd-kind-icon">npv4</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#npvbps" class="tsd-kind-icon">npvbps</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflow1" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflow2" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflowamount" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflowdate" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#previouscouponrate" class="tsd-kind-icon">previous<wbr>Coupon<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#startdate" class="tsd-kind-icon">start<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#yield1" class="tsd-kind-icon">yield1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#yield2" class="tsd-kind-icon">yield2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#yieldvaluebasispoint1" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#yieldvaluebasispoint2" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#zspread1" class="tsd-kind-icon">z<wbr>Spread1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_cashflows_cashflows_.cashflows.html#zspread2" class="tsd-kind-icon">z<wbr>Spread2</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualdays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Days<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:397</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualenddate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>End<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>End<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:301</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualperiod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Period</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Period<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:373</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrualstartdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrual<wbr>Start<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrual<wbr>Start<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:277</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accruedamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Amount<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:477</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accrueddays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Days<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:449</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="accruedperiod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accrued<wbr>Period</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Period<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:421</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="atmrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> atm<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">atm<wbr>Rate<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, targetNpv<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:742</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>At-the-money rate of the cash flows.
+										The result is the fixed rate for which a fixed rate cash flow
+										vector, equivalent to the input vector, has the required NPV
+										according to the given term structure. If the required NPV is
+									not given, the input cash flow vector&#39;s NPV is used instead.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> targetNpv: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="basispointvalue1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> basis<wbr>Point<wbr>Value1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">basis<wbr>Point<wbr>Value1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:976</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Basis-point value
+										Obtained by setting dy = 0.0001 in the 2nd-order Taylor
+									series expansion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="basispointvalue2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> basis<wbr>Point<wbr>Value2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">basis<wbr>Point<wbr>Value2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:1008</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:513</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Basis-point sensitivity of the cash flows.
+										The result is the change in NPV due to a uniform
+										1-basis-point change in the rate paid by the cash
+										flows. The change for each coupon is discounted according
+									to the given term structure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:539</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="bps3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bps3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">bps3<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:562</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="convexity1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> convexity1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">convexity1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:888</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cash-flow convexity
+										The convexity of a string of cash flows is defined as
+										$$
+										C = \frac{1}{P} \frac{\partial^2 P}{\partial y^2}
+										$$
+										where $ P $ is the present value of the cash flows
+									according to the given IRR $ y $.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="convexity2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> convexity2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">convexity2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:962</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="duration1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> duration1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">duration1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, rate<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, type<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:839</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cash-flow duration.
+										The simple duration of a string of cash flows is defined as
+										$$
+										D_{\mathrm{simple}} = \frac{\sum t_i c_i B(t_i)}{\sum c_i B(t_i)}
+										$$
+										where $ c_i $ is the amount of the $ i $-th cash
+										flow, $ t_i $ is its payment time, and $ B(t_i) $
+									is the corresponding discount according to the passed yield.</p>
+								</div>
+								<p>The modified duration is defined as
+									$$
+									D_{\mathrm{modified}} = -\frac{1}{P} \frac{\partial P}{\partial y}
+									$$
+									where $ P $ is the present value of the cash flows
+								according to the given IRR $ y $.</p>
+								<p>The Macaulay duration is defined for a compounded IRR as
+									$$
+									D_{\mathrm{Macaulay}} = \left( 1 + \frac{y}{N} \right)
+									D_{\mathrm{modified}}
+									$$
+									where $ y $ is the IRR and $ N $ is the number of
+								cash flows per year.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>rate: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>type: <a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="duration2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> duration2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">duration2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, type<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:870</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>type: <a href="../enums/_ql_cashflows_duration_.duration.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="isexpired" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Expired</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Expired<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:77</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>settlementDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="maturitydate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> maturity<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">maturity<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:57</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflow1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:136</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflow2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:156</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflowamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:218</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcashflowdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Cash<wbr>Flow<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:188</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nextcouponrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> next<wbr>Coupon<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Coupon<wbr>Rate<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:245</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="nominal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> nominal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">nominal<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:253</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="npv1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> npv1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">npv1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:576</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>NPV of the cash flows.
+										The NPV is the sum of the cash flows, each discounted
+									according to the given term structure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="npv2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> npv2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">npv2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:603</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="npv3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> npv3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">npv3<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:654</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="npv4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> npv4</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">npv4<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, zSpread<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:663</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>zSpread: <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="npvbps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> npvbps</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">npvbps<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, discountCurve<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, ref<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_cashflows_cashflows_.cashflows.byref.html" class="tsd-signature-type">byRef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:703</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>NPV and BPS of the cash flows.</p>
+								</div>
+								<p>The NPV and BPS of the cash flows calculated
+								together for performance reason</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>discountCurve: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>settlementDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>npvDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>ref: <a href="../interfaces/_ql_cashflows_cashflows_.cashflows.byref.html" class="tsd-signature-type">byRef</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflow1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:96</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflow2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:116</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflowamount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:200</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscashflowdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Cash<wbr>Flow<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:176</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="previouscouponrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> previous<wbr>Coupon<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">previous<wbr>Coupon<wbr>Rate<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:237</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="referenceperiodend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> reference<wbr>Period<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>End<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:349</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="referenceperiodstart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> reference<wbr>Period<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>Start<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:325</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="startdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> start<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:37</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yield1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, npv<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:790</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Implied internal rate of return.
+										The function verifies
+										the theoretical existance of an IRR and numerically
+									establishes the IRR to the desired precision.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>npv: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0.05</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yield2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield2<span class="tsd-signature-symbol">(</span>solver<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_math_solver1d_.isolver1d.html" class="tsd-signature-type">ISolver1D</a>, leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, npv<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:802</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>solver: <a href="../interfaces/_ql_math_solver1d_.isolver1d.html" class="tsd-signature-type">ISolver1D</a></h5>
+								</li>
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>npv: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0.05</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yieldvaluebasispoint1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield<wbr>Value<wbr>Basis<wbr>Point1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:1023</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Yield value of a basis point
+										The yield value of a one basis point change in price is
+										the derivative of the yield with respect to the price
+									multiplied by 0.01</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="yieldvaluebasispoint2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> yield<wbr>Value<wbr>Basis<wbr>Point2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:1047</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="zspread1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> z<wbr>Spread1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">z<wbr>Spread1<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, npv<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, discount<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, compounding<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, frequency<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:1057</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>implied Z-spread.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>npv: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>discount: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>compounding: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>frequency: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>settlementDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>npvDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="zspread2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> z<wbr>Spread2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">z<wbr>Spread2<span class="tsd-signature-symbol">(</span>leg<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a>, d<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, npv<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, includeSettlementDateFlows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, settlementDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, npvDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/cashflows/cashflows.ts:1080</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leg: <a href="../modules/_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></h5>
+								</li>
+								<li>
+									<h5>d: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>npv: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+								</li>
+								<li>
+									<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+								</li>
+								<li>
+									<h5>includeSettlementDateFlows: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> npvDate: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_cashflows_cashflows_.html">"ql/cashflows/cashflows"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_cashflows_cashflows_.bpscalculator.html" class="tsd-kind-icon">BPSCalculator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_cashflows_cashflows_.cashflowlater.html" class="tsd-kind-icon">Cash<wbr>Flow<wbr>Later</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_cashflows_cashflows_.cashflows.html" class="tsd-kind-icon">Cash<wbr>Flows</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_cashflows_cashflows_.cashflows.irrfinder.html" class="tsd-kind-icon">Irr<wbr>Finder</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/_ql_cashflows_cashflows_.cashflows.byref.html" class="tsd-kind-icon">by<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#atmrate" class="tsd-kind-icon">atm<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#basispointvalue1" class="tsd-kind-icon">basis<wbr>Point<wbr>Value1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#basispointvalue2" class="tsd-kind-icon">basis<wbr>Point<wbr>Value2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#bps1" class="tsd-kind-icon">bps1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#bps2" class="tsd-kind-icon">bps2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#bps3" class="tsd-kind-icon">bps3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#convexity1" class="tsd-kind-icon">convexity1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#convexity2" class="tsd-kind-icon">convexity2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#duration1" class="tsd-kind-icon">duration1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#duration2" class="tsd-kind-icon">duration2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#isexpired" class="tsd-kind-icon">is<wbr>Expired</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#maturitydate" class="tsd-kind-icon">maturity<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflow1" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflow2" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflowamount" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nextcashflowdate" class="tsd-kind-icon">next<wbr>Cash<wbr>Flow<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nextcouponrate" class="tsd-kind-icon">next<wbr>Coupon<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#nominal" class="tsd-kind-icon">nominal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#npv1" class="tsd-kind-icon">npv1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#npv2" class="tsd-kind-icon">npv2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#npv3" class="tsd-kind-icon">npv3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#npv4" class="tsd-kind-icon">npv4</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#npvbps" class="tsd-kind-icon">npvbps</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflow1" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflow2" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflowamount" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#previouscashflowdate" class="tsd-kind-icon">previous<wbr>Cash<wbr>Flow<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#previouscouponrate" class="tsd-kind-icon">previous<wbr>Coupon<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#startdate" class="tsd-kind-icon">start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#yield1" class="tsd-kind-icon">yield1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#yield2" class="tsd-kind-icon">yield2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#yieldvaluebasispoint1" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#yieldvaluebasispoint2" class="tsd-kind-icon">yield<wbr>Value<wbr>Basis<wbr>Point2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#zspread1" class="tsd-kind-icon">z<wbr>Spread1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_cashflows_cashflows_.cashflows.html#zspread2" class="tsd-kind-icon">z<wbr>Spread2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_cashflows_cashflows_.zspreadfinder.html" class="tsd-kind-icon">ZSpread<wbr>Finder</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#basispoint" class="tsd-kind-icon">basis<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#aggregaterate" class="tsd-kind-icon">aggregate<wbr>Rate</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#getstepwisediscounttime" class="tsd-kind-icon">get<wbr>Stepwise<wbr>Discount<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#macaulayduration" class="tsd-kind-icon">macaulay<wbr>Duration</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#modifiedduration" class="tsd-kind-icon">modified<wbr>Duration</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_cashflows_cashflows_.html#simpleduration" class="tsd-kind-icon">simple<wbr>Duration</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CumulativeBehrensFisher | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_experimental_math_convolvedstudentt_.html">&quot;ql/experimental/math/convolvedstudentt&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html">CumulativeBehrensFisher</a>
+				</li>
+			</ul>
+			<h1>Class CumulativeBehrensFisher</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Cumulative (generalized) BehrensFisher distribution.</p>
+					</div>
+					<p>Exact analitical computation of the cumulative probability distribution of
+						the linear combination of an arbitrary number (not just two) of T random
+						variables of odd integer order. Adapted from the algorithm in:\par
+						V. Witkovsky, Journal of Statistical Planning and Inference 94
+						(2001) 1-13\par
+						see also:\par
+						On the distribution of a linear combination of t-distributed
+						variables; Glenn Alan Walker, Ph.D.thesis University of Florida 1977\par
+						&#39;Convolutions of the T Distribution&#39;; S. Nadarajah, D. K. Dey in
+						Computers and Mathematics with Applications 49 (2005) 715-721\par
+						The last reference provides direct expressions for some of the densities
+						when the linear combination of only two Ts is just an addition. It can be
+						used for testing the results here.\par
+						Another available test on this algorithm stems from the realization that a
+						linear convex (\f$ \sum a_i=1\f$) combination of Ts of order one is stable
+						in the distribution sense (but this result is often of no practical use
+						because of its non-finite variance).\par
+						This implementation is for two or more T variables in the linear
+						combination albeit these must be of odd order. The case of exactly two T of
+						odd order is known to be a finite mixture of Ts but that result is not used
+						here. On this line see &#39;Linearization coefficients of Bessel polynomials&#39;
+					C.Berg, C.Vignat; February 2008; arXiv:math/0506458</p>
+					<dl class="tsd-comment-tags">
+						<dt>todo</dt>
+						<dd><p>Implement the series expansion solution for the addition of
+								two Ts of even order described in: &#39;On the density of the sum of two
+								independent Student t-random vectors&#39; C.Berg, C.Vignat; June 2009;
+							eprint arXiv:0906.3037</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CumulativeBehrensFisher</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_std_functional_.unaryfunction.html" class="tsd-signature-type">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_a" class="tsd-kind-icon">_a</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_a2" class="tsd-kind-icon">_a2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_degreesfreedom" class="tsd-kind-icon">_degrees<wbr>Freedom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_factors" class="tsd-kind-icon">_factors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_polyconvolved" class="tsd-kind-icon">_poly<wbr>Convolved</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_polyncharfnc" class="tsd-kind-icon">_polyn<wbr>Char<wbr>Fnc</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#convolvevectorpolynomials" class="tsd-kind-icon">convolve<wbr>Vector<wbr>Polynomials</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#degreefreedom" class="tsd-kind-icon">degree<wbr>Freedom</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#density" class="tsd-kind-icon">density</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#f" class="tsd-kind-icon">f</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#factors" class="tsd-kind-icon">factors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#polyncharactt" class="tsd-kind-icon">polyn<wbr>CharactT</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Cumulative<wbr>Behrens<wbr>Fisher<span class="tsd-signature-symbol">(</span>degreesFreedom<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">[]</span>, factors<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html" class="tsd-signature-type">CumulativeBehrensFisher</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:46</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> degreesFreedom: <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> factors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html" class="tsd-signature-type">CumulativeBehrensFisher</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_a" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _a</h3>
+					<div class="tsd-signature tsd-kind-icon">_a<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:239</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_a2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _a2</h3>
+					<div class="tsd-signature tsd-kind-icon">_a2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:240</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_degreesfreedom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _degrees<wbr>Freedom</h3>
+					<div class="tsd-signature tsd-kind-icon">_degrees<wbr>Freedom<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:233</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_factors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _factors</h3>
+					<div class="tsd-signature tsd-kind-icon">_factors<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:234</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_polyconvolved" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _poly<wbr>Convolved</h3>
+					<div class="tsd-signature tsd-kind-icon">_poly<wbr>Convolved<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:237</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_polyncharfnc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _polyn<wbr>Char<wbr>Fnc</h3>
+					<div class="tsd-signature tsd-kind-icon">_polyn<wbr>Char<wbr>Fnc<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/math/convolvedstudentt.ts:236</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="convolvevectorpolynomials" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> convolve<wbr>Vector<wbr>Polynomials</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">convolve<wbr>Vector<wbr>Polynomials<span class="tsd-signature-symbol">(</span>v1<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, v2<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:212</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v1: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>v2: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="degreefreedom" class="tsd-anchor"></a>
+					<h3>degree<wbr>Freedom</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">degree<wbr>Freedom<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:99</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="density" class="tsd-anchor"></a>
+					<h3>density</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">density<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:154</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the probability density of the resulting distribution.</p>
+								</div>
+								<p>Similarly to the cumulative probability, Gil-Pelaez theorem is
+								applied, the integration is similar.</p>
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Implement in a separate class? given the name of this class..</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="f" class="tsd-anchor"></a>
+					<h3>f</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">f<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:129</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the cumulative probability of the resulting distribution.</p>
+								</div>
+								<p>To obtain the cumulative probability the Gil-Pelaez theorem
+									is applied:\par
+									First compute the characteristic function of the linear combination
+									variable by multiplying the individual characteristic functions.
+									Then transform back integrating the characteristic function
+									according to the GP theorem; this is done here analytically feeding
+									in the expression of the total characteristic
+									function this:
+									\f[ \int_0^{\infty}x^n e^{-ax}sin(bx)dx =
+									(-1)^n \Gamma(n+1) \frac{sin((n+1)arctg2(-b/a))}
+									{(\sqrt{a^2+b^2})^{n+1}}; for,a&gt;0,,b&gt;0
+									\f]
+									and for the first term I use:
+									\f[
+									\int_0^{\infty} \frac{e^{-ax}sin(bx)}{x} dx = arctg2(b/a)
+									\f]
+									The GP complex integration is simplified thanks to the symetry of
+								the distribution.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="factors" class="tsd-anchor"></a>
+					<h3>factors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">factors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:103</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="polyncharactt" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> polyn<wbr>CharactT</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">polyn<wbr>CharactT<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/math/convolvedstudentt.ts:185</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Student t characteristic polynomials.</p>
+								</div>
+								<p>Generates the polynomial coefficients defining the characteristic
+									function of a T distribution \f$T_\nu\f$ of odd order; \f$\nu=2n+1\f$.
+									In general the characteristic function is given by:
+									\f[
+									\phi_{\nu}(t) = \varphi_{n}(t) \exp{-\nu^{1/2}|t|} ;,where,\nu = 2n+1
+									\f]
+								where \f$ \varphi \f$ are polynomials that are computed recursively.</p>
+								<p>The convolved characteristic function is the product of the two previous
+									characteristic functions and the problem is then the convolution (a
+								product) of two polynomials.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Natural number defining the order of the T for which
+											the characteristic function is to be computed. The order of the
+										T is then \f$ \nu=2n+1 \f$</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_experimental_math_convolvedstudentt_.html">"ql/experimental/math/convolvedstudentt"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html" class="tsd-kind-icon">Cumulative<wbr>Behrens<wbr>Fisher</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_a" class="tsd-kind-icon">_a</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_a2" class="tsd-kind-icon">_a2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_degreesfreedom" class="tsd-kind-icon">_degrees<wbr>Freedom</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_factors" class="tsd-kind-icon">_factors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_polyconvolved" class="tsd-kind-icon">_poly<wbr>Convolved</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#_polyncharfnc" class="tsd-kind-icon">_polyn<wbr>Char<wbr>Fnc</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#convolvevectorpolynomials" class="tsd-kind-icon">convolve<wbr>Vector<wbr>Polynomials</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#degreefreedom" class="tsd-kind-icon">degree<wbr>Freedom</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#density" class="tsd-kind-icon">density</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#f" class="tsd-kind-icon">f</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#factors" class="tsd-kind-icon">factors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_math_convolvedstudentt_.cumulativebehrensfisher.html#polyncharactt" class="tsd-kind-icon">polyn<wbr>CharactT</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_math_convolvedstudentt_.inversecumulativebehrensfisher.html" class="tsd-kind-icon">Inverse<wbr>Cumulative<wbr>Behrens<wbr>Fisher</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

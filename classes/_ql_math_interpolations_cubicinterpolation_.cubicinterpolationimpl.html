@@ -1,0 +1,1125 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CubicInterpolationImpl | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_math_interpolations_cubicinterpolation_.html">&quot;ql/math/interpolations/cubicinterpolation&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html">CubicInterpolationImpl</a>
+				</li>
+			</ul>
+			<h1>Class CubicInterpolationImpl</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html" class="tsd-signature-type">CoefficientHolderInterpolationtemplateImpl</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">CubicInterpolationImpl</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_math_interpolations_coefficientholder_.coefficientholder.html" class="tsd-signature-type">CoefficientHolder</a></li>
+					<li><a href="_ql_math_interpolation_.interpolation.templateimpl.html" class="tsd-signature-type">templateImpl</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_l" class="tsd-kind-icon">_L</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_s" class="tsd-kind-icon">_S</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_a" class="tsd-kind-icon">_a</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_b" class="tsd-kind-icon">_b</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_c" class="tsd-kind-icon">_c</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_da" class="tsd-kind-icon">_da</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_dx" class="tsd-kind-icon">_dx</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_lefttype" class="tsd-kind-icon">_left<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_leftvalue" class="tsd-kind-icon">_left<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_monotonic" class="tsd-kind-icon">_monotonic</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_monotonicityadjustments" class="tsd-kind-icon">_monotonicity<wbr>Adjustments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_n" class="tsd-kind-icon">_n</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_primitiveconst" class="tsd-kind-icon">_primitive<wbr>Const</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_righttype" class="tsd-kind-icon">_right<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_rightvalue" class="tsd-kind-icon">_right<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_tmp" class="tsd-kind-icon">_tmp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_x" class="tsd-kind-icon">_x</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_xbegin" class="tsd-kind-icon">_x<wbr>Begin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_xend" class="tsd-kind-icon">_x<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_y" class="tsd-kind-icon">_y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_ybegin" class="tsd-kind-icon">_y<wbr>Begin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#isinrange" class="tsd-kind-icon">is<wbr>InRange</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#locate" class="tsd-kind-icon">locate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#tiinit" class="tsd-kind-icon">ti<wbr>Init</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#value2" class="tsd-kind-icon">value2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xmax" class="tsd-kind-icon">x<wbr>Max</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xmin" class="tsd-kind-icon">x<wbr>Min</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xvalues" class="tsd-kind-icon">x<wbr>Values</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#yvalues" class="tsd-kind-icon">y<wbr>Values</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#cubicinterpolatingpolynomialderivative" class="tsd-kind-icon">cubic<wbr>Interpolating<wbr>Polynomial<wbr>Derivative</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#derivative" class="tsd-kind-icon">derivative</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#primitive" class="tsd-kind-icon">primitive</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#secondderivative" class="tsd-kind-icon">second<wbr>Derivative</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#value1" class="tsd-kind-icon">value1</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Cubic<wbr>Interpolation<wbr>Impl<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, xBegin<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, xEnd<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, yBegin<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, da<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.derivativeapprox.html" class="tsd-signature-type">DerivativeApprox</a>, monotonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, leftCondition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a>, leftConditionValue<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, rightCondition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a>, rightConditionValue<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html" class="tsd-signature-type">CubicInterpolationImpl</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:307</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>xBegin: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>xEnd: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>y: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>yBegin: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>da: <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.derivativeapprox.html" class="tsd-signature-type">DerivativeApprox</a></h5>
+								</li>
+								<li>
+									<h5>monotonic: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>leftCondition: <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a></h5>
+								</li>
+								<li>
+									<h5>leftConditionValue: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>rightCondition: <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a></h5>
+								</li>
+								<li>
+									<h5>rightConditionValue: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html" class="tsd-signature-type">CubicInterpolationImpl</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_l" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _L</h3>
+					<div class="tsd-signature tsd-kind-icon">_L<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:890</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_s" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _S</h3>
+					<div class="tsd-signature tsd-kind-icon">_S<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:889</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_a" class="tsd-anchor"></a>
+					<h3>_a</h3>
+					<div class="tsd-signature tsd-kind-icon">_a<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_a">_a</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:46</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_b" class="tsd-anchor"></a>
+					<h3>_b</h3>
+					<div class="tsd-signature tsd-kind-icon">_b<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_b">_b</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:47</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_c" class="tsd-anchor"></a>
+					<h3>_c</h3>
+					<div class="tsd-signature tsd-kind-icon">_c<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_c">_c</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:48</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_da" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _da</h3>
+					<div class="tsd-signature tsd-kind-icon">_da<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.derivativeapprox.html" class="tsd-signature-type">DerivativeApprox</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:881</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_dx" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dx</h3>
+					<div class="tsd-signature tsd-kind-icon">_dx<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:888</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_lefttype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _left<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_left<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:883</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_leftvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _left<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">_left<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:885</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_monotonic" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _monotonic</h3>
+					<div class="tsd-signature tsd-kind-icon">_monotonic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:882</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_monotonicityadjustments" class="tsd-anchor"></a>
+					<h3>_monotonicity<wbr>Adjustments</h3>
+					<div class="tsd-signature tsd-kind-icon">_monotonicity<wbr>Adjustments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_monotonicityadjustments">_monotonicityAdjustments</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:49</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_n" class="tsd-anchor"></a>
+					<h3>_n</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_n">_n</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:44</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_primitiveconst" class="tsd-anchor"></a>
+					<h3>_primitive<wbr>Const</h3>
+					<div class="tsd-signature tsd-kind-icon">_primitive<wbr>Const<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_primitiveconst">_primitiveConst</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:45</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_righttype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _right<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_right<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.boundarycondition.html" class="tsd-signature-type">BoundaryCondition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:884</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_rightvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _right<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">_right<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:886</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_tmp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tmp</h3>
+					<div class="tsd-signature tsd-kind-icon">_tmp<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/interpolations/cubicinterpolation.ts:887</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_x" class="tsd-anchor"></a>
+					<h3>_x</h3>
+					<div class="tsd-signature tsd-kind-icon">_x<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_x">_x</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:51</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_xbegin" class="tsd-anchor"></a>
+					<h3>_x<wbr>Begin</h3>
+					<div class="tsd-signature tsd-kind-icon">_x<wbr>Begin<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_xbegin">_xBegin</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:52</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_xend" class="tsd-anchor"></a>
+					<h3>_x<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">_x<wbr>End<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_xend">_xEnd</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:53</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_y" class="tsd-anchor"></a>
+					<h3>_y</h3>
+					<div class="tsd-signature tsd-kind-icon">_y<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_y">_y</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:54</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="_ybegin" class="tsd-anchor"></a>
+					<h3>_y<wbr>Begin</h3>
+					<div class="tsd-signature tsd-kind-icon">_y<wbr>Begin<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#_ybegin">_yBegin</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:55</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#init">init</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_interpolations_coefficientholder_.coefficientholder.html" class="tsd-signature-type">CoefficientHolder</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_math_interpolations_coefficientholder_.coefficientholder.html" class="tsd-signature-type">CoefficientHolder</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isinrange" class="tsd-anchor"></a>
+					<h3>is<wbr>InRange</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>InRange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#isinrange">isInRange</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="locate" class="tsd-anchor"></a>
+					<h3>locate</h3>
+					<div class="tsd-signature tsd-kind-icon">locate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#locate">locate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="tiinit" class="tsd-anchor"></a>
+					<h3>ti<wbr>Init</h3>
+					<div class="tsd-signature tsd-kind-icon">ti<wbr>Init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#tiinit">tiInit</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, xBegin<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, xEnd<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, yBegin<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, requiredPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_interpolation_.interpolation.templateimpl.html" class="tsd-signature-type">templateImpl</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5>xBegin: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5>xEnd: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5>y: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5>yBegin: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> requiredPoints: <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_math_interpolation_.interpolation.templateimpl.html" class="tsd-signature-type">templateImpl</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="value2" class="tsd-anchor"></a>
+					<h3>value2</h3>
+					<div class="tsd-signature tsd-kind-icon">value2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#value2">value2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>y: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="xmax" class="tsd-anchor"></a>
+					<h3>x<wbr>Max</h3>
+					<div class="tsd-signature tsd-kind-icon">x<wbr>Max<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#xmax">xMax</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:24</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="xmin" class="tsd-anchor"></a>
+					<h3>x<wbr>Min</h3>
+					<div class="tsd-signature tsd-kind-icon">x<wbr>Min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#xmin">xMin</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="xvalues" class="tsd-anchor"></a>
+					<h3>x<wbr>Values</h3>
+					<div class="tsd-signature tsd-kind-icon">x<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#xvalues">xValues</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="yvalues" class="tsd-anchor"></a>
+					<h3>y<wbr>Values</h3>
+					<div class="tsd-signature tsd-kind-icon">y<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#yvalues">yValues</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/coefficientholderinterpolationtemplateimpl.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="cubicinterpolatingpolynomialderivative" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cubic<wbr>Interpolating<wbr>Polynomial<wbr>Derivative</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">cubic<wbr>Interpolating<wbr>Polynomial<wbr>Derivative<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, b<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, c<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, d<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, u<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, v<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, w<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, z<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:864</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>c: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>d: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>u: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>v: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>w: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>z: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="derivative" class="tsd-anchor"></a>
+					<h3>derivative</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">derivative<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#derivative">derivative</a></p>
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:852</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="primitive" class="tsd-anchor"></a>
+					<h3>primitive</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">primitive<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#primitive">primitive</a></p>
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:841</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="secondderivative" class="tsd-anchor"></a>
+					<h3>second<wbr>Derivative</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">second<wbr>Derivative<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#secondderivative">secondDerivative</a></p>
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:858</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:340</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="value1" class="tsd-anchor"></a>
+					<h3>value1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">value1<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html">CoefficientHolderInterpolationtemplateImpl</a>.<a href="_mixins_ql_math_coefficientholderinterpolationtemplateimpl_.coefficientholderinterpolationtemplateimpl.html#value1">value1</a></p>
+								<ul>
+									<li>Defined in ql/math/interpolations/cubicinterpolation.ts:834</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_math_interpolations_cubicinterpolation_.html">"ql/math/interpolations/cubicinterpolation"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.akimacubicinterpolation.html" class="tsd-kind-icon">Akima<wbr>Cubic<wbr>Interpolation</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubic.html" class="tsd-kind-icon">Cubic</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolation.html" class="tsd-kind-icon">Cubic<wbr>Interpolation</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html" class="tsd-kind-icon">Cubic<wbr>Interpolation<wbr>Impl</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_l" class="tsd-kind-icon">_L</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_s" class="tsd-kind-icon">_S</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_a" class="tsd-kind-icon">_a</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_b" class="tsd-kind-icon">_b</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_c" class="tsd-kind-icon">_c</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_da" class="tsd-kind-icon">_da</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_dx" class="tsd-kind-icon">_dx</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_lefttype" class="tsd-kind-icon">_left<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_leftvalue" class="tsd-kind-icon">_left<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_monotonic" class="tsd-kind-icon">_monotonic</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_monotonicityadjustments" class="tsd-kind-icon">_monotonicity<wbr>Adjustments</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_n" class="tsd-kind-icon">_n</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_primitiveconst" class="tsd-kind-icon">_primitive<wbr>Const</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_righttype" class="tsd-kind-icon">_right<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_rightvalue" class="tsd-kind-icon">_right<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_tmp" class="tsd-kind-icon">_tmp</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_x" class="tsd-kind-icon">_x</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_xbegin" class="tsd-kind-icon">_x<wbr>Begin</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_xend" class="tsd-kind-icon">_x<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_y" class="tsd-kind-icon">_y</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#_ybegin" class="tsd-kind-icon">_y<wbr>Begin</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#isinrange" class="tsd-kind-icon">is<wbr>InRange</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#locate" class="tsd-kind-icon">locate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#tiinit" class="tsd-kind-icon">ti<wbr>Init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#value2" class="tsd-kind-icon">value2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xmax" class="tsd-kind-icon">x<wbr>Max</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xmin" class="tsd-kind-icon">x<wbr>Min</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#xvalues" class="tsd-kind-icon">x<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#yvalues" class="tsd-kind-icon">y<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#cubicinterpolatingpolynomialderivative" class="tsd-kind-icon">cubic<wbr>Interpolating<wbr>Polynomial<wbr>Derivative</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#derivative" class="tsd-kind-icon">derivative</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#primitive" class="tsd-kind-icon">primitive</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#secondderivative" class="tsd-kind-icon">second<wbr>Derivative</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_ql_math_interpolations_cubicinterpolation_.cubicinterpolationimpl.html#value1" class="tsd-kind-icon">value1</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubicnaturalspline.html" class="tsd-kind-icon">Cubic<wbr>Natural<wbr>Spline</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubicsplineovershootingminimization1.html" class="tsd-kind-icon">Cubic<wbr>Spline<wbr>Overshooting<wbr>Minimization1</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.cubicsplineovershootingminimization2.html" class="tsd-kind-icon">Cubic<wbr>Spline<wbr>Overshooting<wbr>Minimization2</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.fritschbutlandcubic.html" class="tsd-kind-icon">Fritsch<wbr>Butland<wbr>Cubic</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.harmoniccubic.html" class="tsd-kind-icon">Harmonic<wbr>Cubic</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.krugercubic.html" class="tsd-kind-icon">Kruger<wbr>Cubic</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.monotoniccubicnaturalspline.html" class="tsd-kind-icon">Monotonic<wbr>Cubic<wbr>Natural<wbr>Spline</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.monotonicparabolic.html" class="tsd-kind-icon">Monotonic<wbr>Parabolic</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_math_interpolations_cubicinterpolation_.parabolic.html" class="tsd-kind-icon">Parabolic</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

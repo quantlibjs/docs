@@ -1,0 +1,2301 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CappedFlooredCmsSpreadCoupon | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_experimental_coupons_cmsspreadcoupon_.html">&quot;ql/experimental/coupons/cmsspreadcoupon&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html">CappedFlooredCmsSpreadCoupon</a>
+				</li>
+			</ul>
+			<h1>Class CappedFlooredCmsSpreadCoupon</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html" class="tsd-signature-type">CappedFlooredCoupon</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">CappedFlooredCmsSpreadCoupon</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_event_.event.html" class="tsd-signature-type">Event</a></li>
+					<li><a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a></li>
+					<li><a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></li>
+					<li><a href="_ql_patterns_lazyobject_.lazyobject.html" class="tsd-signature-type">LazyObject</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualenddate" class="tsd-kind-icon">_accrual<wbr>End<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualperiod" class="tsd-kind-icon">_accrual<wbr>Period</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualstartdate" class="tsd-kind-icon">_accrual<wbr>Start<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_cap" class="tsd-kind-icon">_cap</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_excoupondate" class="tsd-kind-icon">_ex<wbr>Coupon<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_fixingdays" class="tsd-kind-icon">_fixing<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_floor" class="tsd-kind-icon">_floor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_gearing" class="tsd-kind-icon">_gearing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_index" class="tsd-kind-icon">_index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_iscapped" class="tsd-kind-icon">_is<wbr>Capped</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isfloored" class="tsd-kind-icon">_is<wbr>Floored</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isinarrears" class="tsd-kind-icon">_is<wbr>InArrears</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_nominal" class="tsd-kind-icon">_nominal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_paymentdate" class="tsd-kind-icon">_payment<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_pricer" class="tsd-kind-icon">_pricer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_refperiodend" class="tsd-kind-icon">_ref<wbr>Period<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_refperiodstart" class="tsd-kind-icon">_ref<wbr>Period<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_spread" class="tsd-kind-icon">_spread</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_swapletrate" class="tsd-kind-icon">_swaplet<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_underlying" class="tsd-kind-icon">_underlying</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#date" class="tsd-kind-icon">date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#excoupondate" class="tsd-kind-icon">ex<wbr>Coupon<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#hasoccurred" class="tsd-kind-icon">has<wbr>Occurred</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#nominal" class="tsd-kind-icon">nominal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#tradingexcoupon" class="tsd-kind-icon">trading<wbr>ExCoupon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accept" class="tsd-kind-icon">accept</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#adjustedfixing" class="tsd-kind-icon">adjusted<wbr>Fixing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#amount1" class="tsd-kind-icon">amount1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#cap" class="tsd-kind-icon">cap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#convexityadjustment" class="tsd-kind-icon">convexity<wbr>Adjustment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#convexityadjustmentimpl" class="tsd-kind-icon">convexity<wbr>Adjustment<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#effectivecap" class="tsd-kind-icon">effective<wbr>Cap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#effectivefloor" class="tsd-kind-icon">effective<wbr>Floor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#fixingdate" class="tsd-kind-icon">fixing<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#fixingdays" class="tsd-kind-icon">fixing<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#floor" class="tsd-kind-icon">floor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#gearing" class="tsd-kind-icon">gearing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#indexfixing" class="tsd-kind-icon">index<wbr>Fixing</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#iscapped" class="tsd-kind-icon">is<wbr>Capped</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isfloored" class="tsd-kind-icon">is<wbr>Floored</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isinarrears" class="tsd-kind-icon">is<wbr>InArrears</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#pricer" class="tsd-kind-icon">pricer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#rate" class="tsd-kind-icon">rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#setpricer" class="tsd-kind-icon">set<wbr>Pricer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#spread" class="tsd-kind-icon">spread</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#underlying" class="tsd-kind-icon">underlying</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Capped<wbr>Floored<wbr>Cms<wbr>Spread<wbr>Coupon<span class="tsd-signature-symbol">(</span>paymentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, startDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, fixingDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, index<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_coupons_swapspreadindex_.swapspreadindex.html" class="tsd-signature-type">SwapSpreadIndex</a>, gearing<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, spread<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a>, cap<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, floor<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, refPeriodStart<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, refPeriodEnd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, dayCounter<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, isInArrears<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html" class="tsd-signature-type">CappedFlooredCmsSpreadCoupon</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in ql/experimental/coupons/cmsspreadcoupon.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>paymentDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>startDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>fixingDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="_ql_experimental_coupons_swapspreadindex_.swapspreadindex.html" class="tsd-signature-type">SwapSpreadIndex</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gearing: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> spread: <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> cap: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> floor: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> refPeriodStart: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> refPeriodEnd: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isInArrears: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html" class="tsd-signature-type">CappedFlooredCmsSpreadCoupon</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_accrualenddate" class="tsd-anchor"></a>
+					<h3>_accrual<wbr>End<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_accrual<wbr>End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_accrualenddate">_accrualEndDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:88</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_accrualperiod" class="tsd-anchor"></a>
+					<h3>_accrual<wbr>Period</h3>
+					<div class="tsd-signature tsd-kind-icon">_accrual<wbr>Period<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_accrualperiod">_accrualPeriod</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:92</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_accrualstartdate" class="tsd-anchor"></a>
+					<h3>_accrual<wbr>Start<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_accrual<wbr>Start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_accrualstartdate">_accrualStartDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:87</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:96</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:94</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_cap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _cap</h3>
+					<div class="tsd-signature tsd-kind-icon">_cap<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#_cap">_cap</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/capflooredcoupon.ts:176</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_daycounter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">_day<wbr>Counter<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_daycounter">_dayCounter</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:170</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_excoupondate" class="tsd-anchor"></a>
+					<h3>_ex<wbr>Coupon<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_ex<wbr>Coupon<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_excoupondate">_exCouponDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:91</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_fixingdays" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _fixing<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">_fixing<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_fixingdays">_fixingDays</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:171</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_floor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _floor</h3>
+					<div class="tsd-signature tsd-kind-icon">_floor<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#_floor">_floor</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/capflooredcoupon.ts:177</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:95</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_gearing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _gearing</h3>
+					<div class="tsd-signature tsd-kind-icon">_gearing<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_gearing">_gearing</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:172</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_index" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _index</h3>
+					<div class="tsd-signature tsd-kind-icon">_index<span class="tsd-signature-symbol">:</span> <a href="_ql_indexes_interestrateindex_.interestrateindex.html" class="tsd-signature-type">InterestRateIndex</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_index">_index</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:169</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_iscapped" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _is<wbr>Capped</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Capped<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#_iscapped">_isCapped</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/capflooredcoupon.ts:174</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:78</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_isfloored" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _is<wbr>Floored</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Floored<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#_isfloored">_isFloored</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/capflooredcoupon.ts:175</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_isinarrears" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _is<wbr>InArrears</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>InArrears<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_isinarrears">_isInArrears</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:174</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_nominal" class="tsd-anchor"></a>
+					<h3>_nominal</h3>
+					<div class="tsd-signature tsd-kind-icon">_nominal<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_nominal">_nominal</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:86</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:83</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:81</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_paymentdate" class="tsd-anchor"></a>
+					<h3>_payment<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_paymentdate">_paymentDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:85</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_pricer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _pricer</h3>
+					<div class="tsd-signature tsd-kind-icon">_pricer<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_pricer">_pricer</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:175</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_refperiodend" class="tsd-anchor"></a>
+					<h3>_ref<wbr>Period<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">_ref<wbr>Period<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_refperiodend">_refPeriodEnd</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:90</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_refperiodstart" class="tsd-anchor"></a>
+					<h3>_ref<wbr>Period<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">_ref<wbr>Period<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#_refperiodstart">_refPeriodStart</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:89</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_spread" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _spread</h3>
+					<div class="tsd-signature tsd-kind-icon">_spread<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_spread">_spread</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:173</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_swapletrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _swaplet<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_swaplet<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#_swapletrate">_swapletRate</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/floatingratecoupon.ts:176</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_underlying" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _underlying</h3>
+					<div class="tsd-signature tsd-kind-icon">_underlying<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#_underlying">_underlying</a></p>
+						<ul>
+							<li>Defined in ql/cashflows/capflooredcoupon.ts:173</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accrualdays" class="tsd-anchor"></a>
+					<h3>accrual<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">accrual<wbr>Days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accrualdays">accrualDays</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accrualenddate" class="tsd-anchor"></a>
+					<h3>accrual<wbr>End<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">accrual<wbr>End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accrualenddate">accrualEndDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:50</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accrualperiod" class="tsd-anchor"></a>
+					<h3>accrual<wbr>Period</h3>
+					<div class="tsd-signature tsd-kind-icon">accrual<wbr>Period<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accrualperiod">accrualPeriod</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accrualstartdate" class="tsd-anchor"></a>
+					<h3>accrual<wbr>Start<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">accrual<wbr>Start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accrualstartdate">accrualStartDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accrueddays" class="tsd-anchor"></a>
+					<h3>accrued<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">accrued<wbr>Days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accrueddays">accruedDays</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:56</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="accruedperiod" class="tsd-anchor"></a>
+					<h3>accrued<wbr>Period</h3>
+					<div class="tsd-signature tsd-kind-icon">accrued<wbr>Period<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accruedperiod">accruedPeriod</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:54</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<div class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:69</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<div class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#calculate">calculate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="date" class="tsd-anchor"></a>
+					<h3>date</h3>
+					<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#date">date</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#deepupdate">deepUpdate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:77</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="excoupondate" class="tsd-anchor"></a>
+					<h3>ex<wbr>Coupon<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">ex<wbr>Coupon<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#excoupondate">exCouponDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:41</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<div class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#freeze">freeze</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="hasoccurred" class="tsd-anchor"></a>
+					<h3>has<wbr>Occurred</h3>
+					<div class="tsd-signature tsd-kind-icon">has<wbr>Occurred<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#hasoccurred">hasOccurred</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:36</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>refDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, includeRefDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>refDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>includeRefDate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#init">init</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:44</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>paymentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, accrualStartDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, accrualEndDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, refPeriodStart<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, refPeriodEnd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, exCouponDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>paymentDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+											</li>
+											<li>
+												<h5>accrualStartDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>accrualEndDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> refPeriodStart: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> refPeriodEnd: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> exCouponDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:76</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="nominal" class="tsd-anchor"></a>
+					<h3>nominal</h3>
+					<div class="tsd-signature tsd-kind-icon">nominal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#nominal">nominal</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:48</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<div class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#recalculate">recalculate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:66</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="referenceperiodend" class="tsd-anchor"></a>
+					<h3>reference<wbr>Period<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#referenceperiodend">referencePeriodEnd</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="referenceperiodstart" class="tsd-anchor"></a>
+					<h3>reference<wbr>Period<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">reference<wbr>Period<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#referenceperiodstart">referencePeriodStart</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:24</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="tradingexcoupon" class="tsd-anchor"></a>
+					<h3>trading<wbr>ExCoupon</h3>
+					<div class="tsd-signature tsd-kind-icon">trading<wbr>ExCoupon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#tradingexcoupon">tradingExCoupon</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:42</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<div class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#unfreeze">unfreeze</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:68</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:21</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/cashflows/couponlazyobject.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="accept" class="tsd-anchor"></a>
+					<h3>accept</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">accept<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_visitor_.acyclicvisitor.html" class="tsd-signature-type">AcyclicVisitor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#accept">accept</a></p>
+								<ul>
+									<li>Defined in ql/experimental/coupons/cmsspreadcoupon.ts:75</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <a href="_ql_patterns_visitor_.acyclicvisitor.html" class="tsd-signature-type">AcyclicVisitor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="accruedamount" class="tsd-anchor"></a>
+					<h3>accrued<wbr>Amount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">accrued<wbr>Amount<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#accruedamount">accruedAmount</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#accruedamount">accruedAmount</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:70</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="adjustedfixing" class="tsd-anchor"></a>
+					<h3>adjusted<wbr>Fixing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">adjusted<wbr>Fixing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#adjustedfixing">adjustedFixing</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:119</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>convexity-adjusted fixing</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="amount1" class="tsd-anchor"></a>
+					<h3>amount1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">amount1<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#amount1">amount1</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#amount1">amount1</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:53</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cap" class="tsd-anchor"></a>
+					<h3>cap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">cap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#cap">cap</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:106</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="convexityadjustment" class="tsd-anchor"></a>
+					<h3>convexity<wbr>Adjustment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">convexity<wbr>Adjustment<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#convexityadjustment">convexityAdjustment</a></p>
+								<p>Overrides <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#convexityadjustment">convexityAdjustment</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:102</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="convexityadjustmentimpl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> convexity<wbr>Adjustment<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">convexity<wbr>Adjustment<wbr>Impl<span class="tsd-signature-symbol">(</span>fixing<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#convexityadjustmentimpl">convexityAdjustmentImpl</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:165</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>convexity adjustment for the given index fixing</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fixing: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="daycounter" class="tsd-anchor"></a>
+					<h3>day<wbr>Counter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">day<wbr>Counter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#daycounter">dayCounter</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#daycounter">dayCounter</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:66</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="effectivecap" class="tsd-anchor"></a>
+					<h3>effective<wbr>Cap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">effective<wbr>Cap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#effectivecap">effectiveCap</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:126</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="effectivefloor" class="tsd-anchor"></a>
+					<h3>effective<wbr>Floor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">effective<wbr>Floor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#effectivefloor">effectiveFloor</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:134</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fixingdate" class="tsd-anchor"></a>
+					<h3>fixing<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">fixing<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#fixingdate">fixingDate</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:90</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fixingdays" class="tsd-anchor"></a>
+					<h3>fixing<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">fixing<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#fixingdays">fixingDays</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:86</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="floor" class="tsd-anchor"></a>
+					<h3>floor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">floor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#floor">floor</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:116</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="gearing" class="tsd-anchor"></a>
+					<h3>gearing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">gearing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#gearing">gearing</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:100</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>index gearing, i.e. multiplicative coefficient for the index</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="index" class="tsd-anchor"></a>
+					<h3>index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_indexes_interestrateindex_.interestrateindex.html" class="tsd-signature-type">InterestRateIndex</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#index">index</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:82</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_indexes_interestrateindex_.interestrateindex.html" class="tsd-signature-type">InterestRateIndex</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="indexfixing" class="tsd-anchor"></a>
+					<h3>index<wbr>Fixing</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">index<wbr>Fixing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#indexfixing">indexFixing</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:110</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>fixing of the underlying index</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="iscapped" class="tsd-anchor"></a>
+					<h3>is<wbr>Capped</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Capped<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#iscapped">isCapped</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:142</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="isfloored" class="tsd-anchor"></a>
+					<h3>is<wbr>Floored</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Floored<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#isfloored">isFloored</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="isinarrears" class="tsd-anchor"></a>
+					<h3>is<wbr>InArrears</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>InArrears<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#isinarrears">isInArrears</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:124</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>whether or not the coupon fixes in arrears</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#performcalculations">performCalculations</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:128</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="price" class="tsd-anchor"></a>
+					<h3>price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">(</span>discountingCurve<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#price">price</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:62</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>discountingCurve: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="pricer" class="tsd-anchor"></a>
+					<h3>pricer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">pricer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#pricer">pricer</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:160</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="rate" class="tsd-anchor"></a>
+					<h3>rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#rate">rate</a></p>
+								<p>Overrides <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#rate">rate</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:85</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="setpricer" class="tsd-anchor"></a>
+					<h3>set<wbr>Pricer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Pricer<span class="tsd-signature-symbol">(</span>pricer<span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#setpricer">setPricer</a></p>
+								<p>Overrides <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#setpricer">setPricer</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:150</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pricer: <a href="_ql_cashflows_couponpricer_.floatingratecouponpricer.html" class="tsd-signature-type">FloatingRateCouponPricer</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="spread" class="tsd-anchor"></a>
+					<h3>spread</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">spread<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html">FloatingRateCoupon</a>.<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html#spread">spread</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/floatingratecoupon.ts:105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>spread paid over the fixing of the underlying index</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="underlying" class="tsd-anchor"></a>
+					<h3>underlying</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">underlying<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#underlying">underlying</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:155</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html">CappedFlooredCoupon</a>.<a href="_ql_cashflows_capflooredcoupon_.cappedflooredcoupon.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html">CouponLazyObject</a>.<a href="_mixins_ql_cashflows_couponlazyobject_.couponlazyobject.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/cashflows/capflooredcoupon.ts:159</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_experimental_coupons_cmsspreadcoupon_.html">"ql/experimental/coupons/cmsspreadcoupon"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html" class="tsd-kind-icon">Capped<wbr>Floored<wbr>Cms<wbr>Spread<wbr>Coupon</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualenddate" class="tsd-kind-icon">_accrual<wbr>End<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualperiod" class="tsd-kind-icon">_accrual<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_accrualstartdate" class="tsd-kind-icon">_accrual<wbr>Start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_cap" class="tsd-kind-icon">_cap</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_excoupondate" class="tsd-kind-icon">_ex<wbr>Coupon<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_fixingdays" class="tsd-kind-icon">_fixing<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_floor" class="tsd-kind-icon">_floor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_gearing" class="tsd-kind-icon">_gearing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_index" class="tsd-kind-icon">_index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_iscapped" class="tsd-kind-icon">_is<wbr>Capped</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isfloored" class="tsd-kind-icon">_is<wbr>Floored</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_isinarrears" class="tsd-kind-icon">_is<wbr>InArrears</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_nominal" class="tsd-kind-icon">_nominal</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_paymentdate" class="tsd-kind-icon">_payment<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_pricer" class="tsd-kind-icon">_pricer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_refperiodend" class="tsd-kind-icon">_ref<wbr>Period<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_refperiodstart" class="tsd-kind-icon">_ref<wbr>Period<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_spread" class="tsd-kind-icon">_spread</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_swapletrate" class="tsd-kind-icon">_swaplet<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#_underlying" class="tsd-kind-icon">_underlying</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualdays" class="tsd-kind-icon">accrual<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualenddate" class="tsd-kind-icon">accrual<wbr>End<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualperiod" class="tsd-kind-icon">accrual<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrualstartdate" class="tsd-kind-icon">accrual<wbr>Start<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accrueddays" class="tsd-kind-icon">accrued<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accruedperiod" class="tsd-kind-icon">accrued<wbr>Period</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#date" class="tsd-kind-icon">date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#excoupondate" class="tsd-kind-icon">ex<wbr>Coupon<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#hasoccurred" class="tsd-kind-icon">has<wbr>Occurred</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#nominal" class="tsd-kind-icon">nominal</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#referenceperiodend" class="tsd-kind-icon">reference<wbr>Period<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#referenceperiodstart" class="tsd-kind-icon">reference<wbr>Period<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#tradingexcoupon" class="tsd-kind-icon">trading<wbr>ExCoupon</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accept" class="tsd-kind-icon">accept</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#accruedamount" class="tsd-kind-icon">accrued<wbr>Amount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#adjustedfixing" class="tsd-kind-icon">adjusted<wbr>Fixing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#amount1" class="tsd-kind-icon">amount1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#cap" class="tsd-kind-icon">cap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#convexityadjustment" class="tsd-kind-icon">convexity<wbr>Adjustment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#convexityadjustmentimpl" class="tsd-kind-icon">convexity<wbr>Adjustment<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#effectivecap" class="tsd-kind-icon">effective<wbr>Cap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#effectivefloor" class="tsd-kind-icon">effective<wbr>Floor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#fixingdate" class="tsd-kind-icon">fixing<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#fixingdays" class="tsd-kind-icon">fixing<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#floor" class="tsd-kind-icon">floor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#gearing" class="tsd-kind-icon">gearing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#index" class="tsd-kind-icon">index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#indexfixing" class="tsd-kind-icon">index<wbr>Fixing</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#iscapped" class="tsd-kind-icon">is<wbr>Capped</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isfloored" class="tsd-kind-icon">is<wbr>Floored</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#isinarrears" class="tsd-kind-icon">is<wbr>InArrears</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#price" class="tsd-kind-icon">price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#pricer" class="tsd-kind-icon">pricer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#rate" class="tsd-kind-icon">rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#setpricer" class="tsd-kind-icon">set<wbr>Pricer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#spread" class="tsd-kind-icon">spread</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#underlying" class="tsd-kind-icon">underlying</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_experimental_coupons_cmsspreadcoupon_.cappedflooredcmsspreadcoupon.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_coupons_cmsspreadcoupon_.cmsspreadcoupon.html" class="tsd-kind-icon">Cms<wbr>Spread<wbr>Coupon</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_coupons_cmsspreadcoupon_.cmsspreadcouponpricer.html" class="tsd-kind-icon">Cms<wbr>Spread<wbr>Coupon<wbr>Pricer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_coupons_cmsspreadcoupon_.cmsspreadleg.html" class="tsd-kind-icon">Cms<wbr>Spread<wbr>Leg</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

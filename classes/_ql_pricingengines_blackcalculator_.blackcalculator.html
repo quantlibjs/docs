@@ -1,0 +1,1088 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BlackCalculator | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_pricingengines_blackcalculator_.html">&quot;ql/pricingengines/blackcalculator&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html">BlackCalculator</a>
+				</li>
+			</ul>
+			<h1>Class BlackCalculator</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Black 1976 calculator class</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>bug</dt>
+						<dd><p>When the variance is null, division by zero occur during
+								the calculation of delta, delta forward, gamma, gamma
+							forward, rho, dividend rho, vega, and strike sensitivity.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BlackCalculator</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_ql_pricingengines_blackscholescalculator_.blackscholescalculator.html" class="tsd-signature-type">BlackScholesCalculator</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.calculator.html" class="tsd-kind-icon">Calculator</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dalphadd1" class="tsd-kind-icon">_<wbr>Dalpha<wbr>Dd1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dbetadd2" class="tsd-kind-icon">_<wbr>Dbeta<wbr>Dd2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dxds" class="tsd-kind-icon">_<wbr>DxDs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dxdstrike" class="tsd-kind-icon">_<wbr>DxDstrike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_alpha" class="tsd-kind-icon">_alpha</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_beta" class="tsd-kind-icon">_beta</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_cum_d1" class="tsd-kind-icon">_cum_<wbr>d1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_cum_d2" class="tsd-kind-icon">_cum_<wbr>d2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_d1" class="tsd-kind-icon">_d1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_d2" class="tsd-kind-icon">_d2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_discount" class="tsd-kind-icon">_discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_forward" class="tsd-kind-icon">_forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_n_d1" class="tsd-kind-icon">_n_<wbr>d1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_n_d2" class="tsd-kind-icon">_n_<wbr>d2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_stddev" class="tsd-kind-icon">_std<wbr>Dev</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_strike" class="tsd-kind-icon">_strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_variance" class="tsd-kind-icon">_variance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_x" class="tsd-kind-icon">_x</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#alpha" class="tsd-kind-icon">alpha</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#beta" class="tsd-kind-icon">beta</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#delta" class="tsd-kind-icon">delta</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#deltaforward" class="tsd-kind-icon">delta<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#dividendrho" class="tsd-kind-icon">dividend<wbr>Rho</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#elasticity" class="tsd-kind-icon">elasticity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#elasticityforward" class="tsd-kind-icon">elasticity<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#gamma" class="tsd-kind-icon">gamma</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#gammaforward" class="tsd-kind-icon">gamma<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#init2" class="tsd-kind-icon">init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#itmassetprobability" class="tsd-kind-icon">itm<wbr>Asset<wbr>Probability</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#itmcashprobability" class="tsd-kind-icon">itm<wbr>Cash<wbr>Probability</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#rho" class="tsd-kind-icon">rho</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#strikesensitivity" class="tsd-kind-icon">strike<wbr>Sensitivity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#theta" class="tsd-kind-icon">theta</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#thetaperday" class="tsd-kind-icon">theta<wbr>Per<wbr>Day</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#vega" class="tsd-kind-icon">vega</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_dalphadd1" class="tsd-anchor"></a>
+					<h3>_<wbr>Dalpha<wbr>Dd1</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>Dalpha<wbr>Dd1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:402</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_dbetadd2" class="tsd-anchor"></a>
+					<h3>_<wbr>Dbeta<wbr>Dd2</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>Dbeta<wbr>Dd2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:403</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_dxds" class="tsd-anchor"></a>
+					<h3>_<wbr>DxDs</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>DxDs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:415</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_dxdstrike" class="tsd-anchor"></a>
+					<h3>_<wbr>DxDstrike</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>DxDstrike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:416</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_alpha" class="tsd-anchor"></a>
+					<h3>_alpha</h3>
+					<div class="tsd-signature tsd-kind-icon">_alpha<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:400</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_beta" class="tsd-anchor"></a>
+					<h3>_beta</h3>
+					<div class="tsd-signature tsd-kind-icon">_beta<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:401</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_cum_d1" class="tsd-anchor"></a>
+					<h3>_cum_<wbr>d1</h3>
+					<div class="tsd-signature tsd-kind-icon">_cum_<wbr>d1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:408</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_cum_d2" class="tsd-anchor"></a>
+					<h3>_cum_<wbr>d2</h3>
+					<div class="tsd-signature tsd-kind-icon">_cum_<wbr>d2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:412</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_d1" class="tsd-anchor"></a>
+					<h3>_d1</h3>
+					<div class="tsd-signature tsd-kind-icon">_d1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:397</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_d2" class="tsd-anchor"></a>
+					<h3>_d2</h3>
+					<div class="tsd-signature tsd-kind-icon">_d2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:398</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_discount" class="tsd-anchor"></a>
+					<h3>_discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:394</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_forward" class="tsd-anchor"></a>
+					<h3>_forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_forward<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:392</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_n_d1" class="tsd-anchor"></a>
+					<h3>_n_<wbr>d1</h3>
+					<div class="tsd-signature tsd-kind-icon">_n_<wbr>d1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:406</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_n_d2" class="tsd-anchor"></a>
+					<h3>_n_<wbr>d2</h3>
+					<div class="tsd-signature tsd-kind-icon">_n_<wbr>d2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:410</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_stddev" class="tsd-anchor"></a>
+					<h3>_std<wbr>Dev</h3>
+					<div class="tsd-signature tsd-kind-icon">_std<wbr>Dev<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:393</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_strike" class="tsd-anchor"></a>
+					<h3>_strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_strike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:391</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_variance" class="tsd-anchor"></a>
+					<h3>_variance</h3>
+					<div class="tsd-signature tsd-kind-icon">_variance<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:395</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_x" class="tsd-anchor"></a>
+					<h3>_x</h3>
+					<div class="tsd-signature tsd-kind-icon">_x<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/blackcalculator.ts:414</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="alpha" class="tsd-anchor"></a>
+					<h3>alpha</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">alpha<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:288</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="beta" class="tsd-anchor"></a>
+					<h3>beta</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">beta<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:292</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="delta" class="tsd-anchor"></a>
+					<h3>delta</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:71</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to change in the underlying spot price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deltaforward" class="tsd-anchor"></a>
+					<h3>delta<wbr>Forward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delta<wbr>Forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:58</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to change in the underlying forward price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dividendrho" class="tsd-anchor"></a>
+					<h3>dividend<wbr>Rho</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dividend<wbr>Rho<span class="tsd-signature-symbol">(</span>maturity<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:239</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to dividend/growth rate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>maturity: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="elasticity" class="tsd-anchor"></a>
+					<h3>elasticity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">elasticity<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:112</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity in percent to a percent change in the
+									underlying spot price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="elasticityforward" class="tsd-anchor"></a>
+					<h3>elasticity<wbr>Forward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">elasticity<wbr>Forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:94</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity in percent to a percent change in the
+									underlying forward price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gamma" class="tsd-anchor"></a>
+					<h3>gamma</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gamma<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:154</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Second order derivative with respect to change in the
+									underlying spot price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gammaforward" class="tsd-anchor"></a>
+					<h3>gamma<wbr>Forward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gamma<wbr>Forward<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:130</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Second order derivative with respect to change in the
+									underlying forward price.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init1" class="tsd-anchor"></a>
+					<h3>init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>payoff<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a>, forward<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, stdDev<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, discount<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html" class="tsd-signature-type">BlackCalculator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:22</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>payoff: <a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a></h5>
+								</li>
+								<li>
+									<h5>forward: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>stdDev: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> discount: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_blackcalculator_.blackcalculator.html" class="tsd-signature-type">BlackCalculator</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init2" class="tsd-anchor"></a>
+					<h3>init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init2<span class="tsd-signature-symbol">(</span>optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a>, strike<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, forward<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, stdDev<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, discount<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_blackcalculator_.blackcalculator.html" class="tsd-signature-type">BlackCalculator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:37</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>strike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>forward: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>stdDev: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> discount: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_blackcalculator_.blackcalculator.html" class="tsd-signature-type">BlackCalculator</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:296</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itmassetprobability" class="tsd-anchor"></a>
+					<h3>itm<wbr>Asset<wbr>Probability</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">itm<wbr>Asset<wbr>Probability<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:270</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Probability of being in the money in the asset martingale
+										measure, i.e. N(d1).
+									It is a risk-neutral probability, not the real world one.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itmcashprobability" class="tsd-anchor"></a>
+					<h3>itm<wbr>Cash<wbr>Probability</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">itm<wbr>Cash<wbr>Probability<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:261</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Probability of being in the money in the bond martingale
+										measure, i.e. N(d2).
+									It is a risk-neutral probability, not the real world one.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rho" class="tsd-anchor"></a>
+					<h3>rho</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">rho<span class="tsd-signature-symbol">(</span>maturity<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:222</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to discounting rate.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>maturity: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="strikesensitivity" class="tsd-anchor"></a>
+					<h3>strike<wbr>Sensitivity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">strike<wbr>Sensitivity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:275</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to strike.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="theta" class="tsd-anchor"></a>
+					<h3>theta</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">theta<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maturity<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:181</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to time to maturity.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>maturity: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thetaperday" class="tsd-anchor"></a>
+					<h3>theta<wbr>Per<wbr>Day</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">theta<wbr>Per<wbr>Day<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maturity<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:199</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to time to maturity per day,
+									assuming 365 day per year.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>maturity: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:51</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vega" class="tsd-anchor"></a>
+					<h3>vega</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vega<span class="tsd-signature-symbol">(</span>maturity<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/blackcalculator.ts:204</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sensitivity to volatility.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>maturity: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_pricingengines_blackcalculator_.html">"ql/pricingengines/blackcalculator"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html" class="tsd-kind-icon">Black<wbr>Calculator</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.calculator.html" class="tsd-kind-icon">Calculator</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dalphadd1" class="tsd-kind-icon">_<wbr>Dalpha<wbr>Dd1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dbetadd2" class="tsd-kind-icon">_<wbr>Dbeta<wbr>Dd2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dxds" class="tsd-kind-icon">_<wbr>DxDs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_dxdstrike" class="tsd-kind-icon">_<wbr>DxDstrike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_alpha" class="tsd-kind-icon">_alpha</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_beta" class="tsd-kind-icon">_beta</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_cum_d1" class="tsd-kind-icon">_cum_<wbr>d1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_cum_d2" class="tsd-kind-icon">_cum_<wbr>d2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_d1" class="tsd-kind-icon">_d1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_d2" class="tsd-kind-icon">_d2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_discount" class="tsd-kind-icon">_discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_forward" class="tsd-kind-icon">_forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_n_d1" class="tsd-kind-icon">_n_<wbr>d1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_n_d2" class="tsd-kind-icon">_n_<wbr>d2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_stddev" class="tsd-kind-icon">_std<wbr>Dev</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_strike" class="tsd-kind-icon">_strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_variance" class="tsd-kind-icon">_variance</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#_x" class="tsd-kind-icon">_x</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#alpha" class="tsd-kind-icon">alpha</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#beta" class="tsd-kind-icon">beta</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#delta" class="tsd-kind-icon">delta</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#deltaforward" class="tsd-kind-icon">delta<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#dividendrho" class="tsd-kind-icon">dividend<wbr>Rho</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#elasticity" class="tsd-kind-icon">elasticity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#elasticityforward" class="tsd-kind-icon">elasticity<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#gamma" class="tsd-kind-icon">gamma</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#gammaforward" class="tsd-kind-icon">gamma<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#init1" class="tsd-kind-icon">init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#init2" class="tsd-kind-icon">init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#initialize" class="tsd-kind-icon">initialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#itmassetprobability" class="tsd-kind-icon">itm<wbr>Asset<wbr>Probability</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#itmcashprobability" class="tsd-kind-icon">itm<wbr>Cash<wbr>Probability</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#rho" class="tsd-kind-icon">rho</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#strikesensitivity" class="tsd-kind-icon">strike<wbr>Sensitivity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#theta" class="tsd-kind-icon">theta</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#thetaperday" class="tsd-kind-icon">theta<wbr>Per<wbr>Day</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#value" class="tsd-kind-icon">value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_blackcalculator_.blackcalculator.html#vega" class="tsd-kind-icon">vega</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

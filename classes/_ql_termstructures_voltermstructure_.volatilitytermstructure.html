@@ -1,0 +1,1534 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VolatilityTermStructure | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_termstructures_voltermstructure_.html">&quot;ql/termstructures/voltermstructure&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html">VolatilityTermStructure</a>
+				</li>
+			</ul>
+			<h1>Class VolatilityTermStructure</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Volatility term structure</p>
+					</div>
+					<p>This abstract class defines the interface of concrete
+					volatility structures which will be derived from this one.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">VolatilityTermStructure</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_ql_termstructures_volatility_optionlet_optionletvolatilitystructure_.optionletvolatilitystructure.html" class="tsd-signature-type">OptionletVolatilityStructure</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_swaption_swaptionvolstructure_.swaptionvolatilitystructure.html" class="tsd-signature-type">SwaptionVolatilityStructure</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_inflation_yoyinflationoptionletvolatilitystructure_.yoyoptionletvolatilitysurface.html" class="tsd-signature-type">YoYOptionletVolatilitySurface</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_inflation_cpivolatilitystructure_.cpivolatilitysurface.html" class="tsd-signature-type">CPIVolatilitySurface</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_equityfx_blackvoltermstructure_.blackvoltermstructure.html" class="tsd-signature-type">BlackVolTermStructure</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_equityfx_localvoltermstructure_.localvoltermstructure.html" class="tsd-signature-type">LocalVolTermStructure</a>
+									</li>
+									<li>
+										<a href="_ql_termstructures_volatility_capfloor_capfloortermvolatilitystructure_.capfloortermvolatilitystructure.html" class="tsd-signature-type">CapFloorTermVolatilityStructure</a>
+									</li>
+									<li>
+										<a href="_ql_experimental_volatility_blackatmvolcurve_.blackatmvolcurve.html" class="tsd-signature-type">BlackAtmVolCurve</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+					<li><a href="_ql_math_interpolations_extrapolation_.extrapolator.html" class="tsd-signature-type">Extrapolator</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_experimental_volatility_abcdatmvolcurve_.abcdatmvolcurve.html" class="tsd-signature-type">AbcdAtmVolCurve</a></li>
+					<li><a href="_mixins_ql_experimental_blackatmvolcurvelazyobject_.blackatmvolcurvelazyobject.html" class="tsd-signature-type">BlackAtmVolCurveLazyObject</a></li>
+					<li><a href="_ql_termstructures_volatility_capfloor_capfloortermvolcurve_.capfloortermvolcurve.html" class="tsd-signature-type">CapFloorTermVolCurve</a></li>
+					<li><a href="_ql_termstructures_volatility_capfloor_capfloortermvolsurface_.capfloortermvolsurface.html" class="tsd-signature-type">CapFloorTermVolSurface</a></li>
+					<li><a href="_mixins_ql_termstructures_capfloortermvolatilitystructurelazyobject_.capfloortermvolatilitystructurelazyobject.html" class="tsd-signature-type">CapFloorTermVolatilityStructureLazyObject</a></li>
+					<li><a href="_ql_termstructures_volatility_equityfx_gridmodellocalvolsurface_.gridmodellocalvolsurface.html" class="tsd-signature-type">GridModelLocalVolSurface</a></li>
+					<li><a href="_mixins_ql_termstructures_localvoltermstructurecalibratedmodel_.localvoltermstructurecalibratedmodel.html" class="tsd-signature-type">LocalVolTermStructureCalibratedModel</a></li>
+					<li><a href="_mixins_ql_termstructures_optionletvolatilitystructurelazyobject_.optionletvolatilitystructurelazyobject.html" class="tsd-signature-type">OptionletVolatilityStructureLazyObject</a></li>
+					<li><a href="_ql_termstructures_volatility_optionlet_strippedoptionletadapter_.strippedoptionletadapter.html" class="tsd-signature-type">StrippedOptionletAdapter</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvolcube1_.swaptionvolcube1.html" class="tsd-signature-type">SwaptionVolCube1</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvolcube1_.swaptionvolcube1x.html" class="tsd-signature-type">SwaptionVolCube1x</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvolcube2_.swaptionvolcube2.html" class="tsd-signature-type">SwaptionVolCube2</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvolcube_.swaptionvolatilitycube.html" class="tsd-signature-type">SwaptionVolatilityCube</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvoldiscrete_.swaptionvolatilitydiscrete.html" class="tsd-signature-type">SwaptionVolatilityDiscrete</a></li>
+					<li><a href="_ql_termstructures_volatility_swaption_swaptionvolmatrix_.swaptionvolatilitymatrix.html" class="tsd-signature-type">SwaptionVolatilityMatrix</a></li>
+					<li><a href="_mixins_ql_termstructures_swaptionvolstructurelazyobject_.swaptionvolatilitystructurelazyobject.html" class="tsd-signature-type">SwaptionVolatilityStructureLazyObject</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_bdc" class="tsd-kind-icon">_bdc</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_calendar" class="tsd-kind-icon">_calendar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_extrapolate" class="tsd-kind-icon">_extrapolate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_moving" class="tsd-kind-icon">_moving</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_referencedate" class="tsd-kind-icon">_reference<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_settlementdays" class="tsd-kind-icon">_settlement<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_updated" class="tsd-kind-icon">_updated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#allowsextrapolation" class="tsd-kind-icon">allows<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#disableextrapolation" class="tsd-kind-icon">disable<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#enableextrapolation" class="tsd-kind-icon">enable<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#businessdayconvention" class="tsd-kind-icon">business<wbr>Day<wbr>Convention</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#calendar" class="tsd-kind-icon">calendar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkrange1" class="tsd-kind-icon">check<wbr>Range1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkrange2" class="tsd-kind-icon">check<wbr>Range2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkstrike" class="tsd-kind-icon">check<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxstrike" class="tsd-kind-icon">max<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxtime" class="tsd-kind-icon">max<wbr>Time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#minstrike" class="tsd-kind-icon">min<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#optiondatefromtenor" class="tsd-kind-icon">option<wbr>Date<wbr>From<wbr>Tenor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#referencedate" class="tsd-kind-icon">reference<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#timefromreference" class="tsd-kind-icon">time<wbr>From<wbr>Reference</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit1" class="tsd-kind-icon">ts<wbr>Init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit2" class="tsd-kind-icon">ts<wbr>Init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit3" class="tsd-kind-icon">ts<wbr>Init3</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit1" class="tsd-kind-icon">vts<wbr>Init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit2" class="tsd-kind-icon">vts<wbr>Init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit3" class="tsd-kind-icon">vts<wbr>Init3</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Volatility<wbr>Term<wbr>Structure<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_bdc" class="tsd-anchor"></a>
+					<h3>_bdc</h3>
+					<div class="tsd-signature tsd-kind-icon">_bdc<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/voltermstructure.ts:72</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calendar" class="tsd-anchor"></a>
+					<h3>_calendar</h3>
+					<div class="tsd-signature tsd-kind-icon">_calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_calendar">_calendar</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:165</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_daycounter" class="tsd-anchor"></a>
+					<h3>_day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">_day<wbr>Counter<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_daycounter">_dayCounter</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:169</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_extrapolate" class="tsd-anchor"></a>
+					<h3>_extrapolate</h3>
+					<div class="tsd-signature tsd-kind-icon">_extrapolate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#_extrapolate">_extrapolate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:41</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:34</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_moving" class="tsd-anchor"></a>
+					<h3>_moving</h3>
+					<div class="tsd-signature tsd-kind-icon">_moving<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_moving">_moving</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:163</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:39</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_referencedate" class="tsd-anchor"></a>
+					<h3>_reference<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_reference<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_referencedate">_referenceDate</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:167</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_settlementdays" class="tsd-anchor"></a>
+					<h3>_settlement<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">_settlement<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_settlementdays">_settlementDays</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:168</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_updated" class="tsd-anchor"></a>
+					<h3>_updated</h3>
+					<div class="tsd-signature tsd-kind-icon">_updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#_updated">_updated</a></p>
+						<ul>
+							<li>Defined in ql/termstructure.ts:164</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="allowsextrapolation" class="tsd-anchor"></a>
+					<h3>allows<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">allows<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#allowsextrapolation">allowsExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#deepupdate">deepUpdate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="disableextrapolation" class="tsd-anchor"></a>
+					<h3>disable<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">disable<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#disableextrapolation">disableExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> b: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:33</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="enableextrapolation" class="tsd-anchor"></a>
+					<h3>enable<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">enable<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#enableextrapolation">enableExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> b: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:32</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:15</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/math/observerobservableextrapolator.ts:21</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="businessdayconvention" class="tsd-anchor"></a>
+					<h3>business<wbr>Day<wbr>Convention</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">business<wbr>Day<wbr>Convention<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:46</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="calendar" class="tsd-anchor"></a>
+					<h3>calendar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calendar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#calendar">calendar</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:122</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the calendar used for reference and/or option date calculation</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="checkrange1" class="tsd-anchor"></a>
+					<h3>check<wbr>Range1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Range1<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#checkrange1">checkRange1</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:142</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>date-range check</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="checkrange2" class="tsd-anchor"></a>
+					<h3>check<wbr>Range2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Range2<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#checkrange2">checkRange2</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:153</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>time-range check</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkstrike" class="tsd-anchor"></a>
+					<h3>check<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Strike<span class="tsd-signature-symbol">(</span>k<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:63</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>k: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="daycounter" class="tsd-anchor"></a>
+					<h3>day<wbr>Counter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">day<wbr>Counter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#daycounter">dayCounter</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:91</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the day counter used for date/time conversion</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="maxdate" class="tsd-anchor"></a>
+					<h3>max<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#maxdate">maxDate</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:101</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the latest date for which the curve can return values</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="maxstrike" class="tsd-anchor"></a>
+					<h3>max<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Strike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="maxtime" class="tsd-anchor"></a>
+					<h3>max<wbr>Time</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Time<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#maxtime">maxTime</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:106</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the latest time for which the curve can return values</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="minstrike" class="tsd-anchor"></a>
+					<h3>min<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">min<wbr>Strike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="optiondatefromtenor" class="tsd-anchor"></a>
+					<h3>option<wbr>Date<wbr>From<wbr>Tenor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">option<wbr>Date<wbr>From<wbr>Tenor<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:50</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="referencedate" class="tsd-anchor"></a>
+					<h3>reference<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">reference<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#referencedate">referenceDate</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:111</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the date at which discount = 1.0 and/or variance = 0.0</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="settlementdays" class="tsd-anchor"></a>
+					<h3>settlement<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">settlement<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#settlementdays">settlementDays</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:127</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the settlementDays used for reference date calculation</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="timefromreference" class="tsd-anchor"></a>
+					<h3>time<wbr>From<wbr>Reference</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">time<wbr>From<wbr>Reference<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#timefromreference">timeFromReference</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:96</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>date/time conversion</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit1" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">ts<wbr>Init1<span class="tsd-signature-symbol">(</span>dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#tsinit1">tsInit1</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:50</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd><p>default constructor</p>
+										<p>warning: term structures initialized by means of this
+											constructor must manage their own reference date
+										by overriding the referenceDate() method.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit2" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">ts<wbr>Init2<span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, calendar<span class="tsd-signature-symbol">?: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#tsinit2">tsInit2</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:62</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd><p>initialize with a fixed reference date</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>referenceDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol"> =&nbsp;new Calendar()</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit3" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">ts<wbr>Init3<span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#tsinit3">tsInit3</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:78</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd><p>calculate the reference date based on the global evaluation date</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+								</li>
+								<li>
+									<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html">ObserverObservableExtrapolator</a>.<a href="_mixins_ql_math_observerobservableextrapolator_.observerobservableextrapolator.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/termstructure.ts:134</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vtsinit1" class="tsd-anchor"></a>
+					<h3>vts<wbr>Init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vts<wbr>Init1<span class="tsd-signature-symbol">(</span>bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:21</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vtsinit2" class="tsd-anchor"></a>
+					<h3>vts<wbr>Init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vts<wbr>Init2<span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, cal<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:29</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>referenceDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vtsinit3" class="tsd-anchor"></a>
+					<h3>vts<wbr>Init3</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vts<wbr>Init3<span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, cal<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">?: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/voltermstructure.ts:38</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+								</li>
+								<li>
+									<h5>cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol"> =&nbsp;new DayCounter()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-signature-type">VolatilityTermStructure</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_termstructures_voltermstructure_.html">"ql/termstructures/voltermstructure"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html" class="tsd-kind-icon">Volatility<wbr>Term<wbr>Structure</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_bdc" class="tsd-kind-icon">_bdc</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_calendar" class="tsd-kind-icon">_calendar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_extrapolate" class="tsd-kind-icon">_extrapolate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_moving" class="tsd-kind-icon">_moving</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_referencedate" class="tsd-kind-icon">_reference<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_settlementdays" class="tsd-kind-icon">_settlement<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#_updated" class="tsd-kind-icon">_updated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#allowsextrapolation" class="tsd-kind-icon">allows<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#disableextrapolation" class="tsd-kind-icon">disable<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#enableextrapolation" class="tsd-kind-icon">enable<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#businessdayconvention" class="tsd-kind-icon">business<wbr>Day<wbr>Convention</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#calendar" class="tsd-kind-icon">calendar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkrange1" class="tsd-kind-icon">check<wbr>Range1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkrange2" class="tsd-kind-icon">check<wbr>Range2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#checkstrike" class="tsd-kind-icon">check<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxstrike" class="tsd-kind-icon">max<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#maxtime" class="tsd-kind-icon">max<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#minstrike" class="tsd-kind-icon">min<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#optiondatefromtenor" class="tsd-kind-icon">option<wbr>Date<wbr>From<wbr>Tenor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#referencedate" class="tsd-kind-icon">reference<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#timefromreference" class="tsd-kind-icon">time<wbr>From<wbr>Reference</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit1" class="tsd-kind-icon">ts<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit2" class="tsd-kind-icon">ts<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#tsinit3" class="tsd-kind-icon">ts<wbr>Init3</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit1" class="tsd-kind-icon">vts<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit2" class="tsd-kind-icon">vts<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_voltermstructure_.volatilitytermstructure.html#vtsinit3" class="tsd-kind-icon">vts<wbr>Init3</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

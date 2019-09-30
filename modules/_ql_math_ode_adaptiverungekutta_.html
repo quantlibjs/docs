@@ -1,0 +1,696 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>&quot;ql/math/ode/adaptiverungekutta&quot; | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_ql_math_ode_adaptiverungekutta_.html">&quot;ql/math/ode/adaptiverungekutta&quot;</a>
+				</li>
+			</ul>
+			<h1>External module &quot;ql/math/ode/adaptiverungekutta&quot;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_ql_math_ode_adaptiverungekutta_.adaptiverungekutta.html" class="tsd-kind-icon">Adaptive<wbr>Runge<wbr>Kutta</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_ql_math_ode_adaptiverungekutta_.odefctwrapper.html" class="tsd-kind-icon">Ode<wbr>Fct<wbr>Wrapper</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_ql_math_ode_adaptiverungekutta_.odefunction1d.html" class="tsd-kind-icon">Ode<wbr>Function1D</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_ql_math_ode_adaptiverungekutta_.odefunction2d.html" class="tsd-kind-icon">Ode<wbr>Function2D</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_ql_math_ode_adaptiverungekutta_.byref.html" class="tsd-kind-icon">by<wbr>Ref</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_errcon" class="tsd-kind-icon">ADAPTIVERK_<wbr>ERRCON</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_maxstp" class="tsd-kind-icon">ADAPTIVERK_<wbr>MAXSTP</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_pgrow" class="tsd-kind-icon">ADAPTIVERK_<wbr>PGROW</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_pshrink" class="tsd-kind-icon">ADAPTIVERK_<wbr>PSHRINK</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_safety" class="tsd-kind-icon">ADAPTIVERK_<wbr>SAFETY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_tiny" class="tsd-kind-icon">ADAPTIVERK_<wbr>TINY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#a2" class="tsd-kind-icon">a2</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#a3" class="tsd-kind-icon">a3</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#a4" class="tsd-kind-icon">a4</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#a5" class="tsd-kind-icon">a5</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#a6" class="tsd-kind-icon">a6</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b21" class="tsd-kind-icon">b21</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b31" class="tsd-kind-icon">b31</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b32" class="tsd-kind-icon">b32</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b41" class="tsd-kind-icon">b41</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b42" class="tsd-kind-icon">b42</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b43" class="tsd-kind-icon">b43</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b51" class="tsd-kind-icon">b51</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b52" class="tsd-kind-icon">b52</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b53" class="tsd-kind-icon">b53</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b54" class="tsd-kind-icon">b54</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b61" class="tsd-kind-icon">b61</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b62" class="tsd-kind-icon">b62</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b63" class="tsd-kind-icon">b63</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b64" class="tsd-kind-icon">b64</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#b65" class="tsd-kind-icon">b65</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#c1" class="tsd-kind-icon">c1</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#c3" class="tsd-kind-icon">c3</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#c4" class="tsd-kind-icon">c4</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#c6" class="tsd-kind-icon">c6</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#dc1" class="tsd-kind-icon">dc1</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#dc3" class="tsd-kind-icon">dc3</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#dc4" class="tsd-kind-icon">dc4</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#dc5" class="tsd-kind-icon">dc5</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_math_ode_adaptiverungekutta_.html#dc6" class="tsd-kind-icon">dc6</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_errcon" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>ERRCON</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>ERRCON<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.000189</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:24</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_maxstp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>MAXSTP</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>MAXSTP<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_pgrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>PGROW</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>PGROW<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-0.2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:23</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_pshrink" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>PSHRINK</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>PSHRINK<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-0.25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:24</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_safety" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>SAFETY</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>SAFETY<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.9</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:23</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="adaptiverk_tiny" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ADAPTIVERK_<wbr>TINY</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPTIVERK_<wbr>TINY<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-30</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="a2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> a2</h3>
+					<div class="tsd-signature tsd-kind-icon">a2<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="a3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> a3</h3>
+					<div class="tsd-signature tsd-kind-icon">a3<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="a4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> a4</h3>
+					<div class="tsd-signature tsd-kind-icon">a4<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.6</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="a5" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> a5</h3>
+					<div class="tsd-signature tsd-kind-icon">a5<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:8</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="a6" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> a6</h3>
+					<div class="tsd-signature tsd-kind-icon">a6<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.875</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:9</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b21" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b21</h3>
+					<div class="tsd-signature tsd-kind-icon">b21<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b31" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b31</h3>
+					<div class="tsd-signature tsd-kind-icon">b31<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;3.0 / 40.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b32" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b32</h3>
+					<div class="tsd-signature tsd-kind-icon">b32<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;9.0 / 40.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:10</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b41" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b41</h3>
+					<div class="tsd-signature tsd-kind-icon">b41<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;0.3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:11</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b42" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b42</h3>
+					<div class="tsd-signature tsd-kind-icon">b42<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-0.9</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:11</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b43" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b43</h3>
+					<div class="tsd-signature tsd-kind-icon">b43<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1.2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:11</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b51" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b51</h3>
+					<div class="tsd-signature tsd-kind-icon">b51<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-11.0 / 54.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b52" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b52</h3>
+					<div class="tsd-signature tsd-kind-icon">b52<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;2.5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b53" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b53</h3>
+					<div class="tsd-signature tsd-kind-icon">b53<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-70.0 / 27.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b54" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b54</h3>
+					<div class="tsd-signature tsd-kind-icon">b54<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;35.0 / 27.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:13</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b61" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b61</h3>
+					<div class="tsd-signature tsd-kind-icon">b61<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1631.0 / 55296.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:14</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b62" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b62</h3>
+					<div class="tsd-signature tsd-kind-icon">b62<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;175.0 / 512.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:14</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b63" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b63</h3>
+					<div class="tsd-signature tsd-kind-icon">b63<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;575.0 / 13824.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:15</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b64" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b64</h3>
+					<div class="tsd-signature tsd-kind-icon">b64<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;44275.0 / 110592.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:16</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="b65" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> b65</h3>
+					<div class="tsd-signature tsd-kind-icon">b65<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;253.0 / 4096.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:16</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="c1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> c1</h3>
+					<div class="tsd-signature tsd-kind-icon">c1<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;37.0 / 378.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:17</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="c3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> c3</h3>
+					<div class="tsd-signature tsd-kind-icon">c3<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;250.0 / 621.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:17</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="c4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> c4</h3>
+					<div class="tsd-signature tsd-kind-icon">c4<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;125.0 / 594.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:18</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="c6" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> c6</h3>
+					<div class="tsd-signature tsd-kind-icon">c6<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;512.0 / 1771.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:18</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="dc1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dc1</h3>
+					<div class="tsd-signature tsd-kind-icon">dc1<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;c1 - 2825.0 / 27648.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:19</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="dc3" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dc3</h3>
+					<div class="tsd-signature tsd-kind-icon">dc3<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;c3 - 18575.0 / 48384.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:19</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="dc4" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dc4</h3>
+					<div class="tsd-signature tsd-kind-icon">dc4<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;c4 - 13525.0 / 55296.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:20</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="dc5" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dc5</h3>
+					<div class="tsd-signature tsd-kind-icon">dc5<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;-277.0 / 14336.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:20</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="dc6" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> dc6</h3>
+					<div class="tsd-signature tsd-kind-icon">dc6<span class="tsd-signature-symbol">:</span> <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;c6 - 0.25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/math/ode/adaptiverungekutta.ts:21</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_ql_math_ode_adaptiverungekutta_.html">"ql/math/ode/adaptiverungekutta"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_ql_math_ode_adaptiverungekutta_.adaptiverungekutta.html" class="tsd-kind-icon">Adaptive<wbr>Runge<wbr>Kutta</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_ql_math_ode_adaptiverungekutta_.odefctwrapper.html" class="tsd-kind-icon">Ode<wbr>Fct<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_ql_math_ode_adaptiverungekutta_.odefunction1d.html" class="tsd-kind-icon">Ode<wbr>Function1D</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_ql_math_ode_adaptiverungekutta_.odefunction2d.html" class="tsd-kind-icon">Ode<wbr>Function2D</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_ql_math_ode_adaptiverungekutta_.byref.html" class="tsd-kind-icon">by<wbr>Ref</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_errcon" class="tsd-kind-icon">ADAPTIVERK_<wbr>ERRCON</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_maxstp" class="tsd-kind-icon">ADAPTIVERK_<wbr>MAXSTP</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_pgrow" class="tsd-kind-icon">ADAPTIVERK_<wbr>PGROW</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_pshrink" class="tsd-kind-icon">ADAPTIVERK_<wbr>PSHRINK</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_safety" class="tsd-kind-icon">ADAPTIVERK_<wbr>SAFETY</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#adaptiverk_tiny" class="tsd-kind-icon">ADAPTIVERK_<wbr>TINY</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#a2" class="tsd-kind-icon">a2</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#a3" class="tsd-kind-icon">a3</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#a4" class="tsd-kind-icon">a4</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#a5" class="tsd-kind-icon">a5</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#a6" class="tsd-kind-icon">a6</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b21" class="tsd-kind-icon">b21</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b31" class="tsd-kind-icon">b31</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b32" class="tsd-kind-icon">b32</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b41" class="tsd-kind-icon">b41</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b42" class="tsd-kind-icon">b42</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b43" class="tsd-kind-icon">b43</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b51" class="tsd-kind-icon">b51</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b52" class="tsd-kind-icon">b52</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b53" class="tsd-kind-icon">b53</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b54" class="tsd-kind-icon">b54</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b61" class="tsd-kind-icon">b61</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b62" class="tsd-kind-icon">b62</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b63" class="tsd-kind-icon">b63</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b64" class="tsd-kind-icon">b64</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#b65" class="tsd-kind-icon">b65</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#c1" class="tsd-kind-icon">c1</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#c3" class="tsd-kind-icon">c3</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#c4" class="tsd-kind-icon">c4</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#c6" class="tsd-kind-icon">c6</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#dc1" class="tsd-kind-icon">dc1</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#dc3" class="tsd-kind-icon">dc3</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#dc4" class="tsd-kind-icon">dc4</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#dc5" class="tsd-kind-icon">dc5</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_math_ode_adaptiverungekutta_.html#dc6" class="tsd-kind-icon">dc6</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

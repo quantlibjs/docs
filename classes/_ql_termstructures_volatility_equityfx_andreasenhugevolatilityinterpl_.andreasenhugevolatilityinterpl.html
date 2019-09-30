@@ -1,0 +1,1656 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AndreasenHugeVolatilityInterpl | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html">&quot;ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html">AndreasenHugeVolatilityInterpl</a>
+				</li>
+			</ul>
+			<h1>Class AndreasenHugeVolatilityInterpl</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Calibration of a local volatility surface to a sparse grid of options</p>
+					</div>
+					<p>References:</p>
+					<p>Andreasen J., Huge B., 2010. Volatility Interpolation
+					<a href="https://ssrn.com/abstract=1694972">https://ssrn.com/abstract=1694972</a></p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_ql_patterns_lazyobject_.lazyobject.html" class="tsd-signature-type">LazyObject</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">AndreasenHugeVolatilityInterpl</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.calibrationtype.html" class="tsd-kind-icon">Calibration<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-class tsd-is-static"><a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.interpolationtype.html" class="tsd-kind-icon">Interpolation<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationset" class="tsd-kind-icon">Calibration<wbr>Set</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_avgerror" class="tsd-kind-icon">_avg<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationmatrix" class="tsd-kind-icon">_calibration<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationresults" class="tsd-kind-icon">_calibration<wbr>Results</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationset" class="tsd-kind-icon">_calibration<wbr>Set</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationtype" class="tsd-kind-icon">_calibration<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_dt" class="tsd-kind-icon">_dT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_endcriteria" class="tsd-kind-icon">_end<wbr>Criteria</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_expiries" class="tsd-kind-icon">_expiries</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_expirytimes" class="tsd-kind-icon">_expiry<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_gridinfwd" class="tsd-kind-icon">_grid<wbr>InFwd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_gridpoints" class="tsd-kind-icon">_grid<wbr>Points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_interpolationtype" class="tsd-kind-icon">_interpolation<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_localvolcache" class="tsd-kind-icon">_local<wbr>Vol<wbr>Cache</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_maxerror" class="tsd-kind-icon">_max<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_maxstrike" class="tsd-kind-icon">_max<wbr>Strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_mesher" class="tsd-kind-icon">_mesher</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_minerror" class="tsd-kind-icon">_min<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_minstrike" class="tsd-kind-icon">_min<wbr>Strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_ngridpoints" class="tsd-kind-icon">_n<wbr>Grid<wbr>Points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_optimizationmethod" class="tsd-kind-icon">_optimization<wbr>Method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_pricecache" class="tsd-kind-icon">_price<wbr>Cache</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_qts" class="tsd-kind-icon">_qTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_rts" class="tsd-kind-icon">_rTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_spot" class="tsd-kind-icon">_spot</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_strikes" class="tsd-kind-icon">_strikes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#buildcostfunction" class="tsd-kind-icon">build<wbr>Cost<wbr>Function</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationerror" class="tsd-kind-icon">calibration<wbr>Error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#fwd" class="tsd-kind-icon">fwd</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getcachevalue" class="tsd-kind-icon">get<wbr>Cache<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getexercisetimeidx" class="tsd-kind-icon">get<wbr>Exercise<wbr>Time<wbr>Idx</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getlocalvolslice" class="tsd-kind-icon">get<wbr>Local<wbr>Vol<wbr>Slice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getpriceslice" class="tsd-kind-icon">get<wbr>Price<wbr>Slice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#localvol" class="tsd-kind-icon">local<wbr>Vol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#maxstrike" class="tsd-kind-icon">max<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#minstrike" class="tsd-kind-icon">min<wbr>Strike</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#optionprice" class="tsd-kind-icon">option<wbr>Price</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="calibrationset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Calibration<wbr>Set</h3>
+					<div class="tsd-signature tsd-kind-icon">Calibration<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="_ql_instruments_vanillaoption_.vanillaoption.html" class="tsd-signature-type">VanillaOption</a><span class="tsd-signature-symbol">, </span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:542</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Andreasen<wbr>Huge<wbr>Volatility<wbr>Interpl<span class="tsd-signature-symbol">(</span>calibrationSet<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationset" class="tsd-signature-type">CalibrationSet</a>, spot<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, rTS<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, qTS<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, interpolationType<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.interpolationtype.html" class="tsd-signature-type">InterpolationType</a>, calibrationType<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.calibrationtype.html" class="tsd-signature-type">CalibrationType</a>, nGridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, minStrike<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxStrike<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, optimizationMethod<span class="tsd-signature-symbol">?: </span><a href="_ql_math_optimization_method_.optimizationmethod.html" class="tsd-signature-type">OptimizationMethod</a>, endCriteria<span class="tsd-signature-symbol">?: </span><a href="_ql_math_optimization_endcriteria_.endcriteria.html" class="tsd-signature-type">EndCriteria</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html" class="tsd-signature-type">AndreasenHugeVolatilityInterpl</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:48</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>calibrationSet: <a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationset" class="tsd-signature-type">CalibrationSet</a></h5>
+								</li>
+								<li>
+									<h5>spot: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>rTS: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>qTS: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolationType: <a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.interpolationtype.html" class="tsd-signature-type">InterpolationType</a><span class="tsd-signature-symbol"> =&nbsp;AndreasenHugeVolatilityInterpl.InterpolationType.CubicSpline</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> calibrationType: <a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.calibrationtype.html" class="tsd-signature-type">CalibrationType</a><span class="tsd-signature-symbol"> =&nbsp;AndreasenHugeVolatilityInterpl.CalibrationType.Call</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nGridPoints: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;500</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> minStrike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxStrike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> optimizationMethod: <a href="_ql_math_optimization_method_.optimizationmethod.html" class="tsd-signature-type">OptimizationMethod</a><span class="tsd-signature-symbol"> =&nbsp;new LevenbergMarquardt()</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> endCriteria: <a href="_ql_math_optimization_endcriteria_.endcriteria.html" class="tsd-signature-type">EndCriteria</a><span class="tsd-signature-symbol"> =&nbsp;new EndCriteria(500, 100, 1e-12, 1e-10, 1e-10)</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html" class="tsd-signature-type">AndreasenHugeVolatilityInterpl</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:144</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_avgerror" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _avg<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">_avg<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:519</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_calibrationmatrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _calibration<wbr>Matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">_calibration<wbr>Matrix<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:518</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_calibrationresults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _calibration<wbr>Results</h3>
+					<div class="tsd-signature tsd-kind-icon">_calibration<wbr>Results<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.singlestepcalibrationresult.html" class="tsd-signature-type">SingleStepCalibrationResult</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:527</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_calibrationset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _calibration<wbr>Set</h3>
+					<div class="tsd-signature tsd-kind-icon">_calibration<wbr>Set<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationset" class="tsd-signature-type">CalibrationSet</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:499</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_calibrationtype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _calibration<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_calibration<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.calibrationtype.html" class="tsd-signature-type">CalibrationType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:504</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_dt" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dT</h3>
+					<div class="tsd-signature tsd-kind-icon">_dT<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:516</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_endcriteria" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _end<wbr>Criteria</h3>
+					<div class="tsd-signature tsd-kind-icon">_end<wbr>Criteria<span class="tsd-signature-symbol">:</span> <a href="_ql_math_optimization_endcriteria_.endcriteria.html" class="tsd-signature-type">EndCriteria</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:511</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_expiries" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _expiries</h3>
+					<div class="tsd-signature tsd-kind-icon">_expiries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:514</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_expirytimes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _expiry<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">_expiry<wbr>Times<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:515</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in ql/patterns/lazyobject.ts:143</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_gridinfwd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _grid<wbr>InFwd</h3>
+					<div class="tsd-signature tsd-kind-icon">_grid<wbr>InFwd<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:525</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_gridpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _grid<wbr>Points</h3>
+					<div class="tsd-signature tsd-kind-icon">_grid<wbr>Points<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:524</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_interpolationtype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _interpolation<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_interpolation<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.interpolationtype.html" class="tsd-signature-type">InterpolationType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:503</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_localvolcache" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _local<wbr>Vol<wbr>Cache</h3>
+					<div class="tsd-signature tsd-kind-icon">_local<wbr>Vol<wbr>Cache<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html#timevaluecachetype" class="tsd-signature-type">TimeValueCacheType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:529</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_maxerror" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _max<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:521</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_maxstrike" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _max<wbr>Strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Strike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:508</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_mesher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _mesher</h3>
+					<div class="tsd-signature tsd-kind-icon">_mesher<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:523</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_minerror" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _min<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">_min<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:520</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_minstrike" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _min<wbr>Strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_min<wbr>Strike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:507</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_ngridpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _n<wbr>Grid<wbr>Points</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Grid<wbr>Points<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:506</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_optimizationmethod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _optimization<wbr>Method</h3>
+					<div class="tsd-signature tsd-kind-icon">_optimization<wbr>Method<span class="tsd-signature-symbol">:</span> <a href="_ql_math_optimization_method_.optimizationmethod.html" class="tsd-signature-type">OptimizationMethod</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:510</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_pricecache" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _price<wbr>Cache</h3>
+					<div class="tsd-signature tsd-kind-icon">_price<wbr>Cache<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html#timevaluecachetype" class="tsd-signature-type">TimeValueCacheType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:530</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_qts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _qTS</h3>
+					<div class="tsd-signature tsd-kind-icon">_qTS<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:502</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_rts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _rTS</h3>
+					<div class="tsd-signature tsd-kind-icon">_rTS<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:501</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_spot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _spot</h3>
+					<div class="tsd-signature tsd-kind-icon">_spot<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:500</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_strikes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _strikes</h3>
+					<div class="tsd-signature tsd-kind-icon">_strikes<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:513</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:28</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:18</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/patterns/observerobservable.ts:19</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method causes the object to forward all
+										notifications, even when not calculated.  The default
+										behavior is to forward the first notification received,
+										and discard the others until recalculated; the rationale
+										is that observers were already notified, and don&#39;t need
+										further notification until they recalculate, at which
+										point this object would be recalculated too.  After
+										recalculation, this object would again forward the first
+									notification received.</p>
+								</div>
+								<p>warning Forwarding all notifications will cause a
+									performance hit, and should be used only when
+									discarding notifications cause an incorrect
+								behavior.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="buildcostfunction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> build<wbr>Cost<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Cost<wbr>Function<span class="tsd-signature-symbol">(</span>iExpiry<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a>, previousNPVs<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugecostfunction.html" class="tsd-signature-type">AndreasenHugeCostFunction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:382</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>iExpiry: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+								<li>
+									<h5>previousNPVs: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugecostfunction.html" class="tsd-signature-type">AndreasenHugeCostFunction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#calculate">calculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:118</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method performs all needed calculations by calling
+									the <code>performCalculations</code> method.</p>
+								</div>
+								<p>warning Objects cache the results of the previous
+									calculation. Such results will be returned upon
+									later invocations of
+									<code>calculate</code>. When the results depend
+									on arguments which could change between
+									invocations, the lazy object must register itself
+									as observer of such objects for the calculations
+								to be performed again when they change.</p>
+								<p>warning Should this method be redefined in derived
+									classes, LazyObject.calculate() should be called
+								in the overriding method.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="calibrationerror" class="tsd-anchor"></a>
+					<h3>calibration<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">calibration<wbr>Error<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:167</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#deepupdate">deepUpdate</a></p>
+								<ul>
+									<li>Defined in mixins/ql/patterns/observerobservable.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#freeze">freeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:64</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method constrains the object to return the presently
+										cached results on successive invocations, even if
+									arguments upon which they depend should change.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fwd" class="tsd-anchor"></a>
+					<h3>fwd</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fwd<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:157</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getcachevalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Cache<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cache<wbr>Value<span class="tsd-signature-symbol">(</span>strike<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, cache<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html#timevaluecachetype" class="tsd-signature-type">TimeValueCacheType</a>, f<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:442</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>strike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>cache: <a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html#timevaluecachetype" class="tsd-signature-type">TimeValueCacheType</a></h5>
+								</li>
+								<li>
+									<h5>f: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getexercisetimeidx" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Exercise<wbr>Time<wbr>Idx</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Exercise<wbr>Time<wbr>Idx<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:436</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getlocalvolslice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Local<wbr>Vol<wbr>Slice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Local<wbr>Vol<wbr>Slice<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:466</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getpriceslice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Price<wbr>Slice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Price<wbr>Slice<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:455</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="localvol" class="tsd-anchor"></a>
+					<h3>local<wbr>Vol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">local<wbr>Vol<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, strike<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:228</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>strike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="maxdate" class="tsd-anchor"></a>
+					<h3>max<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:142</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="maxstrike" class="tsd-anchor"></a>
+					<h3>max<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Strike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:151</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="minstrike" class="tsd-anchor"></a>
+					<h3>min<wbr>Strike</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">min<wbr>Strike<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="optionprice" class="tsd-anchor"></a>
+					<h3>option<wbr>Price</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">option<wbr>Price<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, strike<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, optionType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:173</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>strike: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>optionType: <a href="../enums/_ql_option_.option.type.html" class="tsd-signature-type">Type</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:273</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#recalculate">recalculate</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:42</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method force the recalculation of any results which
+										would otherwise be cached. It is not declared as
+										<code>const</code> since it needs to call the
+									non-<code>const</code> <code>notifyObservers</code> method.</p>
+								</div>
+								<p>note Explicit invocation of this method is <b>not</b>
+									necessary if the object registered itself as
+									observer with the structures on which such results
+									depend.  It is strongly advised to follow this
+								policy when possible.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="riskfreerate" class="tsd-anchor"></a>
+					<h3>risk<wbr>Free<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl.ts:163</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#unfreeze">unfreeze</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:72</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method reverts the effect of the <code>freeze</code>
+									method, thus re-enabling recalculations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/patterns/lazyobject.ts:13</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Observer interface</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html">"ql/termstructures/volatility/equityfx/andreasenhugevolatilityinterpl"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugecostfunction.html" class="tsd-kind-icon">Andreasen<wbr>Huge<wbr>Cost<wbr>Function</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html" class="tsd-kind-icon">Andreasen<wbr>Huge<wbr>Volatility<wbr>Interpl</a>
+						<ul>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.calibrationtype.html" class="tsd-kind-icon">Calibration<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-enum tsd-parent-kind-class tsd-is-static">
+								<a href="../enums/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.interpolationtype.html" class="tsd-kind-icon">Interpolation<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationset" class="tsd-kind-icon">Calibration<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_avgerror" class="tsd-kind-icon">_avg<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationmatrix" class="tsd-kind-icon">_calibration<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationresults" class="tsd-kind-icon">_calibration<wbr>Results</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationset" class="tsd-kind-icon">_calibration<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_calibrationtype" class="tsd-kind-icon">_calibration<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_dt" class="tsd-kind-icon">_dT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_endcriteria" class="tsd-kind-icon">_end<wbr>Criteria</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_expiries" class="tsd-kind-icon">_expiries</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_expirytimes" class="tsd-kind-icon">_expiry<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_gridinfwd" class="tsd-kind-icon">_grid<wbr>InFwd</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_gridpoints" class="tsd-kind-icon">_grid<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_interpolationtype" class="tsd-kind-icon">_interpolation<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_localvolcache" class="tsd-kind-icon">_local<wbr>Vol<wbr>Cache</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_maxerror" class="tsd-kind-icon">_max<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_maxstrike" class="tsd-kind-icon">_max<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_mesher" class="tsd-kind-icon">_mesher</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_minerror" class="tsd-kind-icon">_min<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_minstrike" class="tsd-kind-icon">_min<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_ngridpoints" class="tsd-kind-icon">_n<wbr>Grid<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_optimizationmethod" class="tsd-kind-icon">_optimization<wbr>Method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_pricecache" class="tsd-kind-icon">_price<wbr>Cache</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_qts" class="tsd-kind-icon">_qTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_rts" class="tsd-kind-icon">_rTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_spot" class="tsd-kind-icon">_spot</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#_strikes" class="tsd-kind-icon">_strikes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#buildcostfunction" class="tsd-kind-icon">build<wbr>Cost<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#calibrationerror" class="tsd-kind-icon">calibration<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#fwd" class="tsd-kind-icon">fwd</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getcachevalue" class="tsd-kind-icon">get<wbr>Cache<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getexercisetimeidx" class="tsd-kind-icon">get<wbr>Exercise<wbr>Time<wbr>Idx</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getlocalvolslice" class="tsd-kind-icon">get<wbr>Local<wbr>Vol<wbr>Slice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#getpriceslice" class="tsd-kind-icon">get<wbr>Price<wbr>Slice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#localvol" class="tsd-kind-icon">local<wbr>Vol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#maxstrike" class="tsd-kind-icon">max<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#minstrike" class="tsd-kind-icon">min<wbr>Strike</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#optionprice" class="tsd-kind-icon">option<wbr>Price</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.andreasenhugevolatilityinterpl.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.combinedcostfunction.html" class="tsd-kind-icon">Combined<wbr>Cost<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.singlestepcalibrationresult.html" class="tsd-kind-icon">Single<wbr>Step<wbr>Calibration<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.close_enough_to.html" class="tsd-kind-icon">close_<wbr>enough_<wbr>to</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_termstructures_volatility_equityfx_andreasenhugevolatilityinterpl_.html#timevaluecachetype" class="tsd-kind-icon">Time<wbr>Value<wbr>Cache<wbr>Type</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

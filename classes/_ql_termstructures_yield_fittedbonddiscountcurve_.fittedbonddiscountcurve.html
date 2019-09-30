@@ -1,0 +1,2436 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FittedBondDiscountCurve | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_termstructures_yield_fittedbonddiscountcurve_.html">&quot;ql/termstructures/yield/fittedbonddiscountcurve&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html">FittedBondDiscountCurve</a>
+				</li>
+			</ul>
+			<h1>Class FittedBondDiscountCurve</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Discount curve fitted to a set of fixed-coupon bonds</p>
+					</div>
+					<p>This class fits a discount function \f$ d(t) \f$ over a set of
+						bonds, using a user defined fitting method. The discount
+						function is fit in such a way so that all cashflows of all
+						input bonds, when discounted using \f$ d(t) \f$, will
+						reproduce the set of input bond prices in an optimized
+						sense. Minimized price errors are weighted by the inverse of
+					their respective bond duration.</p>
+					<p>The FittedBondDiscountCurve class acts as a generic wrapper,
+						while its inner class FittingMethod provides the
+						implementation details. Developers thus need only derive new
+					fitting methods from the latter.</p>
+					<dl class="tsd-comment-tags">
+						<dt>warning</dt>
+						<dd><p>The method can be slow if there are many bonds to
+								fit. Speed also depends on the particular choice of
+								fitting method chosen and its convergence properties
+								under optimization.  See also todo list for
+							BondDiscountCurveFittingMethod.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>refactor the bond helper class so that it is pure
+								virtual and returns a generic bond or its cash
+								flows. Derived classes would include helpers for
+								fixed-rate and zero-coupon bonds. In this way, both
+								bonds and bills can be used to fit a discount curve
+								using the exact same machinery. At present, only
+								fixed-coupon bonds are supported. An even better way to
+								move forward might be to get rate helpers to return
+								cashflows, in which case this class could be used to fit
+							any set of cash flows, not just bonds.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>add more fitting diagnostics: smoothness, standard
+								deviation, student-t test, etc. Generic smoothness
+								method may be useful for smoothing splines fitting. See
+								Fisher, M., D. Nychka and D. Zervos: &quot;Fitting the term
+								structure of interest rates with smoothing splines.&quot;
+								Board of Governors of the Federal Reserve System,
+							Federal Resere Board Working Paper, 95-1.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>add extrapolation routines</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html" class="tsd-signature-type">YieldTermStructureLazyObject</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">FittedBondDiscountCurve</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></li>
+					<li><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></li>
+					<li><a href="_ql_math_interpolations_extrapolation_.extrapolator.html" class="tsd-signature-type">Extrapolator</a></li>
+					<li><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+					<li><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></li>
+					<li><a href="_ql_patterns_lazyobject_.lazyobject.html" class="tsd-signature-type">LazyObject</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-kind-icon">Fitting<wbr>Method</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_accuracy" class="tsd-kind-icon">_accuracy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_bondhelpers" class="tsd-kind-icon">_bond<wbr>Helpers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_calculated" class="tsd-kind-icon">_calculated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_calendar" class="tsd-kind-icon">_calendar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_extrapolate" class="tsd-kind-icon">_extrapolate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_fittingmethod" class="tsd-kind-icon">_fitting<wbr>Method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_frozen" class="tsd-kind-icon">_frozen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_guesssolution" class="tsd-kind-icon">_guess<wbr>Solution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumpdates" class="tsd-kind-icon">_jump<wbr>Dates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumptimes" class="tsd-kind-icon">_jump<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumps" class="tsd-kind-icon">_jumps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_latestreference" class="tsd-kind-icon">_latest<wbr>Reference</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxdate" class="tsd-kind-icon">_max<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxevaluations" class="tsd-kind-icon">_max<wbr>Evaluations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxstationarystateiterations" class="tsd-kind-icon">_max<wbr>Stationary<wbr>State<wbr>Iterations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_moving" class="tsd-kind-icon">_moving</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_njumps" class="tsd-kind-icon">_n<wbr>Jumps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_observables" class="tsd-kind-icon">_observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_referencedate" class="tsd-kind-icon">_reference<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_settlementdays" class="tsd-kind-icon">_settlement<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_simplexlambda" class="tsd-kind-icon">_simplex<wbr>Lambda</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_updated" class="tsd-kind-icon">_updated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#allowsextrapolation" class="tsd-kind-icon">allows<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#calendar" class="tsd-kind-icon">calendar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#checkrange1" class="tsd-kind-icon">check<wbr>Range1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#checkrange2" class="tsd-kind-icon">check<wbr>Range2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#disableextrapolation" class="tsd-kind-icon">disable<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discount1" class="tsd-kind-icon">discount1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discount2" class="tsd-kind-icon">discount2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#enableextrapolation" class="tsd-kind-icon">enable<wbr>Extrapolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate1" class="tsd-kind-icon">forward<wbr>Rate1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate2" class="tsd-kind-icon">forward<wbr>Rate2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate3" class="tsd-kind-icon">forward<wbr>Rate3</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#freeze" class="tsd-kind-icon">freeze</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#jumpdates" class="tsd-kind-icon">jump<wbr>Dates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#jumptimes" class="tsd-kind-icon">jump<wbr>Times</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#maxtime" class="tsd-kind-icon">max<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#recalculate" class="tsd-kind-icon">recalculate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#referencedate" class="tsd-kind-icon">reference<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerwith" class="tsd-kind-icon">register<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#setjumps" class="tsd-kind-icon">set<wbr>Jumps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#timefromreference" class="tsd-kind-icon">time<wbr>From<wbr>Reference</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit1" class="tsd-kind-icon">ts<wbr>Init1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit2" class="tsd-kind-icon">ts<wbr>Init2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit3" class="tsd-kind-icon">ts<wbr>Init3</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit1" class="tsd-kind-icon">yts<wbr>Init1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit2" class="tsd-kind-icon">yts<wbr>Init2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit3" class="tsd-kind-icon">yts<wbr>Init3</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#zerorate1" class="tsd-kind-icon">zero<wbr>Rate1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#zerorate2" class="tsd-kind-icon">zero<wbr>Rate2</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discountimpl" class="tsd-kind-icon">discount<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fbdcinit1" class="tsd-kind-icon">fbdc<wbr>Init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fbdcinit2" class="tsd-kind-icon">fbdc<wbr>Init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fitresults" class="tsd-kind-icon">fit<wbr>Results</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#numberofbonds" class="tsd-kind-icon">number<wbr>OfBonds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#setup" class="tsd-kind-icon">setup</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_accuracy" class="tsd-anchor"></a>
+					<h3>_accuracy</h3>
+					<div class="tsd-signature tsd-kind-icon">_accuracy<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:185</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_alwaysforward" class="tsd-anchor"></a>
+					<h3>_always<wbr>Forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_alwaysforward">_alwaysForward</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:133</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_bondhelpers" class="tsd-anchor"></a>
+					<h3>_bond<wbr>Helpers</h3>
+					<div class="tsd-signature tsd-kind-icon">_bond<wbr>Helpers<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_yield_bondhelpers_.bondhelper.html" class="tsd-signature-type">BondHelper</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:191</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calculated" class="tsd-anchor"></a>
+					<h3>_calculated</h3>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_calculated">_calculated</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:131</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_calendar" class="tsd-anchor"></a>
+					<h3>_calendar</h3>
+					<div class="tsd-signature tsd-kind-icon">_calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_calendar">_calendar</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:120</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_daycounter" class="tsd-anchor"></a>
+					<h3>_day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">_day<wbr>Counter<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_daycounter">_dayCounter</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:123</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_extrapolate" class="tsd-anchor"></a>
+					<h3>_extrapolate</h3>
+					<div class="tsd-signature tsd-kind-icon">_extrapolate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_extrapolate">_extrapolate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:116</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_fittingmethod" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _fitting<wbr>Method</h3>
+					<div class="tsd-signature tsd-kind-icon">_fitting<wbr>Method<span class="tsd-signature-symbol">:</span> <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:192</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_frozen" class="tsd-anchor"></a>
+					<h3>_frozen</h3>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_frozen">_frozen</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:132</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_guesssolution" class="tsd-anchor"></a>
+					<h3>_guess<wbr>Solution</h3>
+					<div class="tsd-signature tsd-kind-icon">_guess<wbr>Solution<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:189</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_isdisposed" class="tsd-anchor"></a>
+					<h3>_is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_isdisposed">_isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:109</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_jumpdates" class="tsd-anchor"></a>
+					<h3>_jump<wbr>Dates</h3>
+					<div class="tsd-signature tsd-kind-icon">_jump<wbr>Dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_jumpdates">_jumpDates</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:126</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_jumptimes" class="tsd-anchor"></a>
+					<h3>_jump<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">_jump<wbr>Times<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_jumptimes">_jumpTimes</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:127</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_jumps" class="tsd-anchor"></a>
+					<h3>_jumps</h3>
+					<div class="tsd-signature tsd-kind-icon">_jumps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_jumps">_jumps</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:125</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_latestreference" class="tsd-anchor"></a>
+					<h3>_latest<wbr>Reference</h3>
+					<div class="tsd-signature tsd-kind-icon">_latest<wbr>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_latestreference">_latestReference</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:129</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_maxdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _max<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:190</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_maxevaluations" class="tsd-anchor"></a>
+					<h3>_max<wbr>Evaluations</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Evaluations<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:186</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_maxstationarystateiterations" class="tsd-anchor"></a>
+					<h3>_max<wbr>Stationary<wbr>State<wbr>Iterations</h3>
+					<div class="tsd-signature tsd-kind-icon">_max<wbr>Stationary<wbr>State<wbr>Iterations<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:188</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_moving" class="tsd-anchor"></a>
+					<h3>_moving</h3>
+					<div class="tsd-signature tsd-kind-icon">_moving<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_moving">_moving</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:118</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_njumps" class="tsd-anchor"></a>
+					<h3>_n<wbr>Jumps</h3>
+					<div class="tsd-signature tsd-kind-icon">_n<wbr>Jumps<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_njumps">_nJumps</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:128</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observables" class="tsd-anchor"></a>
+					<h3>_observables</h3>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_observables">_observables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:114</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_observers" class="tsd-anchor"></a>
+					<h3>_observers</h3>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_observers">_observers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:112</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_referencedate" class="tsd-anchor"></a>
+					<h3>_reference<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_reference<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_referencedate">_referenceDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:121</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_settlementdays" class="tsd-anchor"></a>
+					<h3>_settlement<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">_settlement<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_settlementdays">_settlementDays</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:122</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_simplexlambda" class="tsd-anchor"></a>
+					<h3>_simplex<wbr>Lambda</h3>
+					<div class="tsd-signature tsd-kind-icon">_simplex<wbr>Lambda<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:187</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_updated" class="tsd-anchor"></a>
+					<h3>_updated</h3>
+					<div class="tsd-signature tsd-kind-icon">_updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#_updated">_updated</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:119</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="allowsextrapolation" class="tsd-anchor"></a>
+					<h3>allows<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">allows<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#allowsextrapolation">allowsExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:43</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="alwaysforwardnotifications" class="tsd-anchor"></a>
+					<h3>always<wbr>Forward<wbr>Notifications</h3>
+					<div class="tsd-signature tsd-kind-icon">always<wbr>Forward<wbr>Notifications<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#alwaysforwardnotifications">alwaysForwardNotifications</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:100</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="calculate" class="tsd-anchor"></a>
+					<h3>calculate</h3>
+					<div class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#calculate">calculate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:101</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="calendar" class="tsd-anchor"></a>
+					<h3>calendar</h3>
+					<div class="tsd-signature tsd-kind-icon">calendar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#calendar">calendar</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="checkrange1" class="tsd-anchor"></a>
+					<h3>check<wbr>Range1</h3>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>Range1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#checkrange1">checkRange1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:61</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="checkrange2" class="tsd-anchor"></a>
+					<h3>check<wbr>Range2</h3>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>Range2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#checkrange2">checkRange2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:62</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="daycounter" class="tsd-anchor"></a>
+					<h3>day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">day<wbr>Counter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#daycounter">dayCounter</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deepupdate" class="tsd-anchor"></a>
+					<h3>deep<wbr>Update</h3>
+					<div class="tsd-signature tsd-kind-icon">deep<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#deepupdate">deepUpdate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="disableextrapolation" class="tsd-anchor"></a>
+					<h3>disable<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">disable<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#disableextrapolation">disableExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:42</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>b: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="discount1" class="tsd-anchor"></a>
+					<h3>discount1</h3>
+					<div class="tsd-signature tsd-kind-icon">discount1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#discount1">discount1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:73</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="discount2" class="tsd-anchor"></a>
+					<h3>discount2</h3>
+					<div class="tsd-signature tsd-kind-icon">discount2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#discount2">discount2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#dispose">dispose</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:108</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="enableextrapolation" class="tsd-anchor"></a>
+					<h3>enable<wbr>Extrapolation</h3>
+					<div class="tsd-signature tsd-kind-icon">enable<wbr>Extrapolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#enableextrapolation">enableExtrapolation</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:41</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>b: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="forwardrate1" class="tsd-anchor"></a>
+					<h3>forward<wbr>Rate1</h3>
+					<div class="tsd-signature tsd-kind-icon">forward<wbr>Rate1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#forwardrate1">forwardRate1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:81</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, d2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, resultDayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d1: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>d2: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>resultDayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+											</li>
+											<li>
+												<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="forwardrate2" class="tsd-anchor"></a>
+					<h3>forward<wbr>Rate2</h3>
+					<div class="tsd-signature tsd-kind-icon">forward<wbr>Rate2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#forwardrate2">forwardRate2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:84</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, p<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, resultDayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>p: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+											</li>
+											<li>
+												<h5>resultDayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+											</li>
+											<li>
+												<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="forwardrate3" class="tsd-anchor"></a>
+					<h3>forward<wbr>Rate3</h3>
+					<div class="tsd-signature tsd-kind-icon">forward<wbr>Rate3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#forwardrate3">forwardRate3</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:87</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t1<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, t2<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>t1: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+											</li>
+											<li>
+												<h5>t2: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+											</li>
+											<li>
+												<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+											</li>
+											<li>
+												<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="freeze" class="tsd-anchor"></a>
+					<h3>freeze</h3>
+					<div class="tsd-signature tsd-kind-icon">freeze<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#freeze">freeze</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:98</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#isdisposed">isDisposed</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:107</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="jumpdates" class="tsd-anchor"></a>
+					<h3>jump<wbr>Dates</h3>
+					<div class="tsd-signature tsd-kind-icon">jump<wbr>Dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#jumpdates">jumpDates</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:90</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="jumptimes" class="tsd-anchor"></a>
+					<h3>jump<wbr>Times</h3>
+					<div class="tsd-signature tsd-kind-icon">jump<wbr>Times<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#jumptimes">jumpTimes</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:91</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="maxtime" class="tsd-anchor"></a>
+					<h3>max<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#maxtime">maxTime</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notifyobservers" class="tsd-anchor"></a>
+					<h3>notify<wbr>Observers</h3>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#notifyobservers">notifyObservers</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="recalculate" class="tsd-anchor"></a>
+					<h3>recalculate</h3>
+					<div class="tsd-signature tsd-kind-icon">recalculate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#recalculate">recalculate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:97</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="referencedate" class="tsd-anchor"></a>
+					<h3>reference<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">reference<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#referencedate">referenceDate</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:58</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerobserver" class="tsd-anchor"></a>
+					<h3>register<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#registerobserver">registerObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:29</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwith" class="tsd-anchor"></a>
+					<h3>register<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#registerwith">registerWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registerwithobservables" class="tsd-anchor"></a>
+					<h3>register<wbr>With<wbr>Observables</h3>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#registerwithobservables">registerWithObservables</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:33</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="setjumps" class="tsd-anchor"></a>
+					<h3>set<wbr>Jumps</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Jumps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#setjumps">setJumps</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:95</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="settlementdays" class="tsd-anchor"></a>
+					<h3>settlement<wbr>Days</h3>
+					<div class="tsd-signature tsd-kind-icon">settlement<wbr>Days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#settlementdays">settlementDays</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:60</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="timefromreference" class="tsd-anchor"></a>
+					<h3>time<wbr>From<wbr>Reference</h3>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>From<wbr>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#timefromreference">timeFromReference</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>date: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit1" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init1</h3>
+					<div class="tsd-signature tsd-kind-icon">ts<wbr>Init1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#tsinit1">tsInit1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit2" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init2</h3>
+					<div class="tsd-signature tsd-kind-icon">ts<wbr>Init2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#tsinit2">tsInit2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:46</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>referenceDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+											</li>
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="tsinit3" class="tsd-anchor"></a>
+					<h3>ts<wbr>Init3</h3>
+					<div class="tsd-signature tsd-kind-icon">ts<wbr>Init3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#tsinit3">tsInit3</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+											</li>
+											<li>
+												<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+											</li>
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructure_.termstructure.html" class="tsd-signature-type">TermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unfreeze" class="tsd-anchor"></a>
+					<h3>unfreeze</h3>
+					<div class="tsd-signature tsd-kind-icon">unfreeze<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#unfreeze">unfreeze</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:99</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterobserver" class="tsd-anchor"></a>
+					<h3>unregister<wbr>Observer</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#unregisterobserver">unregisterObserver</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>o: <a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwith" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#unregisterwith">unregisterWith</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:34</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>h: <a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="unregisterwithall" class="tsd-anchor"></a>
+					<h3>unregister<wbr>With<wbr>All</h3>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#unregisterwithall">unregisterWithAll</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:35</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ytsinit1" class="tsd-anchor"></a>
+					<h3>yts<wbr>Init1</h3>
+					<div class="tsd-signature tsd-kind-icon">yts<wbr>Init1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#ytsinit1">ytsInit1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:64</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumps: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ytsinit2" class="tsd-anchor"></a>
+					<h3>yts<wbr>Init2</h3>
+					<div class="tsd-signature tsd-kind-icon">yts<wbr>Init2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#ytsinit2">ytsInit2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>referenceDate: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+											</li>
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumps: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ytsinit3" class="tsd-anchor"></a>
+					<h3>yts<wbr>Init3</h3>
+					<div class="tsd-signature tsd-kind-icon">yts<wbr>Init3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#ytsinit3">ytsInit3</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+											</li>
+											<li>
+												<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+											</li>
+											<li>
+												<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumps: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="zerorate1" class="tsd-anchor"></a>
+					<h3>zero<wbr>Rate1</h3>
+					<div class="tsd-signature tsd-kind-icon">zero<wbr>Rate1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#zerorate1">zeroRate1</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:75</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, resultDayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>d: <span class="tsd-signature-type">Date</span></h5>
+											</li>
+											<li>
+												<h5>resultDayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+											</li>
+											<li>
+												<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+											</li>
+											<li>
+												<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="zerorate2" class="tsd-anchor"></a>
+					<h3>zero<wbr>Rate2</h3>
+					<div class="tsd-signature tsd-kind-icon">zero<wbr>Rate2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#zerorate2">zeroRate2</a></p>
+						<ul>
+							<li>Defined in mixins/ql/termstructures/yieldtermstructurelazyobject.ts:78</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, comp<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a>, freq<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a>, extrapolate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+											</li>
+											<li>
+												<h5>comp: <a href="../enums/_ql_compounding_.compounding.html" class="tsd-signature-type">Compounding</a></h5>
+											</li>
+											<li>
+												<h5>freq: <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></h5>
+											</li>
+											<li>
+												<h5>extrapolate: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_interestrate_.interestrate.html" class="tsd-signature-type">InterestRate</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="discountimpl" class="tsd-anchor"></a>
+					<h3>discount<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">discount<wbr>Impl<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#discountimpl">discountImpl</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:179</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fbdcinit1" class="tsd-anchor"></a>
+					<h3>fbdc<wbr>Init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fbdc<wbr>Init1<span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bondHelpers<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_bondhelpers_.bondhelper.html" class="tsd-signature-type">BondHelper</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, fittingMethod<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxEvaluations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, simplexLambda<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxStationaryStateIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html" class="tsd-signature-type">FittedBondDiscountCurve</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:74</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></h5>
+								</li>
+								<li>
+									<h5>calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5>bondHelpers: <a href="_ql_termstructures_yield_bondhelpers_.bondhelper.html" class="tsd-signature-type">BondHelper</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>fittingMethod: <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxEvaluations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;10000</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> simplexLambda: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxStationaryStateIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html" class="tsd-signature-type">FittedBondDiscountCurve</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fbdcinit2" class="tsd-anchor"></a>
+					<h3>fbdc<wbr>Init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fbdc<wbr>Init2<span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, bondHelpers<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_bondhelpers_.bondhelper.html" class="tsd-signature-type">BondHelper</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, fittingMethod<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a>, accuracy<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxEvaluations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, guess<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, simplexLambda<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, maxStationaryStateIterations<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html" class="tsd-signature-type">FittedBondDiscountCurve</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>referenceDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>bondHelpers: <a href="_ql_termstructures_yield_bondhelpers_.bondhelper.html" class="tsd-signature-type">BondHelper</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>fittingMethod: <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> accuracy: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1e-10</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxEvaluations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;10000</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> guess: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> simplexLambda: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxStationaryStateIterations: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html" class="tsd-signature-type">FittedBondDiscountCurve</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fitresults" class="tsd-anchor"></a>
+					<h3>fit<wbr>Results</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fit<wbr>Results<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:127</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-signature-type">FittingMethod</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="maxdate" class="tsd-anchor"></a>
+					<h3>max<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">max<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#maxdate">maxDate</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:122</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="numberofbonds" class="tsd-anchor"></a>
+					<h3>number<wbr>OfBonds</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">number<wbr>OfBonds<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:118</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="performcalculations" class="tsd-anchor"></a>
+					<h3>perform<wbr>Calculations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">perform<wbr>Calculations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#performcalculations">performCalculations</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:143</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setup</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:137</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html">YieldTermStructureLazyObject</a>.<a href="_mixins_ql_termstructures_yieldtermstructurelazyobject_.yieldtermstructurelazyobject.html#update">update</a></p>
+								<ul>
+									<li>Defined in ql/termstructures/yield/fittedbonddiscountcurve.ts:132</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_termstructures_yield_fittedbonddiscountcurve_.html">"ql/termstructures/yield/fittedbonddiscountcurve"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html" class="tsd-kind-icon">Fitted<wbr>Bond<wbr>Discount<wbr>Curve</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.fittingmethod.html" class="tsd-kind-icon">Fitting<wbr>Method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_accuracy" class="tsd-kind-icon">_accuracy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_alwaysforward" class="tsd-kind-icon">_always<wbr>Forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_bondhelpers" class="tsd-kind-icon">_bond<wbr>Helpers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_calculated" class="tsd-kind-icon">_calculated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_calendar" class="tsd-kind-icon">_calendar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_extrapolate" class="tsd-kind-icon">_extrapolate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_fittingmethod" class="tsd-kind-icon">_fitting<wbr>Method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_frozen" class="tsd-kind-icon">_frozen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_guesssolution" class="tsd-kind-icon">_guess<wbr>Solution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumpdates" class="tsd-kind-icon">_jump<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumptimes" class="tsd-kind-icon">_jump<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_jumps" class="tsd-kind-icon">_jumps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_latestreference" class="tsd-kind-icon">_latest<wbr>Reference</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxdate" class="tsd-kind-icon">_max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxevaluations" class="tsd-kind-icon">_max<wbr>Evaluations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_maxstationarystateiterations" class="tsd-kind-icon">_max<wbr>Stationary<wbr>State<wbr>Iterations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_moving" class="tsd-kind-icon">_moving</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_njumps" class="tsd-kind-icon">_n<wbr>Jumps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_observables" class="tsd-kind-icon">_observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_referencedate" class="tsd-kind-icon">_reference<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_settlementdays" class="tsd-kind-icon">_settlement<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_simplexlambda" class="tsd-kind-icon">_simplex<wbr>Lambda</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#_updated" class="tsd-kind-icon">_updated</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#allowsextrapolation" class="tsd-kind-icon">allows<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#alwaysforwardnotifications" class="tsd-kind-icon">always<wbr>Forward<wbr>Notifications</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#calendar" class="tsd-kind-icon">calendar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#checkrange1" class="tsd-kind-icon">check<wbr>Range1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#checkrange2" class="tsd-kind-icon">check<wbr>Range2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#disableextrapolation" class="tsd-kind-icon">disable<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discount1" class="tsd-kind-icon">discount1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discount2" class="tsd-kind-icon">discount2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#enableextrapolation" class="tsd-kind-icon">enable<wbr>Extrapolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate1" class="tsd-kind-icon">forward<wbr>Rate1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate2" class="tsd-kind-icon">forward<wbr>Rate2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#forwardrate3" class="tsd-kind-icon">forward<wbr>Rate3</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#freeze" class="tsd-kind-icon">freeze</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#jumpdates" class="tsd-kind-icon">jump<wbr>Dates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#jumptimes" class="tsd-kind-icon">jump<wbr>Times</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#maxtime" class="tsd-kind-icon">max<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#recalculate" class="tsd-kind-icon">recalculate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#referencedate" class="tsd-kind-icon">reference<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#setjumps" class="tsd-kind-icon">set<wbr>Jumps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#settlementdays" class="tsd-kind-icon">settlement<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#timefromreference" class="tsd-kind-icon">time<wbr>From<wbr>Reference</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit1" class="tsd-kind-icon">ts<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit2" class="tsd-kind-icon">ts<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#tsinit3" class="tsd-kind-icon">ts<wbr>Init3</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unfreeze" class="tsd-kind-icon">unfreeze</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit1" class="tsd-kind-icon">yts<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit2" class="tsd-kind-icon">yts<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#ytsinit3" class="tsd-kind-icon">yts<wbr>Init3</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#zerorate1" class="tsd-kind-icon">zero<wbr>Rate1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#zerorate2" class="tsd-kind-icon">zero<wbr>Rate2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#discountimpl" class="tsd-kind-icon">discount<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fbdcinit1" class="tsd-kind-icon">fbdc<wbr>Init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fbdcinit2" class="tsd-kind-icon">fbdc<wbr>Init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#fitresults" class="tsd-kind-icon">fit<wbr>Results</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#maxdate" class="tsd-kind-icon">max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#numberofbonds" class="tsd-kind-icon">number<wbr>OfBonds</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#performcalculations" class="tsd-kind-icon">perform<wbr>Calculations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#setup" class="tsd-kind-icon">setup</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_termstructures_yield_fittedbonddiscountcurve_.fittedbonddiscountcurve.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

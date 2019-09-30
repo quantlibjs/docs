@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AmericanPayoffAtExpiry | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_pricingengines_americanpayoffatexpiry_.html">&quot;ql/pricingengines/americanpayoffatexpiry&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html">AmericanPayoffAtExpiry</a>
+				</li>
+			</ul>
+			<h1>Class AmericanPayoffAtExpiry</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Analytic formula for American exercise payoff at-expiry options
+						todo calculate greeks</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">AmericanPayoffAtExpiry</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_d1" class="tsd-kind-icon">_<wbr>D1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_d2" class="tsd-kind-icon">_<wbr>D2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_k" class="tsd-kind-icon">_K</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_x" class="tsd-kind-icon">_X</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_y" class="tsd-kind-icon">_Y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_cum_d1" class="tsd-kind-icon">_cum_<wbr>d1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_cum_d2" class="tsd-kind-icon">_cum_<wbr>d2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_discount" class="tsd-kind-icon">_discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_dividenddiscount" class="tsd-kind-icon">_dividend<wbr>Discount</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_forward" class="tsd-kind-icon">_forward</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_inthemoney" class="tsd-kind-icon">_in<wbr>The<wbr>Money</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_knock_in" class="tsd-kind-icon">_knock_<wbr>in</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_log_h_s" class="tsd-kind-icon">_log_<wbr><wbr>H_S</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_mu" class="tsd-kind-icon">_mu</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_n_d1" class="tsd-kind-icon">_n_<wbr>d1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_n_d2" class="tsd-kind-icon">_n_<wbr>d2</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_spot" class="tsd-kind-icon">_spot</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_stddev" class="tsd-kind-icon">_std<wbr>Dev</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_strike" class="tsd-kind-icon">_strike</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_variance" class="tsd-kind-icon">_variance</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#value" class="tsd-kind-icon">value</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>American<wbr>Payoff<wbr>AtExpiry<span class="tsd-signature-symbol">(</span>spot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, discount<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a>, dividendDiscount<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a>, variance<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, payoff<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a>, knock_in<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html" class="tsd-signature-type">AmericanPayoffAtExpiry</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:15</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spot: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>discount: <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h5>
+								</li>
+								<li>
+									<h5>dividendDiscount: <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></h5>
+								</li>
+								<li>
+									<h5>variance: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>payoff: <a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> knock_in: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html" class="tsd-signature-type">AmericanPayoffAtExpiry</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_d1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _<wbr>D1</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>D1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:210</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_d2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _<wbr>D2</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>D2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:211</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_k" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _K</h3>
+					<div class="tsd-signature tsd-kind-icon">_K<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:204</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_x" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _X</h3>
+					<div class="tsd-signature tsd-kind-icon">_X<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:223</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_y" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _Y</h3>
+					<div class="tsd-signature tsd-kind-icon">_Y<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:222</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_cum_d1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cum_<wbr>d1</h3>
+					<div class="tsd-signature tsd-kind-icon">_cum_<wbr>d1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:213</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_cum_d2" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cum_<wbr>d2</h3>
+					<div class="tsd-signature tsd-kind-icon">_cum_<wbr>d2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:215</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_discount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:196</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_dividenddiscount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dividend<wbr>Discount</h3>
+					<div class="tsd-signature tsd-kind-icon">_dividend<wbr>Discount<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#discountfactor" class="tsd-signature-type">DiscountFactor</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:197</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_forward" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _forward</h3>
+					<div class="tsd-signature tsd-kind-icon">_forward<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:200</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_inthemoney" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _in<wbr>The<wbr>Money</h3>
+					<div class="tsd-signature tsd-kind-icon">_in<wbr>The<wbr>Money<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:221</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_knock_in" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _knock_<wbr>in</h3>
+					<div class="tsd-signature tsd-kind-icon">_knock_<wbr>in<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:225</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_log_h_s" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _log_<wbr><wbr>H_S</h3>
+					<div class="tsd-signature tsd-kind-icon">_log_<wbr><wbr>H_S<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:208</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_mu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _mu</h3>
+					<div class="tsd-signature tsd-kind-icon">_mu<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:206</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_n_d1" class="tsd-anchor"></a>
+					<h3>_n_<wbr>d1</h3>
+					<div class="tsd-signature tsd-kind-icon">_n_<wbr>d1<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:217</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_n_d2" class="tsd-anchor"></a>
+					<h3>_n_<wbr>d2</h3>
+					<div class="tsd-signature tsd-kind-icon">_n_<wbr>d2<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:219</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_spot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _spot</h3>
+					<div class="tsd-signature tsd-kind-icon">_spot<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:195</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_stddev" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _std<wbr>Dev</h3>
+					<div class="tsd-signature tsd-kind-icon">_std<wbr>Dev<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:201</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_strike" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _strike</h3>
+					<div class="tsd-signature tsd-kind-icon">_strike<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:203</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_variance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _variance</h3>
+					<div class="tsd-signature tsd-kind-icon">_variance<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:198</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/americanpayoffatexpiry.ts:190</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_pricingengines_americanpayoffatexpiry_.html">"ql/pricingengines/americanpayoffatexpiry"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html" class="tsd-kind-icon">American<wbr>Payoff<wbr>AtExpiry</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_d1" class="tsd-kind-icon">_<wbr>D1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_d2" class="tsd-kind-icon">_<wbr>D2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_k" class="tsd-kind-icon">_K</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_x" class="tsd-kind-icon">_X</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_y" class="tsd-kind-icon">_Y</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_cum_d1" class="tsd-kind-icon">_cum_<wbr>d1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_cum_d2" class="tsd-kind-icon">_cum_<wbr>d2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_discount" class="tsd-kind-icon">_discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_dividenddiscount" class="tsd-kind-icon">_dividend<wbr>Discount</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_forward" class="tsd-kind-icon">_forward</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_inthemoney" class="tsd-kind-icon">_in<wbr>The<wbr>Money</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_knock_in" class="tsd-kind-icon">_knock_<wbr>in</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_log_h_s" class="tsd-kind-icon">_log_<wbr><wbr>H_S</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_mu" class="tsd-kind-icon">_mu</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_n_d1" class="tsd-kind-icon">_n_<wbr>d1</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_n_d2" class="tsd-kind-icon">_n_<wbr>d2</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_spot" class="tsd-kind-icon">_spot</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_stddev" class="tsd-kind-icon">_std<wbr>Dev</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_strike" class="tsd-kind-icon">_strike</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#_variance" class="tsd-kind-icon">_variance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_americanpayoffatexpiry_.americanpayoffatexpiry.html#value" class="tsd-kind-icon">value</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

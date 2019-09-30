@@ -1,0 +1,642 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MakeCreditDefaultSwap | quantlib.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">quantlib.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_ql_instruments_makecds_.html">&quot;ql/instruments/makecds&quot;</a>
+				</li>
+				<li>
+					<a href="_ql_instruments_makecds_.makecreditdefaultswap.html">MakeCreditDefaultSwap</a>
+				</li>
+			</ul>
+			<h1>Class MakeCreditDefaultSwap</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>helper class</p>
+					</div>
+					<p>This class provides a more comfortable way
+					to instantiate standard cds.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MakeCreditDefaultSwap</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_std_functional_.nullaryfunction.html" class="tsd-signature-type">NullaryFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_instruments_creditdefaultswap_.creditdefaultswap.html" class="tsd-signature-type">CreditDefaultSwap</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_couponrate" class="tsd-kind-icon">_coupon<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_coupontenor" class="tsd-kind-icon">_coupon<wbr>Tenor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_engine" class="tsd-kind-icon">_engine</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_lastperioddaycounter" class="tsd-kind-icon">_last<wbr>Period<wbr>Day<wbr>Counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_nominal" class="tsd-kind-icon">_nominal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_side" class="tsd-kind-icon">_side</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_tenor" class="tsd-kind-icon">_tenor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_termdate" class="tsd-kind-icon">_term<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_upfrontrate" class="tsd-kind-icon">_upfront<wbr>Rate</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#f" class="tsd-kind-icon">f</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#init2" class="tsd-kind-icon">init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withcoupontenor" class="tsd-kind-icon">with<wbr>Coupon<wbr>Tenor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withdaycounter" class="tsd-kind-icon">with<wbr>Day<wbr>Counter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withlastperioddaycounter" class="tsd-kind-icon">with<wbr>Last<wbr>Period<wbr>Day<wbr>Counter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withnominal" class="tsd-kind-icon">with<wbr>Nominal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withpricingengine" class="tsd-kind-icon">with<wbr>Pricing<wbr>Engine</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withside" class="tsd-kind-icon">with<wbr>Side</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withupfrontrate" class="tsd-kind-icon">with<wbr>Upfront<wbr>Rate</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_couponrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _coupon<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_coupon<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:123</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_coupontenor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _coupon<wbr>Tenor</h3>
+					<div class="tsd-signature tsd-kind-icon">_coupon<wbr>Tenor<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:122</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_daycounter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">_day<wbr>Counter<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:125</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_engine" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _engine</h3>
+					<div class="tsd-signature tsd-kind-icon">_engine<span class="tsd-signature-symbol">:</span> <a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:128</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_lastperioddaycounter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _last<wbr>Period<wbr>Day<wbr>Counter</h3>
+					<div class="tsd-signature tsd-kind-icon">_last<wbr>Period<wbr>Day<wbr>Counter<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:126</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_nominal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _nominal</h3>
+					<div class="tsd-signature tsd-kind-icon">_nominal<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:119</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_side" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _side</h3>
+					<div class="tsd-signature tsd-kind-icon">_side<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_default_.protection.side.html" class="tsd-signature-type">Side</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:118</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_tenor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tenor</h3>
+					<div class="tsd-signature tsd-kind-icon">_tenor<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:120</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_termdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _term<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">_term<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:121</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_upfrontrate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _upfront<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_upfront<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/instruments/makecds.ts:124</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="f" class="tsd-anchor"></a>
+					<h3>f</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">f<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_creditdefaultswap_.creditdefaultswap.html" class="tsd-signature-type">CreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_std_functional_.nullaryfunction.html">NullaryFunction</a>.<a href="../interfaces/_std_functional_.nullaryfunction.html#f">f</a></p>
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:92</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_creditdefaultswap_.creditdefaultswap.html" class="tsd-signature-type">CreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init1" class="tsd-anchor"></a>
+					<h3>init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>tenor<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, couponRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:31</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tenor: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+								<li>
+									<h5>couponRate: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init2" class="tsd-anchor"></a>
+					<h3>init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init2<span class="tsd-signature-symbol">(</span>termDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, couponRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:44</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>termDate: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>couponRate: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withcoupontenor" class="tsd-anchor"></a>
+					<h3>with<wbr>Coupon<wbr>Tenor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Coupon<wbr>Tenor<span class="tsd-signature-symbol">(</span>couponTenor<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:71</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>couponTenor: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withdaycounter" class="tsd-anchor"></a>
+					<h3>with<wbr>Day<wbr>Counter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Day<wbr>Counter<span class="tsd-signature-symbol">(</span>dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:76</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withlastperioddaycounter" class="tsd-anchor"></a>
+					<h3>with<wbr>Last<wbr>Period<wbr>Day<wbr>Counter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Last<wbr>Period<wbr>Day<wbr>Counter<span class="tsd-signature-symbol">(</span>lastPeriodDayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:81</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lastPeriodDayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withnominal" class="tsd-anchor"></a>
+					<h3>with<wbr>Nominal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Nominal<span class="tsd-signature-symbol">(</span>nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:66</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withpricingengine" class="tsd-anchor"></a>
+					<h3>with<wbr>Pricing<wbr>Engine</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Pricing<wbr>Engine<span class="tsd-signature-symbol">(</span>engine<span class="tsd-signature-symbol">: </span><a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:87</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>engine: <a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withside" class="tsd-anchor"></a>
+					<h3>with<wbr>Side</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Side<span class="tsd-signature-symbol">(</span>side<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_default_.protection.side.html" class="tsd-signature-type">Side</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>side: <a href="../enums/_ql_default_.protection.side.html" class="tsd-signature-type">Side</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="withupfrontrate" class="tsd-anchor"></a>
+					<h3>with<wbr>Upfront<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Upfront<wbr>Rate<span class="tsd-signature-symbol">(</span>upfrontRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/instruments/makecds.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>upfrontRate: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-signature-type">MakeCreditDefaultSwap</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_ql_instruments_makecds_.html">"ql/instruments/makecds"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_instruments_makecds_.makecreditdefaultswap.html" class="tsd-kind-icon">Make<wbr>Credit<wbr>Default<wbr>Swap</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_couponrate" class="tsd-kind-icon">_coupon<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_coupontenor" class="tsd-kind-icon">_coupon<wbr>Tenor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_daycounter" class="tsd-kind-icon">_day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_engine" class="tsd-kind-icon">_engine</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_lastperioddaycounter" class="tsd-kind-icon">_last<wbr>Period<wbr>Day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_nominal" class="tsd-kind-icon">_nominal</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_side" class="tsd-kind-icon">_side</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_tenor" class="tsd-kind-icon">_tenor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_termdate" class="tsd-kind-icon">_term<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#_upfrontrate" class="tsd-kind-icon">_upfront<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#f" class="tsd-kind-icon">f</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#init1" class="tsd-kind-icon">init1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#init2" class="tsd-kind-icon">init2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withcoupontenor" class="tsd-kind-icon">with<wbr>Coupon<wbr>Tenor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withdaycounter" class="tsd-kind-icon">with<wbr>Day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withlastperioddaycounter" class="tsd-kind-icon">with<wbr>Last<wbr>Period<wbr>Day<wbr>Counter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withnominal" class="tsd-kind-icon">with<wbr>Nominal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withpricingengine" class="tsd-kind-icon">with<wbr>Pricing<wbr>Engine</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withside" class="tsd-kind-icon">with<wbr>Side</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_instruments_makecds_.makecreditdefaultswap.html#withupfrontrate" class="tsd-kind-icon">with<wbr>Upfront<wbr>Rate</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
