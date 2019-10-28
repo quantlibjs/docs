@@ -81,12 +81,14 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#column" class="tsd-kind-icon">column</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#columns" class="tsd-kind-icon">columns</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#copyv2col" class="tsd-kind-icon">copy<wbr>V2Col</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#determinant" class="tsd-kind-icon">determinant</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#diagonal" class="tsd-kind-icon">diagonal</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#divscalar" class="tsd-kind-icon">div<wbr>Scalar</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#fill" class="tsd-kind-icon">fill</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#from" class="tsd-kind-icon">from</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#from1d" class="tsd-kind-icon">from1D</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#identitymatrix" class="tsd-kind-icon">identity<wbr>Matrix</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#inverse" class="tsd-kind-icon">inverse</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#ismatrix" class="tsd-kind-icon">is<wbr>Matrix</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#max" class="tsd-kind-icon">max</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_ql_math_matrix_.array2d.html#min" class="tsd-kind-icon">min</a></li>
@@ -253,6 +255,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="determinant" class="tsd-anchor"></a>
+					<h3>determinant</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">determinant<span class="tsd-signature-symbol">(</span>m<span class="tsd-signature-symbol">: </span><a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/matrix.ts:385</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m: <a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="diagonal" class="tsd-anchor"></a>
 					<h3>diagonal</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -407,6 +432,29 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rows: <a href="_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="inverse" class="tsd-anchor"></a>
+					<h3>inverse</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">inverse<span class="tsd-signature-symbol">(</span>m<span class="tsd-signature-symbol">: </span><a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/matrix.ts:343</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m: <a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
@@ -935,6 +983,9 @@
 						<a href="_ql_math_matrix_.array2d.html#copyv2col" class="tsd-kind-icon">copy<wbr>V2Col</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_ql_math_matrix_.array2d.html#determinant" class="tsd-kind-icon">determinant</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_ql_math_matrix_.array2d.html#diagonal" class="tsd-kind-icon">diagonal</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -951,6 +1002,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_ql_math_matrix_.array2d.html#identitymatrix" class="tsd-kind-icon">identity<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_ql_math_matrix_.array2d.html#inverse" class="tsd-kind-icon">inverse</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_ql_math_matrix_.array2d.html#ismatrix" class="tsd-kind-icon">is<wbr>Matrix</a>
@@ -1080,7 +1134,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('create', 'UA-87290595-2', '');
         ga('send', 'pageview');
     </script>
 </body>

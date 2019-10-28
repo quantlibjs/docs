@@ -102,16 +102,16 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#finitedifferenceepsilon" class="tsd-kind-icon">finite<wbr>Difference<wbr>Epsilon</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#finitedifferenceepsilon" class="tsd-kind-icon">finite<wbr>Difference<wbr>Epsilon</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#gradient" class="tsd-kind-icon">gradient</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#jacobian" class="tsd-kind-icon">jacobian</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#value" class="tsd-kind-icon">value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#valueandgradient" class="tsd-kind-icon">value<wbr>And<wbr>Gradient</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#values" class="tsd-kind-icon">values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#values" class="tsd-kind-icon">values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#valuesandjacobian" class="tsd-kind-icon">values<wbr>And<wbr>Jacobian</a></li>
 							</ul>
 						</section>
@@ -124,13 +124,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Calibration<wbr>Function<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_ql_models_model_.calibratedmodel.html" class="tsd-signature-type">CalibratedModel</a>, h<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_models_calibrationhelper_.html#calibrationhelper" class="tsd-signature-type">CalibrationHelper</a><span class="tsd-signature-symbol">[]</span>, weights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, projection<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_projection_.projection.html" class="tsd-signature-type">Projection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html" class="tsd-signature-type">CalibrationFunction</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Calibration<wbr>Function<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="_ql_models_model_.calibratedmodel.html" class="tsd-signature-type">CalibratedModel</a>, h<span class="tsd-signature-symbol">: </span><a href="_ql_models_calibrationhelperbase_.calibrationhelperbase.html" class="tsd-signature-type">CalibrationHelperBase</a><span class="tsd-signature-symbol">[]</span>, weights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, projection<span class="tsd-signature-symbol">: </span><a href="_ql_math_optimization_projection_.projection.html" class="tsd-signature-type">Projection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html" class="tsd-signature-type">CalibrationFunction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/models/model.ts:220</li>
+									<li>Defined in ql/models/model.ts:249</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -139,7 +139,7 @@
 									<h5>model: <a href="_ql_models_model_.calibratedmodel.html" class="tsd-signature-type">CalibratedModel</a></h5>
 								</li>
 								<li>
-									<h5>h: <a href="../modules/_ql_models_calibrationhelper_.html#calibrationhelper" class="tsd-signature-type">CalibrationHelper</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>h: <a href="_ql_models_calibrationhelperbase_.calibrationhelperbase.html" class="tsd-signature-type">CalibrationHelperBase</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>weights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
@@ -188,7 +188,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="dispose" class="tsd-anchor"></a>
@@ -208,25 +208,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="finitedifferenceepsilon" class="tsd-anchor"></a>
 					<h3>finite<wbr>Difference<wbr>Epsilon</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">finite<wbr>Difference<wbr>Epsilon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#finitedifferenceepsilon">finiteDifferenceEpsilon</a></p>
+								<p>Overrides <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#finitedifferenceepsilon">finiteDifferenceEpsilon</a></p>
 								<ul>
-									<li>Defined in ql/math/optimization/costfunction.ts:81</li>
+									<li>Defined in ql/models/model.ts:280</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Default epsilon for finite difference method</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
 						</li>
 					</ul>
@@ -297,29 +292,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="value" class="tsd-anchor"></a>
 					<h3>value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#value">value</a></p>
+								<p>Overrides <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#value">value</a></p>
 								<ul>
-									<li>Defined in ql/math/optimization/costfunction.ts:12</li>
+									<li>Defined in ql/models/model.ts:260</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>method to overload to compute the cost function value in x</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>params: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -359,24 +349,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="values" class="tsd-anchor"></a>
 					<h3>values</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#values">values</a></p>
+								<p>Overrides <a href="_ql_math_optimization_costfunction_.costfunction.html">CostFunction</a>.<a href="_ql_math_optimization_costfunction_.costfunction.html#values">values</a></p>
 								<ul>
-									<li>Defined in ql/math/optimization/costfunction.ts:20</li>
+									<li>Defined in ql/models/model.ts:270</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>params: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -451,7 +441,7 @@
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#dispose" class="tsd-kind-icon">dispose</a>
 									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#finitedifferenceepsilon" class="tsd-kind-icon">finite<wbr>Difference<wbr>Epsilon</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -460,13 +450,13 @@
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#jacobian" class="tsd-kind-icon">jacobian</a>
 									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#value" class="tsd-kind-icon">value</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#valueandgradient" class="tsd-kind-icon">value<wbr>And<wbr>Gradient</a>
 									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 										<a href="_ql_models_equity_gjrgarchmodel_.gjrgarchmodel.calibrationfunction.html#values" class="tsd-kind-icon">values</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -552,7 +542,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('create', 'UA-87290595-2', '');
         ga('send', 'pageview');
     </script>
 </body>

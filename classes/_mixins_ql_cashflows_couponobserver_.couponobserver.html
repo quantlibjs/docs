@@ -76,6 +76,9 @@
 						<span class="target">CouponObserver</span>
 						<ul class="tsd-hierarchy">
 							<li>
+								<a href="_ql_cashflows_floatingratecoupon_.floatingratecoupon.html" class="tsd-signature-type">FloatingRateCoupon</a>
+							</li>
+							<li>
 								<a href="_ql_cashflows_inflationcoupon_.inflationcoupon.html" class="tsd-signature-type">InflationCoupon</a>
 							</li>
 						</ul>
@@ -215,7 +218,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
 					<a name="_observables" class="tsd-anchor"></a>
 					<h3>_observables</h3>
-					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observable&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set()</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in mixins/ql/cashflows/couponobserver.ts:74</li>
@@ -225,7 +228,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
 					<a name="_observers" class="tsd-anchor"></a>
 					<h3>_observers</h3>
-					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Observer&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set()</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in mixins/ql/cashflows/couponobserver.ts:72</li>
@@ -572,7 +575,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>paymentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, accrualStartDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, accrualEndDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, refPeriodStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, refPeriodEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, exCouponDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>paymentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, accrualStartDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, accrualEndDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, refPeriodStart<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, refPeriodEnd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, exCouponDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -591,13 +594,13 @@
 												<h5>accrualEndDate: <span class="tsd-signature-type">Date</span></h5>
 											</li>
 											<li>
-												<h5>refPeriodStart: <span class="tsd-signature-type">Date</span></h5>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> refPeriodStart: <span class="tsd-signature-type">Date</span></h5>
 											</li>
 											<li>
-												<h5>refPeriodEnd: <span class="tsd-signature-type">Date</span></h5>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> refPeriodEnd: <span class="tsd-signature-type">Date</span></h5>
 											</li>
 											<li>
-												<h5>exCouponDate: <span class="tsd-signature-type">Date</span></h5>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> exCouponDate: <span class="tsd-signature-type">Date</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_coupon_.coupon.html" class="tsd-signature-type">Coupon</a></h4>
@@ -1260,7 +1263,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('create', 'UA-87290595-2', '');
         ga('send', 'pageview');
     </script>
 </body>

@@ -132,6 +132,9 @@
 										<a href="_ql_math_solvers1d_newton_.newton.html" class="tsd-signature-type">Newton</a>
 									</li>
 									<li>
+										<a href="_ql_math_solvers1d_halleysafe_.halleysafe.html" class="tsd-signature-type">HalleySafe</a>
+									</li>
+									<li>
 										<a href="_ql_math_solvers1d_bisection_.bisection.html" class="tsd-signature-type">Bisection</a>
 									</li>
 									<li>
@@ -139,6 +142,9 @@
 									</li>
 									<li>
 										<a href="_ql_math_solvers1d_finitedifferencenewtonsafe_.finitedifferencenewtonsafe.html" class="tsd-signature-type">FiniteDifferenceNewtonSafe</a>
+									</li>
+									<li>
+										<a href="_ql_math_solvers1d_halley_.halley.html" class="tsd-signature-type">Halley</a>
 									</li>
 									<li>
 										<a href="_ql_math_solvers1d_ridder_.ridder.html" class="tsd-signature-type">Ridder</a>
@@ -184,11 +190,15 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_math_solver1d_.solver1d.html#_enforcebounds" class="tsd-kind-icon">_enforce<wbr>Bounds</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_math_solver1d_.solver1d.html#impl" class="tsd-kind-icon">impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#lowerbound" class="tsd-kind-icon">lower<wbr>Bound</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#lowerboundenforced" class="tsd-kind-icon">lower<wbr>Bound<wbr>Enforced</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#setlowerbound" class="tsd-kind-icon">set<wbr>Lower<wbr>Bound</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#setmaxevaluations" class="tsd-kind-icon">set<wbr>Max<wbr>Evaluations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#setupperbound" class="tsd-kind-icon">set<wbr>Upper<wbr>Bound</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#solve1" class="tsd-kind-icon">solve1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#solve2" class="tsd-kind-icon">solve2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#upperbound" class="tsd-kind-icon">upper<wbr>Bound</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_solver1d_.solver1d.html#upperboundenforced" class="tsd-kind-icon">upper<wbr>Bound<wbr>Enforced</a></li>
 							</ul>
 						</section>
 					</div>
@@ -202,7 +212,7 @@
 					<div class="tsd-signature tsd-kind-icon">_evaluation<wbr>Number<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:255</li>
+							<li>Defined in ql/math/solver1d.ts:271</li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fx<wbr>Max<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:253</li>
+							<li>Defined in ql/math/solver1d.ts:269</li>
 						</ul>
 					</aside>
 				</section>
@@ -222,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fx<wbr>Min<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:252</li>
+							<li>Defined in ql/math/solver1d.ts:268</li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">_lower<wbr>Bound<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:257</li>
+							<li>Defined in ql/math/solver1d.ts:273</li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">_lower<wbr>Bound<wbr>Enforced<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:259</li>
+							<li>Defined in ql/math/solver1d.ts:275</li>
 						</ul>
 					</aside>
 				</section>
@@ -252,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">_max<wbr>Evaluations<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;MAX_FUNCTION_EVALUATIONS</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:254</li>
+							<li>Defined in ql/math/solver1d.ts:270</li>
 						</ul>
 					</aside>
 				</section>
@@ -262,7 +272,7 @@
 					<div class="tsd-signature tsd-kind-icon">_root<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:249</li>
+							<li>Defined in ql/math/solver1d.ts:265</li>
 						</ul>
 					</aside>
 				</section>
@@ -272,7 +282,7 @@
 					<div class="tsd-signature tsd-kind-icon">_upper<wbr>Bound<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:258</li>
+							<li>Defined in ql/math/solver1d.ts:274</li>
 						</ul>
 					</aside>
 				</section>
@@ -282,7 +292,7 @@
 					<div class="tsd-signature tsd-kind-icon">_upper<wbr>Bound<wbr>Enforced<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:260</li>
+							<li>Defined in ql/math/solver1d.ts:276</li>
 						</ul>
 					</aside>
 				</section>
@@ -292,7 +302,7 @@
 					<div class="tsd-signature tsd-kind-icon">_x<wbr>Max<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:251</li>
+							<li>Defined in ql/math/solver1d.ts:267</li>
 						</ul>
 					</aside>
 				</section>
@@ -302,7 +312,7 @@
 					<div class="tsd-signature tsd-kind-icon">_x<wbr>Min<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/solver1d.ts:250</li>
+							<li>Defined in ql/math/solver1d.ts:266</li>
 						</ul>
 					</aside>
 				</section>
@@ -319,7 +329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/math/solver1d.ts:239</li>
+									<li>Defined in ql/math/solver1d.ts:255</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -348,6 +358,40 @@
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lowerbound" class="tsd-anchor"></a>
+					<h3>lower<wbr>Bound</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">lower<wbr>Bound<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/solver1d.ts:239</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lowerboundenforced" class="tsd-anchor"></a>
+					<h3>lower<wbr>Bound<wbr>Enforced</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">lower<wbr>Bound<wbr>Enforced<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/solver1d.ts:247</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -539,6 +583,40 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="upperbound" class="tsd-anchor"></a>
+					<h3>upper<wbr>Bound</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">upper<wbr>Bound<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/solver1d.ts:243</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="upperboundenforced" class="tsd-anchor"></a>
+					<h3>upper<wbr>Bound<wbr>Enforced</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">upper<wbr>Bound<wbr>Enforced<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/solver1d.ts:251</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -599,6 +677,12 @@
 								<a href="_ql_math_solver1d_.solver1d.html#impl" class="tsd-kind-icon">impl</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_math_solver1d_.solver1d.html#lowerbound" class="tsd-kind-icon">lower<wbr>Bound</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_math_solver1d_.solver1d.html#lowerboundenforced" class="tsd-kind-icon">lower<wbr>Bound<wbr>Enforced</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_math_solver1d_.solver1d.html#setlowerbound" class="tsd-kind-icon">set<wbr>Lower<wbr>Bound</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -612,6 +696,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_math_solver1d_.solver1d.html#solve2" class="tsd-kind-icon">solve2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_math_solver1d_.solver1d.html#upperbound" class="tsd-kind-icon">upper<wbr>Bound</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_math_solver1d_.solver1d.html#upperboundenforced" class="tsd-kind-icon">upper<wbr>Bound<wbr>Enforced</a>
 							</li>
 						</ul>
 					</li>
@@ -700,7 +790,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('create', 'UA-87290595-2', '');
         ga('send', 'pageview');
     </script>
 </body>

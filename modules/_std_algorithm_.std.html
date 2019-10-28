@@ -78,7 +78,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#find_if" class="tsd-kind-icon">find_<wbr>if</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#is_sorted" class="tsd-kind-icon">is_<wbr>sorted</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#lower_bound" class="tsd-kind-icon">lower_<wbr>bound</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#max_element" class="tsd-kind-icon">max_<wbr>element</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#min_element" class="tsd-kind-icon">min_<wbr>element</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#partial_sort" class="tsd-kind-icon">partial_<wbr>sort</a></li>
@@ -88,7 +87,6 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#swap" class="tsd-kind-icon">swap</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#unique" class="tsd-kind-icon">unique</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#unique1" class="tsd-kind-icon">unique1</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_std_algorithm_.std.html#upper_bound" class="tsd-kind-icon">upper_<wbr>bound</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:205</li>
+									<li>Defined in std/algorithm.ts:117</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:181</li>
+									<li>Defined in std/algorithm.ts:93</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,73 +159,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
-					<a name="lower_bound" class="tsd-anchor"></a>
-					<h3>lower_<wbr>bound</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">lower_<wbr>bound<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in std/algorithm.ts:52</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Example:</p>
-									<pre><code class="language-ts"><span class="hljs-keyword">let</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>];
-std.lower_bound(data, <span class="hljs-number">0</span>, numberCmp);   <span class="hljs-comment">// 0</span>
-std.lower_bound(data, <span class="hljs-number">6</span>, numberCmp);   <span class="hljs-comment">// 3</span>
-std.lower_bound(data, <span class="hljs-number">7</span>, numberCmp);   <span class="hljs-comment">// 3</span>
-std.lower_bound(data, <span class="hljs-number">-1</span>, numberCmp);  <span class="hljs-comment">// 0</span>
-std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="hljs-comment">// 6</span></code></pre>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>element: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>value: <span class="tsd-signature-type">number</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
 					<a name="max_element" class="tsd-anchor"></a>
 					<h3>max_<wbr>element</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external">
@@ -237,7 +168,7 @@ std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:130</li>
+									<li>Defined in std/algorithm.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -260,7 +191,7 @@ std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:135</li>
+									<li>Defined in std/algorithm.ts:47</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,7 +214,7 @@ std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:152</li>
+									<li>Defined in std/algorithm.ts:64</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -318,7 +249,7 @@ std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:145</li>
+									<li>Defined in std/algorithm.ts:57</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,7 +279,7 @@ std.lower_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:214</li>
+									<li>Defined in std/algorithm.ts:126</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -412,7 +343,7 @@ std.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</span></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:167</li>
+									<li>Defined in std/algorithm.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -438,7 +369,7 @@ std.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</span></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:193</li>
+									<li>Defined in std/algorithm.ts:105</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -466,7 +397,7 @@ std.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</span></
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in std/algorithm.ts:198</li>
+									<li>Defined in std/algorithm.ts:110</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -479,73 +410,6 @@ std.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</span></
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
-					<a name="upper_bound" class="tsd-anchor"></a>
-					<h3>upper_<wbr>bound</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">upper_<wbr>bound<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in std/algorithm.ts:96</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Example:</p>
-									<pre><code class="language-ts"><span class="hljs-keyword">let</span> data = [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">7</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>];
-std.upper_bound(data, <span class="hljs-number">0</span>, numberCmp);   <span class="hljs-comment">// 1</span>
-std.upper_bound(data, <span class="hljs-number">6</span>, numberCmp);   <span class="hljs-comment">// 3</span>
-std.upper_bound(data, <span class="hljs-number">7</span>, numberCmp);   <span class="hljs-comment">// 5</span>
-std.upper_bound(data, <span class="hljs-number">-1</span>, numberCmp);  <span class="hljs-comment">// 0</span>
-std.upper_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span class="hljs-comment">// 6</span></code></pre>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>element: <span class="tsd-signature-type">number</span></h5>
-														</li>
-														<li>
-															<h5>value: <span class="tsd-signature-type">number</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -576,9 +440,6 @@ std.upper_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 						<a href="_std_algorithm_.std.html#is_sorted" class="tsd-kind-icon">is_<wbr>sorted</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
-						<a href="_std_algorithm_.std.html#lower_bound" class="tsd-kind-icon">lower_<wbr>bound</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_std_algorithm_.std.html#max_element" class="tsd-kind-icon">max_<wbr>element</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
@@ -604,9 +465,6 @@ std.upper_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_std_algorithm_.std.html#unique1" class="tsd-kind-icon">unique1</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
-						<a href="_std_algorithm_.std.html#upper_bound" class="tsd-kind-icon">upper_<wbr>bound</a>
 					</li>
 				</ul>
 			</nav>
@@ -682,7 +540,7 @@ std.upper_bound(data, <span class="hljs-number">10</span>, numberCmp);  <span cl
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '4IrXoRzLpuCL684J3Y19wWtY9W5KqlvwLH5EQuZh1-Q');
+        ga('create', 'UA-87290595-2', '');
         ga('send', 'pageview');
     </script>
 </body>
