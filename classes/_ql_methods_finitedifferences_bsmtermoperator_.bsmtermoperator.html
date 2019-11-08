@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BSMOperator | quantlib.js</title>
+	<title>BSMTermOperator | quantlib.js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_ql_methods_finitedifferences_bsmoperator_.html">&quot;ql/methods/finitedifferences/bsmoperator&quot;</a>
+					<a href="../modules/_ql_methods_finitedifferences_bsmtermoperator_.html">&quot;ql/methods/finitedifferences/bsmtermoperator&quot;</a>
 				</li>
 				<li>
-					<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html">BSMOperator</a>
+					<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html">BSMTermOperator</a>
 				</li>
 			</ul>
-			<h1>Class BSMOperator</h1>
+			<h1>Class BSMTermOperator</h1>
 		</div>
 	</div>
 </header>
@@ -74,16 +74,17 @@
 					<div class="lead">
 						<p>Black-Scholes-Merton differential operator</p>
 					</div>
+					<p>test coefficients are tested against constant BSM operator</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a>
+						<a href="_ql_methods_finitedifferences_pdeoperator_.pdeoperator.html" class="tsd-signature-type">PdeOperator</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_finitedifferences_pdebsm_.pdebsm.html" class="tsd-signature-type">PdeBSM</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">BSMOperator</span>
+								<span class="target">BSMTermOperator</span>
 							</li>
 						</ul>
 					</li>
@@ -94,51 +95,78 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Classes</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.timesetter.html" class="tsd-kind-icon">Time<wbr>Setter</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_diagonal" class="tsd-kind-icon">_diagonal</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_lowerdiagonal" class="tsd-kind-icon">_lower<wbr>Diagonal</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_n" class="tsd-kind-icon">_n</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_temp" class="tsd-kind-icon">_temp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_timesetter" class="tsd-kind-icon">_time<wbr>Setter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_upperdiagonal" class="tsd-kind-icon">_upper<wbr>Diagonal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_diagonal" class="tsd-kind-icon">_diagonal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_lowerdiagonal" class="tsd-kind-icon">_lower<wbr>Diagonal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_n" class="tsd-kind-icon">_n</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_temp" class="tsd-kind-icon">_temp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_timesetter" class="tsd-kind-icon">_time<wbr>Setter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_upperdiagonal" class="tsd-kind-icon">_upper<wbr>Diagonal</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#sor" class="tsd-kind-icon">SOR</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#applyto" class="tsd-kind-icon">apply<wbr>To</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit1" class="tsd-kind-icon">bsm<wbr>Init1</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit2" class="tsd-kind-icon">bsm<wbr>Init2</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit3" class="tsd-kind-icon">bsm<wbr>Init3</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#diagonal" class="tsd-kind-icon">diagonal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#init1" class="tsd-kind-icon">init1</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#init2" class="tsd-kind-icon">init2</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#istimedependent" class="tsd-kind-icon">is<wbr>Time<wbr>Dependent</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#lowerdiagonal" class="tsd-kind-icon">lower<wbr>Diagonal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setfirstrow" class="tsd-kind-icon">set<wbr>First<wbr>Row</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setlastrow" class="tsd-kind-icon">set<wbr>Last<wbr>Row</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setmidrow" class="tsd-kind-icon">set<wbr>Mid<wbr>Row</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setmidrows" class="tsd-kind-icon">set<wbr>Mid<wbr>Rows</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#settime" class="tsd-kind-icon">set<wbr>Time</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#solvefor1" class="tsd-kind-icon">solve<wbr>For1</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#solvefor2" class="tsd-kind-icon">solve<wbr>For2</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#upperdiagonal" class="tsd-kind-icon">upper<wbr>Diagonal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#identity" class="tsd-kind-icon">identity</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#mulscalar" class="tsd-kind-icon">mul<wbr>Scalar</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#sub" class="tsd-kind-icon">sub</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#sor" class="tsd-kind-icon">SOR</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#applyto" class="tsd-kind-icon">apply<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#diagonal" class="tsd-kind-icon">diagonal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#init2" class="tsd-kind-icon">init2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#istimedependent" class="tsd-kind-icon">is<wbr>Time<wbr>Dependent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#lowerdiagonal" class="tsd-kind-icon">lower<wbr>Diagonal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setfirstrow" class="tsd-kind-icon">set<wbr>First<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setlastrow" class="tsd-kind-icon">set<wbr>Last<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setmidrow" class="tsd-kind-icon">set<wbr>Mid<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setmidrows" class="tsd-kind-icon">set<wbr>Mid<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#settime" class="tsd-kind-icon">set<wbr>Time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#solvefor1" class="tsd-kind-icon">solve<wbr>For1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#solvefor2" class="tsd-kind-icon">solve<wbr>For2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#upperdiagonal" class="tsd-kind-icon">upper<wbr>Diagonal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#identity" class="tsd-kind-icon">identity</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new BSMTerm<wbr>Operator<span class="tsd-signature-symbol">(</span>grid<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, process<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_methods_finitedifferences_pde_.pde.html#argument_type" class="tsd-signature-type">argument_type</a>, residualTime<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html" class="tsd-signature-type">BSMTermOperator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_methods_finitedifferences_pdeoperator_.pdeoperator.html">PdeOperator</a>.<a href="_ql_methods_finitedifferences_pdeoperator_.pdeoperator.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/bsmtermoperator.ts:16</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>grid: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>process: <a href="../modules/_ql_methods_finitedifferences_pde_.pde.html#argument_type" class="tsd-signature-type">argument_type</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> residualTime: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html" class="tsd-signature-type">BSMTermOperator</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -210,7 +238,7 @@
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="sor" class="tsd-anchor"></a>
@@ -270,122 +298,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="bsminit1" class="tsd-anchor"></a>
-					<h3>bsm<wbr>Init1</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">bsm<wbr>Init1<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, dx<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, q<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, sigma<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/bsmoperator.ts:19</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>size: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
-								</li>
-								<li>
-									<h5>dx: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
-								</li>
-								<li>
-									<h5>r: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
-								</li>
-								<li>
-									<h5>q: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
-								</li>
-								<li>
-									<h5>sigma: <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="bsminit2" class="tsd-anchor"></a>
-					<h3>bsm<wbr>Init2</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">bsm<wbr>Init2<span class="tsd-signature-symbol">(</span>grid<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, residualTime<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/bsmoperator.ts:37</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-									<dt>deprecated</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>grid: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>process: <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></h5>
-								</li>
-								<li>
-									<h5>residualTime: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="bsminit3" class="tsd-anchor"></a>
-					<h3>bsm<wbr>Init3</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">bsm<wbr>Init3<span class="tsd-signature-symbol">(</span>grid<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, q<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, sigma<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/bsmoperator.ts:52</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>grid: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>r: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
-								</li>
-								<li>
-									<h5>q: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
-								</li>
-								<li>
-									<h5>sigma: <a href="../modules/_ql_types_.html#volatility" class="tsd-signature-type">Volatility</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-signature-type">BSMOperator</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -749,32 +661,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="add" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>D1<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a>, D2<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/tridiagonaloperator.ts:260</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>D1: <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h5>
-								</li>
-								<li>
-									<h5>D2: <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="identity" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> identity</h3>
@@ -804,58 +690,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="mulscalar" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> mul<wbr>Scalar</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">mul<wbr>Scalar<span class="tsd-signature-symbol">(</span>D<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a>, a<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/tridiagonaloperator.ts:276</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>D: <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h5>
-								</li>
-								<li>
-									<h5>a: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="sub" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> sub</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">sub<span class="tsd-signature-symbol">(</span>D1<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a>, D2<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/finitedifferences/tridiagonaloperator.ts:268</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>D1: <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h5>
-								</li>
-								<li>
-									<h5>D2: <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_tridiagonaloperator_.tridiagonaloperator.html" class="tsd-signature-type">TridiagonalOperator</a></h4>
-						</li>
-					</ul>
-				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -865,7 +699,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_methods_finitedifferences_bsmoperator_.html">"ql/methods/finitedifferences/bsmoperator"</a>
+						<a href="../modules/_ql_methods_finitedifferences_bsmtermoperator_.html">"ql/methods/finitedifferences/bsmtermoperator"</a>
 					</li>
 				</ul>
 			</nav>
@@ -874,97 +708,79 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html" class="tsd-kind-icon">BSMOperator</a>
+						<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html" class="tsd-kind-icon">BSMTerm<wbr>Operator</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-class">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.timesetter.html" class="tsd-kind-icon">Time<wbr>Setter</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_diagonal" class="tsd-kind-icon">_diagonal</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_diagonal" class="tsd-kind-icon">_diagonal</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_lowerdiagonal" class="tsd-kind-icon">_lower<wbr>Diagonal</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_lowerdiagonal" class="tsd-kind-icon">_lower<wbr>Diagonal</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_n" class="tsd-kind-icon">_n</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_n" class="tsd-kind-icon">_n</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_temp" class="tsd-kind-icon">_temp</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_temp" class="tsd-kind-icon">_temp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_timesetter" class="tsd-kind-icon">_time<wbr>Setter</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_timesetter" class="tsd-kind-icon">_time<wbr>Setter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#_upperdiagonal" class="tsd-kind-icon">_upper<wbr>Diagonal</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#_upperdiagonal" class="tsd-kind-icon">_upper<wbr>Diagonal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#sor" class="tsd-kind-icon">SOR</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#sor" class="tsd-kind-icon">SOR</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#applyto" class="tsd-kind-icon">apply<wbr>To</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit1" class="tsd-kind-icon">bsm<wbr>Init1</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit2" class="tsd-kind-icon">bsm<wbr>Init2</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#bsminit3" class="tsd-kind-icon">bsm<wbr>Init3</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#applyto" class="tsd-kind-icon">apply<wbr>To</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#diagonal" class="tsd-kind-icon">diagonal</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#diagonal" class="tsd-kind-icon">diagonal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#init1" class="tsd-kind-icon">init1</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#init1" class="tsd-kind-icon">init1</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#init2" class="tsd-kind-icon">init2</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#init2" class="tsd-kind-icon">init2</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#istimedependent" class="tsd-kind-icon">is<wbr>Time<wbr>Dependent</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#istimedependent" class="tsd-kind-icon">is<wbr>Time<wbr>Dependent</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#lowerdiagonal" class="tsd-kind-icon">lower<wbr>Diagonal</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#lowerdiagonal" class="tsd-kind-icon">lower<wbr>Diagonal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setfirstrow" class="tsd-kind-icon">set<wbr>First<wbr>Row</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setfirstrow" class="tsd-kind-icon">set<wbr>First<wbr>Row</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setlastrow" class="tsd-kind-icon">set<wbr>Last<wbr>Row</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setlastrow" class="tsd-kind-icon">set<wbr>Last<wbr>Row</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setmidrow" class="tsd-kind-icon">set<wbr>Mid<wbr>Row</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setmidrow" class="tsd-kind-icon">set<wbr>Mid<wbr>Row</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#setmidrows" class="tsd-kind-icon">set<wbr>Mid<wbr>Rows</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#setmidrows" class="tsd-kind-icon">set<wbr>Mid<wbr>Rows</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#settime" class="tsd-kind-icon">set<wbr>Time</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#settime" class="tsd-kind-icon">set<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#size" class="tsd-kind-icon">size</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#size" class="tsd-kind-icon">size</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#solvefor1" class="tsd-kind-icon">solve<wbr>For1</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#solvefor1" class="tsd-kind-icon">solve<wbr>For1</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#solvefor2" class="tsd-kind-icon">solve<wbr>For2</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#solvefor2" class="tsd-kind-icon">solve<wbr>For2</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#upperdiagonal" class="tsd-kind-icon">upper<wbr>Diagonal</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#add" class="tsd-kind-icon">add</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#upperdiagonal" class="tsd-kind-icon">upper<wbr>Diagonal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#identity" class="tsd-kind-icon">identity</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#mulscalar" class="tsd-kind-icon">mul<wbr>Scalar</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="_ql_methods_finitedifferences_bsmoperator_.bsmoperator.html#sub" class="tsd-kind-icon">sub</a>
+								<a href="_ql_methods_finitedifferences_bsmtermoperator_.bsmtermoperator.html#identity" class="tsd-kind-icon">identity</a>
 							</li>
 						</ul>
 					</li>

@@ -98,6 +98,8 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#einit" class="tsd-kind-icon">e<wbr>Init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#setstep" class="tsd-kind-icon">set<wbr>Step</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#step" class="tsd-kind-icon">step</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">Evolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:58</li>
+							<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:81</li>
 						</ul>
 					</aside>
 				</section>
@@ -147,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">_evolvers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:72</li>
+							<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:86</li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:63</li>
+									<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:58</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,6 +179,55 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html" class="tsd-signature-type">ParallelEvolver</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setstep" class="tsd-anchor"></a>
+					<h3>set<wbr>Step</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Step<span class="tsd-signature-symbol">(</span>dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:74</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="step" class="tsd-anchor"></a>
+					<h3>step</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">step<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/parallelevolver.ts:67</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>t: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -219,6 +270,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#einit" class="tsd-kind-icon">e<wbr>Init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#setstep" class="tsd-kind-icon">set<wbr>Step</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_finitedifferences_parallelevolver_.parallelevolver.html#step" class="tsd-kind-icon">step</a>
 							</li>
 						</ul>
 					</li>

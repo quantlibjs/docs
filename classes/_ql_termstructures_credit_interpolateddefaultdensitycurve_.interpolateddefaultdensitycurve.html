@@ -266,7 +266,7 @@
 					<div class="tsd-signature tsd-kind-icon">_dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:184</li>
+							<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:178</li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +310,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html">DefaultDensityStructureInterpolatedCurve</a>.<a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html#_interpolator">_interpolator</a></p>
 						<ul>
-							<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:185</li>
+							<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:179</li>
 						</ul>
 					</aside>
 				</section>
@@ -2090,7 +2090,7 @@
 					<a name="curveinit1" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init1</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init1<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, cal<span class="tsd-signature-symbol">?: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init1<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, cal<span class="tsd-signature-symbol">?: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2125,9 +2125,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2137,13 +2134,13 @@
 					<a name="curveinit2" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init2</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init2<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, cal<span class="tsd-signature-symbol">?: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init2<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, cal<span class="tsd-signature-symbol">?: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:40</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:39</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2166,9 +2163,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol"> =&nbsp;new Calendar()</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2178,13 +2172,13 @@
 					<a name="curveinit3" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init3</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init3<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init3<span class="tsd-signature-symbol">(</span>dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, densities<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:52</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:50</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2204,9 +2198,6 @@
 								<li>
 									<h5>dayCounter: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2216,13 +2207,13 @@
 					<a name="curveinit4" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init4</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init4<span class="tsd-signature-symbol">(</span>dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init4<span class="tsd-signature-symbol">(</span>dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:63</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:60</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2242,9 +2233,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2254,13 +2242,13 @@
 					<a name="curveinit5" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init5</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init5<span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init5<span class="tsd-signature-symbol">(</span>referenceDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:74</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:70</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2283,9 +2271,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2295,13 +2280,13 @@
 					<a name="curveinit6" class="tsd-anchor"></a>
 					<h3>curve<wbr>Init6</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init6<span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, interpolator<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
+						<li class="tsd-signature tsd-kind-icon">curve<wbr>Init6<span class="tsd-signature-symbol">(</span>settlementDays<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, calendar<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, dayCounter<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, jumps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, jumpDates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:85</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:80</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2327,9 +2312,6 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> jumpDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator: <a href="../modules/_ql_math_interpolator_.interpolator.html" class="tsd-signature-type">Interpolator</a><span class="tsd-signature-symbol"> =&nbsp;this._interpolator</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_ql_termstructures_curve_.defaultcurve.html" class="tsd-signature-type">DefaultCurve</a></h4>
 						</li>
@@ -2345,7 +2327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:107</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:101</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -2362,7 +2344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:103</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:97</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -2379,7 +2361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:111</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:105</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -2397,7 +2379,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html">DefaultDensityStructureInterpolatedCurve</a>.<a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html#defaultdensityimpl">defaultDensityImpl</a></p>
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:123</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:117</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2420,7 +2402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:151</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:145</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2438,7 +2420,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html">DefaultDensityStructureInterpolatedCurve</a>.<a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html#maxdate">maxDate</a></p>
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:95</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -2455,7 +2437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:115</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:109</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">, </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2473,7 +2455,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html">DefaultDensityStructureInterpolatedCurve</a>.<a href="_mixins_ql_termstructures_defaultdensitystructureinterpolatedcurve_.defaultdensitystructureinterpolatedcurve.html#survivalprobabilityimpl">survivalProbabilityImpl</a></p>
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:132</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:126</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2496,7 +2478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:99</li>
+									<li>Defined in ql/termstructures/credit/interpolateddefaultdensitycurve.ts:93</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h4>
