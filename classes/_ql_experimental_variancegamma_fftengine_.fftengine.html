@@ -69,6 +69,22 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Base class for FFT pricing engines for European vanilla options</p>
+					</div>
+					<p>The FFT engine calculates the values of all options with the same expiry at
+						the same time. For that reason it is very inefficient to price options
+						individually.  When using this engine you should collect all the options you
+						wish to price in a list and call the engine&#39;s precalculate method before
+					calling the NPV method of the option.</p>
+					<p>References:
+						Carr, P. and D. B. Madan (1998),
+						&quot;Option Valuation using the fast Fourier transform,&quot;
+					Journal of Computational Finance, 2, 61-73.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -102,19 +118,22 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_arguments" class="tsd-kind-icon">_arguments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_lambda" class="tsd-kind-icon">_lambda</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_observables" class="tsd-kind-icon">_observables</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_process" class="tsd-kind-icon">_process</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_resultmap" class="tsd-kind-icon">_result<wbr>Map</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_results" class="tsd-kind-icon">_results</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#dispose" class="tsd-kind-icon">dispose</a></li>
@@ -128,42 +147,57 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#calculateuncached" class="tsd-kind-icon">calculate<wbr>Uncached</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#complexfouriertransform" class="tsd-kind-icon">complex<wbr>Fourier<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#discountfactor" class="tsd-kind-icon">discount<wbr>Factor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#dividendyield" class="tsd-kind-icon">dividend<wbr>Yield</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#getarguments" class="tsd-kind-icon">get<wbr>Arguments</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#getresults" class="tsd-kind-icon">get<wbr>Results</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#precalculate" class="tsd-kind-icon">precalculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#precalculateexpiry" class="tsd-kind-icon">precalculate<wbr>Expiry</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#reset" class="tsd-kind-icon">reset</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new FFTEngine<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-signature-type">FFTEngine</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new FFTEngine<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a>, logStrikeSpacing<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-signature-type">FFTEngine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_instruments_vanillaoptionengine_.vanillaoptionengine.engine.html">engine</a>.<a href="_ql_instruments_vanillaoptionengine_.vanillaoptionengine.engine.html#constructor">constructor</a></p>
-								<p>Overrides <a href="_ql_instruments_oneassetoption_.oneassetoption.engine.html">engine</a>.<a href="_ql_instruments_oneassetoption_.oneassetoption.engine.html#constructor">constructor</a></p>
+								<p>Overrides <a href="_ql_instruments_vanillaoptionengine_.vanillaoptionengine.engine.html">engine</a>.<a href="_ql_instruments_vanillaoptionengine_.vanillaoptionengine.engine.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in ql/instruments/vanillaoptionengine.ts:10</li>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:34</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a></h5>
+								</li>
+								<li>
+									<h5>logStrikeSpacing: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-signature-type">FFTEngine</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_arguments" class="tsd-anchor"></a>
@@ -187,6 +221,16 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_lambda" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _lambda</h3>
+					<div class="tsd-signature tsd-kind-icon">_lambda<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/fftengine.ts:237</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_observables" class="tsd-anchor"></a>
 					<h3>_observables</h3>
@@ -206,6 +250,26 @@
 						<p>Inherited from <a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html">PricingEngineObserver</a>.<a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html#_observers">_observers</a></p>
 						<ul>
 							<li>Defined in mixins/ql/pricingengines/pricingengineobserver.ts:46</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_process" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _process</h3>
+					<div class="tsd-signature tsd-kind-icon">_process<span class="tsd-signature-symbol">:</span> <a href="_ql_stochasticprocess_.stochasticprocess1d.html" class="tsd-signature-type">StochasticProcess1D</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/fftengine.ts:236</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_resultmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _result<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">_result<wbr>Map<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_experimental_variancegamma_fftengine_.html#resultmap" class="tsd-signature-type">ResultMap</a><span class="tsd-signature-symbol"> =&nbsp;new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/fftengine.ts:239</li>
 						</ul>
 					</aside>
 				</section>
@@ -496,23 +560,135 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="calculate" class="tsd-anchor"></a>
 					<h3>calculate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">calculate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html">PricingEngineObserver</a>.<a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html#calculate">calculate</a></p>
+								<p>Overrides <a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html">PricingEngineObserver</a>.<a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html#calculate">calculate</a></p>
 								<ul>
-									<li>Defined in mixins/ql/pricingengines/pricingengineobserver.ts:36</li>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:42</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="calculateuncached" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> calculate<wbr>Uncached</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Uncached<span class="tsd-signature-symbol">(</span>payoff<span class="tsd-signature-symbol">: </span><a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a>, exercise<span class="tsd-signature-symbol">: </span><a href="_ql_exercise_.exercise.html" class="tsd-signature-type">Exercise</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:224</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>payoff: <a href="_ql_instruments_payoffs_.strikedtypepayoff.html" class="tsd-signature-type">StrikedTypePayoff</a></h5>
+								</li>
+								<li>
+									<h5>exercise: <a href="_ql_exercise_.exercise.html" class="tsd-signature-type">Exercise</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-signature-type">FFTEngine</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:204</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-signature-type">FFTEngine</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="complexfouriertransform" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> complex<wbr>Fourier<wbr>Transform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">complex<wbr>Fourier<wbr>Transform<span class="tsd-signature-symbol">(</span>u<span class="tsd-signature-symbol">: </span><a href="_std_complex_.complex.html" class="tsd-signature-type">Complex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_std_complex_.complex.html" class="tsd-signature-type">Complex</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:212</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>u: <a href="_std_complex_.complex.html" class="tsd-signature-type">Complex</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_std_complex_.complex.html" class="tsd-signature-type">Complex</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="discountfactor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> discount<wbr>Factor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">discount<wbr>Factor<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:216</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="dividendyield" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> dividend<wbr>Yield</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">dividend<wbr>Yield<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:220</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -554,6 +730,52 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="precalculate" class="tsd-anchor"></a>
+					<h3>precalculate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">precalculate<span class="tsd-signature-symbol">(</span>optionList<span class="tsd-signature-symbol">: </span><a href="_ql_instrument_.instrument.html" class="tsd-signature-type">Instrument</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:78</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>optionList: <a href="_ql_instrument_.instrument.html" class="tsd-signature-type">Instrument</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="precalculateexpiry" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> precalculate<wbr>Expiry</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">precalculate<wbr>Expiry<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:208</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="reset" class="tsd-anchor"></a>
 					<h3>reset</h3>
@@ -573,19 +795,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_genericengine_.genericengine.html">GenericEngine</a>.<a href="_ql_genericengine_.genericengine.html#update">update</a></p>
-								<p>Overrides <a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html">PricingEngineObserver</a>.<a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html#update">update</a></p>
+								<p>Overrides <a href="_ql_genericengine_.genericengine.html">GenericEngine</a>.<a href="_ql_genericengine_.genericengine.html#update">update</a></p>
 								<ul>
-									<li>Defined in ql/genericengine.ts:29</li>
+									<li>Defined in ql/experimental/variancegamma/fftengine.ts:70</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -612,7 +833,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html" class="tsd-kind-icon">FFTEngine</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -621,11 +842,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_lambda" class="tsd-kind-icon">_lambda</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_observables" class="tsd-kind-icon">_observables</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_process" class="tsd-kind-icon">_process</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_resultmap" class="tsd-kind-icon">_result<wbr>Map</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#_results" class="tsd-kind-icon">_results</a>
@@ -660,8 +890,23 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#calculate" class="tsd-kind-icon">calculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#calculateuncached" class="tsd-kind-icon">calculate<wbr>Uncached</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#complexfouriertransform" class="tsd-kind-icon">complex<wbr>Fourier<wbr>Transform</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#discountfactor" class="tsd-kind-icon">discount<wbr>Factor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#dividendyield" class="tsd-kind-icon">dividend<wbr>Yield</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#getarguments" class="tsd-kind-icon">get<wbr>Arguments</a>
@@ -669,16 +914,28 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#getresults" class="tsd-kind-icon">get<wbr>Results</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#precalculate" class="tsd-kind-icon">precalculate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#precalculateexpiry" class="tsd-kind-icon">precalculate<wbr>Expiry</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#reset" class="tsd-kind-icon">reset</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_fftengine_.fftengine.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_experimental_variancegamma_fftengine_.html#payoffresultmap" class="tsd-kind-icon">Payoff<wbr>Result<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_ql_experimental_variancegamma_fftengine_.html#resultmap" class="tsd-kind-icon">Result<wbr>Map</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

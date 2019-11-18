@@ -175,7 +175,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#calculate" class="tsd-kind-icon">calculate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#executeintermediatestep" class="tsd-kind-icon">execute<wbr>Intermediate<wbr>Step</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#init1" class="tsd-kind-icon">init1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#initializestepcondition" class="tsd-kind-icon">initialize<wbr>Step<wbr>Condition</a></li>
 							</ul>
 						</section>
@@ -590,7 +591,7 @@
 					<div class="tsd-signature tsd-kind-icon">extra<wbr>Term<wbr>InBermudan<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:45</li>
+							<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:46</li>
 						</ul>
 					</aside>
 				</section>
@@ -1338,7 +1339,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html">VanillaOptionEngineFDMultiPeriodEngine</a>.<a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html#calculate">calculate</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:28</li>
+									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1356,7 +1357,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html">VanillaOptionEngineFDMultiPeriodEngine</a>.<a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html#executeintermediatestep">executeIntermediateStep</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:37</li>
+									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:38</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1369,16 +1370,15 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="init1" class="tsd-anchor"></a>
-					<h3>init1</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html" class="tsd-signature-type">FDBermudanEngine</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fdinit" class="tsd-anchor"></a>
+					<h3>fd<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fd<wbr>Init<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html" class="tsd-signature-type">FDBermudanEngine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html">VanillaOptionEngineFDMultiPeriodEngine</a>.<a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html#init1">init1</a></p>
 								<ul>
 									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:22</li>
 								</ul>
@@ -1408,6 +1408,39 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="init1" class="tsd-anchor"></a>
+					<h3>init1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html" class="tsd-signature-type">FDMultiPeriodEngine</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html">VanillaOptionEngineFDMultiPeriodEngine</a>.<a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html#init1">init1</a></p>
+								<ul>
+									<li>Defined in mixins/ql/pricingengines/vanillaoptionenginefdmultiperiodengine.ts:57</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeSteps: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> gridPoints: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeDependent: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html" class="tsd-signature-type">FDMultiPeriodEngine</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="initializestepcondition" class="tsd-anchor"></a>
 					<h3>initialize<wbr>Step<wbr>Condition</h3>
@@ -1419,7 +1452,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html">VanillaOptionEngineFDMultiPeriodEngine</a>.<a href="_mixins_ql_pricingengines_vanillaoptionenginefdmultiperiodengine_.vanillaoptionenginefdmultiperiodengine.html#initializestepcondition">initializeStepCondition</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:33</li>
+									<li>Defined in ql/pricingengines/vanilla/fdbermudanengine.ts:34</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1620,7 +1653,10 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#executeintermediatestep" class="tsd-kind-icon">execute<wbr>Intermediate<wbr>Step</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fdbermudanengine_.fdbermudanengine.html#init1" class="tsd-kind-icon">init1</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">

@@ -126,6 +126,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#_tree1" class="tsd-kind-icon">_tree1</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#_tree2" class="tsd-kind-icon">_tree2</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#impl" class="tsd-kind-icon">impl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#timegrid" class="tsd-kind-icon">time<wbr>Grid</a></li>
 							</ul>
 						</section>
@@ -135,7 +136,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#computestateprices" class="tsd-kind-icon">compute<wbr>State<wbr>Prices</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#descendant" class="tsd-kind-icon">descendant</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#grid" class="tsd-kind-icon">grid</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init2d" class="tsd-kind-icon">init2D</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#initialize" class="tsd-kind-icon">initialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#partialrollback" class="tsd-kind-icon">partial<wbr>Rollback</a></li>
@@ -145,6 +145,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#stateprices" class="tsd-kind-icon">state<wbr>Prices</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#stepback" class="tsd-kind-icon">stepback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#tlinit" class="tsd-kind-icon">tl<wbr>Init</a></li>
 							</ul>
 						</section>
 					</div>
@@ -179,7 +180,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#_stateprices">_statePrices</a></p>
 						<ul>
-							<li>Defined in ql/methods/lattices/lattice.ts:145</li>
+							<li>Defined in ql/methods/lattices/lattice.ts:147</li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +191,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#_t">_t</a></p>
 						<ul>
-							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:37</li>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -221,7 +222,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#impl">impl</a></p>
 						<ul>
-							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:35</li>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -241,13 +242,45 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<div class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#init">init</a></p>
+						<ul>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:17</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>timeGrid<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_numericalmethod_.lattice.html" class="tsd-signature-type">Lattice</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>timeGrid: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_ql_numericalmethod_.lattice.html" class="tsd-signature-type">Lattice</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="timegrid" class="tsd-anchor"></a>
 					<h3>time<wbr>Grid</h3>
 					<div class="tsd-signature tsd-kind-icon">time<wbr>Grid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#timegrid">timeGrid</a></p>
 						<ul>
-							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:17</li>
+							<li>Defined in mixins/ql/methods/latticecuriouslyrecurringtemplate.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -280,7 +313,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#computestateprices">computeStatePrices</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:128</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:130</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -346,33 +379,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="init" class="tsd-anchor"></a>
-					<h3>init</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>timeGrid<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Impl</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#init">init</a></p>
-								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:55</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>timeGrid: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
-								</li>
-								<li>
-									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Impl</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="init2d" class="tsd-anchor"></a>
 					<h3>init2D</h3>
@@ -420,7 +426,7 @@
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#initialize">initialize</a></p>
 								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:78</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:80</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,7 +454,7 @@
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#partialrollback">partialRollback</a></p>
 								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#partialrollback">partialRollback</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:89</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:91</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -476,7 +482,7 @@
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#presentvalue">presentValue</a></p>
 								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#presentvalue">presentValue</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:73</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:75</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -530,7 +536,7 @@
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#rollback">rollback</a></p>
 								<p>Overrides <a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html">LatticeCuriouslyRecurringTemplate</a>.<a href="_mixins_ql_methods_latticecuriouslyrecurringtemplate_.latticecuriouslyrecurringtemplate.html#rollback">rollback</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:84</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:86</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -581,7 +587,7 @@
 								<p>Implementation of <a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html">ITreeLattice</a>.<a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html#stateprices">statePrices</a></p>
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#stateprices">statePrices</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:66</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -606,7 +612,7 @@
 								<p>Implementation of <a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html">ITreeLattice</a>.<a href="../interfaces/_ql_methods_lattices_lattice_.itreelattice.html#stepback">stepback</a></p>
 								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#stepback">stepback</a></p>
 								<ul>
-									<li>Defined in ql/methods/lattices/lattice.ts:116</li>
+									<li>Defined in ql/methods/lattices/lattice.ts:118</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -622,6 +628,39 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tlinit" class="tsd-anchor"></a>
+					<h3>tl<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">tl<wbr>Init<span class="tsd-signature-symbol">(</span>timeGrid<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, n<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Impl</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_lattices_lattice_.treelattice.html">TreeLattice</a>.<a href="_ql_methods_lattices_lattice_.treelattice.html#tlinit">tlInit</a></p>
+								<ul>
+									<li>Defined in ql/methods/lattices/lattice.ts:56</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeGrid: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
+								</li>
+								<li>
+									<h5>n: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_lattices_lattice_.treelattice.html" class="tsd-signature-type">TreeLattice</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Impl</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -667,6 +706,9 @@
 								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#impl" class="tsd-kind-icon">impl</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#timegrid" class="tsd-kind-icon">time<wbr>Grid</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -677,9 +719,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#grid" class="tsd-kind-icon">grid</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init" class="tsd-kind-icon">init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#init2d" class="tsd-kind-icon">init2D</a>
@@ -707,6 +746,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#stepback" class="tsd-kind-icon">stepback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_methods_lattices_lattice2d_.treelattice2d.html#tlinit" class="tsd-kind-icon">tl<wbr>Init</a>
 							</li>
 						</ul>
 					</li>

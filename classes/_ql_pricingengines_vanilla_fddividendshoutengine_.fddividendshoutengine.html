@@ -134,10 +134,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#calculate" class="tsd-kind-icon">calculate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#fdeainit" class="tsd-kind-icon">fdea<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#getarguments" class="tsd-kind-icon">get<wbr>Arguments</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#getresults" class="tsd-kind-icon">get<wbr>Results</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#init1" class="tsd-kind-icon">init1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#reset" class="tsd-kind-icon">reset</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
@@ -558,6 +558,44 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fdinit" class="tsd-anchor"></a>
+					<h3>fd<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fd<wbr>Init<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html" class="tsd-signature-type">FDDividendShoutEngine</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/vanilla/fddividendshoutengine.ts:28</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeSteps: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gridPoints: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeDependent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html" class="tsd-signature-type">FDDividendShoutEngine</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="fdeainit" class="tsd-anchor"></a>
 					<h3>fdea<wbr>Init</h3>
@@ -632,44 +670,6 @@
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengine_.pricingengine.results.html" class="tsd-signature-type">Results</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="init1" class="tsd-anchor"></a>
-					<h3>init1</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html" class="tsd-signature-type">FDDividendShoutEngine</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fddividendshoutengine.ts:28</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>process: <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeSteps: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gridPoints: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeDependent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html" class="tsd-signature-type">FDDividendShoutEngine</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -791,6 +791,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#calculate" class="tsd-kind-icon">calculate</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#fdeainit" class="tsd-kind-icon">fdea<wbr>Init</a>
 							</li>
@@ -799,9 +802,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#getresults" class="tsd-kind-icon">get<wbr>Results</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#init1" class="tsd-kind-icon">init1</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendshoutengine_.fddividendshoutengine.html#reset" class="tsd-kind-icon">reset</a>

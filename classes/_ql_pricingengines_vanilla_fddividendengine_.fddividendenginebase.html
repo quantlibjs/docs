@@ -145,13 +145,14 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#calculate2" class="tsd-kind-icon">calculate2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#ensurestrikeingrid" class="tsd-kind-icon">ensure<wbr>Strike<wbr>InGrid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#executeintermediatestep" class="tsd-kind-icon">execute<wbr>Intermediate<wbr>Step</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#getdiscounteddividend" class="tsd-kind-icon">get<wbr>Discounted<wbr>Dividend</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#getdividendamount" class="tsd-kind-icon">get<wbr>Dividend<wbr>Amount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#getdividendtime" class="tsd-kind-icon">get<wbr>Dividend<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#getresidualtime" class="tsd-kind-icon">get<wbr>Residual<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#grid" class="tsd-kind-icon">grid</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#init" class="tsd-kind-icon">init</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#init1" class="tsd-kind-icon">init1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#init1" class="tsd-kind-icon">init1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#initializeboundaryconditions" class="tsd-kind-icon">initialize<wbr>Boundary<wbr>Conditions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#initializeinitialcondition" class="tsd-kind-icon">initialize<wbr>Initial<wbr>Condition</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#initializemodel" class="tsd-kind-icon">initialize<wbr>Model</a></li>
@@ -204,7 +205,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#scheme">Scheme</a></p>
 						<ul>
-							<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:40</li>
+							<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:192</li>
 						</ul>
 					</aside>
 				</section>
@@ -431,7 +432,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#calculate2">calculate2</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:73</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -483,6 +484,44 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fdinit" class="tsd-anchor"></a>
+					<h3>fd<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fd<wbr>Init<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html" class="tsd-signature-type">FDDividendEngineBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/pricingengines/vanilla/fddividendengine.ts:36</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeSteps: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gridPoints: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol"> =&nbsp;100</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeDependent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html" class="tsd-signature-type">FDDividendEngineBase</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -543,7 +582,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#getdividendtime">getDividendTime</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:192</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:187</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -631,18 +670,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="init1" class="tsd-anchor"></a>
 					<h3>init1</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html" class="tsd-signature-type">FDDividendEngineBase</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">init1<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a>, timeSteps<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, gridPoints<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, timeDependent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html" class="tsd-signature-type">FDMultiPeriodEngine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#init1">init1</a></p>
+								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#init1">init1</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fddividendengine.ts:36</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:31</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -666,7 +705,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeDependent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html" class="tsd-signature-type">FDDividendEngineBase</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html" class="tsd-signature-type">FDMultiPeriodEngine</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -717,7 +756,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#initializemodel">initializeModel</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:188</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:183</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -753,7 +792,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#initializestepcondition">initializeStepCondition</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:184</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:179</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -884,7 +923,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html">FDMultiPeriodEngine</a>.<a href="_ql_pricingengines_vanilla_fdmultiperiodengine_.fdmultiperiodengine.html#setuparguments2">setupArguments2</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:44</li>
+									<li>Defined in ql/pricingengines/vanilla/fdmultiperiodengine.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -998,6 +1037,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#executeintermediatestep" class="tsd-kind-icon">execute<wbr>Intermediate<wbr>Step</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#fdinit" class="tsd-kind-icon">fd<wbr>Init</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#getdiscounteddividend" class="tsd-kind-icon">get<wbr>Discounted<wbr>Dividend</a>
 							</li>
@@ -1016,7 +1058,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#init" class="tsd-kind-icon">init</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_pricingengines_vanilla_fddividendengine_.fddividendenginebase.html#init1" class="tsd-kind-icon">init1</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
