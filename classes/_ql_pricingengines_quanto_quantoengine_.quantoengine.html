@@ -161,7 +161,7 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Quanto<wbr>Engine<span class="tsd-signature-symbol">(</span>Engine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_quanto_quantoengine_.quantoengine.html" class="tsd-signature-type">QuantoEngine</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quanto<wbr>Engine<span class="tsd-signature-symbol">(</span>Arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, Results<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, Engine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_pricingengines_quanto_quantoengine_.quantoengine.html" class="tsd-signature-type">QuantoEngine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -172,6 +172,12 @@
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>Arguments: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>Results: <span class="tsd-signature-type">any</span></h5>
+								</li>
 								<li>
 									<h5>Engine: <span class="tsd-signature-type">any</span></h5>
 								</li>
@@ -189,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">Engine<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:60</li>
+							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:193</li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">_correlation<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:189</li>
+							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:200</li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">_exchange<wbr>Rate<wbr>Volatility<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_volatility_equityfx_blackvoltermstructure_.blackvoltermstructure.html" class="tsd-signature-type">BlackVolTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:188</li>
+							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:199</li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">_foreign<wbr>Risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:187</li>
+							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:198</li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">_process<span class="tsd-signature-symbol">:</span> <a href="_ql_processes_blackscholesprocess_.generalizedblackscholesprocess.html" class="tsd-signature-type">GeneralizedBlackScholesProcess</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:186</li>
+							<li>Defined in ql/pricingengines/quanto/quantoengine.ts:197</li>
 						</ul>
 					</aside>
 				</section>
@@ -577,7 +583,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html">PricingEngineObserver</a>.<a href="_mixins_ql_pricingengines_pricingengineobserver_.pricingengineobserver.html#calculate">calculate</a></p>
 								<ul>
-									<li>Defined in ql/pricingengines/quanto/quantoengine.ts:64</li>
+									<li>Defined in ql/pricingengines/quanto/quantoengine.ts:69</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -632,7 +638,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/pricingengines/quanto/quantoengine.ts:41</li>
+									<li>Defined in ql/pricingengines/quanto/quantoengine.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

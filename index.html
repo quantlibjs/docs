@@ -139,6 +139,7 @@ obj.dosomething();</code></pre>
 					<h2>release note</h2>
 				</a>
 				<ul>
+					<li>0.3.0, fixed 40+ specs, start working on model tests</li>
 					<li>0.2.7, fixed <code>default probability curves</code> specs</li>
 					<li>0.2.6, fixed most <code>european option</code> test, tree engine cleanup</li>
 					<li>0.2.5, fixed <code>piecewise zero spreaded</code> term structure, <code>brownian bridge</code>, 4 <code>american options</code> specs, FD engine cleanup</li>
@@ -166,102 +167,102 @@ obj.dosomething();</code></pre>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>license</h2>
 				</a>
-				<pre><code class="language-txt">
+				<pre><code>
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+   TERMS AND CONDITIONS FOR <span class="hljs-keyword">USE</span>, REPRODUCTION, <span class="hljs-keyword">AND</span> DISTRIBUTION
 
-   1. Definitions.
+   <span class="hljs-number">1.</span> Definitions.
 
-      &quot;License&quot; shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+      <span class="hljs-string">"License"</span> shall mean the terms <span class="hljs-keyword">and</span> conditions <span class="hljs-keyword">for</span> <span class="hljs-keyword">use</span>, reproduction,
+      <span class="hljs-keyword">and</span> distribution <span class="hljs-keyword">as</span> defined <span class="hljs-keyword">by</span> Sections <span class="hljs-number">1</span> <span class="hljs-keyword">through</span> <span class="hljs-number">9</span> <span class="hljs-keyword">of</span> this document.
 
-      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+      <span class="hljs-string">"Licensor"</span> shall mean the copyright owner <span class="hljs-keyword">or</span> entity authorized <span class="hljs-keyword">by</span>
+      the copyright owner that <span class="hljs-keyword">is</span> granting the License.
 
-      &quot;Legal Entity&quot; shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      &quot;control&quot; means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+      <span class="hljs-string">"Legal Entity"</span> shall mean the <span class="hljs-keyword">union</span> <span class="hljs-keyword">of</span> the acting entity <span class="hljs-keyword">and</span> <span class="hljs-keyword">all</span>
+      other entities that control, <span class="hljs-keyword">are</span> controlled <span class="hljs-keyword">by</span>, <span class="hljs-keyword">or</span> <span class="hljs-keyword">are</span> <span class="hljs-keyword">under</span> common
+      control <span class="hljs-keyword">with</span> that entity. <span class="hljs-keyword">For</span> the purposes <span class="hljs-keyword">of</span> this definition,
+      <span class="hljs-string">"control"</span> means (i) the <span class="hljs-keyword">power</span>, direct <span class="hljs-keyword">or</span> indirect, <span class="hljs-keyword">to</span> cause the
+      direction <span class="hljs-keyword">or</span> <span class="hljs-keyword">management</span> <span class="hljs-keyword">of</span> such entity, whether <span class="hljs-keyword">by</span> contract <span class="hljs-keyword">or</span>
+      otherwise, <span class="hljs-keyword">or</span> (ii) ownership <span class="hljs-keyword">of</span> fifty <span class="hljs-keyword">percent</span> (<span class="hljs-number">50</span>%) <span class="hljs-keyword">or</span> more <span class="hljs-keyword">of</span> the
+      outstanding shares, <span class="hljs-keyword">or</span> (iii) beneficial ownership <span class="hljs-keyword">of</span> such entity.
 
-      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+      <span class="hljs-string">"You"</span> (<span class="hljs-keyword">or</span> <span class="hljs-string">"Your"</span>) shall mean an individual <span class="hljs-keyword">or</span> Legal Entity
+      exercising permissions granted <span class="hljs-keyword">by</span> this License.
 
-      &quot;Source&quot; form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+      <span class="hljs-string">"Source"</span> <span class="hljs-keyword">form</span> shall mean the preferred <span class="hljs-keyword">form</span> <span class="hljs-keyword">for</span> making modifications,
+      <span class="hljs-keyword">including</span> but <span class="hljs-keyword">not</span> limited <span class="hljs-keyword">to</span> software <span class="hljs-keyword">source</span> code, documentation
+      <span class="hljs-keyword">source</span>, <span class="hljs-keyword">and</span> configuration files.
 
-      &quot;Object&quot; form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+      <span class="hljs-string">"Object"</span> <span class="hljs-keyword">form</span> shall mean <span class="hljs-keyword">any</span> <span class="hljs-keyword">form</span> resulting <span class="hljs-keyword">from</span> mechanical
+      transformation <span class="hljs-keyword">or</span> <span class="hljs-keyword">translation</span> <span class="hljs-keyword">of</span> a <span class="hljs-keyword">Source</span> <span class="hljs-keyword">form</span>, <span class="hljs-keyword">including</span> but
+      <span class="hljs-keyword">not</span> limited <span class="hljs-keyword">to</span> <span class="hljs-keyword">compiled</span> <span class="hljs-keyword">object</span> code, <span class="hljs-keyword">generated</span> documentation,
+      <span class="hljs-keyword">and</span> conversions <span class="hljs-keyword">to</span> other media types.
 
-      &quot;Work&quot; shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+      <span class="hljs-string">"Work"</span> shall mean the <span class="hljs-keyword">work</span> <span class="hljs-keyword">of</span> authorship, whether <span class="hljs-keyword">in</span> <span class="hljs-keyword">Source</span> <span class="hljs-keyword">or</span>
+      <span class="hljs-keyword">Object</span> <span class="hljs-keyword">form</span>, made available <span class="hljs-keyword">under</span> the License, <span class="hljs-keyword">as</span> indicated <span class="hljs-keyword">by</span> a
+      copyright <span class="hljs-keyword">notice</span> that <span class="hljs-keyword">is</span> included <span class="hljs-keyword">in</span> <span class="hljs-keyword">or</span> attached <span class="hljs-keyword">to</span> the <span class="hljs-keyword">work</span>
+      (an example <span class="hljs-keyword">is</span> provided <span class="hljs-keyword">in</span> the Appendix below).
 
-      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+      <span class="hljs-string">"Derivative Works"</span> shall mean <span class="hljs-keyword">any</span> <span class="hljs-keyword">work</span>, whether <span class="hljs-keyword">in</span> <span class="hljs-keyword">Source</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">Object</span>
+      <span class="hljs-keyword">form</span>, that <span class="hljs-keyword">is</span> based <span class="hljs-keyword">on</span> (<span class="hljs-keyword">or</span> derived <span class="hljs-keyword">from</span>) the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">for</span> which the
+      editorial revisions, annotations, elaborations, <span class="hljs-keyword">or</span> other modifications
+      represent, <span class="hljs-keyword">as</span> a whole, an original <span class="hljs-keyword">work</span> <span class="hljs-keyword">of</span> authorship. <span class="hljs-keyword">For</span> the purposes
+      <span class="hljs-keyword">of</span> this License, Derivative Works shall <span class="hljs-keyword">not</span> <span class="hljs-keyword">include</span> works that remain
+      separable <span class="hljs-keyword">from</span>, <span class="hljs-keyword">or</span> merely <span class="hljs-keyword">link</span> (<span class="hljs-keyword">or</span> bind <span class="hljs-keyword">by</span> <span class="hljs-keyword">name</span>) <span class="hljs-keyword">to</span> the interfaces <span class="hljs-keyword">of</span>,
+      the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> Derivative Works thereof.
 
-      &quot;Contribution&quot; shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, &quot;submitted&quot;
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;
+      <span class="hljs-string">"Contribution"</span> shall mean <span class="hljs-keyword">any</span> <span class="hljs-keyword">work</span> <span class="hljs-keyword">of</span> authorship, <span class="hljs-keyword">including</span>
+      the original <span class="hljs-keyword">version</span> <span class="hljs-keyword">of</span> the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">any</span> modifications <span class="hljs-keyword">or</span> additions
+      <span class="hljs-keyword">to</span> that <span class="hljs-keyword">Work</span> <span class="hljs-keyword">or</span> Derivative Works thereof, that <span class="hljs-keyword">is</span> intentionally
+      submitted <span class="hljs-keyword">to</span> Licensor <span class="hljs-keyword">for</span> inclusion <span class="hljs-keyword">in</span> the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">by</span> the copyright owner
+      <span class="hljs-keyword">or</span> <span class="hljs-keyword">by</span> an individual <span class="hljs-keyword">or</span> Legal Entity authorized <span class="hljs-keyword">to</span> submit <span class="hljs-keyword">on</span> behalf <span class="hljs-keyword">of</span>
+      the copyright owner. <span class="hljs-keyword">For</span> the purposes <span class="hljs-keyword">of</span> this definition, <span class="hljs-string">"submitted"</span>
+      means <span class="hljs-keyword">any</span> <span class="hljs-keyword">form</span> <span class="hljs-keyword">of</span> electronic, verbal, <span class="hljs-keyword">or</span> written communication sent
+      <span class="hljs-keyword">to</span> the Licensor <span class="hljs-keyword">or</span> its representatives, <span class="hljs-keyword">including</span> but <span class="hljs-keyword">not</span> limited <span class="hljs-keyword">to</span>
+      communication <span class="hljs-keyword">on</span> electronic mailing lists, <span class="hljs-keyword">source</span> code control systems,
+      <span class="hljs-keyword">and</span> issue <span class="hljs-keyword">tracking</span> systems that <span class="hljs-keyword">are</span> <span class="hljs-keyword">managed</span> <span class="hljs-keyword">by</span>, <span class="hljs-keyword">or</span> <span class="hljs-keyword">on</span> behalf <span class="hljs-keyword">of</span>, the
+      Licensor <span class="hljs-keyword">for</span> the purpose <span class="hljs-keyword">of</span> discussing <span class="hljs-keyword">and</span> improving the <span class="hljs-keyword">Work</span>, but
+      <span class="hljs-keyword">excluding</span> communication that <span class="hljs-keyword">is</span> conspicuously marked <span class="hljs-keyword">or</span> otherwise
+      designated <span class="hljs-keyword">in</span> writing <span class="hljs-keyword">by</span> the copyright owner <span class="hljs-keyword">as</span> <span class="hljs-string">"Not a Contribution."</span>
 
-      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
+      <span class="hljs-string">"Contributor"</span> shall mean Licensor <span class="hljs-keyword">and</span> <span class="hljs-keyword">any</span> individual <span class="hljs-keyword">or</span> Legal Entity
+      <span class="hljs-keyword">on</span> behalf <span class="hljs-keyword">of</span> whom a Contribution has been received <span class="hljs-keyword">by</span> Licensor <span class="hljs-keyword">and</span>
+      subsequently incorporated <span class="hljs-keyword">within</span> the Work.
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
+   <span class="hljs-number">2.</span> <span class="hljs-keyword">Grant</span> <span class="hljs-keyword">of</span> Copyright License. Subject <span class="hljs-keyword">to</span> the terms <span class="hljs-keyword">and</span> conditions <span class="hljs-keyword">of</span>
+      this License, <span class="hljs-keyword">each</span> Contributor hereby <span class="hljs-keyword">grants</span> <span class="hljs-keyword">to</span> You a perpetual,
+      worldwide, non-exclusive, <span class="hljs-keyword">no</span>-charge, royalty-free, irrevocable
+      copyright license <span class="hljs-keyword">to</span> reproduce, <span class="hljs-keyword">prepare</span> Derivative Works <span class="hljs-keyword">of</span>,
+      publicly display, publicly perform, sublicense, <span class="hljs-keyword">and</span> <span class="hljs-keyword">distribute</span> the
+      <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> such Derivative Works <span class="hljs-keyword">in</span> <span class="hljs-keyword">Source</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">Object</span> form.
 
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
+   <span class="hljs-number">3.</span> <span class="hljs-keyword">Grant</span> <span class="hljs-keyword">of</span> Patent License. Subject <span class="hljs-keyword">to</span> the terms <span class="hljs-keyword">and</span> conditions <span class="hljs-keyword">of</span>
+      this License, <span class="hljs-keyword">each</span> Contributor hereby <span class="hljs-keyword">grants</span> <span class="hljs-keyword">to</span> You a perpetual,
+      worldwide, non-exclusive, <span class="hljs-keyword">no</span>-charge, royalty-free, irrevocable
+      (<span class="hljs-keyword">except</span> <span class="hljs-keyword">as</span> stated <span class="hljs-keyword">in</span> this <span class="hljs-keyword">section</span>) patent license <span class="hljs-keyword">to</span> make, have made,
+      <span class="hljs-keyword">use</span>, offer <span class="hljs-keyword">to</span> sell, sell, <span class="hljs-keyword">import</span>, <span class="hljs-keyword">and</span> otherwise transfer the <span class="hljs-keyword">Work</span>,
+      <span class="hljs-keyword">where</span> such license applies <span class="hljs-keyword">only</span> <span class="hljs-keyword">to</span> those patent claims licensable
+      <span class="hljs-keyword">by</span> such Contributor that <span class="hljs-keyword">are</span> necessarily infringed <span class="hljs-keyword">by</span> their
+      Contribution(s) alone <span class="hljs-keyword">or</span> <span class="hljs-keyword">by</span> combination <span class="hljs-keyword">of</span> their Contribution(s)
+      <span class="hljs-keyword">with</span> the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">to</span> which such Contribution(s) was submitted. <span class="hljs-keyword">If</span> You
+      institute patent litigation against <span class="hljs-keyword">any</span> entity (<span class="hljs-keyword">including</span> a
+      <span class="hljs-keyword">cross</span>-claim <span class="hljs-keyword">or</span> counterclaim <span class="hljs-keyword">in</span> a lawsuit) alleging that the <span class="hljs-keyword">Work</span>
+      <span class="hljs-keyword">or</span> a Contribution incorporated <span class="hljs-keyword">within</span> the <span class="hljs-keyword">Work</span> constitutes direct
+      <span class="hljs-keyword">or</span> contributory patent infringement, <span class="hljs-keyword">then</span> <span class="hljs-keyword">any</span> patent licenses
+      granted <span class="hljs-keyword">to</span> You <span class="hljs-keyword">under</span> this License <span class="hljs-keyword">for</span> that <span class="hljs-keyword">Work</span> shall terminate
+      <span class="hljs-keyword">as</span> <span class="hljs-keyword">of</span> the <span class="hljs-built_in">date</span> such litigation <span class="hljs-keyword">is</span> filed.
 
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
+   <span class="hljs-number">4.</span> Redistribution. You may reproduce <span class="hljs-keyword">and</span> <span class="hljs-keyword">distribute</span> copies <span class="hljs-keyword">of</span> the
+      <span class="hljs-keyword">Work</span> <span class="hljs-keyword">or</span> Derivative Works thereof <span class="hljs-keyword">in</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">medium</span>, <span class="hljs-keyword">with</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">without</span>
+      modifications, <span class="hljs-keyword">and</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">Source</span> <span class="hljs-keyword">or</span> <span class="hljs-keyword">Object</span> <span class="hljs-keyword">form</span>, provided that You
+      meet the <span class="hljs-keyword">following</span> conditions:
 
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
+      (a) You must give <span class="hljs-keyword">any</span> other recipients <span class="hljs-keyword">of</span> the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">or</span>
+          Derivative Works a copy <span class="hljs-keyword">of</span> this License; and
 
       (b) You must cause any modified files to carry prominent notices
           stating that You changed the files; and
@@ -269,105 +270,105 @@ obj.dosomething();</code></pre>
       (c) You must retain, in the Source form of any Derivative Works
           that You distribute, all copyright, patent, trademark, and
           attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
+          excluding those notices that <span class="hljs-keyword">do</span> <span class="hljs-keyword">not</span> pertain <span class="hljs-keyword">to</span> <span class="hljs-keyword">any</span> part <span class="hljs-keyword">of</span>
           the Derivative Works; and
 
-      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its
+      (d) If the Work includes a "NOTICE" text file as part of its
           distribution, then any Derivative Works that You distribute must
           include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
+          within such NOTICE file, excluding those notices that <span class="hljs-keyword">do</span> <span class="hljs-keyword">not</span>
+          pertain <span class="hljs-keyword">to</span> <span class="hljs-keyword">any</span> part <span class="hljs-keyword">of</span> the Derivative Works, <span class="hljs-keyword">in</span> <span class="hljs-keyword">at</span> <span class="hljs-keyword">least</span> one
+          <span class="hljs-keyword">of</span> the <span class="hljs-keyword">following</span> places: <span class="hljs-keyword">within</span> a <span class="hljs-keyword">NOTICE</span> <span class="hljs-built_in">text</span> <span class="hljs-keyword">file</span> <span class="hljs-keyword">distributed</span>
+          <span class="hljs-keyword">as</span> part <span class="hljs-keyword">of</span> the Derivative Works; within the Source form or
+          documentation, if provided along <span class="hljs-keyword">with</span> the Derivative Works; or,
           within a display generated by the Derivative Works, if and
           wherever such third-party notices normally appear. The contents
           of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
+          <span class="hljs-keyword">do</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">modify</span> the License. You may <span class="hljs-keyword">add</span> Your own attribution
+          notices <span class="hljs-keyword">within</span> Derivative Works that You <span class="hljs-keyword">distribute</span>, alongside
+          <span class="hljs-keyword">or</span> <span class="hljs-keyword">as</span> an addendum <span class="hljs-keyword">to</span> the <span class="hljs-keyword">NOTICE</span> <span class="hljs-built_in">text</span> <span class="hljs-keyword">from</span> the <span class="hljs-keyword">Work</span>, provided
           that such additional attribution notices cannot be construed
-          as modifying the License.
+          <span class="hljs-keyword">as</span> modifying the License.
 
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
+      You may <span class="hljs-keyword">add</span> Your own copyright <span class="hljs-keyword">statement</span> <span class="hljs-keyword">to</span> Your modifications <span class="hljs-keyword">and</span>
+      may provide additional <span class="hljs-keyword">or</span> different license terms <span class="hljs-keyword">and</span> conditions
+      <span class="hljs-keyword">for</span> <span class="hljs-keyword">use</span>, reproduction, <span class="hljs-keyword">or</span> distribution <span class="hljs-keyword">of</span> Your modifications, <span class="hljs-keyword">or</span>
+      <span class="hljs-keyword">for</span> <span class="hljs-keyword">any</span> such Derivative Works <span class="hljs-keyword">as</span> a whole, provided Your <span class="hljs-keyword">use</span>,
+      reproduction, <span class="hljs-keyword">and</span> distribution <span class="hljs-keyword">of</span> the <span class="hljs-keyword">Work</span> otherwise complies <span class="hljs-keyword">with</span>
+      the conditions stated <span class="hljs-keyword">in</span> this License.
 
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
+   <span class="hljs-number">5.</span> Submission <span class="hljs-keyword">of</span> Contributions. Unless You explicitly state otherwise,
+      <span class="hljs-keyword">any</span> Contribution intentionally submitted <span class="hljs-keyword">for</span> inclusion <span class="hljs-keyword">in</span> the <span class="hljs-keyword">Work</span>
+      <span class="hljs-keyword">by</span> You <span class="hljs-keyword">to</span> the Licensor shall be <span class="hljs-keyword">under</span> the terms <span class="hljs-keyword">and</span> conditions <span class="hljs-keyword">of</span>
+      this License, <span class="hljs-keyword">without</span> <span class="hljs-keyword">any</span> additional terms <span class="hljs-keyword">or</span> conditions.
+      Notwithstanding the above, <span class="hljs-keyword">nothing</span> herein shall supersede <span class="hljs-keyword">or</span> <span class="hljs-keyword">modify</span>
+      the terms <span class="hljs-keyword">of</span> <span class="hljs-keyword">any</span> separate license agreement you may have executed
+      <span class="hljs-keyword">with</span> Licensor regarding such Contributions.
 
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
+   <span class="hljs-number">6.</span> Trademarks. This License does <span class="hljs-keyword">not</span> <span class="hljs-keyword">grant</span> permission <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span> the trade
+      <span class="hljs-keyword">names</span>, trademarks, service marks, <span class="hljs-keyword">or</span> product <span class="hljs-keyword">names</span> <span class="hljs-keyword">of</span> the Licensor,
+      <span class="hljs-keyword">except</span> <span class="hljs-keyword">as</span> <span class="hljs-keyword">required</span> <span class="hljs-keyword">for</span> reasonable <span class="hljs-keyword">and</span> customary <span class="hljs-keyword">use</span> <span class="hljs-keyword">in</span> describing the
+      origin <span class="hljs-keyword">of</span> the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> reproducing the <span class="hljs-keyword">content</span> <span class="hljs-keyword">of</span> the <span class="hljs-keyword">NOTICE</span> file.
 
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
+   <span class="hljs-number">7.</span> Disclaimer <span class="hljs-keyword">of</span> Warranty. Unless <span class="hljs-keyword">required</span> <span class="hljs-keyword">by</span> applicable law <span class="hljs-keyword">or</span>
+      agreed <span class="hljs-keyword">to</span> <span class="hljs-keyword">in</span> writing, Licensor provides the <span class="hljs-keyword">Work</span> (<span class="hljs-keyword">and</span> <span class="hljs-keyword">each</span>
+      Contributor provides its Contributions) <span class="hljs-keyword">on</span> an <span class="hljs-string">"AS IS"</span> BASIS,
+      <span class="hljs-keyword">WITHOUT</span> WARRANTIES <span class="hljs-keyword">OR</span> CONDITIONS <span class="hljs-keyword">OF</span> <span class="hljs-keyword">ANY</span> KIND, either express <span class="hljs-keyword">or</span>
+      implied, <span class="hljs-keyword">including</span>, <span class="hljs-keyword">without</span> limitation, <span class="hljs-keyword">any</span> warranties <span class="hljs-keyword">or</span> conditions
+      <span class="hljs-keyword">of</span> TITLE, NON-INFRINGEMENT, MERCHANTABILITY, <span class="hljs-keyword">or</span> FITNESS <span class="hljs-keyword">FOR</span> A
+      PARTICULAR PURPOSE. You <span class="hljs-keyword">are</span> solely responsible <span class="hljs-keyword">for</span> determining the
+      appropriateness <span class="hljs-keyword">of</span> <span class="hljs-keyword">using</span> <span class="hljs-keyword">or</span> redistributing the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">and</span> assume <span class="hljs-keyword">any</span>
+      risks associated <span class="hljs-keyword">with</span> Your exercise <span class="hljs-keyword">of</span> permissions <span class="hljs-keyword">under</span> this License.
 
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
+   <span class="hljs-number">8.</span> Limitation <span class="hljs-keyword">of</span> Liability. <span class="hljs-keyword">In</span> <span class="hljs-keyword">no</span> <span class="hljs-keyword">event</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">under</span> <span class="hljs-keyword">no</span> legal theory,
+      whether <span class="hljs-keyword">in</span> tort (<span class="hljs-keyword">including</span> negligence), contract, <span class="hljs-keyword">or</span> otherwise,
+      unless <span class="hljs-keyword">required</span> <span class="hljs-keyword">by</span> applicable law (such <span class="hljs-keyword">as</span> deliberate <span class="hljs-keyword">and</span> grossly
+      negligent acts) <span class="hljs-keyword">or</span> agreed <span class="hljs-keyword">to</span> <span class="hljs-keyword">in</span> writing, shall <span class="hljs-keyword">any</span> Contributor be
+      liable <span class="hljs-keyword">to</span> You <span class="hljs-keyword">for</span> damages, <span class="hljs-keyword">including</span> <span class="hljs-keyword">any</span> direct, indirect, special,
+      incidental, <span class="hljs-keyword">or</span> consequential damages <span class="hljs-keyword">of</span> <span class="hljs-keyword">any</span> <span class="hljs-built_in">character</span> arising <span class="hljs-keyword">as</span> a
+      <span class="hljs-keyword">result</span> <span class="hljs-keyword">of</span> this License <span class="hljs-keyword">or</span> <span class="hljs-keyword">out</span> <span class="hljs-keyword">of</span> the <span class="hljs-keyword">use</span> <span class="hljs-keyword">or</span> inability <span class="hljs-keyword">to</span> <span class="hljs-keyword">use</span> the
+      <span class="hljs-keyword">Work</span> (<span class="hljs-keyword">including</span> but <span class="hljs-keyword">not</span> limited <span class="hljs-keyword">to</span> damages <span class="hljs-keyword">for</span> loss <span class="hljs-keyword">of</span> goodwill,
+      <span class="hljs-keyword">work</span> stoppage, computer <span class="hljs-keyword">failure</span> <span class="hljs-keyword">or</span> malfunction, <span class="hljs-keyword">or</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">and</span> <span class="hljs-keyword">all</span>
+      other commercial damages <span class="hljs-keyword">or</span> losses), even <span class="hljs-keyword">if</span> such Contributor
+      has been advised <span class="hljs-keyword">of</span> the possibility <span class="hljs-keyword">of</span> such damages.
 
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
+   <span class="hljs-number">9.</span> Accepting Warranty <span class="hljs-keyword">or</span> Additional Liability. <span class="hljs-keyword">While</span> redistributing
+      the <span class="hljs-keyword">Work</span> <span class="hljs-keyword">or</span> Derivative Works thereof, You may <span class="hljs-keyword">choose</span> <span class="hljs-keyword">to</span> offer,
+      <span class="hljs-keyword">and</span> charge a fee <span class="hljs-keyword">for</span>, acceptance <span class="hljs-keyword">of</span> support, warranty, indemnity,
+      <span class="hljs-keyword">or</span> other liability obligations <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> rights <span class="hljs-keyword">consistent</span> <span class="hljs-keyword">with</span> this
+      License. However, <span class="hljs-keyword">in</span> accepting such obligations, You may act <span class="hljs-keyword">only</span>
+      <span class="hljs-keyword">on</span> Your own behalf <span class="hljs-keyword">and</span> <span class="hljs-keyword">on</span> Your sole responsibility, <span class="hljs-keyword">not</span> <span class="hljs-keyword">on</span> behalf
+      <span class="hljs-keyword">of</span> <span class="hljs-keyword">any</span> other Contributor, <span class="hljs-keyword">and</span> <span class="hljs-keyword">only</span> <span class="hljs-keyword">if</span> You agree <span class="hljs-keyword">to</span> indemnify,
+      defend, <span class="hljs-keyword">and</span> hold <span class="hljs-keyword">each</span> Contributor harmless <span class="hljs-keyword">for</span> <span class="hljs-keyword">any</span> liability
+      incurred <span class="hljs-keyword">by</span>, <span class="hljs-keyword">or</span> claims asserted against, such Contributor <span class="hljs-keyword">by</span> reason
+      <span class="hljs-keyword">of</span> your accepting <span class="hljs-keyword">any</span> such warranty <span class="hljs-keyword">or</span> additional liability.
 
-   END OF TERMS AND CONDITIONS
+   <span class="hljs-keyword">END</span> <span class="hljs-keyword">OF</span> TERMS <span class="hljs-keyword">AND</span> CONDITIONS
 
-   APPENDIX: How to apply the Apache License to your work.
+   APPENDIX: How <span class="hljs-keyword">to</span> <span class="hljs-keyword">apply</span> the Apache License <span class="hljs-keyword">to</span> your work.
 
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;
-      replaced with your own identifying information. (Don&#39;t include
+      <span class="hljs-keyword">To</span> <span class="hljs-keyword">apply</span> the Apache License <span class="hljs-keyword">to</span> your <span class="hljs-keyword">work</span>, attach the <span class="hljs-keyword">following</span>
+      boilerplate <span class="hljs-keyword">notice</span>, <span class="hljs-keyword">with</span> the <span class="hljs-keyword">fields</span> <span class="hljs-keyword">enclosed</span> <span class="hljs-keyword">by</span> brackets <span class="hljs-string">"[]"</span>
+      replaced <span class="hljs-keyword">with</span> your own identifying information. (Don<span class="hljs-string">'t include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
       file or class name and description of purpose be included on the
-      same &quot;printed page&quot; as the copyright notice for easier
+      same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
    Copyright [yyyy] [name of copyright owner]
 
-   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+   Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
        http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+   distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.</code></pre>
+   limitations under the License.</span></code></pre>
 				<a href="#credit" id="credit" style="color: inherit; text-decoration: none;">
 					<h2>credit</h2>
 				</a>
@@ -391,7 +392,7 @@ obj.dosomething();</code></pre>
 				<a href="#test-report" id="test-report" style="color: inherit; text-decoration: none;">
 					<h2>test report</h2>
 				</a>
-				<p>v0.2.7 total: 704, passed: 367, failed: 181, pending: 156</p>
+				<p>v0.3.0 total: 703, passed: 418, failed: 169, pending: 116</p>
 				<p>LazyObject tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing that lazy objects discard notifications after the first...</li>
@@ -509,7 +510,7 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing returned time matches to the requested index...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing mandatory times are recalled correctly...</li>
 				</ul>
-				<p>time series tests</p>
+				<p>Time series tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing time series construction...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing time series interval price...</li>
@@ -543,7 +544,7 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing discrete integrator formulae...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing piecewise integral...</li>
 				</ul>
-				<p>NumericalDifferentiation tests</p>
+				<p>Numerical differentiation tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing numerical differentiation using the central scheme...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing numerical differentiation using the backward scheme...</li>
@@ -553,7 +554,7 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing numerical differentiation of sin function...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing coefficients from numerical differentiation by comparison with results from Vandermonde matrix inversion...</li>
 				</ul>
-				<p>ode tests</p>
+				<p>ODE tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing adaptive Runge Kutta...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing matrix exponential based on ode...</li>
@@ -572,7 +573,7 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing Ridder solver...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing secant solver...</li>
 				</ul>
-				<p>array tests</p>
+				<p>Array tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing array construction...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing array functions...</li>
@@ -598,13 +599,13 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing Moore-Penrose inverse...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing iterative solvers...</li>
 				</ul>
-				<p>TQR eigendecomposition tests</p>
+				<p>TQR eigen decomposition tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing TQR eigenvalue decomposition...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing TQR zero-off-diagonal eigenvalues...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing TQR eigenvector decomposition...</li>
 				</ul>
-				<p>auto-covariance tests</p>
+				<p>Auto-covariance tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing convolutions...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing auto-covariances...</li>
@@ -621,7 +622,7 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing bivariate cumulative Student t distribution for large N...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing inverse CDF based on stochastic collocation...</li>
 				</ul>
-				<p>linear least squares regression tests</p>
+				<p>Linear least squares regression tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing linear least-squares regression...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing multi-dimensional linear least-squares regression...</li>
@@ -674,7 +675,7 @@ obj.dosomething();</code></pre>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing Mersenne twister...</li>
 				</ul>
-				<p>fast fourier transform tests</p>
+				<p>Fast fourier transform tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing complex direct FFT...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing convolution via inverse FFT...</li>
@@ -717,11 +718,11 @@ obj.dosomething();</code></pre>
 					<li><input checked="" disabled="" type="checkbox"> Testing B-Splines...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing piecewise constant interpolation on a single point...</li>
 				</ul>
-				<p>sampled curve tests</p>
+				<p>Sampled curve tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing sampled curve construction...</li>
 				</ul>
-				<p>transformed grid</p>
+				<p>Transformed grid</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing transformed grid construction...</li>
 				</ul>
@@ -808,7 +809,7 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing method of lines to solve Heston PDEs...</li>
 					<li><input disabled="" type="checkbox"> Testing for spurious oscillations when solving the Heston PDEs...</li>
 				</ul>
-				<p>linear operator tests</p>
+				<p>Linear operator tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing indexing of a linear operator...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing uniform grid mesher...</li>
@@ -876,7 +877,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>CatBond tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing that catastrophe events are split correctly for periods of whole years...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing that catastrophe events are split correctly for periods of whole years...</li>
 					<li><input disabled="" type="checkbox"> Testing that catastrophe events are split correctly for irregular periods...</li>
 					<li><input disabled="" type="checkbox"> Testing that catastrophe events are split correctly when there are no simulated events...</li>
 					<li><input disabled="" type="checkbox"> Testing that beta risk gives correct terminal distribution...</li>
@@ -908,7 +909,7 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing yoy inflation cap/floor parity...</li>
 					<li><input disabled="" type="checkbox"> Testing Black yoy inflation cap/floor price against cached values...</li>
 				</ul>
-				<p>forward rate agreement</p>
+				<p>Forward rate agreement</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing forward rate agreement construction...</li>
 				</ul>
@@ -977,11 +978,11 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Dividend European option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing dividend European option values with no dividends...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing dividend European option values with no dividends...</li>
 					<li><input disabled="" type="checkbox"> Testing dividend European option values with known value...</li>
-					<li><input disabled="" type="checkbox"> Testing dividend European option with a dividend on today&#39;s date...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing dividend European option with a dividend on today&#39;s date...</li>
 					<li><input disabled="" type="checkbox"> Testing dividend European option values with end limits...</li>
-					<li><input disabled="" type="checkbox"> Testing dividend European option greeks...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing dividend European option greeks...</li>
 					<li><input disabled="" type="checkbox"> Testing finite-difference dividend European option values...</li>
 					<li><input disabled="" type="checkbox"> Testing finite-differences dividend European option greeks...</li>
 					<li><input disabled="" type="checkbox"> Testing finite-differences dividend American option greeks...</li>
@@ -1016,25 +1017,25 @@ obj.dosomething();</code></pre>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing FFT European engines against analytic results...</li>
 				</ul>
-				<p>Quanto option tests</p>
-				<ul>
-					<li><input disabled="" type="checkbox"> Testing quanto option values...</li>
-					<li><input disabled="" type="checkbox"> Testing quanto option greeks...</li>
-					<li><input disabled="" type="checkbox"> Testing quanto-forward option values...</li>
-					<li><input disabled="" type="checkbox"> Testing quanto-forward option greeks...</li>
-					<li><input disabled="" type="checkbox"> Testing quanto-forward-performance option values...</li>
-				</ul>
-				<p>Experimental quanto option tests</p>
-				<ul>
-					<li><input disabled="" type="checkbox"> Testing quanto-double-barrier option values...</li>
-				</ul>
 				<p>Forward option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing forward option values...</li>
-					<li><input disabled="" type="checkbox"> Testing forward performance option values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing forward option values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing forward performance option values...</li>
 					<li><input disabled="" type="checkbox"> Testing forward option greeks...</li>
 					<li><input disabled="" type="checkbox"> Testing forward performance option greeks...</li>
 					<li><input disabled="" type="checkbox"> Testing forward option greeks initialization...</li>
+				</ul>
+				<p>Quanto option tests</p>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto option values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto option greeks...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto-forward option values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto-forward option greeks...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto-forward-performance option values...</li>
+				</ul>
+				<p>Experimental quanto option tests</p>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Testing quanto-double-barrier option values...</li>
 				</ul>
 				<p>Quote tests</p>
 				<ul>
@@ -1069,12 +1070,12 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Overnight-indexed swap tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Eonia-swap calculation of fair fixed rate...</li>
-					<li><input disabled="" type="checkbox"> Testing Eonia-swap calculation of fair floating spread...</li>
-					<li><input disabled="" type="checkbox"> Testing Eonia-swap calculation against cached value...</li>
-					<li><input disabled="" type="checkbox"> Testing Eonia-swap curve building...</li>
-					<li><input disabled="" type="checkbox"> Testing Eonia-swap curve building with telescopic value dates...</li>
-					<li><input disabled="" type="checkbox"> Testing seasoned Eonia-swap calculation...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Eonia-swap calculation of fair fixed rate...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Eonia-swap calculation of fair floating spread...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Eonia-swap calculation against cached value...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Eonia-swap curve building...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Eonia-swap curve building with telescopic value dates...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing seasoned Eonia-swap calculation...</li>
 				</ul>
 				<p>Swap tests</p>
 				<ul>
@@ -1100,12 +1101,11 @@ obj.dosomething();</code></pre>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing swaption dependency on strike...</li>
 					<li><input disabled="" type="checkbox"> Testing swaption dependency on spread...</li>
-					<li><input disabled="" type="checkbox"> Testing swaption treatment of spread...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing swaption treatment of spread...</li>
 					<li><input disabled="" type="checkbox"> Testing swaption value against cached value...</li>
-					<li><input disabled="" type="checkbox"> Testing swaption vega...</li>
-					<li><input disabled="" type="checkbox"> Testing cash settled swaptions modified annuity...</li>
-					<li><input disabled="" type="checkbox"> Testing cash settled swaptions modified annuity...</li>
-					<li><input disabled="" type="checkbox"> Testing implied volatility for swaptions...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing swaption vega...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing cash settled swaptions modified annuity...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing implied volatility for swaptions...</li>
 				</ul>
 				<p>Swaption Volatility Cube tests</p>
 				<ul>
@@ -1206,12 +1206,12 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing Markov functional calibration to two instrument sets...</li>
 					<li><input disabled="" type="checkbox"> Testing Markov functional Bermudan swaption engine...</li>
 				</ul>
-				<p>NormalCLVModel tests</p>
+				<p>Normal CLV Model tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Black-Scholes cumulative distribution function with constant volatility...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Black-Scholes cumulative distribution function with constant volatility...</li>
 					<li><input disabled="" type="checkbox"> Testing Heston cumulative distribution function...</li>
 					<li><input disabled="" type="checkbox"> Testing illustrative 1D example of normal CLV model...</li>
-					<li><input disabled="" type="checkbox"> Testing Monte Carlo BS option pricing...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Monte Carlo BS option pricing...</li>
 					<li><input disabled="" type="checkbox"> Testing double no-touch pricing with normal CLV model...</li>
 				</ul>
 				<p>Short-rate model tests</p>
@@ -1220,7 +1220,7 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing Hull-White calibration with fixed reversion against cached values...</li>
 					<li><input disabled="" type="checkbox"> Testing Hull-White calibration against cached values using swaptions without start delay...</li>
 					<li><input disabled="" type="checkbox"> Testing Hull-White swap pricing against known values...</li>
-					<li><input disabled="" type="checkbox"> Testing Hull-White futures convexity bias...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Hull-White futures convexity bias...</li>
 					<li><input disabled="" type="checkbox"> Testing zero bond pricing for extended CIR model ...</li>
 				</ul>
 				<p>SquareRootCLVModel tests</p>
@@ -1259,7 +1259,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>volatility models tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing volatility model construction...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing volatility model construction...</li>
 				</ul>
 				<p>Default-probability curve tests</p>
 				<ul>
@@ -1274,9 +1274,9 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Inflation tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing zero inflation indices...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing zero inflation indices...</li>
 					<li><input disabled="" type="checkbox"> Testing zero inflation term structure...</li>
-					<li><input disabled="" type="checkbox"> Testing that zero inflation indices forecast future fixings...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing that zero inflation indices forecast future fixings...</li>
 					<li><input disabled="" type="checkbox"> Testing year-on-year inflation indices...</li>
 					<li><input disabled="" type="checkbox"> Testing year-on-year inflation term structure...</li>
 					<li><input disabled="" type="checkbox"> Testing inflation period...</li>
@@ -1309,12 +1309,12 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing different optimizer for Andreasen-Huge volatility interpolation...</li>
 					<li><input disabled="" type="checkbox"> Testing that reference date of adapter surface moves along with evaluation date...</li>
 				</ul>
-				<p>yoyOptionletStripper (yoy inflation vol) tests</p>
+				<p>YoY OptionletStripper (yoy inflation vol) tests</p>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing conversion from YoY price surface to YoY volatility surface...</li>
 					<li><input disabled="" type="checkbox"> Testing conversion from YoY cap-floor surface to YoY inflation term structure...</li>
 				</ul>
-				<p>OptionletStripper Tests</p>
+				<p>Optionlet Stripper Tests</p>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing forward/forward vol stripping from flat term vol surface using OptionletStripper1 class...</li>
 					<li><input disabled="" type="checkbox"> Testing forward/forward vol stripping from non-flat term vol surface using OptionletStripper1 class...</li>
@@ -1369,8 +1369,8 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Credit-default swap tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing credit-default swap against cached values...</li>
-					<li><input disabled="" type="checkbox"> Testing credit-default swap against cached market values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing credit-default swap against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing credit-default swap against cached market values...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing implied hazard-rate for credit-default swaps...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing fair-spread calculation for credit-default swaps...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing fair-upfront calculation for credit-default swaps...</li>
@@ -1391,7 +1391,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Binary Option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing cash-or-nothing barrier options against Haug&#39;s values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing cash-or-nothing barrier options against Haug&#39;s values...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing asset-or-nothing barrier options against Haug&#39;s values...</li>
 				</ul>
 				<p>Chooser option tests</p>
@@ -1418,14 +1418,14 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Digital option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing European cash-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing European asset-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing European gap digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing American cash-(at-hit)-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing American asset-(at-hit)-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing American cash-(at-expiry)-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing American asset-(at-expiry)-or-nothing digital option...</li>
-					<li><input disabled="" type="checkbox"> Testing American cash-(at-hit)-or-nothing digital option greeks...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing European cash-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing European asset-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing European gap digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American cash-(at-hit)-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American asset-(at-hit)-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American cash-(at-expiry)-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American asset-(at-expiry)-or-nothing digital option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American cash-(at-hit)-or-nothing digital option greeks...</li>
 					<li><input disabled="" type="checkbox"> Testing Monte Carlo cash-(at-hit)-or-nothing American engine...</li>
 				</ul>
 				<p>Extensible option tests</p>
@@ -1444,27 +1444,27 @@ obj.dosomething();</code></pre>
 				<p>Lookback option tests</p>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing analytic continuous floating-strike lookback options...</li>
-					<li><input disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
 					<li><input disabled="" type="checkbox"> Testing analytic continuous partial floating-strike lookback options...</li>
-					<li><input disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
 				</ul>
 				<p>Exchange option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing European one-asset-for-another option...</li>
-					<li><input disabled="" type="checkbox"> Testing analytic European exchange option greeks...</li>
-					<li><input disabled="" type="checkbox"> Testing American one-asset-for-another option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing European one-asset-for-another option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic European exchange option greeks...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing American one-asset-for-another option...</li>
 				</ul>
 				<p>Pagoda-option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing pagoda option against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing pagoda option against cached values...</li>
 				</ul>
 				<p>Partial-time barrier option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing analytic engine for partial-time barrier option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic engine for partial-time barrier option...</li>
 				</ul>
 				<p>Spread option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Kirk approximation for spread options...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Kirk approximation for spread options...</li>
 				</ul>
 				<p>Swing-Option Test</p>
 				<ul>
@@ -1477,11 +1477,11 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Two-asset barrier option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing two-asset barrier options against Haug&#39;s values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing two-asset barrier options against Haug&#39;s values...</li>
 				</ul>
 				<p>Two-asset correlation option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing analytic engine for two-asset correlation option...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic engine for two-asset correlation option...</li>
 				</ul>
 				<p>Credit risk plus tests</p>
 				<ul>
@@ -1498,7 +1498,7 @@ obj.dosomething();</code></pre>
 				<p>Variance Gamma tests</p>
 				<ul>
 					<li><input disabled="" type="checkbox"> Testing variance-gamma model for European options...</li>
-					<li><input disabled="" type="checkbox"> Testing variance-gamma model integration around zero...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing variance-gamma model integration around zero...</li>
 				</ul>
 				<p>Variance option tests</p>
 				<ul>
@@ -1511,7 +1511,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>VPP Test</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Geman-Roncoroni process...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Geman-Roncoroni process...</li>
 					<li><input disabled="" type="checkbox"> Testing simple-storage option based on ext. OU model...</li>
 					<li><input disabled="" type="checkbox"> Testing simple Kluge ext-Ornstein-Uhlenbeck spread option...</li>
 					<li><input disabled="" type="checkbox"> Testing VPP step condition...</li>
@@ -3730,6 +3730,9 @@ obj.dosomething();</code></pre>
 						<a href="modules/_ql_methods_finitedifferences_operators_ninepointlinearop_.html">"ql/methods/finitedifferences/operators/ninepointlinearop"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_ql_methods_finitedifferences_operators_nthorderderivativeop_.html">"ql/methods/finitedifferences/operators/nthorderderivativeop"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_ql_methods_finitedifferences_operators_numericaldifferentiation_.html">"ql/methods/finitedifferences/operators/numericaldifferentiation"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -5728,6 +5731,9 @@ obj.dosomething();</code></pre>
 						<a href="modules/_mixins_ql_experimental_himalayaoptionenginemcsimulation_.html">"mixins/ql/experimental/himalayaoptionenginemcsimulation"</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_mixins_ql_experimental_interpolatedyoyoptionletvolatilitycurvelazyobject_.html">"mixins/ql/experimental/interpolatedyoyoptionletvolatilitycurve<wbr>Lazyobject"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/_mixins_ql_experimental_pagodaoptionenginemcsimulation_.html">"mixins/ql/experimental/pagodaoptionenginemcsimulation"</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -5735,6 +5741,9 @@ obj.dosomething();</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/_mixins_ql_experimental_riskneutraldensitycalculatorlazyobject_.html">"mixins/ql/experimental/riskneutraldensitycalculatorlazyobject"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_mixins_ql_experimental_yoyoptionletvolatilitysurfaceinterpolatedcurve_.html">"mixins/ql/experimental/yoyoptionletvolatilitysurfaceinterpolatedcurve"</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/_mixins_ql_indexes_indexobserver_.html">"mixins/ql/indexes/indexobserver"</a>

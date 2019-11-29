@@ -163,6 +163,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#checkrange2" class="tsd-kind-icon">check<wbr>Range2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#checkstrike" class="tsd-kind-icon">check<wbr>Strike</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#cpioptiondatefromtenor" class="tsd-kind-icon">cpi<wbr>Option<wbr>Date<wbr>From<wbr>Tenor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#cpicftpsinit" class="tsd-kind-icon">cpicftps<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#floorprice1" class="tsd-kind-icon">floor<wbr>Price1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#floorprice2" class="tsd-kind-icon">floor<wbr>Price2</a></li>
@@ -170,6 +171,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#floorstrikes" class="tsd-kind-icon">floor<wbr>Strikes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#frequency" class="tsd-kind-icon">frequency</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#hasseasonality" class="tsd-kind-icon">has<wbr>Seasonality</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#icpicftpsinit" class="tsd-kind-icon">icpicftps<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#indexisinterpolated" class="tsd-kind-icon">index<wbr>IsInterpolated</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#itsinit1" class="tsd-kind-icon">its<wbr>Init1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#itsinit2" class="tsd-kind-icon">its<wbr>Init2</a></li>
@@ -209,59 +211,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>InterpolatedCPICap<wbr>Floor<wbr>Term<wbr>Price<wbr>Surface<span class="tsd-signature-symbol">(</span>nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, startRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, observationLag<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, cal<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, zii<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span>, yts<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, cStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, fStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, cfMaturities<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span>, cPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, fPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, interpolator2d<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html" class="tsd-signature-type">InterpolatedCPICapFloorTermPriceSurface</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>InterpolatedCPICap<wbr>Floor<wbr>Term<wbr>Price<wbr>Surface<span class="tsd-signature-symbol">(</span>interpolator<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html" class="tsd-signature-type">InterpolatedCPICapFloorTermPriceSurface</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#constructor">constructor</a></p>
+								<p>Overrides <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:282</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:284</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
-								</li>
-								<li>
-									<h5>startRate: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
-								</li>
-								<li>
-									<h5>observationLag: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
-								</li>
-								<li>
-									<h5>cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
-								</li>
-								<li>
-									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
-								</li>
-								<li>
-									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
-								</li>
-								<li>
-									<h5>zii: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>yts: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>cStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>fStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>cfMaturities: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>cPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
-								</li>
-								<li>
-									<h5>fPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator2d: <a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5>interpolator: <a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html" class="tsd-signature-type">InterpolatedCPICapFloorTermPriceSurface</a></h4>
@@ -289,7 +252,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_cprice">_cPrice</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:272</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:274</li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">_c<wbr>PriceB<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:404</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:415</li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +273,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_cstrikes">_cStrikes</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:268</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:270</li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">_cap<wbr>Price<span class="tsd-signature-symbol">:</span> <a href="_ql_math_interpolations_interpolation2d_.interpolation2d.html" class="tsd-signature-type">Interpolation2D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:406</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:417</li>
 						</ul>
 					</aside>
 				</section>
@@ -342,7 +305,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_cfmaturities">_cfMaturities</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:270</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:272</li>
 						</ul>
 					</aside>
 				</section>
@@ -353,7 +316,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_cfmaturitytimes">_cfMaturityTimes</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:271</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:273</li>
 						</ul>
 					</aside>
 				</section>
@@ -364,7 +327,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_cfstrikes">_cfStrikes</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:275</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:277</li>
 						</ul>
 					</aside>
 				</section>
@@ -397,7 +360,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_fprice">_fPrice</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:273</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:275</li>
 						</ul>
 					</aside>
 				</section>
@@ -407,7 +370,7 @@
 					<div class="tsd-signature tsd-kind-icon">_f<wbr>PriceB<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:405</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:416</li>
 						</ul>
 					</aside>
 				</section>
@@ -418,7 +381,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_fstrikes">_fStrikes</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:269</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:271</li>
 						</ul>
 					</aside>
 				</section>
@@ -428,7 +391,7 @@
 					<div class="tsd-signature tsd-kind-icon">_floor<wbr>Price<span class="tsd-signature-symbol">:</span> <a href="_ql_math_interpolations_interpolation2d_.interpolation2d.html" class="tsd-signature-type">Interpolation2D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:407</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:418</li>
 						</ul>
 					</aside>
 				</section>
@@ -460,7 +423,7 @@
 					<div class="tsd-signature tsd-kind-icon">_interpolator2d<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:408</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:419</li>
 						</ul>
 					</aside>
 				</section>
@@ -581,7 +544,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#_zii">_zii</a></p>
 						<ul>
-							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:266</li>
+							<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:268</li>
 						</ul>
 					</aside>
 				</section>
@@ -965,7 +928,7 @@
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#basedate">baseDate</a></p>
 								<p>Overrides <a href="_ql_termstructures_inflationtermstructure_.inflationtermstructure.html">InflationTermStructure</a>.<a href="_ql_termstructures_inflationtermstructure_.inflationtermstructure.html#basedate">baseDate</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:165</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:167</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -1001,7 +964,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#businessdayconvention">businessDayConvention</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:181</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:183</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h4>
@@ -1042,7 +1005,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#capprice1">capPrice1</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:189</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:191</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1069,7 +1032,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#capprice2">capPrice2</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:394</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:405</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1096,7 +1059,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#capprices">capPrices</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:225</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:227</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
@@ -1114,7 +1077,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#capstrikes">capStrikes</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:213</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:215</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1132,7 +1095,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#checkmaturity">checkMaturity</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:260</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:262</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1212,7 +1175,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#checkstrike">checkStrike</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:256</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:258</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1236,7 +1199,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#cpioptiondatefromtenor">cpiOptionDateFromTenor</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:250</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:252</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1246,6 +1209,72 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cpicftpsinit" class="tsd-anchor"></a>
+					<h3>cpicftps<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">cpicftps<wbr>Init<span class="tsd-signature-symbol">(</span>nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, baseRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, observationLag<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, cal<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, zii<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span>, yts<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, cStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, fStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, cfMaturities<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span>, cPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, fPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html" class="tsd-signature-type">CPICapFloorTermPriceSurface</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#cpicftpsinit">cpicftpsInit</a></p>
+								<ul>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:47</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>baseRate: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>observationLag: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+								<li>
+									<h5>cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>zii: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>yts: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>cStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>fStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>cfMaturities: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>cPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+								<li>
+									<h5>fPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html" class="tsd-signature-type">CPICapFloorTermPriceSurface</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1283,7 +1312,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#floorprice1">floorPrice1</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:193</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:195</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1310,7 +1339,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#floorprice2">floorPrice2</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:399</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:410</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1337,7 +1366,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#floorprices">floorPrices</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:229</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:231</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h4>
@@ -1355,7 +1384,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#floorstrikes">floorStrikes</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:217</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:219</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1395,6 +1424,74 @@
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="icpicftpsinit" class="tsd-anchor"></a>
+					<h3>icpicftps<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">icpicftps<wbr>Init<span class="tsd-signature-symbol">(</span>nominal<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, startRate<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a>, observationLag<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a>, cal<span class="tsd-signature-symbol">: </span><a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a>, bdc<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, dc<span class="tsd-signature-symbol">: </span><a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, zii<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span>, yts<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, cStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, fStrikes<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, cfMaturities<span class="tsd-signature-symbol">: </span><a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span>, cPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, fPrice<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, interpolator2d<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html" class="tsd-signature-type">InterpolatedCPICapFloorTermPriceSurface</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:291</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nominal: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>startRate: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h5>
+								</li>
+								<li>
+									<h5>observationLag: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h5>
+								</li>
+								<li>
+									<h5>cal: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></h5>
+								</li>
+								<li>
+									<h5>bdc: <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></h5>
+								</li>
+								<li>
+									<h5>dc: <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></h5>
+								</li>
+								<li>
+									<h5>zii: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>yts: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>cStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>fStrikes: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>cfMaturities: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>cPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+								<li>
+									<h5>fPrice: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interpolator2d: <a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html" class="tsd-signature-type">InterpolatedCPICapFloorTermPriceSurface</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1583,7 +1680,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#maturities">maturities</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:221</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:223</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1602,7 +1699,7 @@
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#maxdate">maxDate</a></p>
 								<p>Overrides <a href="_ql_termstructure_.termstructure.html">TermStructure</a>.<a href="_ql_termstructure_.termstructure.html#maxdate">maxDate</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:245</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:247</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -1620,7 +1717,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#maxstrike">maxStrike</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:237</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:239</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
@@ -1661,7 +1758,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#mindate">minDate</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:241</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:243</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -1679,7 +1776,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#minstrike">minStrike</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:233</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:235</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></h4>
@@ -1697,7 +1794,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#nominal">nominal</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:177</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:179</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -1734,7 +1831,7 @@
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#observationlag">observationLag</a></p>
 								<p>Overrides <a href="_ql_termstructures_inflationtermstructure_.inflationtermstructure.html">InflationTermStructure</a>.<a href="_ql_termstructures_inflationtermstructure_.inflationtermstructure.html#observationlag">observationLag</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:157</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:159</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></h4>
@@ -1751,7 +1848,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:296</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:307</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1769,7 +1866,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#price1">price1</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:185</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:187</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1796,7 +1893,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#price2">price2</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:385</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:396</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1942,7 +2039,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#strikes">strikes</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:209</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:211</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -2116,7 +2213,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html">CPICapFloorTermPriceSurface</a>.<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.cpicapfloortermpricesurface.html#zeroinflationindex">zeroInflationIndex</a></p>
 								<ul>
-									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:173</li>
+									<li>Defined in ql/experimental/inflation/cpicapfloortermpricesurface.ts:175</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_indexes_inflationindex_.zeroinflationindex.html" class="tsd-signature-type">ZeroInflationIndex</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2318,6 +2415,9 @@
 								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#cpioptiondatefromtenor" class="tsd-kind-icon">cpi<wbr>Option<wbr>Date<wbr>From<wbr>Tenor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#cpicftpsinit" class="tsd-kind-icon">cpicftps<wbr>Init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#daycounter" class="tsd-kind-icon">day<wbr>Counter</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -2337,6 +2437,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#hasseasonality" class="tsd-kind-icon">has<wbr>Seasonality</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#icpicftpsinit" class="tsd-kind-icon">icpicftps<wbr>Init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_inflation_cpicapfloortermpricesurface_.interpolatedcpicapfloortermpricesurface.html#indexisinterpolated" class="tsd-kind-icon">index<wbr>IsInterpolated</a>

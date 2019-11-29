@@ -73,11 +73,186 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmscheme.html" class="tsd-kind-icon">Fdm<wbr>Scheme</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmschemewrapper.html" class="tsd-kind-icon">Fdm<wbr>Scheme<wbr>Wrapper</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfdmmodel.html" class="tsd-kind-icon">HestonSLVFDMModel</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfokkerplanckfdmparams.html" class="tsd-kind-icon">HestonSLVFokker<wbr>Planck<wbr>Fdm<wbr>Params</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_experimental_models_hestonslvfdmmodel_.html#fdmschemefactory" class="tsd-kind-icon">fdm<wbr>Scheme<wbr>Factory</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_experimental_models_hestonslvfdmmodel_.html#integratepdf" class="tsd-kind-icon">integratePDF</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_experimental_models_hestonslvfdmmodel_.html#rescalepdf" class="tsd-kind-icon">rescalePDF</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_experimental_models_hestonslvfdmmodel_.html#reshapepdf" class="tsd-kind-icon">reshapePDF</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_ql_experimental_models_hestonslvfdmmodel_.html#variancemesher" class="tsd-kind-icon">variance<wbr>Mesher</a></li>
+							</ul>
+						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="fdmschemefactory" class="tsd-anchor"></a>
+					<h3>fdm<wbr>Scheme<wbr>Factory</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">fdm<wbr>Scheme<wbr>Factory<span class="tsd-signature-symbol">(</span>desc<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_solvers_fdmbackwardsolver_.fdmschemedesc.html" class="tsd-signature-type">FdmSchemeDesc</a>, op<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html" class="tsd-signature-type">FdmLinearOpComposite</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmscheme.html" class="tsd-signature-type">FdmScheme</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/models/hestonslvfdmmodel.ts:597</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>desc: <a href="../classes/_ql_methods_finitedifferences_solvers_fdmbackwardsolver_.fdmschemedesc.html" class="tsd-signature-type">FdmSchemeDesc</a></h5>
+								</li>
+								<li>
+									<h5>op: <a href="../classes/_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html" class="tsd-signature-type">FdmLinearOpComposite</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmscheme.html" class="tsd-signature-type">FdmScheme</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="integratepdf" class="tsd-anchor"></a>
+					<h3>integratePDF</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">integratePDF<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, mesher<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a>, trafoType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_experimental_finitedifferences_fdmsquarerootfwdop_.fdmsquarerootfwdop.transformationtype.html" class="tsd-signature-type">TransformationType</a>, alpha<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/models/hestonslvfdmmodel.ts:498</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mesher: <a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a></h5>
+								</li>
+								<li>
+									<h5>trafoType: <a href="../enums/_ql_experimental_finitedifferences_fdmsquarerootfwdop_.fdmsquarerootfwdop.transformationtype.html" class="tsd-signature-type">TransformationType</a></h5>
+								</li>
+								<li>
+									<h5>alpha: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="rescalepdf" class="tsd-anchor"></a>
+					<h3>rescalePDF</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">rescalePDF<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, mesher<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a>, trafoType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_experimental_finitedifferences_fdmsquarerootfwdop_.fdmsquarerootfwdop.transformationtype.html" class="tsd-signature-type">TransformationType</a>, alpha<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/models/hestonslvfdmmodel.ts:520</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mesher: <a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a></h5>
+								</li>
+								<li>
+									<h5>trafoType: <a href="../enums/_ql_experimental_finitedifferences_fdmsquarerootfwdop_.fdmsquarerootfwdop.transformationtype.html" class="tsd-signature-type">TransformationType</a></h5>
+								</li>
+								<li>
+									<h5>alpha: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="reshapepdf" class="tsd-anchor"></a>
+					<h3>reshapePDF</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">reshapePDF<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, oldMesher<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a>, newMesher<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a>, interp<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/models/hestonslvfdmmodel.ts:529</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>oldMesher: <a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a></h5>
+								</li>
+								<li>
+									<h5>newMesher: <a href="../classes/_ql_methods_finitedifferences_meshers_fdmmeshercomposite_.fdmmeshercomposite.html" class="tsd-signature-type">FdmMesherComposite</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> interp: <a href="../interfaces/_ql_math_interpolations_interpolation2d_.interpolator2d.html" class="tsd-signature-type">Interpolator2D</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="variancemesher" class="tsd-anchor"></a>
+					<h3>variance<wbr>Mesher</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">variance<wbr>Mesher<span class="tsd-signature-symbol">(</span>rnd<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_experimental_finitedifferences_squarerootprocessrndcalculator_.squarerootprocessrndcalculator.html" class="tsd-signature-type">SquareRootProcessRNDCalculator</a>, t0<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#time" class="tsd-signature-type">Time</a>, t1<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#time" class="tsd-signature-type">Time</a>, vGrid<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#size" class="tsd-signature-type">Size</a>, v0<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a>, params<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfokkerplanckfdmparams.html" class="tsd-signature-type">HestonSLVFokkerPlanckFdmParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_ql_methods_finitedifferences_meshers_fdm1dmesher_.fdm1dmesher.html" class="tsd-signature-type">Fdm1dMesher</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/models/hestonslvfdmmodel.ts:435</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rnd: <a href="../classes/_ql_experimental_finitedifferences_squarerootprocessrndcalculator_.squarerootprocessrndcalculator.html" class="tsd-signature-type">SquareRootProcessRNDCalculator</a></h5>
+								</li>
+								<li>
+									<h5>t0: <a href="_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>t1: <a href="_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>vGrid: <a href="_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>v0: <a href="_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>params: <a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfokkerplanckfdmparams.html" class="tsd-signature-type">HestonSLVFokkerPlanckFdmParams</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_ql_methods_finitedifferences_meshers_fdm1dmesher_.fdm1dmesher.html" class="tsd-signature-type">Fdm1dMesher</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -94,11 +269,32 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmscheme.html" class="tsd-kind-icon">Fdm<wbr>Scheme</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.fdmschemewrapper.html" class="tsd-kind-icon">Fdm<wbr>Scheme<wbr>Wrapper</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfdmmodel.html" class="tsd-kind-icon">HestonSLVFDMModel</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_ql_experimental_models_hestonslvfdmmodel_.hestonslvfokkerplanckfdmparams.html" class="tsd-kind-icon">HestonSLVFokker<wbr>Planck<wbr>Fdm<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_models_hestonslvfdmmodel_.html#fdmschemefactory" class="tsd-kind-icon">fdm<wbr>Scheme<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_models_hestonslvfdmmodel_.html#integratepdf" class="tsd-kind-icon">integratePDF</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_models_hestonslvfdmmodel_.html#rescalepdf" class="tsd-kind-icon">rescalePDF</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_models_hestonslvfdmmodel_.html#reshapepdf" class="tsd-kind-icon">reshapePDF</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_models_hestonslvfdmmodel_.html#variancemesher" class="tsd-kind-icon">variance<wbr>Mesher</a>
 					</li>
 				</ul>
 			</nav>

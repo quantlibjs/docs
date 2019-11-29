@@ -181,7 +181,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fixedRate: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol"> =&nbsp;QL_NULL_REAL</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> forwardStart: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> forwardStart: <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a><span class="tsd-signature-symbol"> =&nbsp;new Period().init1(0, TimeUnit.Days)</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_makeois_.makeois.html" class="tsd-signature-type">MakeOIS</a></h4>
@@ -197,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">_calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:237</li>
+							<li>Defined in ql/instruments/makeois.ts:252</li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">_effective<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:235</li>
+							<li>Defined in ql/instruments/makeois.ts:250</li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">_end<wbr>OfMonth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:245</li>
+							<li>Defined in ql/instruments/makeois.ts:260</li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">_engine<span class="tsd-signature-symbol">:</span> <a href="_ql_pricingengine_.pricingengine.html" class="tsd-signature-type">PricingEngine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:254</li>
+							<li>Defined in ql/instruments/makeois.ts:269</li>
 						</ul>
 					</aside>
 				</section>
@@ -237,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fixed<wbr>Day<wbr>Count<span class="tsd-signature-symbol">:</span> <a href="_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:252</li>
+							<li>Defined in ql/instruments/makeois.ts:267</li>
 						</ul>
 					</aside>
 				</section>
@@ -247,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">_fixed<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:231</li>
+							<li>Defined in ql/instruments/makeois.ts:246</li>
 						</ul>
 					</aside>
 				</section>
@@ -257,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">_forward<wbr>Start<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:232</li>
+							<li>Defined in ql/instruments/makeois.ts:247</li>
 						</ul>
 					</aside>
 				</section>
@@ -267,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>DefaultEOM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:246</li>
+							<li>Defined in ql/instruments/makeois.ts:261</li>
 						</ul>
 					</aside>
 				</section>
@@ -277,7 +277,7 @@
 					<div class="tsd-signature tsd-kind-icon">_nominal<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:249</li>
+							<li>Defined in ql/instruments/makeois.ts:264</li>
 						</ul>
 					</aside>
 				</section>
@@ -287,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">_overnight<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="_ql_indexes_iborindex_.overnightindex.html" class="tsd-signature-type">OvernightIndex</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:230</li>
+							<li>Defined in ql/instruments/makeois.ts:245</li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">_overnight<wbr>Spread<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:251</li>
+							<li>Defined in ql/instruments/makeois.ts:266</li>
 						</ul>
 					</aside>
 				</section>
@@ -307,7 +307,7 @@
 					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Adjustment<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:241</li>
+							<li>Defined in ql/instruments/makeois.ts:256</li>
 						</ul>
 					</aside>
 				</section>
@@ -317,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:240</li>
+							<li>Defined in ql/instruments/makeois.ts:255</li>
 						</ul>
 					</aside>
 				</section>
@@ -327,7 +327,7 @@
 					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Frequency<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_time_frequency_.frequency.html" class="tsd-signature-type">Frequency</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:239</li>
+							<li>Defined in ql/instruments/makeois.ts:254</li>
 						</ul>
 					</aside>
 				</section>
@@ -337,7 +337,7 @@
 					<div class="tsd-signature tsd-kind-icon">_payment<wbr>Lag<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:242</li>
+							<li>Defined in ql/instruments/makeois.ts:257</li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">_rule<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_time_dategenerationrule_.dategeneration.rule.html" class="tsd-signature-type">Rule</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:244</li>
+							<li>Defined in ql/instruments/makeois.ts:259</li>
 						</ul>
 					</aside>
 				</section>
@@ -357,7 +357,7 @@
 					<div class="tsd-signature tsd-kind-icon">_settlement<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:234</li>
+							<li>Defined in ql/instruments/makeois.ts:249</li>
 						</ul>
 					</aside>
 				</section>
@@ -367,7 +367,7 @@
 					<div class="tsd-signature tsd-kind-icon">_swap<wbr>Tenor<span class="tsd-signature-symbol">:</span> <a href="_ql_time_period_.period.html" class="tsd-signature-type">Period</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:229</li>
+							<li>Defined in ql/instruments/makeois.ts:244</li>
 						</ul>
 					</aside>
 				</section>
@@ -377,7 +377,7 @@
 					<div class="tsd-signature tsd-kind-icon">_telescopic<wbr>Value<wbr>Dates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:256</li>
+							<li>Defined in ql/instruments/makeois.ts:271</li>
 						</ul>
 					</aside>
 				</section>
@@ -387,7 +387,7 @@
 					<div class="tsd-signature tsd-kind-icon">_termination<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:236</li>
+							<li>Defined in ql/instruments/makeois.ts:251</li>
 						</ul>
 					</aside>
 				</section>
@@ -397,7 +397,7 @@
 					<div class="tsd-signature tsd-kind-icon">_type<span class="tsd-signature-symbol">:</span> <a href="../enums/_ql_instruments_overnightindexedswap_.overnightindexedswap.type.html" class="tsd-signature-type">Type</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/instruments/makeois.ts:248</li>
+							<li>Defined in ql/instruments/makeois.ts:263</li>
 						</ul>
 					</aside>
 				</section>
@@ -415,7 +415,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_std_functional_.nullaryfunction.html">NullaryFunction</a>.<a href="../interfaces/_std_functional_.nullaryfunction.html#f">f</a></p>
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:138</li>
+									<li>Defined in ql/instruments/makeois.ts:153</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_instruments_overnightindexedswap_.overnightindexedswap.html" class="tsd-signature-type">OvernightIndexedSwap</a></h4>
@@ -432,7 +432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:42</li>
+									<li>Defined in ql/instruments/makeois.ts:57</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -455,7 +455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:122</li>
+									<li>Defined in ql/instruments/makeois.ts:137</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -478,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:64</li>
+									<li>Defined in ql/instruments/makeois.ts:79</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:106</li>
+									<li>Defined in ql/instruments/makeois.ts:121</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -524,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:112</li>
+									<li>Defined in ql/instruments/makeois.ts:127</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -547,7 +547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:53</li>
+									<li>Defined in ql/instruments/makeois.ts:68</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -570,7 +570,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:117</li>
+									<li>Defined in ql/instruments/makeois.ts:132</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -593,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:91</li>
+									<li>Defined in ql/instruments/makeois.ts:106</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -616,7 +616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:101</li>
+									<li>Defined in ql/instruments/makeois.ts:116</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -639,7 +639,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:83</li>
+									<li>Defined in ql/instruments/makeois.ts:98</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -662,7 +662,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:96</li>
+									<li>Defined in ql/instruments/makeois.ts:111</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -685,7 +685,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:133</li>
+									<li>Defined in ql/instruments/makeois.ts:148</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -708,7 +708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:75</li>
+									<li>Defined in ql/instruments/makeois.ts:90</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -731,7 +731,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:58</li>
+									<li>Defined in ql/instruments/makeois.ts:73</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -754,7 +754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:128</li>
+									<li>Defined in ql/instruments/makeois.ts:143</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -777,7 +777,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:69</li>
+									<li>Defined in ql/instruments/makeois.ts:84</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -800,7 +800,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/instruments/makeois.ts:48</li>
+									<li>Defined in ql/instruments/makeois.ts:63</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

@@ -69,6 +69,25 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Variance gamma process</p>
+					</div>
+					<p>This class describes the stochastic volatility
+						process.  With a Brownian motion given by
+						\f[
+						db = \theta dt + \sigma dW_t
+						\f]
+						then a Variance Gamma process X is defined by evaluating this
+						Brownian motion at sample times driven by a Gamma process. If T is
+						the value of a Gamma process with mean 1 and variance rate \f$ \nu
+						\f$ then the Variance Gamma process is given by
+						\f[
+						X(t) = B(T)
+					\f]</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,13 +112,25 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_discretization" class="tsd-kind-icon">_discretization</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_dividendyield" class="tsd-kind-icon">_dividend<wbr>Yield</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_nu" class="tsd-kind-icon">_nu</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_observables" class="tsd-kind-icon">_observables</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_riskfreerate" class="tsd-kind-icon">_risk<wbr>Free<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_s0" class="tsd-kind-icon">_s0</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_sigma" class="tsd-kind-icon">_sigma</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_theta" class="tsd-kind-icon">_theta</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a></li>
@@ -111,7 +142,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#apply1" class="tsd-kind-icon">apply1</a></li>
@@ -119,9 +150,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#covariance" class="tsd-kind-icon">covariance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#diffusion1" class="tsd-kind-icon">diffusion1</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#diffusion2" class="tsd-kind-icon">diffusion2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#diffusion2" class="tsd-kind-icon">diffusion2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#dividendyield" class="tsd-kind-icon">dividend<wbr>Yield</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#drift1" class="tsd-kind-icon">drift1</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#drift2" class="tsd-kind-icon">drift2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#drift2" class="tsd-kind-icon">drift2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#evolve1" class="tsd-kind-icon">evolve1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#evolve2" class="tsd-kind-icon">evolve2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#expectation1" class="tsd-kind-icon">expectation1</a></li>
@@ -129,19 +161,65 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#factors" class="tsd-kind-icon">factors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#initialvalues" class="tsd-kind-icon">initial<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#nu" class="tsd-kind-icon">nu</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#s0" class="tsd-kind-icon">s0</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#sigma" class="tsd-kind-icon">sigma</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#stddeviation1" class="tsd-kind-icon">std<wbr>Deviation1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#stddeviation2" class="tsd-kind-icon">std<wbr>Deviation2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#theta" class="tsd-kind-icon">theta</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#time" class="tsd-kind-icon">time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#update" class="tsd-kind-icon">update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#variance" class="tsd-kind-icon">variance</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#x0" class="tsd-kind-icon">x0</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#x0" class="tsd-kind-icon">x0</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Variance<wbr>Gamma<wbr>Process<span class="tsd-signature-symbol">(</span>s0<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span>, dividendYield<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, riskFreeRate<span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span>, sigma<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, nu<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, theta<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html" class="tsd-signature-type">VarianceGammaProcess</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:28</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>s0: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>dividendYield: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>riskFreeRate: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>sigma: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>nu: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>theta: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html" class="tsd-signature-type">VarianceGammaProcess</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_discretization" class="tsd-anchor"></a>
@@ -154,6 +232,16 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_dividendyield" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _dividend<wbr>Yield</h3>
+					<div class="tsd-signature tsd-kind-icon">_dividend<wbr>Yield<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:82</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_isdisposed" class="tsd-anchor"></a>
 					<h3>_is<wbr>Disposed</h3>
@@ -162,6 +250,16 @@
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
 						<ul>
 							<li>Defined in mixins/ql/patterns/observerobservable.ts:30</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_nu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _nu</h3>
+					<div class="tsd-signature tsd-kind-icon">_nu<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:85</li>
 						</ul>
 					</aside>
 				</section>
@@ -184,6 +282,46 @@
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
 						<ul>
 							<li>Defined in mixins/ql/patterns/observerobservable.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_riskfreerate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _risk<wbr>Free<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">_risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:83</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_s0" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _s0</h3>
+					<div class="tsd-signature tsd-kind-icon">_s0<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:81</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_sigma" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _sigma</h3>
+					<div class="tsd-signature tsd-kind-icon">_sigma<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:84</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_theta" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _theta</h3>
+					<div class="tsd-signature tsd-kind-icon">_theta<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:86</li>
 						</ul>
 					</aside>
 				</section>
@@ -437,7 +575,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="apply1" class="tsd-anchor"></a>
@@ -577,26 +715,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="diffusion2" class="tsd-anchor"></a>
 					<h3>diffusion2</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">diffusion2<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#diffusion2">diffusion2</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#diffusion2">diffusion2</a></p>
 								<ul>
-									<li>Defined in ql/stochasticprocess.ts:206</li>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:55</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>brief returns the diffusion part of the equation, i.e.
-									$ \sigma(t, x_t) $</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -607,6 +739,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dividendyield" class="tsd-anchor"></a>
+					<h3>dividend<wbr>Yield</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dividend<wbr>Yield<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:73</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -638,26 +787,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="drift2" class="tsd-anchor"></a>
 					<h3>drift2</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">drift2<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, x<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#drift2">drift2</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#drift2">drift2</a></p>
 								<ul>
-									<li>Defined in ql/stochasticprocess.ts:198</li>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:51</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>returns the drift part of the equation, i.e.
-									$ \mu(t, x_t) $</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -894,6 +1037,74 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="nu" class="tsd-anchor"></a>
+					<h3>nu</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">nu<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:62</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="riskfreerate" class="tsd-anchor"></a>
+					<h3>risk<wbr>Free<wbr>Rate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">risk<wbr>Free<wbr>Rate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:77</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="s0" class="tsd-anchor"></a>
+					<h3>s0</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">s0<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:69</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_quote_.quote.html" class="tsd-signature-type">Quote</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sigma" class="tsd-anchor"></a>
+					<h3>sigma</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">sigma<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
@@ -980,6 +1191,23 @@
 									<h5>dt: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="theta" class="tsd-anchor"></a>
+					<h3>theta</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">theta<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:65</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
 						</li>
 					</ul>
@@ -1076,25 +1304,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="x0" class="tsd-anchor"></a>
 					<h3>x0</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">x0<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#x0">x0</a></p>
+								<p>Overrides <a href="_ql_stochasticprocess_.stochasticprocess1d.html">StochasticProcess1D</a>.<a href="_ql_stochasticprocess_.stochasticprocess1d.html#x0">x0</a></p>
 								<ul>
-									<li>Defined in ql/stochasticprocess.ts:190</li>
+									<li>Defined in ql/experimental/variancegamma/variancegammaprocess.ts:47</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>returns the initial value of the state variable</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
 						</li>
 					</ul>
@@ -1119,17 +1342,38 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html" class="tsd-kind-icon">Variance<wbr>Gamma<wbr>Process</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_discretization" class="tsd-kind-icon">_discretization</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_dividendyield" class="tsd-kind-icon">_dividend<wbr>Yield</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_nu" class="tsd-kind-icon">_nu</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_observables" class="tsd-kind-icon">_observables</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_riskfreerate" class="tsd-kind-icon">_risk<wbr>Free<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_s0" class="tsd-kind-icon">_s0</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_sigma" class="tsd-kind-icon">_sigma</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#_theta" class="tsd-kind-icon">_theta</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#dispose" class="tsd-kind-icon">dispose</a>
@@ -1173,13 +1417,16 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#diffusion1" class="tsd-kind-icon">diffusion1</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#diffusion2" class="tsd-kind-icon">diffusion2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#dividendyield" class="tsd-kind-icon">dividend<wbr>Yield</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#drift1" class="tsd-kind-icon">drift1</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#drift2" class="tsd-kind-icon">drift2</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -1203,6 +1450,18 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#initialvalues" class="tsd-kind-icon">initial<wbr>Values</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#nu" class="tsd-kind-icon">nu</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#riskfreerate" class="tsd-kind-icon">risk<wbr>Free<wbr>Rate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#s0" class="tsd-kind-icon">s0</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#sigma" class="tsd-kind-icon">sigma</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#size" class="tsd-kind-icon">size</a>
 							</li>
@@ -1211,6 +1470,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#stddeviation2" class="tsd-kind-icon">std<wbr>Deviation2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#theta" class="tsd-kind-icon">theta</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#time" class="tsd-kind-icon">time</a>
@@ -1221,7 +1483,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#variance" class="tsd-kind-icon">variance</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_variancegamma_variancegammaprocess_.variancegammaprocess.html#x0" class="tsd-kind-icon">x0</a>
 							</li>
 						</ul>

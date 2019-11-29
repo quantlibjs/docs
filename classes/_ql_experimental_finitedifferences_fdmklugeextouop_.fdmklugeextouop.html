@@ -69,6 +69,30 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class describes a correlated Kluge - extended Ornstein-Uhlenbeck</p>
+					</div>
+					<p>process governed by
+						\f[
+						\begin{array}{rcl}
+						P_t &amp;=&amp; \exp(p_t + X_t + Y_t) \
+						dX_t &amp;=&amp; -\alpha X_tdt + \sigma_x dW_t^x \
+						dY_t &amp;=&amp; -\beta Y_{t-}dt + J_tdN_t \
+						\omega(J) &amp;=&amp; \eta e^{-\eta J} \
+						G_t &amp;=&amp; \exp(g_t + U_t) \
+						dU_t &amp;=&amp; -\kappa U_tdt + \sigma_udW_t^u \
+						\rho &amp;=&amp; \mathrm{corr} (dW_t^x, dW_t^u)
+						\end{array}
+					\f]</p>
+					<p>References:
+						Kluge, Timo L., 2008. Pricing Swing Options and other
+					Electricity Derivatives, <a href="http://eprints.maths.ox.ac.uk/246/1/kluge.pdf">http://eprints.maths.ox.ac.uk/246/1/kluge.pdf</a></p>
+					<p><a href="http://spanderen.de/2011/06/13/vpp-pricing-i-stochastic-processes-partial-">http://spanderen.de/2011/06/13/vpp-pricing-i-stochastic-processes-partial-</a>
+					integro-differential-equation/</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -86,35 +110,155 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_corrmap" class="tsd-kind-icon">_corr<wbr>Map</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_extou" class="tsd-kind-icon">_extOU</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_kluge" class="tsd-kind-icon">_kluge</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_klugeop" class="tsd-kind-icon">_kluge<wbr>Op</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_mesher" class="tsd-kind-icon">_mesher</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_ouop" class="tsd-kind-icon">_ou<wbr>Op</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply" class="tsd-kind-icon">apply</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_direction" class="tsd-kind-icon">apply_<wbr>direction</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_mixed" class="tsd-kind-icon">apply_<wbr>mixed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#preconditioner" class="tsd-kind-icon">preconditioner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#settime" class="tsd-kind-icon">set<wbr>Time</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#solve_splitting" class="tsd-kind-icon">solve_<wbr>splitting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply" class="tsd-kind-icon">apply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_direction" class="tsd-kind-icon">apply_<wbr>direction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_mixed" class="tsd-kind-icon">apply_<wbr>mixed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#preconditioner" class="tsd-kind-icon">preconditioner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#settime" class="tsd-kind-icon">set<wbr>Time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#solve_splitting" class="tsd-kind-icon">solve_<wbr>splitting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#tomatrix" class="tsd-kind-icon">to<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#tomatrixdecomp" class="tsd-kind-icon">to<wbr>Matrix<wbr>Decomp</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fdm<wbr>Kluge<wbr>ExtOUOp<span class="tsd-signature-symbol">(</span>mesher<span class="tsd-signature-symbol">: </span><a href="_ql_methods_finitedifferences_meshers_fdmmesher_.fdmmesher.html" class="tsd-signature-type">FdmMesher</a>, klugeOUProcess<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_processes_klugeextouprocess_.klugeextouprocess.html" class="tsd-signature-type">KlugeExtOUProcess</a>, rTS<span class="tsd-signature-symbol">: </span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a>, bcSet<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_methods_finitedifferences_utilities_fdmboundaryconditionset_.html#fdmboundaryconditionset" class="tsd-signature-type">FdmBoundaryConditionSet</a>, integroIntegrationOrder<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html" class="tsd-signature-type">FdmKlugeExtOUOp</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:46</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mesher: <a href="_ql_methods_finitedifferences_meshers_fdmmesher_.fdmmesher.html" class="tsd-signature-type">FdmMesher</a></h5>
+								</li>
+								<li>
+									<h5>klugeOUProcess: <a href="_ql_experimental_processes_klugeextouprocess_.klugeextouprocess.html" class="tsd-signature-type">KlugeExtOUProcess</a></h5>
+								</li>
+								<li>
+									<h5>rTS: <a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a></h5>
+								</li>
+								<li>
+									<h5>bcSet: <a href="../modules/_ql_methods_finitedifferences_utilities_fdmboundaryconditionset_.html#fdmboundaryconditionset" class="tsd-signature-type">FdmBoundaryConditionSet</a></h5>
+								</li>
+								<li>
+									<h5>integroIntegrationOrder: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html" class="tsd-signature-type">FdmKlugeExtOUOp</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_corrmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _corr<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">_corr<wbr>Map<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_finitedifferences_operators_ninepointlinearop_.ninepointlinearop.html" class="tsd-signature-type">NinePointLinearOp</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:124</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_extou" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _extOU</h3>
+					<div class="tsd-signature tsd-kind-icon">_extOU<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_processes_extendedornsteinuhlenbeckprocess_.extendedornsteinuhlenbeckprocess.html" class="tsd-signature-type">ExtendedOrnsteinUhlenbeckProcess</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:116</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_kluge" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _kluge</h3>
+					<div class="tsd-signature tsd-kind-icon">_kluge<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_processes_extouwithjumpsprocess_.extouwithjumpsprocess.html" class="tsd-signature-type">ExtOUWithJumpsProcess</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:115</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_klugeop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _kluge<wbr>Op</h3>
+					<div class="tsd-signature tsd-kind-icon">_kluge<wbr>Op<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_finitedifferences_fdmextoujumpop_.fdmextoujumpop.html" class="tsd-signature-type">FdmExtOUJumpOp</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:121</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_mesher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _mesher</h3>
+					<div class="tsd-signature tsd-kind-icon">_mesher<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_finitedifferences_meshers_fdmmesher_.fdmmesher.html" class="tsd-signature-type">FdmMesher</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:114</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_ouop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _ou<wbr>Op</h3>
+					<div class="tsd-signature tsd-kind-icon">_ou<wbr>Op<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_finitedifferences_fdmextendedornsteinuhlenbeckop_.fdmextendedornsteinuhlenbeckop.html" class="tsd-signature-type">FdmExtendedOrnsteinUhlenbeckOp</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:122</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="apply" class="tsd-anchor"></a>
 					<h3>apply</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">apply<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearop_.fdmlinearop.html">FdmLinearOp</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearop_.fdmlinearop.html#apply">apply</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearop_.fdmlinearop.html">FdmLinearOp</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearop_.fdmlinearop.html#apply">apply</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearop.ts:9</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:83</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -127,18 +271,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="apply_direction" class="tsd-anchor"></a>
 					<h3>apply_<wbr>direction</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">apply_<wbr>direction<span class="tsd-signature-symbol">(</span>direction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#apply_direction">apply_direction</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#apply_direction">apply_direction</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:24</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:93</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -154,18 +298,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="apply_mixed" class="tsd-anchor"></a>
 					<h3>apply_<wbr>mixed</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">apply_<wbr>mixed<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#apply_mixed">apply_mixed</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#apply_mixed">apply_mixed</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:20</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:89</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -178,18 +322,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="preconditioner" class="tsd-anchor"></a>
 					<h3>preconditioner</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">preconditioner<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, s<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">preconditioner<span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, dt<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#preconditioner">preconditioner</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#preconditioner">preconditioner</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:32</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:110</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -198,25 +342,25 @@
 									<h5>r: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>s: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+									<h5>dt: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="settime" class="tsd-anchor"></a>
 					<h3>set<wbr>Time</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">set<wbr>Time<span class="tsd-signature-symbol">(</span>t1<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a>, t2<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#settime">setTime</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#settime">setTime</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:16</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:78</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,36 +376,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="size" class="tsd-anchor"></a>
 					<h3>size</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#size">size</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#size">size</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:12</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:74</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="solve_splitting" class="tsd-anchor"></a>
 					<h3>solve_<wbr>splitting</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">solve_<wbr>splitting<span class="tsd-signature-symbol">(</span>direction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, s<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">solve_<wbr>splitting<span class="tsd-signature-symbol">(</span>direction<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, r<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, a<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#solve_splitting">solve_splitting</a></p>
+								<p>Overrides <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#solve_splitting">solve_splitting</a></p>
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:28</li>
+									<li>Defined in ql/experimental/finitedifferences/fdmklugeextouop.ts:99</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -273,10 +417,46 @@
 									<h5>r: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>s: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+									<h5>a: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tomatrix" class="tsd-anchor"></a>
+					<h3>to<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Matrix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrix">toMatrix</a></p>
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:41</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tomatrixdecomp" class="tsd-anchor"></a>
+					<h3>to<wbr>Matrix<wbr>Decomp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Matrix<wbr>Decomp<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html">FdmLinearOpComposite</a>.<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrixdecomp">toMatrixDecomp</a></p>
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:37</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -300,26 +480,53 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html" class="tsd-kind-icon">Fdm<wbr>Kluge<wbr>ExtOUOp</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_corrmap" class="tsd-kind-icon">_corr<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_extou" class="tsd-kind-icon">_extOU</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_kluge" class="tsd-kind-icon">_kluge</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_klugeop" class="tsd-kind-icon">_kluge<wbr>Op</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_mesher" class="tsd-kind-icon">_mesher</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#_ouop" class="tsd-kind-icon">_ou<wbr>Op</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply" class="tsd-kind-icon">apply</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_direction" class="tsd-kind-icon">apply_<wbr>direction</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#apply_mixed" class="tsd-kind-icon">apply_<wbr>mixed</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#preconditioner" class="tsd-kind-icon">preconditioner</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#settime" class="tsd-kind-icon">set<wbr>Time</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#size" class="tsd-kind-icon">size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#solve_splitting" class="tsd-kind-icon">solve_<wbr>splitting</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#tomatrix" class="tsd-kind-icon">to<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html#tomatrixdecomp" class="tsd-kind-icon">to<wbr>Matrix<wbr>Decomp</a>
 							</li>
 						</ul>
 					</li>

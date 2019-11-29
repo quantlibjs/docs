@@ -106,6 +106,9 @@
 										<a href="_ql_experimental_finitedifferences_fdmextoujumpop_.fdmextoujumpop.html" class="tsd-signature-type">FdmExtOUJumpOp</a>
 									</li>
 									<li>
+										<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html" class="tsd-signature-type">FdmKlugeExtOUOp</a>
+									</li>
+									<li>
 										<a href="_ql_experimental_finitedifferences_fdmblackscholesfwdop_.fdmblackscholesfwdop.html" class="tsd-signature-type">FdmBlackScholesFwdOp</a>
 									</li>
 									<li>
@@ -116,9 +119,6 @@
 									</li>
 									<li>
 										<a href="_ql_experimental_finitedifferences_fdmhestonfwdop_.fdmhestonfwdop.html" class="tsd-signature-type">FdmHestonFwdOp</a>
-									</li>
-									<li>
-										<a href="_ql_experimental_finitedifferences_fdmklugeextouop_.fdmklugeextouop.html" class="tsd-signature-type">FdmKlugeExtOUOp</a>
 									</li>
 									<li>
 										<a href="_ql_experimental_finitedifferences_fdmlocalvolfwdop_.fdmlocalvolfwdop.html" class="tsd-signature-type">FdmLocalVolFwdOp</a>
@@ -149,6 +149,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#settime" class="tsd-kind-icon">set<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#size" class="tsd-kind-icon">size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#solve_splitting" class="tsd-kind-icon">solve_<wbr>splitting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrix" class="tsd-kind-icon">to<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrixdecomp" class="tsd-kind-icon">to<wbr>Matrix<wbr>Decomp</a></li>
 							</ul>
 						</section>
 					</div>
@@ -190,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:24</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:25</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -216,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:20</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:21</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:32</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:33</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:16</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:17</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:12</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:13</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
@@ -308,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:28</li>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -324,6 +326,40 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tomatrix" class="tsd-anchor"></a>
+					<h3>to<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Matrix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:41</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tomatrixdecomp" class="tsd-anchor"></a>
+					<h3>to<wbr>Matrix<wbr>Decomp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Matrix<wbr>Decomp<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/finitedifferences/operators/fdmlinearopcomposite.ts:37</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_math_matrixutilities_sparsematrix_.sparsematrix.html" class="tsd-signature-type">SparseMatrix</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -367,6 +403,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#solve_splitting" class="tsd-kind-icon">solve_<wbr>splitting</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrix" class="tsd-kind-icon">to<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_finitedifferences_operators_fdmlinearopcomposite_.fdmlinearopcomposite.html#tomatrixdecomp" class="tsd-kind-icon">to<wbr>Matrix<wbr>Decomp</a>
 							</li>
 						</ul>
 					</li>

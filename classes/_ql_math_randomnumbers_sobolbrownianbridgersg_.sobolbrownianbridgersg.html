@@ -114,13 +114,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Sobol<wbr>Brownian<wbr>Bridge<wbr>Rsg<span class="tsd-signature-symbol">(</span>factors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, steps<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, ordering<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_models_marketmodels_browniangenerators_sobolbrowniangenerator_.sobolbrowniangenerator.ordering.html" class="tsd-signature-type">Ordering</a>, seed<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a>, directionIntegers<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_math_randomnumbers_sobolrsg_.sobolrsg.directionintegers.html" class="tsd-signature-type">DirectionIntegers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_randomnumbers_sobolbrownianbridgersg_.sobolbrownianbridgersg.html" class="tsd-signature-type">SobolBrownianBridgeRsg</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Sobol<wbr>Brownian<wbr>Bridge<wbr>Rsg<span class="tsd-signature-symbol">(</span>factors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, steps<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, ordering<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_models_marketmodels_browniangenerators_sobolbrowniangenerator_.sobolbrowniangenerator.ordering.html" class="tsd-signature-type">Ordering</a>, seed<span class="tsd-signature-symbol">?: </span><a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a>, directionIntegers<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_math_randomnumbers_sobolrsg_.sobolrsg.directionintegers.html" class="tsd-signature-type">DirectionIntegers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_math_randomnumbers_sobolbrownianbridgersg_.sobolbrownianbridgersg.html" class="tsd-signature-type">SobolBrownianBridgeRsg</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:11</li>
+									<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:12</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -135,7 +135,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ordering: <a href="../enums/_ql_models_marketmodels_browniangenerators_sobolbrowniangenerator_.sobolbrowniangenerator.ordering.html" class="tsd-signature-type">Ordering</a><span class="tsd-signature-symbol"> =&nbsp;SobolBrownianGenerator.Ordering.Diagonal</span></h5>
 								</li>
 								<li>
-									<h5>seed: <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> seed: <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> directionIntegers: <a href="../enums/_ql_math_randomnumbers_sobolrsg_.sobolrsg.directionintegers.html" class="tsd-signature-type">DirectionIntegers</a><span class="tsd-signature-symbol"> =&nbsp;SobolRsg.DirectionIntegers.JoeKuoD7</span></h5>
@@ -181,7 +181,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_seq" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _seq</h3>
-					<div class="tsd-signature tsd-kind-icon">_seq<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">_seq<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:50</li>
@@ -222,7 +222,7 @@
 					<a name="lastsequence" class="tsd-anchor"></a>
 					<h3>last<wbr>Sequence</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">last<wbr>Sequence<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">last<wbr>Sequence<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -231,7 +231,7 @@
 									<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:39</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -239,16 +239,16 @@
 					<a name="nextsequence" class="tsd-anchor"></a>
 					<h3>next<wbr>Sequence</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">next<wbr>Sequence<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Sequence<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:27</li>
+									<li>Defined in ql/math/randomnumbers/sobolbrownianbridgersg.ts:28</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
