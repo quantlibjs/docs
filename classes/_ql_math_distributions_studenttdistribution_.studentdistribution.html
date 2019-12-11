@@ -118,6 +118,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#f" class="tsd-kind-icon">f</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#cdf" class="tsd-kind-icon">cdf</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#pdf" class="tsd-kind-icon">pdf</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#quantile" class="tsd-kind-icon">quantile</a></li>
 							</ul>
 						</section>
 					</div>
@@ -135,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/math/distributions/studenttdistribution.ts:23</li>
+									<li>Defined in ql/math/distributions/studenttdistribution.ts:24</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -157,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">_n<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#integer" class="tsd-signature-type">Integer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/distributions/studenttdistribution.ts:42</li>
+							<li>Defined in ql/math/distributions/studenttdistribution.ts:43</li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">G<span class="tsd-signature-symbol">:</span> <a href="_ql_math_distributions_gammadistribution_.gammafunction.html" class="tsd-signature-type">GammaFunction</a><span class="tsd-signature-symbol"> =&nbsp;new GammaFunction()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/distributions/studenttdistribution.ts:41</li>
+							<li>Defined in ql/math/distributions/studenttdistribution.ts:42</li>
 						</ul>
 					</aside>
 				</section>
@@ -184,13 +187,91 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/math/distributions/studenttdistribution.ts:31</li>
+									<li>Defined in ql/math/distributions/studenttdistribution.ts:32</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="cdf" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> cdf</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">cdf<span class="tsd-signature-symbol">(</span>dist<span class="tsd-signature-symbol">: </span><a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a>, p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/distributions/studenttdistribution.ts:126</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dist: <a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a></h5>
+								</li>
+								<li>
+									<h5>p: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="pdf" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> pdf</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">pdf<span class="tsd-signature-symbol">(</span>dist<span class="tsd-signature-symbol">: </span><a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a>, p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/distributions/studenttdistribution.ts:130</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dist: <a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a></h5>
+								</li>
+								<li>
+									<h5>p: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="quantile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> quantile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">quantile<span class="tsd-signature-symbol">(</span>dist<span class="tsd-signature-symbol">: </span><a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a>, p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/math/distributions/studenttdistribution.ts:122</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dist: <a href="_boost_math_distributions_students_t_.students_t_distribution.html" class="tsd-signature-type">students_t_distribution</a></h5>
+								</li>
+								<li>
+									<h5>p: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -234,6 +315,15 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#f" class="tsd-kind-icon">f</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#cdf" class="tsd-kind-icon">cdf</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#pdf" class="tsd-kind-icon">pdf</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_ql_math_distributions_studenttdistribution_.studentdistribution.html#quantile" class="tsd-kind-icon">quantile</a>
 							</li>
 						</ul>
 					</li>

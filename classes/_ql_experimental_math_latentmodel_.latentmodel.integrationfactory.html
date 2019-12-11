@@ -99,13 +99,13 @@
 					<a name="createlmintegration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> createLMIntegration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">createLMIntegration<span class="tsd-signature-symbol">(</span>dimension<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, type<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></li>
+						<li class="tsd-signature tsd-kind-icon">createLMIntegration<span class="tsd-signature-symbol">(</span>dimension<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, type<span class="tsd-signature-symbol">?: </span><a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:266</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:460</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -114,7 +114,7 @@
 									<h5>dimension: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
 								</li>
 								<li>
-									<h5>type: <a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a><span class="tsd-signature-symbol"> =&nbsp;LatentModelIntegrationType.GaussianQuadrature</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></h4>
@@ -150,9 +150,6 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-kind-icon">Latent<wbr>Model</a>
 						<ul>
-							<li class=" tsd-kind-class tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.factorsampler.html" class="tsd-kind-icon">Factor<wbr>Sampler</a>
-							</li>
 							<li class="current tsd-kind-class tsd-parent-kind-class">
 								<a href="_ql_experimental_math_latentmodel_.latentmodel.integrationfactory.html" class="tsd-kind-icon">Integration<wbr>Factory</a>
 								<ul>
@@ -161,115 +158,13 @@
 									</li>
 								</ul>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_cachedmktfactor" class="tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_copula" class="tsd-kind-icon">_copula</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_factorweights" class="tsd-kind-icon">_factor<wbr>Weights</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_idiosyncfctrs" class="tsd-kind-icon">_idiosync<wbr>Fctrs</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_nfactors" class="tsd-kind-icon">_n<wbr>Factors</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_nvariables" class="tsd-kind-icon">_n<wbr>Variables</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_observables" class="tsd-kind-icon">_observables</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_observers" class="tsd-kind-icon">_observers</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#copulapolicy" class="tsd-kind-icon">copula<wbr>Policy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#dispose" class="tsd-kind-icon">dispose</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#notifyobservers" class="tsd-kind-icon">notify<wbr>Observers</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#registerobserver" class="tsd-kind-icon">register<wbr>Observer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#registerwith" class="tsd-kind-icon">register<wbr>With</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#registerwithobservables" class="tsd-kind-icon">register<wbr>With<wbr>Observables</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#unregisterobserver" class="tsd-kind-icon">unregister<wbr>Observer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#unregisterwith" class="tsd-kind-icon">unregister<wbr>With</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#cumulativez" class="tsd-kind-icon">cumulativeZ</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#density" class="tsd-kind-icon">density</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#init" class="tsd-kind-icon">init</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#integratedexpectedvalue1" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value1</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#integratedexpectedvalue2" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value2</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#inversecumulativey" class="tsd-kind-icon">inverse<wbr>CumulativeY</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#inversecumulativez" class="tsd-kind-icon">inverse<wbr>CumulativeZ</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit1" class="tsd-kind-icon">lm<wbr>Init1</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit2" class="tsd-kind-icon">lm<wbr>Init2</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit3" class="tsd-kind-icon">lm<wbr>Init3</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit4" class="tsd-kind-icon">lm<wbr>Init4</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#numfactors" class="tsd-kind-icon">num<wbr>Factors</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#numtotalfactors" class="tsd-kind-icon">num<wbr>Total<wbr>Factors</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#size" class="tsd-kind-icon">size</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_ql_experimental_math_latentmodel_.latentmodel.html#update" class="tsd-kind-icon">update</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_ql_experimental_math_latentmodel_.multiplyv.html" class="tsd-kind-icon">multiplyV</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

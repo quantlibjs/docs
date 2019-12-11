@@ -139,12 +139,15 @@ obj.dosomething();</code></pre>
 					<h2>release note</h2>
 				</a>
 				<ul>
+					<li>0.3.1, examples cleanup, fixed 4 examples, global optimizers DE tests</li>
 					<li>0.3.0, fixed 40+ specs, start working on model tests</li>
 					<li>0.2.7, fixed <code>default probability curves</code> specs</li>
 					<li>0.2.6, fixed most <code>european option</code> test, tree engine cleanup</li>
 					<li>0.2.5, fixed <code>piecewise zero spreaded</code> term structure, <code>brownian bridge</code>, 4 <code>american options</code> specs, FD engine cleanup</li>
-					<li>0.2.4 fixed <code>risk statistics</code>, some <code>piecewise yield curve</code></li>
-					<li>0.2.3 fixed <code>Term structure tests</code>, <code>Gaussian quadratures experimental tests</code></li>
+					<li>0.2.4, fixed <code>risk statistics</code>, some <code>piecewise yield curve</code> specs</li>
+					<li>0.2.3, fixed <code>Term structure tests</code>, <code>Gaussian quadratures experimental tests</code></li>
+					<li>0.1.x, most math specs passed</li>
+					<li>0.0.x, patterns, date&amp;time specs passed</li>
 				</ul>
 				<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
 					<h2>docs</h2>
@@ -392,7 +395,10 @@ obj.dosomething();</code></pre>
 				<a href="#test-report" id="test-report" style="color: inherit; text-decoration: none;">
 					<h2>test report</h2>
 				</a>
-				<p>v0.3.0 total: 703, passed: 418, failed: 169, pending: 116</p>
+				<ul>
+					<li>test suite: total: 703, passed: 418, failed: 169, pending: 116</li>
+					<li>examples: total 19, passed: 9, failed: 10</li>
+				</ul>
 				<p>LazyObject tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing that lazy objects discard notifications after the first...</li>
@@ -1539,6 +1545,28 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing caplet LMM process initialisation...</li>
 					<li><input disabled="" type="checkbox"> Testing caplet LMM lambda bootstrapping...</li>
 					<li><input disabled="" type="checkbox"> Testing caplet LMM Monte-Carlo caplet pricing...</li>
+				</ul>
+				<p>Examples:</p>
+				<ul>
+					<li><input disabled="" type="checkbox"> Basket Losses</li>
+					<li><input disabled="" type="checkbox"> Bermudan Swaption</li>
+					<li><input checked="" disabled="" type="checkbox"> Bonds</li>
+					<li><input disabled="" type="checkbox"> Callable bonds</li>
+					<li><input checked="" disabled="" type="checkbox"> CDS</li>
+					<li><input disabled="" type="checkbox"> Convertable bonds</li>
+					<li><input disabled="" type="checkbox"> CVAIRS</li>
+					<li><input checked="" disabled="" type="checkbox"> Discrete hedging</li>
+					<li><input disabled="" type="checkbox"> Equity Option</li>
+					<li><input checked="" disabled="" type="checkbox"> Fitted bond curve</li>
+					<li><input checked="" disabled="" type="checkbox"> FRA</li>
+					<li><input disabled="" type="checkbox"> Gaussian 1D models</li>
+					<li><input disabled="" type="checkbox"> Global Optimizer</li>
+					<li><input disabled="" type="checkbox"> Latent Model</li>
+					<li><input disabled="" type="checkbox"> Market models</li>
+					<li><input checked="" disabled="" type="checkbox"> Multi-dim Integral</li>
+					<li><input checked="" disabled="" type="checkbox"> Replication</li>
+					<li><input checked="" disabled="" type="checkbox"> Repo</li>
+					<li><input checked="" disabled="" type="checkbox"> Swap valuation</li>
 				</ul>
 			</div>
 		</div>
@@ -3128,6 +3156,9 @@ obj.dosomething();</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_ql_math_distributions_studenttdistribution_.html">"ql/math/distributions/studenttdistribution"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_ql_math_distributions_variategenerator_.html">"ql/math/distributions/variategenerator"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_ql_math_errorfunction_.html">"ql/math/errorfunction"</a>
@@ -5621,6 +5652,9 @@ obj.dosomething();</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/_boost_math_distributions_normal_.html">"boost/math/distributions/normal"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_boost_math_distributions_students_t_.html">"boost/math/distributions/students_<wbr>t"</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/_boost_math_special_functions_detail_erf_inv_.html">"boost/math/special_<wbr>functions/detail/erf_<wbr>inv"</a>

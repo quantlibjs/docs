@@ -69,6 +69,79 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Saddle point portfolio credit default loss model.</p>
+					</div>
+					<p>Default Loss model implementing the Saddle point expansion
+						integrations on several default risk metrics. Codepence is dealt
+						through a latent model making the integrals conditional to the latent
+						model factor. Latent variables are integrated indirectly.
+						See:
+						<b>Taking to the saddle</b> by R.Martin, K.Thompson and C.Browne; RISK JUNE
+						2001; p.91
+						<b>The saddlepoint method and portfolio optionalities</b> R.Martin in Risk
+						December 2006
+						<b>VAR: who contributes and how much?</b> R.Martin, K.Thompson and
+						C.Browne RISK AUGUST 2001
+						<b>Shortfall: Who contributes and how much?</b> R. J. Martin, Credit Suisse
+						January 3, 2007
+						<b>Don&#39;t Fall from the Saddle: the Importance of Higher Moments of Credit
+						Loss Distributions</b> J.Annaert, C.Garcia Joao Batista, J.Lamoot,
+						G.Lanine February 2006, Gent University
+						<b>Analytical techniques for synthetic CDOs and credit default risk
+						measures</b> A. Antonov, S. Mechkovy, and T. Misirpashaevz;
+						NumeriX May 23, 2005
+						<b>Computation of VaR and VaR contribution in the Vasicek portfolio credit
+						loss model: a comparative study</b> X.Huang, C.W.Oosterlee, M.Mesters
+						Journal of Credit Risk (75-96) Volume 3/ Number 3, Fall 2007
+						<b>Higher-order saddlepoint approximations in the Vasicek portfolio credit
+						loss model</b> X.Huang, C.W.Oosterlee, M.Mesters  Journal of
+						Computational Finance (93-113) Volume 11/Number 1, Fall 2007
+						While more expensive, a high order expansion is used here; see the paper by
+						Antonov et al for the terms retained.
+						For a discussion of an alternative to fix the error at low loss levels
+						(more relevant to pricing than risk metrics) see:
+						<b>The hybrid saddlepoint method for credit portfolios</b> by A.Owen,
+						A.McLeod and K.Thompson; in Risk, August 2009. This is not implemented here
+						though (yet?...)
+						For the more general context mathematical theory see: <b>Saddlepoint
+						approximations with applications</b> by R.W. Butler, Cambridge series in
+					statistical and probabilistic mathematics. 2007</p>
+					<dl class="tsd-comment-tags">
+						<dt>todo</dt>
+						<dd><p>Some portfolios show instabilities in the high order expansion terms.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>Methods here are calling and integrating using the unconditional
+								probabilities without inverting them first; quite a lot of calls to
+							the copula inversion can be avoided; this should improve performance.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>Revise the model for stability of the saddle point calculation. The
+								search for the point does not convege in extreme cases; e.g. very high
+								value of all the factors; factors for each variable not ordered from
+							high to low,...</p>
+							<p>The treatment of recovery wont work with random recoveries, they should
+							be passed to the conditional methods in the same way as the probabilities.</p>
+							<p>TO DO:
+								Failing when the tranche upper loss limit goes over the max attainable
+							loss.</p>
+							<ul>
+								<li>With 15 quadrature points things are OK but 25 gives me -1#IND000 errors<pre><code> (<span class="hljs-keyword">over</span> region <span class="hljs-keyword">around</span> <span class="hljs-keyword">the</span> EL I think)</code></pre></li>
+								<li>Silly bug when calling some methods on todays date (zero time).<pre><code>  ProbDef = <span class="hljs-number">0</span> there</code></pre></li>
+								<li>VaR &lt;- tranched?????!</li>
+								<li>ESF &lt;- tranched????!!</li>
+								<li>VaR split</li>
+								<li>ESF split?</li>
+							</ul>
+							<p>When introducing defaults; somewhere, (after an update?) there should be
+							a check that: copula_-&gt;basketSize() EQUALS remainingBasket_.size()</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">

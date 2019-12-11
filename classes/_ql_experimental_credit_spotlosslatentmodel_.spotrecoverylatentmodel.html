@@ -69,6 +69,31 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Random spot recovery rate latent variable portfolio model.</p>
+					</div>
+					<p>See:
+						A Spot Stochastic Recovery Extension of the Gaussian Copula
+						N.Bennani and J.Maetz, MPRA July 2009
+						Extension of Spot Recovery model for Gaussian Copula
+						H.Li, October 2009,  MPRA
+						The model is adpated here for a multifactor set up and a generic copula so
+						it can be used for pricing in single factor mode or for risk metrics in its
+					multifactor version.\par</p>
+					<dl class="tsd-comment-tags">
+						<dt>todo</dt>
+						<dd><p>Rewrite this model: the distribution of the spot recovery given
+								default could be given as a functional of rr_i with the market factors and
+							the rest of methods depend on this. That would offer a family of models.</p>
+						</dd>
+						<dt>todo</dt>
+						<dd><p>Implement eq. 45 to have the EL(t) and be able to integrate the model</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -77,6 +102,14 @@
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">SpotRecoveryLatentModel</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_ql_experimental_credit_spotlosslatentmodel_.gaussianspotlosslm.html" class="tsd-signature-type">GaussianSpotLossLM</a>
+									</li>
+									<li>
+										<a href="_ql_experimental_credit_spotlosslatentmodel_.tspotlosslm.html" class="tsd-signature-type">TSpotLossLM</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -106,18 +139,24 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_basket" class="tsd-kind-icon">_basket</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_cachedmktfactor" class="tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_copula" class="tsd-kind-icon">_copula</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_crossidiosyncfctrs" class="tsd-kind-icon">_cross<wbr>Idiosync<wbr>Fctrs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_factorweights" class="tsd-kind-icon">_factor<wbr>Weights</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_idiosyncfctrs" class="tsd-kind-icon">_idiosync<wbr>Fctrs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_integration" class="tsd-kind-icon">_integration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_modela" class="tsd-kind-icon">_modelA</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_nfactors" class="tsd-kind-icon">_n<wbr>Factors</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_nvariables" class="tsd-kind-icon">_n<wbr>Variables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_numnames" class="tsd-kind-icon">_num<wbr>Names</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_observables" class="tsd-kind-icon">_observables</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_observers" class="tsd-kind-icon">_observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_recoveries" class="tsd-kind-icon">_recoveries</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#copulapolicy" class="tsd-kind-icon">copula<wbr>Policy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
@@ -130,25 +169,47 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#allfactorcumulinverter" class="tsd-kind-icon">all<wbr>Factor<wbr>Cumul<wbr>Inverter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobability1" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability1</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobability2" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobabilityinvp" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability<wbr>InvP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalexplossrr" class="tsd-kind-icon">conditional<wbr>Exp<wbr>LossRR</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalexplossrrinv" class="tsd-kind-icon">conditional<wbr>Exp<wbr>LossRRInv</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalrecovery" class="tsd-kind-icon">conditional<wbr>Recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#copula" class="tsd-kind-icon">copula</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#cumulativey" class="tsd-kind-icon">cumulativeY</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#cumulativez" class="tsd-kind-icon">cumulativeZ</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#deepupdate" class="tsd-kind-icon">deep<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#density" class="tsd-kind-icon">density</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecovery" class="tsd-kind-icon">exp<wbr>Cond<wbr>Recovery</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecoveryinvpinvrr" class="tsd-kind-icon">exp<wbr>Cond<wbr>Recovery<wbr>Inv<wbr>PinvRR</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecoveryp" class="tsd-kind-icon">exp<wbr>Cond<wbr>RecoveryP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expectedloss" class="tsd-kind-icon">expected<wbr>Loss</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#factorweights" class="tsd-kind-icon">factor<wbr>Weights</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#idiosyncfctrs" class="tsd-kind-icon">idiosync<wbr>Fctrs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#integratedexpectedvalue1" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#integratedexpectedvalue2" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value2</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#integration" class="tsd-kind-icon">integration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativedensity" class="tsd-kind-icon">inverse<wbr>Cumulative<wbr>Density</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativey" class="tsd-kind-icon">inverse<wbr>CumulativeY</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativez" class="tsd-kind-icon">inverse<wbr>CumulativeZ</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentrrvarvalue" class="tsd-kind-icon">latentRRVar<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentvarvalue" class="tsd-kind-icon">latent<wbr>Var<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentvariablecorrel" class="tsd-kind-icon">latent<wbr>Variable<wbr>Correl</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#lminit1" class="tsd-kind-icon">lm<wbr>Init1</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#lminit2" class="tsd-kind-icon">lm<wbr>Init2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#lminit3" class="tsd-kind-icon">lm<wbr>Init3</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#lminit4" class="tsd-kind-icon">lm<wbr>Init4</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#numfactors" class="tsd-kind-icon">num<wbr>Factors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#numtotalfactors" class="tsd-kind-icon">num<wbr>Total<wbr>Factors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#resetbasket" class="tsd-kind-icon">reset<wbr>Basket</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#srlminit" class="tsd-kind-icon">srlm<wbr>Init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -160,31 +221,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Spot<wbr>Recovery<wbr>Latent<wbr>Model<span class="tsd-signature-symbol">(</span>factorWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, recoveries<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, modelA<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, integralType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a>, ini<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html" class="tsd-signature-type">SpotRecoveryLatentModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Spot<wbr>Recovery<wbr>Latent<wbr>Model<span class="tsd-signature-symbol">(</span>copulaPolicy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html" class="tsd-signature-type">SpotRecoveryLatentModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:11</li>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:33</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>factorWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>recoveries: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>modelA: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
-								</li>
-								<li>
-									<h5>integralType: <a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a></h5>
-								</li>
-								<li>
-									<h5>ini: <span class="tsd-signature-type">any</span></h5>
+									<h5>copulaPolicy: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html" class="tsd-signature-type">SpotRecoveryLatentModel</a></h4>
@@ -192,8 +241,18 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_basket" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _basket</h3>
+					<div class="tsd-signature tsd-kind-icon">_basket<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:283</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_cachedmktfactor" class="tsd-anchor"></a>
 					<h3>_cached<wbr>Mkt<wbr>Factor</h3>
@@ -201,7 +260,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_cachedmktfactor">_cachedMktFactor</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:252</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:446</li>
 						</ul>
 					</aside>
 				</section>
@@ -212,29 +271,49 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_copula">_copula</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:260</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:454</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_crossidiosyncfctrs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _cross<wbr>Idiosync<wbr>Fctrs</h3>
+					<div class="tsd-signature tsd-kind-icon">_cross<wbr>Idiosync<wbr>Fctrs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:281</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_factorweights" class="tsd-anchor"></a>
 					<h3>_factor<wbr>Weights</h3>
-					<div class="tsd-signature tsd-kind-icon">_factor<wbr>Weights<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_factor<wbr>Weights<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[[]]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_factorweights">_factorWeights</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:251</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:445</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_idiosyncfctrs" class="tsd-anchor"></a>
 					<h3>_idiosync<wbr>Fctrs</h3>
-					<div class="tsd-signature tsd-kind-icon">_idiosync<wbr>Fctrs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_idiosync<wbr>Fctrs<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_idiosyncfctrs">_idiosyncFctrs</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:253</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:447</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_integration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _integration</h3>
+					<div class="tsd-signature tsd-kind-icon">_integration<span class="tsd-signature-symbol">:</span> <a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:284</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,6 +328,16 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_modela" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _modelA</h3>
+					<div class="tsd-signature tsd-kind-icon">_modelA<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:280</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_nfactors" class="tsd-anchor"></a>
 					<h3>_n<wbr>Factors</h3>
@@ -256,7 +345,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_nfactors">_nFactors</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:255</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:449</li>
 						</ul>
 					</aside>
 				</section>
@@ -267,7 +356,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#_nvariables">_nVariables</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:257</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:451</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_numnames" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _num<wbr>Names</h3>
+					<div class="tsd-signature tsd-kind-icon">_num<wbr>Names<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:282</li>
 						</ul>
 					</aside>
 				</section>
@@ -293,6 +392,16 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_recoveries" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _recoveries</h3>
+					<div class="tsd-signature tsd-kind-icon">_recoveries<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:279</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="copulapolicy" class="tsd-anchor"></a>
 					<h3>copula<wbr>Policy</h3>
@@ -300,7 +409,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#copulapolicy">copulaPolicy</a></p>
 						<ul>
-							<li>Defined in ql/experimental/math/latentmodel.ts:249</li>
+							<li>Defined in ql/experimental/math/latentmodel.ts:443</li>
 						</ul>
 					</aside>
 				</section>
@@ -554,8 +663,254 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="allfactorcumulinverter" class="tsd-anchor"></a>
+					<h3>all<wbr>Factor<wbr>Cumul<wbr>Inverter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">all<wbr>Factor<wbr>Cumul<wbr>Inverter<span class="tsd-signature-symbol">(</span>probs<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#allfactorcumulinverter">allFactorCumulInverter</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:406</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>probs: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionaldefaultprobability1" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Default<wbr>Probability1</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Default<wbr>Probability1<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:92</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionaldefaultprobability2" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Default<wbr>Probability2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Default<wbr>Probability2<span class="tsd-signature-symbol">(</span>prob<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:103</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prob: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionaldefaultprobabilityinvp" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Default<wbr>Probability<wbr>InvP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Default<wbr>Probability<wbr>InvP<span class="tsd-signature-symbol">(</span>invCumYProb<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, m<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:123</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invCumYProb: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>m: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionalexplossrr" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Exp<wbr>LossRR</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Exp<wbr>LossRR<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:225</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionalexplossrrinv" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Exp<wbr>LossRRInv</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Exp<wbr>LossRRInv<span class="tsd-signature-symbol">(</span>invP<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, invRR<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:240</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invP: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>invRR: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="conditionalrecovery" class="tsd-anchor"></a>
+					<h3>conditional<wbr>Recovery</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">conditional<wbr>Recovery<span class="tsd-signature-symbol">(</span>latentVarSample<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:194</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>latentVarSample: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="copula" class="tsd-anchor"></a>
+					<h3>copula</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">copula<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#copula">copula</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:418</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="cumulativey" class="tsd-anchor"></a>
+					<h3>cumulativeY</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">cumulativeY<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iVariable<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#cumulativey">cumulativeY</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:377</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iVariable: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="cumulativez" class="tsd-anchor"></a>
 					<h3>cumulativeZ</h3>
@@ -567,7 +922,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#cumulativez">cumulativeZ</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:235</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:381</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -609,7 +964,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#density">density</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:239</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:385</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -619,6 +974,182 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expcondrecovery" class="tsd-anchor"></a>
+					<h3>exp<wbr>Cond<wbr>Recovery</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">exp<wbr>Cond<wbr>Recovery<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:150</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Expected conditional spot recovery rate. Conditional on a set of
+										systemic factors and default returns the integrated attainable recovery
+										values. \par
+										Corresponds to a multifactor generalization of the model in eq. 44
+										on p.15 of <b>Extension of Spot Recovery Model for Gaussian Copula</b>
+										Hui Li. 2009  Only remember that \f$\rho_l Z \f$ there is here
+										(multiple betas):
+										\f$ \sum_k \beta_{ik}^l Z_k \f$ and that \f$ \rho_d \rho_l \f$ there is
+										here:
+										\f$ \sum_k \beta_{ik}^d \beta_{ik}^l \f$ \par
+									(d,l corresponds to first and last set of betas)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expcondrecoveryinvpinvrr" class="tsd-anchor"></a>
+					<h3>exp<wbr>Cond<wbr>Recovery<wbr>Inv<wbr>PinvRR</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">exp<wbr>Cond<wbr>Recovery<wbr>Inv<wbr>PinvRR<span class="tsd-signature-symbol">(</span>invUncondDefP<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, invUncondRR<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:175</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>invUncondDefP: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>invUncondRR: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expcondrecoveryp" class="tsd-anchor"></a>
+					<h3>exp<wbr>Cond<wbr>RecoveryP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">exp<wbr>Cond<wbr>RecoveryP<span class="tsd-signature-symbol">(</span>uncondDefP<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, mktFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:167</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uncondDefP: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>mktFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expectedloss" class="tsd-anchor"></a>
+					<h3>expected<wbr>Loss</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expected<wbr>Loss<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:256</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Single name expected loss.\par
+										The main reason of this method is for the testing of this model. The
+										model is coherent in that it preserves the single name expected loss
+										and thus is coherent with the single name CDS market when used in the
+									pricing context. i.e. it should match: \f$pdef_i(d) \times RR_i \f$</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="factorweights" class="tsd-anchor"></a>
+					<h3>factor<wbr>Weights</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">factor<wbr>Weights<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#factorweights">factorWeights</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:339</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="idiosyncfctrs" class="tsd-anchor"></a>
+					<h3>idiosync<wbr>Fctrs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">idiosync<wbr>Fctrs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#idiosyncfctrs">idiosyncFctrs</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:343</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -633,7 +1164,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#init">init</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:177</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:248</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -663,7 +1194,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#integratedexpectedvalue1">integratedExpectedValue1</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:227</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:361</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -687,7 +1218,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#integratedexpectedvalue2">integratedExpectedValue2</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:231</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:369</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -697,6 +1228,51 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="integration" class="tsd-anchor"></a>
+					<h3>integration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">integration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#integration">integration</a></p>
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:275</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_latentmodel_.lmintegration.html" class="tsd-signature-type">LMIntegration</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="inversecumulativedensity" class="tsd-anchor"></a>
+					<h3>inverse<wbr>Cumulative<wbr>Density</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">inverse<wbr>Cumulative<wbr>Density<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a>, iFactor<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#inversecumulativedensity">inverseCumulativeDensity</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:394</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="../modules/_ql_types_.html#probability" class="tsd-signature-type">Probability</a></h5>
+								</li>
+								<li>
+									<h5>iFactor: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -711,7 +1287,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#inversecumulativey">inverseCumulativeY</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:219</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:398</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -738,7 +1314,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#inversecumulativez">inverseCumulativeZ</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:223</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:402</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -751,18 +1327,98 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="latentrrvarvalue" class="tsd-anchor"></a>
+					<h3>latentRRVar<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">latentRRVar<wbr>Value<span class="tsd-signature-symbol">(</span>allFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, iName<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:220</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>allFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>iName: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="latentvarvalue" class="tsd-anchor"></a>
+					<h3>latent<wbr>Var<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">latent<wbr>Var<wbr>Value<span class="tsd-signature-symbol">(</span>allFactors<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, iVar<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#latentvarvalue">latentVarValue</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:410</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>allFactors: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>iVar: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="latentvariablecorrel" class="tsd-anchor"></a>
+					<h3>latent<wbr>Variable<wbr>Correl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">latent<wbr>Variable<wbr>Correl<span class="tsd-signature-symbol">(</span>iVar1<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, iVar2<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#latentvariablecorrel">latentVariableCorrel</a></p>
+								<ul>
+									<li>Defined in ql/experimental/math/latentmodel.ts:347</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>iVar1: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>iVar2: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="lminit1" class="tsd-anchor"></a>
 					<h3>lm<wbr>Init1</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">lm<wbr>Init1<span class="tsd-signature-symbol">(</span>factorsWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">lm<wbr>Init1<span class="tsd-signature-symbol">(</span>factorWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit1">lmInit1</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:184</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:255</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -774,7 +1430,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>factorsWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>factorWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ini: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
@@ -788,14 +1444,14 @@
 					<a name="lminit2" class="tsd-anchor"></a>
 					<h3>lm<wbr>Init2</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">lm<wbr>Init2<span class="tsd-signature-symbol">(</span>factorsWeight<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">lm<wbr>Init2<span class="tsd-signature-symbol">(</span>factorWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_math_latentmodel_.latentmodel.html" class="tsd-signature-type">LatentModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit2">lmInit2</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:190</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:275</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -807,7 +1463,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>factorsWeight: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>factorWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ini: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
@@ -828,7 +1484,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit3">lmInit3</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:196</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:294</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,7 +1520,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#lminit4">lmInit4</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:202</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:310</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -900,7 +1556,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#numfactors">numFactors</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:211</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:331</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
@@ -918,10 +1574,33 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#numtotalfactors">numTotalFactors</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:215</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:335</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resetbasket" class="tsd-anchor"></a>
+					<h3>reset<wbr>Basket</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Basket<span class="tsd-signature-symbol">(</span>basket<span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:84</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>basket: <a href="_ql_experimental_credit_basket_.basket.html" class="tsd-signature-type">Basket</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -936,25 +1615,67 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#size">size</a></p>
 								<ul>
-									<li>Defined in ql/experimental/math/latentmodel.ts:207</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:327</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="srlminit" class="tsd-anchor"></a>
+					<h3>srlm<wbr>Init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">srlm<wbr>Init<span class="tsd-signature-symbol">(</span>factorWeights<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, recoveries<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, modelA<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a>, integralType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a>, ini<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html" class="tsd-signature-type">SpotRecoveryLatentModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/experimental/credit/spotlosslatentmodel.ts:41</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>factorWeights: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>recoveries: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>modelA: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
+								</li>
+								<li>
+									<h5>integralType: <a href="../enums/_ql_experimental_math_latentmodel_.latentmodelintegrationtype.html" class="tsd-signature-type">LatentModelIntegrationType</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ini: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html" class="tsd-signature-type">SpotRecoveryLatentModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
+								<p>Inherited from <a href="_ql_experimental_math_latentmodel_.latentmodel.html">LatentModel</a>.<a href="_ql_experimental_math_latentmodel_.latentmodel.html#update">update</a></p>
+								<p>Overrides <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#update">update</a></p>
 								<ul>
-									<li>Defined in mixins/ql/patterns/observerobservable.ts:20</li>
+									<li>Defined in ql/experimental/math/latentmodel.ts:422</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -976,6 +1697,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_credit_spotlosslatentmodel_.gaussianspotlosslm.html" class="tsd-kind-icon">Gaussian<wbr>Spot<wbr>LossLM</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
@@ -990,11 +1714,17 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_basket" class="tsd-kind-icon">_basket</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_cachedmktfactor" class="tsd-kind-icon">_cached<wbr>Mkt<wbr>Factor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_copula" class="tsd-kind-icon">_copula</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_crossidiosyncfctrs" class="tsd-kind-icon">_cross<wbr>Idiosync<wbr>Fctrs</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_factorweights" class="tsd-kind-icon">_factor<wbr>Weights</a>
@@ -1002,8 +1732,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_idiosyncfctrs" class="tsd-kind-icon">_idiosync<wbr>Fctrs</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_integration" class="tsd-kind-icon">_integration</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_isdisposed" class="tsd-kind-icon">_is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_modela" class="tsd-kind-icon">_modelA</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_nfactors" class="tsd-kind-icon">_n<wbr>Factors</a>
@@ -1011,11 +1747,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_nvariables" class="tsd-kind-icon">_n<wbr>Variables</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_numnames" class="tsd-kind-icon">_num<wbr>Names</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_observables" class="tsd-kind-icon">_observables</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_observers" class="tsd-kind-icon">_observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#_recoveries" class="tsd-kind-icon">_recoveries</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#copulapolicy" class="tsd-kind-icon">copula<wbr>Policy</a>
@@ -1048,6 +1790,33 @@
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#unregisterwithall" class="tsd-kind-icon">unregister<wbr>With<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#allfactorcumulinverter" class="tsd-kind-icon">all<wbr>Factor<wbr>Cumul<wbr>Inverter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobability1" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability1</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobability2" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability2</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionaldefaultprobabilityinvp" class="tsd-kind-icon">conditional<wbr>Default<wbr>Probability<wbr>InvP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalexplossrr" class="tsd-kind-icon">conditional<wbr>Exp<wbr>LossRR</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalexplossrrinv" class="tsd-kind-icon">conditional<wbr>Exp<wbr>LossRRInv</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#conditionalrecovery" class="tsd-kind-icon">conditional<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#copula" class="tsd-kind-icon">copula</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#cumulativey" class="tsd-kind-icon">cumulativeY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#cumulativez" class="tsd-kind-icon">cumulativeZ</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -1055,6 +1824,24 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#density" class="tsd-kind-icon">density</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecovery" class="tsd-kind-icon">exp<wbr>Cond<wbr>Recovery</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecoveryinvpinvrr" class="tsd-kind-icon">exp<wbr>Cond<wbr>Recovery<wbr>Inv<wbr>PinvRR</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expcondrecoveryp" class="tsd-kind-icon">exp<wbr>Cond<wbr>RecoveryP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#expectedloss" class="tsd-kind-icon">expected<wbr>Loss</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#factorweights" class="tsd-kind-icon">factor<wbr>Weights</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#idiosyncfctrs" class="tsd-kind-icon">idiosync<wbr>Fctrs</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#init" class="tsd-kind-icon">init</a>
@@ -1065,11 +1852,26 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#integratedexpectedvalue2" class="tsd-kind-icon">integrated<wbr>Expected<wbr>Value2</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#integration" class="tsd-kind-icon">integration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativedensity" class="tsd-kind-icon">inverse<wbr>Cumulative<wbr>Density</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativey" class="tsd-kind-icon">inverse<wbr>CumulativeY</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#inversecumulativez" class="tsd-kind-icon">inverse<wbr>CumulativeZ</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentrrvarvalue" class="tsd-kind-icon">latentRRVar<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentvarvalue" class="tsd-kind-icon">latent<wbr>Var<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#latentvariablecorrel" class="tsd-kind-icon">latent<wbr>Variable<wbr>Correl</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#lminit1" class="tsd-kind-icon">lm<wbr>Init1</a>
@@ -1089,21 +1891,24 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#numtotalfactors" class="tsd-kind-icon">num<wbr>Total<wbr>Factors</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#resetbasket" class="tsd-kind-icon">reset<wbr>Basket</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#size" class="tsd-kind-icon">size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#srlminit" class="tsd-kind-icon">srlm<wbr>Init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_ql_experimental_credit_spotlosslatentmodel_.spotrecoverylatentmodel.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ql_experimental_credit_spotlosslatentmodel_.html#gaussianspotlosslm" class="tsd-kind-icon">Gaussian<wbr>Spot<wbr>LossLM</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_ql_experimental_credit_spotlosslatentmodel_.html#tspotlosslm" class="tsd-kind-icon">TSpot<wbr>LossLM</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_experimental_credit_spotlosslatentmodel_.tspotlosslm.html" class="tsd-kind-icon">TSpot<wbr>LossLM</a>
 					</li>
 				</ul>
 			</nav>

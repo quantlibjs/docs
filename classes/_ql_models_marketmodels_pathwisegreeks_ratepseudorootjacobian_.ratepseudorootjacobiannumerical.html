@@ -71,12 +71,14 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>module</dt>
-						<dd><p>MarketModel
-							Copyright (c) Jin Yang. All Rights Reserved.</p>
-						</dd>
-					</dl>
+					<div class="lead">
+						<p>Classes for computing derivative of the map taking rates one step
+							to the next with respect to a change in the pseudo-root. We do it both
+							numerically and analytically to provide an easy test of the analytic method.
+						This is useful for pathwise vegas.</p>
+					</div>
+					<p>Evolution is log Euler.</p>
+					<p>One is tested against the other in MarketModelTest::testPathwiseVegas</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -86,6 +88,222 @@
 						<span class="target">RatePseudoRootJacobianNumerical</span>
 					</li>
 				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_aliveindex" class="tsd-kind-icon">_alive<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_bumpedrates" class="tsd-kind-icon">_bumped<wbr>Rates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_displacements" class="tsd-kind-icon">_displacements</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_drifts" class="tsd-kind-icon">_drifts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_driftscomputers" class="tsd-kind-icon">_drifts<wbr>Computers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_factors" class="tsd-kind-icon">_factors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_numberbumps" class="tsd-kind-icon">_number<wbr>Bumps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_pseudobumped" class="tsd-kind-icon">_pseudo<wbr>Bumped</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_pseudoroot" class="tsd-kind-icon">_pseudo<wbr>Root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_taus" class="tsd-kind-icon">_taus</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#getbumps" class="tsd-kind-icon">get<wbr>Bumps</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Rate<wbr>Pseudo<wbr>Root<wbr>Jacobian<wbr>Numerical<span class="tsd-signature-symbol">(</span>pseudoRoot<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a>, aliveIndex<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, numeraire<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a>, taus<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span>, pseudoBumps<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">[]</span>, displacements<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html" class="tsd-signature-type">RatePseudoRootJacobianNumerical</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:19</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pseudoRoot: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+								<li>
+									<h5>aliveIndex: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>numeraire: <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></h5>
+								</li>
+								<li>
+									<h5>taus: <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>pseudoBumps: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>displacements: <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html" class="tsd-signature-type">RatePseudoRootJacobianNumerical</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_aliveindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _alive<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">_alive<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:107</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_bumpedrates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _bumped<wbr>Rates</h3>
+					<div class="tsd-signature tsd-kind-icon">_bumped<wbr>Rates<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:116</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_displacements" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _displacements</h3>
+					<div class="tsd-signature tsd-kind-icon">_displacements<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:110</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_drifts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _drifts</h3>
+					<div class="tsd-signature tsd-kind-icon">_drifts<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:115</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_driftscomputers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _drifts<wbr>Computers</h3>
+					<div class="tsd-signature tsd-kind-icon">_drifts<wbr>Computers<span class="tsd-signature-symbol">:</span> <a href="_ql_models_marketmodels_driftcomputation_lmmdriftcalculator_.lmmdriftcalculator.html" class="tsd-signature-type">LMMDriftCalculator</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:112</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_factors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _factors</h3>
+					<div class="tsd-signature tsd-kind-icon">_factors<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:113</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_numberbumps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _number<wbr>Bumps</h3>
+					<div class="tsd-signature tsd-kind-icon">_number<wbr>Bumps<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:111</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_pseudobumped" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _pseudo<wbr>Bumped</h3>
+					<div class="tsd-signature tsd-kind-icon">_pseudo<wbr>Bumped<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:109</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_pseudoroot" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _pseudo<wbr>Root</h3>
+					<div class="tsd-signature tsd-kind-icon">_pseudo<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:106</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_taus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _taus</h3>
+					<div class="tsd-signature tsd-kind-icon">_taus<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#time" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:108</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getbumps" class="tsd-anchor"></a>
+					<h3>get<wbr>Bumps</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bumps<span class="tsd-signature-symbol">(</span>oldRates<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, oneStepDFs<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, newRates<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, gaussians<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, B<span class="tsd-signature-symbol">: </span><a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/models/marketmodels/pathwisegreeks/ratepseudorootjacobian.ts:63</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldRates: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>oneStepDFs: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>newRates: <a href="../modules/_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>gaussians: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>B: <a href="../modules/_ql_math_matrix_.html#matrix" class="tsd-signature-type">Matrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -101,10 +319,54 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobian.html" class="tsd-kind-icon">Rate<wbr>Pseudo<wbr>Root<wbr>Jacobian</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobianallelements.html" class="tsd-kind-icon">Rate<wbr>Pseudo<wbr>Root<wbr>Jacobian<wbr>All<wbr>Elements</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html" class="tsd-kind-icon">Rate<wbr>Pseudo<wbr>Root<wbr>Jacobian<wbr>Numerical</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_aliveindex" class="tsd-kind-icon">_alive<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_bumpedrates" class="tsd-kind-icon">_bumped<wbr>Rates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_displacements" class="tsd-kind-icon">_displacements</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_drifts" class="tsd-kind-icon">_drifts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_driftscomputers" class="tsd-kind-icon">_drifts<wbr>Computers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_factors" class="tsd-kind-icon">_factors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_numberbumps" class="tsd-kind-icon">_number<wbr>Bumps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_pseudobumped" class="tsd-kind-icon">_pseudo<wbr>Bumped</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_pseudoroot" class="tsd-kind-icon">_pseudo<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#_taus" class="tsd-kind-icon">_taus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_models_marketmodels_pathwisegreeks_ratepseudorootjacobian_.ratepseudorootjacobiannumerical.html#getbumps" class="tsd-kind-icon">get<wbr>Bumps</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
