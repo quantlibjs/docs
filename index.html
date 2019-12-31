@@ -67,7 +67,7 @@
 				<a href="#quantlibjs" id="quantlibjs" style="color: inherit; text-decoration: none;">
 					<h1>quantlib.js</h1>
 				</a>
-				<p><a href="https://www.npmjs.com/package/@quantlib/ql"><img src="https://img.shields.io/npm/v/@quantlib/ql.svg?style=flat" alt="npm version"></a> <a href="https://www.jsdelivr.com/package/npm/@quantlib/ql"><img src="https://data.jsdelivr.com/v1/package/npm/@quantlib/ql/badge?style=rounded" alt=""></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>  <a href="https://quantlib.js.org/blog/"><img src="https://img.shields.io/badge/%C2%A9%202019-Jin%20Yang-brightgreen" alt="copyright"></a> <a href="https://twitter.com/quantlibjs"><img src="https://img.shields.io/twitter/follow/quantlibjs.svg?style=social&maxAge=3600" alt="Twitter Follow"></a></p>
+				<p><a href="https://www.npmjs.com/package/@quantlib/ql"><img src="https://img.shields.io/npm/v/@quantlib/ql.svg?style=flat" alt="npm version"></a> <a href="https://www.jsdelivr.com/package/npm/@quantlib/ql"><img src="https://data.jsdelivr.com/v1/package/npm/@quantlib/ql/badge?style=rounded" alt=""></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>  <a href="https://quantlib.js.org/blog/"><img src="https://img.shields.io/badge/%C2%A9%202020-Jin%20Yang-brightgreen" alt="copyright"></a> <a href="https://twitter.com/quantlibjs"><img src="https://img.shields.io/twitter/follow/quantlibjs.svg?style=social&maxAge=3600" alt="Twitter Follow"></a></p>
 				<a href="#quantitative-finance-in-javascript" id="quantitative-finance-in-javascript" style="color: inherit; text-decoration: none;">
 					<h2>quantitative finance in javascript</h2>
 				</a>
@@ -109,15 +109,37 @@
 				<a href="#install-from-npm" id="install-from-npm" style="color: inherit; text-decoration: none;">
 					<h4>install from npm</h4>
 				</a>
-				<pre><code><span class="hljs-built_in">npm</span> install @quantlib/ql</code></pre>
+				<pre><code><span class="hljs-built_in">npm</span> i @quantlib/ql</code></pre>
 				<a href="#use-in-web-page" id="use-in-web-page" style="color: inherit; text-decoration: none;">
 					<h4>use in web page</h4>
 				</a>
 				<p><code>ql.mjs</code> is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">ESM format</a>, when using in html script tag, make sure to have script type set to &quot;module&quot;</p>
 				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"module"</span>&gt;</span><span class="javascript">
-    <span class="hljs-keyword">import</span> {someclass} <span class="hljs-keyword">from</span> <span class="hljs-string">'https://cdn.jsdelivr.net/npm/@quantlib/ql@latest/ql.mjs'</span>
-    <span class="hljs-keyword">const</span> obj=<span class="hljs-keyword">new</span> someclass();
-    obj.dosomething();
+
+<span class="hljs-keyword">import</span> { Actual360, AnalyticEuropeanEngine, BlackConstantVol, BlackScholesProcess, DateExt, EuropeanExercise, EuropeanOption, FlatForward, Handle, Option, PlainVanillaPayoff, Settings, SimpleQuote, TARGET } <span class="hljs-keyword">from</span> <span class="hljs-string">'https://cdn.jsdelivr.net/npm/@quantlib/ql@latest/ql.mjs'</span>;
+
+<span class="hljs-keyword">const</span> today = DateExt.UTC(<span class="hljs-string">'7,March,2014'</span>);
+Settings.evaluationDate.set(today);
+
+<span class="hljs-keyword">const</span> payoff = <span class="hljs-keyword">new</span> PlainVanillaPayoff(Option.Type.Call, <span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> exercise = <span class="hljs-keyword">new</span> EuropeanExercise(DateExt.UTC(<span class="hljs-string">'7,June,2014'</span>));
+<span class="hljs-keyword">const</span> option = <span class="hljs-keyword">new</span> EuropeanOption(payoff, exercise);
+
+<span class="hljs-keyword">const</span> u = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> r = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.01</span>);
+<span class="hljs-keyword">const</span> s = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.2</span>);
+
+<span class="hljs-keyword">const</span> riskFreeCurve = <span class="hljs-keyword">new</span> FlatForward().ffInit3(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(r), <span class="hljs-keyword">new</span> Actual360());
+<span class="hljs-keyword">const</span> volatility = <span class="hljs-keyword">new</span> BlackConstantVol().bcvInit4(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(s), <span class="hljs-keyword">new</span> Actual360());
+
+<span class="hljs-keyword">const</span> process = <span class="hljs-keyword">new</span> BlackScholesProcess(<span class="hljs-keyword">new</span> Handle(u), <span class="hljs-keyword">new</span> Handle(riskFreeCurve), <span class="hljs-keyword">new</span> Handle(volatility));
+
+<span class="hljs-keyword">const</span> engine = <span class="hljs-keyword">new</span> AnalyticEuropeanEngine().init1(process);
+option.setPricingEngine(engine);
+
+<span class="hljs-keyword">const</span> npv = option.NPV();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`NPV = <span class="hljs-subst">${npv}</span>`</span>);  <span class="hljs-comment">// 4.155543462156206</span>
+
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 				<a href="#use-in-nodejs" id="use-in-nodejs" style="color: inherit; text-decoration: none;">
 					<h4>use in node.js</h4>
@@ -125,30 +147,125 @@
 				<p><code>quantlib.js</code> works in <code>node.js</code> environment. after installing with <code>npm</code>, pass <code>--experimental-modules</code> to <code>node</code> to use ESM javascript file</p>
 				<pre><code class="language-sh">node --experimental-modules test.mjs</code></pre>
 				<p>in <code>test.mjs</code></p>
-				<pre><code class="language-js"><span class="hljs-keyword">import</span> {someclass} <span class="hljs-keyword">from</span> <span class="hljs-string">'@quantlib/ql'</span>
-<span class="hljs-keyword">const</span> obj=<span class="hljs-keyword">new</span> someclass();
-obj.dosomething();</code></pre>
+				<pre><code class="language-js"><span class="hljs-keyword">import</span> { Actual360, AnalyticEuropeanEngine, BlackConstantVol, BlackScholesProcess, DateExt, EuropeanExercise, EuropeanOption, FlatForward, Handle, Option, PlainVanillaPayoff, Settings, SimpleQuote, TARGET } <span class="hljs-keyword">from</span> <span class="hljs-string">'@quantlib/ql'</span>;
+
+<span class="hljs-keyword">const</span> today = DateExt.UTC(<span class="hljs-string">'7,March,2014'</span>);
+Settings.evaluationDate.set(today);
+
+<span class="hljs-keyword">const</span> payoff = <span class="hljs-keyword">new</span> PlainVanillaPayoff(Option.Type.Call, <span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> exercise = <span class="hljs-keyword">new</span> EuropeanExercise(DateExt.UTC(<span class="hljs-string">'7,June,2014'</span>));
+<span class="hljs-keyword">const</span> option = <span class="hljs-keyword">new</span> EuropeanOption(payoff, exercise);
+
+<span class="hljs-keyword">const</span> u = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> r = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.01</span>);
+<span class="hljs-keyword">const</span> s = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.2</span>);
+
+<span class="hljs-keyword">const</span> riskFreeCurve = <span class="hljs-keyword">new</span> FlatForward().ffInit3(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(r), <span class="hljs-keyword">new</span> Actual360());
+<span class="hljs-keyword">const</span> volatility = <span class="hljs-keyword">new</span> BlackConstantVol().bcvInit4(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(s), <span class="hljs-keyword">new</span> Actual360());
+
+<span class="hljs-keyword">const</span> process = <span class="hljs-keyword">new</span> BlackScholesProcess(<span class="hljs-keyword">new</span> Handle(u), <span class="hljs-keyword">new</span> Handle(riskFreeCurve), <span class="hljs-keyword">new</span> Handle(volatility));
+
+<span class="hljs-keyword">const</span> engine = <span class="hljs-keyword">new</span> AnalyticEuropeanEngine().init1(process);
+option.setPricingEngine(engine);
+
+<span class="hljs-keyword">const</span> npv = option.NPV();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`NPV = <span class="hljs-subst">${npv}</span>`</span>);  <span class="hljs-comment">// 4.155543462156206</span></code></pre>
 				<a href="#typescript" id="typescript" style="color: inherit; text-decoration: none;">
 					<h4>typescript</h4>
 				</a>
 				<p><code>ql.d.ts</code> is published along with <code>ql.mjs</code></p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> {someclass} <span class="hljs-keyword">from</span> <span class="hljs-string">'@quantlib/ql'</span>
-<span class="hljs-keyword">const</span> obj:someclass = <span class="hljs-keyword">new</span> someclass();
-obj.dosomething();</code></pre>
+				<p>write code in typescript, then compile with <code>tsc</code> or run with <code>ts-node</code></p>
+				<p>in <code>test.ts</code></p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> {Actual360, AnalyticEuropeanEngine, BlackConstantVol, BlackScholesProcess, BlackVolTermStructure, DateExt, EuropeanExercise, EuropeanOption, Exercise, FlatForward, GeneralizedBlackScholesProcess, Handle, Option, PlainVanillaPayoff, PricingEngine, Quote, Real, Settings, SimpleQuote, StrikedTypePayoff, TARGET, YieldTermStructure} <span class="hljs-keyword">from</span> <span class="hljs-string">'@quantlib/ql'</span>;
+
+<span class="hljs-keyword">const</span> today: <span class="hljs-built_in">Date</span> = DateExt.UTC(<span class="hljs-string">'7,March,2014'</span>);
+Settings.evaluationDate.set(today);
+
+<span class="hljs-keyword">const</span> payoff: StrikedTypePayoff =
+    <span class="hljs-keyword">new</span> PlainVanillaPayoff(Option.Type.Call, <span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> exercise: Exercise = <span class="hljs-keyword">new</span> EuropeanExercise(DateExt.UTC(<span class="hljs-string">'7,June,2014'</span>));
+<span class="hljs-keyword">const</span> option: EuropeanOption = <span class="hljs-keyword">new</span> EuropeanOption(payoff, exercise);
+
+<span class="hljs-keyword">const</span> u: Quote = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">100.0</span>);
+<span class="hljs-keyword">const</span> r: Quote = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.01</span>);
+<span class="hljs-keyword">const</span> s: Quote = <span class="hljs-keyword">new</span> SimpleQuote(<span class="hljs-number">0.2</span>);
+
+<span class="hljs-keyword">const</span> riskFreeCurve: YieldTermStructure =
+    <span class="hljs-keyword">new</span> FlatForward().ffInit3(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(r), <span class="hljs-keyword">new</span> Actual360());
+<span class="hljs-keyword">const</span> volatility: BlackVolTermStructure = <span class="hljs-keyword">new</span> BlackConstantVol().bcvInit4(
+    <span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> TARGET(), <span class="hljs-keyword">new</span> Handle(s), <span class="hljs-keyword">new</span> Actual360());
+
+<span class="hljs-keyword">const</span> process: GeneralizedBlackScholesProcess = <span class="hljs-keyword">new</span> BlackScholesProcess(
+    <span class="hljs-keyword">new</span> Handle(u), <span class="hljs-keyword">new</span> Handle(riskFreeCurve), <span class="hljs-keyword">new</span> Handle(volatility));
+
+<span class="hljs-keyword">const</span> engine: PricingEngine = <span class="hljs-keyword">new</span> AnalyticEuropeanEngine().init1(process);
+option.setPricingEngine(engine);
+
+<span class="hljs-keyword">const</span> npv: Real = option.NPV();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`NPV = <span class="hljs-subst">${npv}</span>`</span>); <span class="hljs-comment">// 4.155543462156206</span></code></pre>
 				<a href="#release-note" id="release-note" style="color: inherit; text-decoration: none;">
 					<h2>release note</h2>
 				</a>
-				<ul>
-					<li>0.3.1, examples cleanup, fixed 4 examples, global optimizers DE tests</li>
-					<li>0.3.0, fixed 40+ specs, start working on model tests</li>
-					<li>0.2.7, fixed <code>default probability curves</code> specs</li>
-					<li>0.2.6, fixed most <code>european option</code> test, tree engine cleanup</li>
-					<li>0.2.5, fixed <code>piecewise zero spreaded</code> term structure, <code>brownian bridge</code>, 4 <code>american options</code> specs, FD engine cleanup</li>
-					<li>0.2.4, fixed <code>risk statistics</code>, some <code>piecewise yield curve</code> specs</li>
-					<li>0.2.3, fixed <code>Term structure tests</code>, <code>Gaussian quadratures experimental tests</code></li>
-					<li>0.1.x, most math specs passed</li>
-					<li>0.0.x, patterns, date&amp;time specs passed</li>
-				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>version</th>
+							<th>notes</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>0.3.2</td>
+							<td>fixed <code>swaption</code>, most of <code>short-rate models</code> specs and some other pricing specs, and part of <code>bermudanswaption</code> example</td>
+						</tr>
+						<tr>
+							<td>0.3.1</td>
+							<td>examples code cleanup, fixed 4 examples, <code>global optimizers</code> example DE tests passed</td>
+						</tr>
+						<tr>
+							<td>0.3.0</td>
+							<td>fixed 40+ pricing specs, started working on model tests</td>
+						</tr>
+						<tr>
+							<td>0.2.7</td>
+							<td>fixed <code>default probability curves</code> specs</td>
+						</tr>
+						<tr>
+							<td>0.2.6</td>
+							<td>fixed most <code>european option</code> test, tree engine cleanup</td>
+						</tr>
+						<tr>
+							<td>0.2.5</td>
+							<td>fixed <code>piecewise zero spreaded</code> term structure, <code>brownian bridge</code>, 4 <code>american options</code> specs, FD engine cleanup</td>
+						</tr>
+						<tr>
+							<td>0.2.4</td>
+							<td>fixed <code>risk statistics</code>, <code>brownian bridge</code> some <code>piecewise yield curve</code> specs</td>
+						</tr>
+						<tr>
+							<td>0.2.3</td>
+							<td>fixed <code>termstructure</code> spec, <code>experimental Gaussian quadratures</code> specs</td>
+						</tr>
+						<tr>
+							<td>0.2.2</td>
+							<td>termstructure constructor cleanup, fixed a few simple ts specs</td>
+						</tr>
+						<tr>
+							<td>0.2.1</td>
+							<td>add <code>halley</code>, <code>halleysafe</code>, <code>inverseIncompleteGammaFunction</code> from QuantLib-noBoost, fixed <code>blackdeltacalculator</code></td>
+						</tr>
+						<tr>
+							<td>0.2.0</td>
+							<td>started working on instrument pricing specs, fixed some old test that passed before</td>
+						</tr>
+						<tr>
+							<td>0.1.x</td>
+							<td>most math specs passed</td>
+						</tr>
+						<tr>
+							<td>0.0.x</td>
+							<td>date&amp;time, patterns, currency, misc specs passed</td>
+						</tr>
+				</tbody></table>
 				<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
 					<h2>docs</h2>
 				</a>
@@ -395,10 +512,8 @@ obj.dosomething();</code></pre>
 				<a href="#test-report" id="test-report" style="color: inherit; text-decoration: none;">
 					<h2>test report</h2>
 				</a>
-				<ul>
-					<li>test suite: total: 703, passed: 418, failed: 169, pending: 116</li>
-					<li>examples: total 19, passed: 9, failed: 10</li>
-				</ul>
+				<p>v0.3.2 specs + examples status report
+				total: 735, passed: 443, failed: 185, pending: 107</p>
 				<p>LazyObject tests</p>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Testing that lazy objects discard notifications after the first...</li>
@@ -769,9 +884,9 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Range Accrual tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing infinite range accrual floaters...</li>
-					<li><input disabled="" type="checkbox"> Testing price monotonicity with respect to the lower strike...</li>
-					<li><input disabled="" type="checkbox"> Testing price monotonicity with respect to the upper strike...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing infinite range accrual floaters...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing price monotonicity with respect to the lower strike...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing price monotonicity with respect to the upper strike...</li>
 				</ul>
 				<p>Hybrid Heston-HullWhite tests</p>
 				<ul>
@@ -914,6 +1029,11 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing consistency between yoy inflation cap, floor and collar...</li>
 					<li><input disabled="" type="checkbox"> Testing yoy inflation cap/floor parity...</li>
 					<li><input disabled="" type="checkbox"> Testing Black yoy inflation cap/floor price against cached values...</li>
+				</ul>
+				<p>CPI swaption tests</p>
+				<ul>
+					<li><input disabled="" type="checkbox"> Testing cpi capfloor price surface...</li>
+					<li><input disabled="" type="checkbox"> Testing cpi capfloor pricer...</li>
 				</ul>
 				<p>Forward rate agreement</p>
 				<ul>
@@ -1094,7 +1214,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>swap-forward mappings tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing forward-rate coinitial-swap Jacobian...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing forward-rate coinitial-swap Jacobian...</li>
 					<li><input disabled="" type="checkbox"> Testing forward-rate coterminal-swap mappings...</li>
 					<li><input disabled="" type="checkbox"> Testing implied swaption vol in LMM using HW approximation...</li>
 				</ul>
@@ -1105,10 +1225,10 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Swaption tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing swaption dependency on strike...</li>
-					<li><input disabled="" type="checkbox"> Testing swaption dependency on spread...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing swaption dependency on strike...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing swaption dependency on spread...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing swaption treatment of spread...</li>
-					<li><input disabled="" type="checkbox"> Testing swaption value against cached value...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing swaption value against cached value...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing swaption vega...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing cash settled swaptions modified annuity...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing implied volatility for swaptions...</li>
@@ -1222,12 +1342,12 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Short-rate model tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Hull-White calibration against cached values using swaptions with start delay...</li>
-					<li><input disabled="" type="checkbox"> Testing Hull-White calibration with fixed reversion against cached values...</li>
-					<li><input disabled="" type="checkbox"> Testing Hull-White calibration against cached values using swaptions without start delay...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Hull-White calibration against cached values using swaptions with start delay...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Hull-White calibration with fixed reversion against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Hull-White calibration against cached values using swaptions without start delay...</li>
 					<li><input disabled="" type="checkbox"> Testing Hull-White swap pricing against known values...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing Hull-White futures convexity bias...</li>
-					<li><input disabled="" type="checkbox"> Testing zero bond pricing for extended CIR model ...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing zero bond pricing for extended CIR model ...</li>
 				</ul>
 				<p>SquareRootCLVModel tests</p>
 				<ul>
@@ -1286,6 +1406,16 @@ obj.dosomething();</code></pre>
 					<li><input disabled="" type="checkbox"> Testing year-on-year inflation indices...</li>
 					<li><input disabled="" type="checkbox"> Testing year-on-year inflation term structure...</li>
 					<li><input disabled="" type="checkbox"> Testing inflation period...</li>
+				</ul>
+				<p>CPI bond tests</p>
+				<ul>
+					<li><input disabled="" type="checkbox"> Testing clean price...</li>
+				</ul>
+				<p>CPI Swap tests</p>
+				<ul>
+					<li><input disabled="" type="checkbox"> Testing consistency...</li>
+					<li><input disabled="" type="checkbox"> Testing zciis consistency...</li>
+					<li><input disabled="" type="checkbox"> Testing cpi bond consistency...</li>
 				</ul>
 				<p>Term structure tests</p>
 				<ul>
@@ -1371,7 +1501,7 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>CDS Option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing CDS-option value against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing CDS-option value against cached values...</li>
 				</ul>
 				<p>Credit-default swap tests</p>
 				<ul>
@@ -1441,17 +1571,17 @@ obj.dosomething();</code></pre>
 				</ul>
 				<p>Everest-option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Everest option against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Everest option against cached values...</li>
 				</ul>
 				<p>Himalaya-option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing Himalaya option against cached values...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing Himalaya option against cached values...</li>
 				</ul>
 				<p>Lookback option tests</p>
 				<ul>
-					<li><input disabled="" type="checkbox"> Testing analytic continuous floating-strike lookback options...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous floating-strike lookback options...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
-					<li><input disabled="" type="checkbox"> Testing analytic continuous partial floating-strike lookback options...</li>
+					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous partial floating-strike lookback options...</li>
 					<li><input checked="" disabled="" type="checkbox"> Testing analytic continuous fixed-strike lookback options...</li>
 				</ul>
 				<p>Exchange option tests</p>
