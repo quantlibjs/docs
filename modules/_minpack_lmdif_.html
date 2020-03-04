@@ -108,22 +108,6 @@
 									diag,mode,factor,nprint,info,nfev,fjac,
 								ldfjac,ipvt,qtf,wa1,wa2,wa3,wa4)</p>
 								<p>where</p>
-								<p>  @param fcn is the name of the user-supplied subroutine which
-									calculates the functions. fcn must be declared
-									in an external statement in the user calling
-								program, and should be written as follows.</p>
-								<p>subroutine fcn(m,n,x,fvec,iflag)
-									integer m,n,iflag
-								double precision x(n),fvec(m)</p>
-								<hr>
-								<p>calculate the functions at x and
-								return this vector in fvec.</p>
-								<hr>
-								<p>return
-								end</p>
-								<p>the value of iflag should not be changed by fcn unless
-									the user wants to terminate execution of lmdif.
-								in this case set iflag to a negative integer.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -312,6 +296,24 @@
 								</li>
 								<li>
 									<h5>fcn: <a href="../interfaces/_minpack_minpack_.lmdifcostfunction.html" class="tsd-signature-type">LmdifCostFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is the name of the user-supplied subroutine which
+											calculates the functions. fcn must be declared
+											in an external statement in the user calling
+										program, and should be written as follows.</p>
+										<p>subroutine fcn(m,n,x,fvec,iflag)
+											integer m,n,iflag
+										double precision x(n),fvec(m)</p>
+										<hr>
+										<p>calculate the functions at x and
+										return this vector in fvec.</p>
+										<hr>
+										<p>return
+										end</p>
+										<p>the value of iflag should not be changed by fcn unless
+											the user wants to terminate execution of lmdif.
+										in this case set iflag to a negative integer.</p>
+									</div>
 								</li>
 								<li>
 									<h5>jacFcn: <a href="../interfaces/_minpack_minpack_.lmdifcostfunction.html" class="tsd-signature-type">LmdifCostFunction</a></h5>
@@ -330,7 +332,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module tsd-is-external">
-						<a href="_minpack_lmdif_.html">"minpack/lmdif"</a>
+						<a href="_minpack_lmdif_.html">&quot;minpack/lmdif&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -413,7 +415,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

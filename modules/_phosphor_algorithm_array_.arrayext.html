@@ -126,7 +126,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
 					<a name="mutablearraylike" class="tsd-anchor"></a>
 					<h3>Mutable<wbr>Array<wbr>Like</h3>
-					<div class="tsd-signature tsd-kind-icon">Mutable<wbr>Array<wbr>Like&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">Mutable<wbr>Array<wbr>Like&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in phosphor/algorithm/array.ts:762</li>
@@ -197,7 +197,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											filled, inclusive. The default value is <code>0</code>. Negative values
@@ -205,7 +205,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											filled, inclusive. The default value is <code>-1</code>. Negative values
@@ -243,7 +243,7 @@ ArrayExt.fill(data, <span class="hljs-string">'z'</span>, <span class="hljs-numb
 					<a name="findfirstindex" class="tsd-anchor"></a>
 					<h3>find<wbr>First<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>First<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>First<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -272,13 +272,13 @@ ArrayExt.fill(data, <span class="hljs-string">'z'</span>, <span class="hljs-numb
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -299,7 +299,7 @@ ArrayExt.fill(data, <span class="hljs-string">'z'</span>, <span class="hljs-numb
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -307,7 +307,7 @@ ArrayExt.fill(data, <span class="hljs-string">'z'</span>, <span class="hljs-numb
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -352,7 +352,7 @@ ArrayExt.findFirstIndex(data, isEven, <span class="hljs-number">6</span>, <span 
 					<a name="findfirstvalue" class="tsd-anchor"></a>
 					<h3>find<wbr>First<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>First<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>First<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -381,13 +381,13 @@ ArrayExt.findFirstIndex(data, isEven, <span class="hljs-number">6</span>, <span 
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -408,7 +408,7 @@ ArrayExt.findFirstIndex(data, isEven, <span class="hljs-number">6</span>, <span 
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -416,7 +416,7 @@ ArrayExt.findFirstIndex(data, isEven, <span class="hljs-number">6</span>, <span 
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -424,10 +424,7 @@ ArrayExt.findFirstIndex(data, isEven, <span class="hljs-number">6</span>, <span 
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 							<p>The first matching value, or <code>undefined</code> if no matching
 							value is found.</p>
 							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
@@ -464,7 +461,7 @@ ArrayExt.findFirstValue(data, isEven, <span class="hljs-number">6</span>, <span 
 					<a name="findlastindex" class="tsd-anchor"></a>
 					<h3>find<wbr>Last<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Index&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -490,13 +487,13 @@ ArrayExt.findFirstValue(data, isEven, <span class="hljs-number">6</span>, <span 
 									<h5>array: <span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -517,7 +514,7 @@ ArrayExt.findFirstValue(data, isEven, <span class="hljs-number">6</span>, <span 
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -525,7 +522,7 @@ ArrayExt.findFirstValue(data, isEven, <span class="hljs-number">6</span>, <span 
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -570,7 +567,7 @@ ArrayExt.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span c
 					<a name="findlastvalue" class="tsd-anchor"></a>
 					<h3>find<wbr>Last<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Last<wbr>Value&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -596,13 +593,13 @@ ArrayExt.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span c
 									<h5>array: <span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -623,7 +620,7 @@ ArrayExt.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span c
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -631,7 +628,7 @@ ArrayExt.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span c
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -639,10 +636,7 @@ ArrayExt.findLastIndex(data, isEven, <span class="hljs-number">0</span>, <span c
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 							<p>The last matching value, or <code>undefined</code> if no matching
 							value is found.</p>
 							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
@@ -715,7 +709,7 @@ ArrayExt.findLastValue(data, isEven, <span class="hljs-number">0</span>, <span c
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -723,7 +717,7 @@ ArrayExt.findLastValue(data, isEven, <span class="hljs-number">0</span>, <span c
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -868,7 +862,7 @@ ArrayExt.insert(data, <span class="hljs-number">6</span>, <span class="hljs-numb
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -876,7 +870,7 @@ ArrayExt.insert(data, <span class="hljs-number">6</span>, <span class="hljs-numb
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -917,7 +911,7 @@ ArrayExt.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="
 					<a name="lowerbound" class="tsd-anchor"></a>
 					<h3>lower<wbr>Bound</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">lower<wbr>Bound&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">lower<wbr>Bound&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -955,7 +949,7 @@ ArrayExt.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The 3-way comparison function to apply to the values.
 											It should return <code>&lt; 0</code> if an element is less than a value, <code>0</code> if
@@ -964,7 +958,7 @@ ArrayExt.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -985,7 +979,7 @@ ArrayExt.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -993,7 +987,7 @@ ArrayExt.lastIndexOf(data, <span class="hljs-string">'two'</span>, <span class="
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1146,7 +1140,7 @@ ArrayExt.move(data, <span class="hljs-number">4</span>, <span class="hljs-number
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1154,7 +1148,7 @@ ArrayExt.move(data, <span class="hljs-number">4</span>, <span class="hljs-number
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1189,7 +1183,7 @@ ArrayExt.removeAllOf(data, <span class="hljs-number">14</span>, <span class="hlj
 					<a name="removeallwhere" class="tsd-anchor"></a>
 					<h3>remove<wbr>All<wbr>Where</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>All<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1218,13 +1212,13 @@ ArrayExt.removeAllOf(data, <span class="hljs-number">14</span>, <span class="hlj
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1245,7 +1239,7 @@ ArrayExt.removeAllOf(data, <span class="hljs-number">14</span>, <span class="hlj
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1253,7 +1247,7 @@ ArrayExt.removeAllOf(data, <span class="hljs-number">14</span>, <span class="hlj
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1331,10 +1325,7 @@ ArrayExt.removeAllWhere(data, isNegative, <span class="hljs-number">0</span>, <s
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 							<p>The value at the specified index, or <code>undefined</code> if the
 							index is out of range.</p>
 							<a href="#complexity" id="complexity" style="color: inherit; text-decoration: none;">
@@ -1397,7 +1388,7 @@ ArrayExt.removeAt(data, <span class="hljs-number">10</span>);  <span class="hljs
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1405,7 +1396,7 @@ ArrayExt.removeAt(data, <span class="hljs-number">10</span>);  <span class="hljs
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1441,7 +1432,7 @@ ArrayExt.removeFirstOf(data, <span class="hljs-number">39</span>, <span class="h
 					<a name="removefirstwhere" class="tsd-anchor"></a>
 					<h3>remove<wbr>First<wbr>Where</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>First<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>First<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1470,13 +1461,13 @@ ArrayExt.removeFirstOf(data, <span class="hljs-number">39</span>, <span class="h
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1497,7 +1488,7 @@ ArrayExt.removeFirstOf(data, <span class="hljs-number">39</span>, <span class="h
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1505,7 +1496,7 @@ ArrayExt.removeFirstOf(data, <span class="hljs-number">39</span>, <span class="h
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1513,7 +1504,7 @@ ArrayExt.removeFirstOf(data, <span class="hljs-number">39</span>, <span class="h
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></h4>
 							<p>The removed <code>{ index, value }</code>, which will be <code>-1</code> and
 							<code>undefined</code> if the value is not contained in the array.</p>
 							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
@@ -1588,7 +1579,7 @@ ArrayExt.removeFirstWhere(data, isEven, <span class="hljs-number">4</span>);  <s
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1596,7 +1587,7 @@ ArrayExt.removeFirstWhere(data, isEven, <span class="hljs-number">4</span>);  <s
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1632,7 +1623,7 @@ ArrayExt.removeLastOf(data, <span class="hljs-number">39</span>, <span class="hl
 					<a name="removelastwhere" class="tsd-anchor"></a>
 					<h3>remove<wbr>Last<wbr>Where</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Last<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Last<wbr>Where&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1661,13 +1652,13 @@ ArrayExt.removeLastOf(data, <span class="hljs-number">39</span>, <span class="hl
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The predicate function to apply to the values.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1688,7 +1679,7 @@ ArrayExt.removeLastOf(data, <span class="hljs-number">39</span>, <span class="hl
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -1696,7 +1687,7 @@ ArrayExt.removeLastOf(data, <span class="hljs-number">39</span>, <span class="hl
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -1704,7 +1695,7 @@ ArrayExt.removeLastOf(data, <span class="hljs-number">39</span>, <span class="hl
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></h4>
 							<p>The removed <code>{ index, value }</code>, which will be <code>-1</code> and
 							<code>undefined</code> if the value is not contained in the array.</p>
 							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
@@ -1772,7 +1763,7 @@ ArrayExt.removeLastWhere(data, isEven, <span class="hljs-number">2</span>, <span
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											reversed, inclusive. The default value is <code>0</code>. Negative values
@@ -1780,7 +1771,7 @@ ArrayExt.removeLastWhere(data, isEven, <span class="hljs-number">2</span>, <span
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											reversed, inclusive. The default value is <code>-1</code>. Negative values
@@ -1850,7 +1841,7 @@ ArrayExt.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</sp
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											rotated, inclusive. The default value is <code>0</code>. Negative values
@@ -1858,7 +1849,7 @@ ArrayExt.reverse(data);        <span class="hljs-comment">// [1, 4, 2, 3, 0]</sp
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											rotated, inclusive. The default value is <code>-1</code>. Negative values
@@ -1893,7 +1884,7 @@ ArrayExt.rotate(data, <span class="hljs-number">2</span>, <span class="hljs-numb
 					<a name="shallowequal" class="tsd-anchor"></a>
 					<h3>shallow<wbr>Equal</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">shallow<wbr>Equal&lt;T&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">shallow<wbr>Equal&lt;T&gt;<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -1928,7 +1919,7 @@ ArrayExt.rotate(data, <span class="hljs-number">2</span>, <span class="hljs-numb
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-type">function</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The comparison function to apply to the elements. It
 											should return <code>true</code> if the elements are &quot;equal&quot;. The default
@@ -1936,7 +1927,7 @@ ArrayExt.rotate(data, <span class="hljs-number">2</span>, <span class="hljs-numb
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -1984,7 +1975,7 @@ ArrayExt.shallowEqual(d2, d3);  <span class="hljs-comment">// false</span></code
 					<a name="upperbound" class="tsd-anchor"></a>
 					<h3>upper<wbr>Bound</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">upper<wbr>Bound&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">upper<wbr>Bound&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, stop<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2022,7 +2013,7 @@ ArrayExt.shallowEqual(d2, d3);  <span class="hljs-comment">// false</span></code
 									</div>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-type">function</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The 3-way comparison function to apply to the values.
 											It should return <code>&lt; 0</code> if an element is less than a value, <code>0</code> if
@@ -2031,7 +2022,7 @@ ArrayExt.shallowEqual(d2, d3);  <span class="hljs-comment">// false</span></code
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -2052,7 +2043,7 @@ ArrayExt.shallowEqual(d2, d3);  <span class="hljs-comment">// false</span></code
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the first element in the range to be
 											searched, inclusive. The default value is <code>0</code>. Negative values
@@ -2060,7 +2051,7 @@ ArrayExt.shallowEqual(d2, d3);  <span class="hljs-comment">// false</span></code
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> stop: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The index of the last element in the range to be
 											searched, inclusive. The default value is <code>-1</code>. Negative values
@@ -2115,7 +2106,7 @@ ArrayExt.upperBound(data, <span class="hljs-number">10</span>, numberCmp);  <spa
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module tsd-is-external">
-						<a href="_phosphor_algorithm_array_.html">"phosphor/algorithm/array"</a>
+						<a href="_phosphor_algorithm_array_.html">&quot;phosphor/algorithm/array&quot;</a>
 						<ul>
 							<li class="current tsd-kind-module tsd-parent-kind-external-module tsd-is-external">
 								<a href="_phosphor_algorithm_array_.arrayext.html">Array<wbr>Ext</a>
@@ -2271,7 +2262,7 @@ ArrayExt.upperBound(data, <span class="hljs-number">10</span>, numberCmp);  <spa
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

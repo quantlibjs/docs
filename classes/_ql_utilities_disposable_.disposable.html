@@ -79,21 +79,21 @@
 						which the copy constructor and assignment operator are implemented,
 						thus resulting in actual move semantics. Typical use of this
 					class is along the following lines:</p>
-					<pre><code><span class="hljs-keyword">Disposable&lt;Foo&gt; </span><span class="hljs-keyword">bar(Integer </span>i) {
-    Foo f(i*<span class="hljs-number">2</span>)<span class="hljs-comment">;</span>
-    return f<span class="hljs-comment">;</span>
+					<pre><code><span class="hljs-function">Disposable&lt;Foo&gt; <span class="hljs-title">bar</span><span class="hljs-params">(Integer i)</span> </span>{
+    <span class="hljs-function">Foo <span class="hljs-title">f</span><span class="hljs-params">(i*<span class="hljs-number">2</span>)</span></span>;
+    <span class="hljs-keyword">return</span> f;
 }</code></pre><p>warning In order to avoid copies in code such as shown above,
 						the conversion from <tt>T</tt> to <tt>Disposable&lt;T&gt;</tt>
 						is destructive, i.e., it does <b>not</b> preserve the
 						state of the original object. Therefore, it is necessary
 					for the developer to avoid code such as</p>
-					<pre><code><span class="hljs-keyword">Disposable&lt;Foo&gt; </span><span class="hljs-keyword">bar(Foo&amp; </span>f) {
-    return f<span class="hljs-comment">;</span>
+					<pre><code><span class="hljs-function">Disposable&lt;Foo&gt; <span class="hljs-title">bar</span><span class="hljs-params">(Foo&amp; f)</span> </span>{
+    <span class="hljs-keyword">return</span> f;
 }</code></pre><p>which would likely render the passed object unusable.
 					The correct way to obtain the desired behavior would be:</p>
-					<pre><code><span class="hljs-keyword">Disposable&lt;Foo&gt; </span><span class="hljs-keyword">bar(Foo&amp; </span>f) {
-    Foo temp = f<span class="hljs-comment">;</span>
-    return temp<span class="hljs-comment">;</span>
+					<pre><code>Disposable&lt;Foo&gt; bar(Foo&amp; f) {
+    Foo <span class="hljs-keyword">temp</span> = f;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">temp</span>;
 }</code></pre>
 				</div>
 			</section>
@@ -113,7 +113,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_utilities_disposable_.html">"ql/utilities/disposable"</a>
+						<a href="../modules/_ql_utilities_disposable_.html">&quot;ql/utilities/disposable&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -200,7 +200,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

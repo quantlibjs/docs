@@ -100,12 +100,6 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#sample_type" class="tsd-kind-icon">sample_<wbr>type</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -119,6 +113,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#antithetic" class="tsd-kind-icon">antithetic</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#init2" class="tsd-kind-icon">init2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#next" class="tsd-kind-icon">next</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#next_" class="tsd-kind-icon">next_</a></li>
 							</ul>
@@ -134,44 +129,9 @@
 					<div class="tsd-signature tsd-kind-icon">sample_<wbr>type<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_methods_montecarlo_multipath_.multipath.html" class="tsd-signature-type">MultiPath</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:106</li>
+							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:113</li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Multi<wbr>Path<wbr>Generator<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_stochasticprocess_.stochasticprocess.html" class="tsd-signature-type">StochasticProcess</a>, times<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, generator<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_math_randomnumbers_rngtraits_.usg.html" class="tsd-signature-type">USG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span>, brownianBridge<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html" class="tsd-signature-type">MultiPathGenerator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:26</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>process: <a href="_ql_stochasticprocess_.stochasticprocess.html" class="tsd-signature-type">StochasticProcess</a></h5>
-								</li>
-								<li>
-									<h5>times: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
-								</li>
-								<li>
-									<h5>generator: <a href="../interfaces/_ql_math_randomnumbers_rngtraits_.usg.html" class="tsd-signature-type">USG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> brownianBridge: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html" class="tsd-signature-type">MultiPathGenerator</a></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
@@ -182,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">_brownian<wbr>Bridge<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:98</li>
+							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:106</li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">_generator<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ql_math_randomnumbers_rngtraits_.usg.html" class="tsd-signature-type">USG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:100</li>
+							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:108</li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +162,7 @@
 					<div class="tsd-signature tsd-kind-icon">_next<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#sample_type" class="tsd-signature-type">sample_type</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:101</li>
+							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:109</li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">_process<span class="tsd-signature-symbol">:</span> <a href="_ql_stochasticprocess_.stochasticprocess.html" class="tsd-signature-type">StochasticProcess</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:99</li>
+							<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:107</li>
 						</ul>
 					</aside>
 				</section>
@@ -229,10 +189,44 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:51</li>
+									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:59</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#sample_type" class="tsd-signature-type">sample_type</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init2" class="tsd-anchor"></a>
+					<h3>init2</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init2<span class="tsd-signature-symbol">(</span>process<span class="tsd-signature-symbol">: </span><a href="_ql_stochasticprocess_.stochasticprocess.html" class="tsd-signature-type">StochasticProcess</a>, times<span class="tsd-signature-symbol">: </span><a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a>, generator<span class="tsd-signature-symbol">: </span><a href="../interfaces/_ql_math_randomnumbers_rngtraits_.usg.html" class="tsd-signature-type">USG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span>, brownianBridge<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html" class="tsd-signature-type">MultiPathGenerator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:33</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>process: <a href="_ql_stochasticprocess_.stochasticprocess.html" class="tsd-signature-type">StochasticProcess</a></h5>
+								</li>
+								<li>
+									<h5>times: <a href="_ql_timegrid_.timegrid.html" class="tsd-signature-type">TimeGrid</a></h5>
+								</li>
+								<li>
+									<h5>generator: <a href="../interfaces/_ql_math_randomnumbers_rngtraits_.usg.html" class="tsd-signature-type">USG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> brownianBridge: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html" class="tsd-signature-type">MultiPathGenerator</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -246,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:47</li>
+									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:55</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#sample_type" class="tsd-signature-type">sample_type</a></h4>
@@ -263,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:55</li>
+									<li>Defined in ql/methods/montecarlo/multipathgenerator.ts:63</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,7 +279,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_methods_montecarlo_multipathgenerator_.html">"ql/methods/montecarlo/multipathgenerator"</a>
+						<a href="../modules/_ql_methods_montecarlo_multipathgenerator_.html">&quot;ql/methods/montecarlo/multipathgenerator&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -298,9 +292,6 @@
 						<ul>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
 								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#sample_type" class="tsd-kind-icon">sample_<wbr>type</a>
-							</li>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#_brownianbridge" class="tsd-kind-icon">_brownian<wbr>Bridge</a>
@@ -316,6 +307,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#antithetic" class="tsd-kind-icon">antithetic</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#init2" class="tsd-kind-icon">init2</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_ql_methods_montecarlo_multipathgenerator_.multipathgenerator.html#next" class="tsd-kind-icon">next</a>
@@ -401,7 +395,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

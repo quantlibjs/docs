@@ -83,7 +83,7 @@
 						Using a uniform RNG on a [-1,1] support, the extra call to the uniform
 					generator (used for the sign of the sample) is avoided.</p>
 					<p>Class RNG must implement the following interface:</p>
-					<pre><code>  URNG::sample_type RNG::next() <span class="hljs-keyword">const</span>;</code></pre>
+					<pre><code>  URNG::sample_type RNG::<span class="hljs-keyword">next</span>() const;</code></pre>
 					<dl class="tsd-comment-tags">
 						<dt>warning</dt>
 						<dd><p>do not use with a low-discrepancy sequence generator.</p>
@@ -209,10 +209,6 @@
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -220,7 +216,7 @@
 									<h5>degFreedom: <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> seed: <a href="../modules/_ql_types_.html#bignatural" class="tsd-signature-type">BigNatural</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> seed: <a href="../modules/_ql_types_.html#bignatural" class="tsd-signature-type">BigNatural</a><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_math_polarstudenttrng_.polarstudenttrng.html" class="tsd-signature-type">PolarStudentTRng</a></h4>
@@ -241,10 +237,6 @@
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -268,7 +260,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_experimental_math_polarstudenttrng_.html">"ql/experimental/math/polarstudenttrng"</a>
+						<a href="../modules/_ql_experimental_math_polarstudenttrng_.html">&quot;ql/experimental/math/polarstudenttrng&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -375,7 +367,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

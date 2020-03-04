@@ -80,10 +80,10 @@
 					</div>
 					<p>The uniform deviate is supplied by RNG.</p>
 					<p>Class RNG must implement the following interface:</p>
-					<pre><code>  RNG::sample_type RNG::next() <span class="hljs-keyword">const</span>;</code></pre><p>The inverse cumulative distribution is supplied by IC.</p>
+					<pre><code>  RNG::sample_type RNG::<span class="hljs-keyword">next</span>() const;</code></pre><p>The inverse cumulative distribution is supplied by IC.</p>
 					<p>Class IC must implement the following interface:</p>
 					<pre><code>  IC::IC();
-  Real IC::<span class="hljs-keyword">operator</span>() <span class="hljs-keyword">const</span>;</code></pre>
+  <span class="hljs-function">Real <span class="hljs-title">IC::operator</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span></span>;</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -141,7 +141,7 @@
 					<div class="tsd-signature tsd-kind-icon">sample_<wbr>type<span class="tsd-signature-symbol">:</span> <a href="_ql_methods_montecarlo_sample_.sample.html" class="tsd-signature-type">Sample</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/randomnumbers/inversecumulativerng.ts:52</li>
+							<li>Defined in ql/math/randomnumbers/inversecumulativerng.ts:51</li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +151,7 @@
 					<div class="tsd-signature tsd-kind-icon">urng_<wbr>type<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_ql_math_randomnumbers_rngtraits_.rng.html" class="tsd-signature-type">RNG</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/math/randomnumbers/inversecumulativerng.ts:54</li>
+							<li>Defined in ql/math/randomnumbers/inversecumulativerng.ts:53</li>
 						</ul>
 					</aside>
 				</section>
@@ -237,7 +237,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_math_randomnumbers_inversecumulativerng_.html">"ql/math/randomnumbers/inversecumulativerng"</a>
+						<a href="../modules/_ql_math_randomnumbers_inversecumulativerng_.html">&quot;ql/math/randomnumbers/inversecumulativerng&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -344,7 +344,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>

@@ -208,6 +208,14 @@
 									<li>Defined in ql/experimental/credit/riskybond.ts:30</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The value is contingent to survival, i.e., the knockout
+										probability is considered.  To compute the npv given that
+										the issuer has survived, divide the npv by
+									\f[(1-P_{def}(T_{npv}))\f]</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -226,10 +234,10 @@
 									<h5>yieldTS: <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settlementDays: <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol"> =&nbsp;new Calendar()</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> calendar: <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol"> = new Calendar()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_experimental_credit_riskybond_.riskybond.html" class="tsd-signature-type">RiskyBond</a></h4>
@@ -253,7 +261,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_additionalresults" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _additional<wbr>Results</h3>
-					<div class="tsd-signature tsd-kind-icon">_additional<wbr>Results<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, any&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_additional<wbr>Results<span class="tsd-signature-symbol">:</span> <a href="_ql_cashflows_timebasket_.timebasket.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, any&gt;()</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#_additionalresults">_additionalResults</a></p>
 						<ul>
@@ -264,7 +272,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_alwaysforward" class="tsd-anchor"></a>
 					<h3>_always<wbr>Forward</h3>
-					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<div class="tsd-signature tsd-kind-icon">_always<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_alwaysforward">_alwaysForward</a></p>
 						<ul>
@@ -275,7 +283,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_calculated" class="tsd-anchor"></a>
 					<h3>_calculated</h3>
-					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<div class="tsd-signature tsd-kind-icon">_calculated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_calculated">_calculated</a></p>
 						<ul>
@@ -289,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">_calendar<span class="tsd-signature-symbol">:</span> <a href="_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:196</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:197</li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +307,7 @@
 					<div class="tsd-signature tsd-kind-icon">_ccy<span class="tsd-signature-symbol">:</span> <a href="_ql_currency_.currency.html" class="tsd-signature-type">Currency</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:199</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:200</li>
 						</ul>
 					</aside>
 				</section>
@@ -309,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">_defaultTS<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_defaulttermstructure_.defaultprobabilitytermstructure.html" class="tsd-signature-type">DefaultProbabilityTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:201</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:202</li>
 						</ul>
 					</aside>
 				</section>
@@ -338,7 +346,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_frozen" class="tsd-anchor"></a>
 					<h3>_frozen</h3>
-					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<div class="tsd-signature tsd-kind-icon">_frozen<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_ql_patterns_lazyobject_.lazyobject.html">LazyObject</a>.<a href="_ql_patterns_lazyobject_.lazyobject.html#_frozen">_frozen</a></p>
 						<ul>
@@ -349,7 +357,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_isdisposed" class="tsd-anchor"></a>
 					<h3>_is<wbr>Disposed</h3>
-					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<div class="tsd-signature tsd-kind-icon">_is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_isdisposed">_isDisposed</a></p>
 						<ul>
@@ -363,14 +371,14 @@
 					<div class="tsd-signature tsd-kind-icon">_name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:198</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:199</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_observables" class="tsd-anchor"></a>
 					<h3>_observables</h3>
-					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set()</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observables">_observables</a></p>
 						<ul>
@@ -381,7 +389,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_observers" class="tsd-anchor"></a>
 					<h3>_observers</h3>
-					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set()</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#_observers">_observers</a></p>
 						<ul>
@@ -395,7 +403,7 @@
 					<div class="tsd-signature tsd-kind-icon">_recovery<wbr>Rate<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:200</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:201</li>
 						</ul>
 					</aside>
 				</section>
@@ -405,7 +413,7 @@
 					<div class="tsd-signature tsd-kind-icon">_settlement<wbr>Days<span class="tsd-signature-symbol">:</span> <a href="../modules/_ql_types_.html#natural" class="tsd-signature-type">Natural</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:195</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:196</li>
 						</ul>
 					</aside>
 				</section>
@@ -426,14 +434,14 @@
 					<div class="tsd-signature tsd-kind-icon">_yieldTS<span class="tsd-signature-symbol">:</span> <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ql/experimental/credit/riskybond.ts:202</li>
+							<li>Defined in ql/experimental/credit/riskybond.ts:203</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="dispose" class="tsd-anchor"></a>
 					<h3>dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#dispose">dispose</a></p>
 						<ul>
@@ -444,7 +452,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -470,7 +478,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="notifyobservers" class="tsd-anchor"></a>
 					<h3>notify<wbr>Observers</h3>
-					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">notify<wbr>Observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#notifyobservers">notifyObservers</a></p>
 						<ul>
@@ -481,7 +489,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -496,7 +504,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="registerobserver" class="tsd-anchor"></a>
 					<h3>register<wbr>Observer</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerobserver">registerObserver</a></p>
 						<ul>
@@ -507,7 +515,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -528,7 +536,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="registerwith" class="tsd-anchor"></a>
 					<h3>register<wbr>With</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwith">registerWith</a></p>
 						<ul>
@@ -539,7 +547,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -560,7 +568,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="registerwithobservables" class="tsd-anchor"></a>
 					<h3>register<wbr>With<wbr>Observables</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>With<wbr>Observables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#registerwithobservables">registerWithObservables</a></p>
 						<ul>
@@ -571,7 +579,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -592,7 +600,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="unregisterobserver" class="tsd-anchor"></a>
 					<h3>unregister<wbr>Observer</h3>
-					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>Observer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterobserver">unregisterObserver</a></p>
 						<ul>
@@ -603,7 +611,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observer.html" class="tsd-signature-type">Observer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -624,7 +632,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="unregisterwith" class="tsd-anchor"></a>
 					<h3>unregister<wbr>With</h3>
-					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwith">unregisterWith</a></p>
 						<ul>
@@ -635,7 +643,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>h<span class="tsd-signature-symbol">: </span><a href="_ql_patterns_observable_.observable.html" class="tsd-signature-type">Observable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_ql_types_.html#size" class="tsd-signature-type">Size</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -656,7 +664,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="unregisterwithall" class="tsd-anchor"></a>
 					<h3>unregister<wbr>With<wbr>All</h3>
-					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-signature tsd-kind-icon">unregister<wbr>With<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mixins_ql_patterns_observerobservable_.observerobservable.html">ObserverObservable</a>.<a href="_mixins_ql_patterns_observerobservable_.observerobservable.html#unregisterwithall">unregisterWithAll</a></p>
 						<ul>
@@ -667,7 +675,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -709,7 +717,7 @@
 					<a name="additionalresults" class="tsd-anchor"></a>
 					<h3>additional<wbr>Results</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">additional<wbr>Results<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">additional<wbr>Results<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflows_timebasket_.timebasket.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -724,7 +732,7 @@
 									<p>returns all additional result returned by the pricing engine.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflows_timebasket_.timebasket.html#map" class="tsd-signature-type">Map</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -792,7 +800,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:56</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:57</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -809,7 +817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:143</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:144</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_currency_.currency.html" class="tsd-signature-type">Currency</a></h4>
@@ -844,7 +852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:151</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:152</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_defaulttermstructure_.defaultprobabilitytermstructure.html" class="tsd-signature-type">DefaultProbabilityTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -861,7 +869,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:94</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:95</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -901,7 +909,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:60</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:61</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -979,10 +987,6 @@
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
-								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_instrument_.instrument.html" class="tsd-signature-type">Instrument</a></h4>
 						</li>
@@ -998,7 +1002,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:102</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:103</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1016,7 +1020,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#isexpired">isExpired</a></p>
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:159</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:160</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1033,7 +1037,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:98</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:99</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
@@ -1050,7 +1054,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:139</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:140</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -1067,13 +1071,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:90</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:91</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> date: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> =&nbsp;DateExt.minDate()</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> date: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> = DateExt.minDate()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -1090,7 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:106</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:107</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_cashflow_.cashflow.html" class="tsd-signature-type">CashFlow</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1108,7 +1112,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#performcalculations">performCalculations</a></p>
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:167</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:168</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1156,7 +1160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:155</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:156</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -1202,7 +1206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:110</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:111</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -1283,7 +1287,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_ql_instrument_.instrument.html">Instrument</a>.<a href="_ql_instrument_.instrument.html#setupexpired">setupExpired</a></p>
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:163</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:164</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1300,7 +1304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:125</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:126</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -1388,7 +1392,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/experimental/credit/riskybond.ts:147</li>
+									<li>Defined in ql/experimental/credit/riskybond.ts:148</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_ql_handle_.handle.html" class="tsd-signature-type">Handle</a><span class="tsd-signature-symbol">&lt;</span><a href="_ql_termstructures_yieldtermstructure_.yieldtermstructure.html" class="tsd-signature-type">YieldTermStructure</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1404,7 +1408,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ql_experimental_credit_riskybond_.html">"ql/experimental/credit/riskybond"</a>
+						<a href="../modules/_ql_experimental_credit_riskybond_.html">&quot;ql/experimental/credit/riskybond&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -1685,7 +1689,7 @@
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-87290595-2', '');
+        ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
     </script>
 </body>
