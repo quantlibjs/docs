@@ -67,7 +67,7 @@
 				<a href="#quantlibjs" id="quantlibjs" style="color: inherit; text-decoration: none;">
 					<h1>quantlib.js</h1>
 				</a>
-				<p><a href="https://www.npmjs.com/package/@quantlib/ql"><img src="https://img.shields.io/npm/v/@quantlib/ql.svg?style=flat" alt="npm version"></a> <a href="https://www.jsdelivr.com/package/npm/@quantlib/ql"><img src="https://data.jsdelivr.com/v1/package/npm/@quantlib/ql/badge?style=rounded" alt=""></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>  <a href="https://quantlib.js.org/blog/"><img src="https://img.shields.io/badge/%C2%A9%202020-Jin%20Yang-brightgreen" alt="copyright"></a> <a href="https://twitter.com/quantlibjs"><img src="https://img.shields.io/twitter/follow/quantlibjs.svg?style=social&maxAge=3600" alt="Twitter Follow"></a></p>
+				<p><a href="https://www.npmjs.com/package/@quantlib/ql"><img src="https://img.shields.io/npm/v/@quantlib/ql.svg?style=flat" alt="npm version"></a> <a href="https://www.jsdelivr.com/package/npm/@quantlib/ql"><img src="https://data.jsdelivr.com/v1/package/npm/@quantlib/ql/badge?style=rounded" alt=""></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a> <a href="https://twitter.com/fucktwitter"><img src="https://img.shields.io/twitter/follow/fucktwitter.svg?style=social&maxAge=3600" alt="Twitter Follow"></a></p>
 				<a href="#quantitative-finance-in-javascript" id="quantitative-finance-in-javascript" style="color: inherit; text-decoration: none;">
 					<h2>quantitative finance in javascript</h2>
 				</a>
@@ -86,16 +86,15 @@
 				<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
 					<h2>introduction</h2>
 				</a>
-				<p><code>quantlib.js</code> aims to be a <strong>COMPLETE</strong> re-implementation of <code>C++</code> <a href="https://quantlib.org">QuantLib</a> in <code>javascript</code> language, <a href="https://emscripten.org/">emscripten</a> is <strong>NOT</strong> used. it can be used in web browser or node.js environment.</p>
+				<p><code>quantlib.js</code> aims to be a <strong>COMPLETE</strong> re-implementation of <code>C++</code> <a href="https://quantlib.org/test-suite/">QuantLib</a> in <code>javascript</code> language, <a href="https://emscripten.org/">emscripten</a> is <strong>NOT</strong> used. it can be used in web browser or node.js environment.</p>
 				<a href="#get-started" id="get-started" style="color: inherit; text-decoration: none;">
 					<h2>get started</h2>
 				</a>
-				<ol>
-					<li><p>open <a href="https://quantlib.js.org">https://quantlib.js.org</a> with morden web browser, like chrome, firefox, etc...</p>
-					</li>
-					<li><p>select a <code>spec</code> or <code>example</code> from menu. <code>spec</code> source will be displayed on left panel, <code>spec</code> will be run with <a href="https://github.com/jasmine/jasmine">jasmine</a> by your web browser, and test result will be displayed on right panel</p>
-					</li>
-				</ol>
+				<blockquote>
+					<p>Old home page and <code>get started</code> section moved to <a href="https://quantlib.js.org/test-suite/">https://quantlib.js.org/test-suite/</a></p>
+				</blockquote>
+				<p>We build a <code>notebook</code> app for easy use of <code>quantlib.js</code>, it&#39;s hosted on Github pages, after loading, it works offline.</p>
+				<p><a href="https://quantlib.js.org/notebook/">https://quantlib.js.org/notebook/</a></p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>usage</h2>
 				</a>
@@ -252,6 +251,10 @@ option.setPricingEngine(engine);
 						</tr>
 					</thead>
 					<tbody><tr>
+							<td>0.3.4</td>
+							<td>no fix, renamed many symbol names for notebook app</td>
+						</tr>
+						<tr>
 							<td>0.3.3</td>
 							<td>fixed most <code>asianoption</code> specs</td>
 						</tr>
@@ -318,14 +321,13 @@ option.setPricingEngine(engine);
 				<a href="#test-suite-amp-example" id="test-suite-amp-example" style="color: inherit; text-decoration: none;">
 					<h2>test-suite &amp; example</h2>
 				</a>
-				<p>A static <a href="https://quantlib.js.org/test-suite/">report</a> is updated regularly, so you could see the overall test status. C++ <a href="https://quantlib.js.org/examples/">example output</a> for reference</p>
 				<p>source code in ESM <code>javascript</code>:</p>
 				<ul>
 					<li><a href="https://github.com/quantlibjs/test-suite">https://github.com/quantlibjs/test-suite</a></li>
 					<li><a href="https://github.com/quantlibjs/examples">https://github.com/quantlibjs/examples</a></li>
 				</ul>
 				<p>converted from the <code>c++</code> <a href="https://www.quantlib.org/">quantlib</a> <a href="https://github.com/lballabio/QuantLib/tree/master/test-suite">test-suite</a> &amp; <a href="https://github.com/lballabio/QuantLib/tree/master/Examples">Examples</a></p>
-				<p>these are the code loaded and executed in <a href="https://quantlib.js.org">https://quantlib.js.org</a></p>
+				<p>these are the code loaded and executed in <a href="https://quantlib.js.org/test-suite/">https://quantlib.js.org/test-suite/</a></p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>license</h2>
 				</a>
