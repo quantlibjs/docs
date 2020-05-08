@@ -6,6 +6,7 @@
 	<title>&quot;ql/cashflows/cashflowvectors&quot; | quantlib.js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="/cn.png">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
@@ -71,6 +72,15 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_ql_cashflows_cashflowvectors_.cappedflooredcoupontype.html" class="tsd-kind-icon">Capped<wbr>Floored<wbr>Coupon<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_ql_cashflows_cashflowvectors_.digitalcoupontype.html" class="tsd-kind-icon">Digital<wbr>Coupon<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-kind-icon">Floating<wbr>Coupon<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-kind-icon">Interest<wbr>Rate<wbr>Index<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_ql_cashflows_cashflowvectors_.html#floatingdigitalleg" class="tsd-kind-icon">Floating<wbr>Digital<wbr>Leg</a></li>
@@ -88,17 +98,26 @@
 					<a name="floatingdigitalleg" class="tsd-anchor"></a>
 					<h3>Floating<wbr>Digital<wbr>Leg</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">Floating<wbr>Digital<wbr>Leg<span class="tsd-signature-symbol">(</span>schedule<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, nominals<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_indexes_interestrateindex_.interestrateindex.html" class="tsd-signature-type">InterestRateIndex</a>, paymentDayCounter<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, paymentAdj<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, fixingDays<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol">[]</span>, gearings<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, spreads<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span>, isInArrears<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callStrikes<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, callPosition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_position_.position.type.html" class="tsd-signature-type">Type</a>, isCallATMIncluded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callDigitalPayoffs<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, putStrikes<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, putPosition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_position_.position.type.html" class="tsd-signature-type">Type</a>, isPutATMIncluded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, putDigitalPayoffs<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, replication<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_cashflows_replication_.digitalreplication.html" class="tsd-signature-type">DigitalReplication</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
+						<li class="tsd-signature tsd-kind-icon">Floating<wbr>Digital<wbr>Leg<span class="tsd-signature-symbol">(</span>iriType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-signature-type">InterestRateIndexType</a>, fcType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-signature-type">FloatingCouponType</a>, dcType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.digitalcoupontype.html" class="tsd-signature-type">DigitalCouponType</a>, schedule<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, nominals<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_indexes_interestrateindex_.interestrateindex.html" class="tsd-signature-type">InterestRateIndex</a>, paymentDayCounter<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, paymentAdj<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, fixingDays<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol">[]</span>, gearings<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, spreads<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span>, isInArrears<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callStrikes<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, callPosition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_position_.position.type.html" class="tsd-signature-type">Type</a>, isCallATMIncluded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callDigitalPayoffs<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, putStrikes<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, putPosition<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_position_.position.type.html" class="tsd-signature-type">Type</a>, isPutATMIncluded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, putDigitalPayoffs<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, replication<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_cashflows_replication_.digitalreplication.html" class="tsd-signature-type">DigitalReplication</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/cashflows/cashflowvectors.ts:138</li>
+									<li>Defined in ql/cashflows/cashflowvectors.ts:195</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>iriType: <a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-signature-type">InterestRateIndexType</a></h5>
+								</li>
+								<li>
+									<h5>fcType: <a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-signature-type">FloatingCouponType</a></h5>
+								</li>
+								<li>
+									<h5>dcType: <a href="../enums/_ql_cashflows_cashflowvectors_.digitalcoupontype.html" class="tsd-signature-type">DigitalCouponType</a></h5>
+								</li>
 								<li>
 									<h5>schedule: <a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h5>
 								</li>
@@ -162,17 +181,26 @@
 					<a name="floatingleg" class="tsd-anchor"></a>
 					<h3>Floating<wbr>Leg</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">Floating<wbr>Leg<span class="tsd-signature-symbol">(</span>schedule<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, nominals<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_ql_indexes_swapindex_.swapindex.html" class="tsd-signature-type">SwapIndex</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_ql_experimental_coupons_swapspreadindex_.swapspreadindex.html" class="tsd-signature-type">SwapSpreadIndex</a>, paymentDayCounter<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, paymentAdj<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, fixingDays<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol">[]</span>, gearings<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, spreads<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span>, caps<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, floors<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, isInArrears<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isZero<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, paymentLag<span class="tsd-signature-symbol">?: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, paymentCalendar<span class="tsd-signature-symbol">?: </span><a href="../classes/_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
+						<li class="tsd-signature tsd-kind-icon">Floating<wbr>Leg<span class="tsd-signature-symbol">(</span>iriType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-signature-type">InterestRateIndexType</a>, fcType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-signature-type">FloatingCouponType</a>, cfcType<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_cashflows_cashflowvectors_.cappedflooredcoupontype.html" class="tsd-signature-type">CappedFlooredCouponType</a>, schedule<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a>, nominals<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_indexes_iborindex_.iborindex.html" class="tsd-signature-type">IborIndex</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_ql_indexes_swapindex_.swapindex.html" class="tsd-signature-type">SwapIndex</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_ql_experimental_coupons_swapspreadindex_.swapspreadindex.html" class="tsd-signature-type">SwapSpreadIndex</a>, paymentDayCounter<span class="tsd-signature-symbol">: </span><a href="../classes/_ql_time_daycounter_.daycounter.html" class="tsd-signature-type">DayCounter</a>, paymentAdj<span class="tsd-signature-symbol">: </span><a href="../enums/_ql_time_businessdayconvention_.businessdayconvention.html" class="tsd-signature-type">BusinessDayConvention</a>, fixingDays<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a><span class="tsd-signature-symbol">[]</span>, gearings<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#real" class="tsd-signature-type">Real</a><span class="tsd-signature-symbol">[]</span>, spreads<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#spread" class="tsd-signature-type">Spread</a><span class="tsd-signature-symbol">[]</span>, caps<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, floors<span class="tsd-signature-symbol">: </span><a href="_ql_types_.html#rate" class="tsd-signature-type">Rate</a><span class="tsd-signature-symbol">[]</span>, isInArrears<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isZero<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, paymentLag<span class="tsd-signature-symbol">?: </span><a href="_ql_types_.html#natural" class="tsd-signature-type">Natural</a>, paymentCalendar<span class="tsd-signature-symbol">?: </span><a href="../classes/_ql_time_calendar_.calendar.html" class="tsd-signature-type">Calendar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_ql_cashflow_.html#leg" class="tsd-signature-type">Leg</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/cashflows/cashflowvectors.ts:47</li>
+									<li>Defined in ql/cashflows/cashflowvectors.ts:66</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>iriType: <a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-signature-type">InterestRateIndexType</a></h5>
+								</li>
+								<li>
+									<h5>fcType: <a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-signature-type">FloatingCouponType</a></h5>
+								</li>
+								<li>
+									<h5>cfcType: <a href="../enums/_ql_cashflows_cashflowvectors_.cappedflooredcoupontype.html" class="tsd-signature-type">CappedFlooredCouponType</a></h5>
+								</li>
 								<li>
 									<h5>schedule: <a href="../classes/_ql_time_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></h5>
 								</li>
@@ -230,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/cashflows/cashflowvectors.ts:28</li>
+									<li>Defined in ql/cashflows/cashflowvectors.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -262,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ql/cashflows/cashflowvectors.ts:42</li>
+									<li>Defined in ql/cashflows/cashflowvectors.ts:43</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -296,6 +324,18 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_ql_cashflows_cashflowvectors_.cappedflooredcoupontype.html" class="tsd-kind-icon">Capped<wbr>Floored<wbr>Coupon<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_ql_cashflows_cashflowvectors_.digitalcoupontype.html" class="tsd-kind-icon">Digital<wbr>Coupon<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_ql_cashflows_cashflowvectors_.floatingcoupontype.html" class="tsd-kind-icon">Floating<wbr>Coupon<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_ql_cashflows_cashflowvectors_.interestrateindextype.html" class="tsd-kind-icon">Interest<wbr>Rate<wbr>Index<wbr>Type</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_ql_cashflows_cashflowvectors_.html#floatingdigitalleg" class="tsd-kind-icon">Floating<wbr>Digital<wbr>Leg</a>
 					</li>
@@ -384,6 +424,15 @@
 
         ga('create', 'UA-87290595-2', 'auto');
         ga('send', 'pageview');
+    </script>
+<script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?fe6b934f326cc497985add8efde0653d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
 </body>
 </html>
