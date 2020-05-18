@@ -79,43 +79,43 @@
 					<ol>
 						<li>Jump-Diffusion with Stochastic Volatility</li>
 					</ol>
-					<p>\f[
+					<p>$$
 						\begin{array}{rcl}
 						dS(t, S)  &amp;=&amp; (r-d-\lambda m) S dt +\sqrt{v} S dW_1 + (e^J - 1) S dN \
 						dv(t, S)  &amp;=&amp; \kappa (\theta - v) dt + \sigma \sqrt{v} dW_2 \
 						dW_1 dW_2 &amp;=&amp; \rho dt
 						\end{array}
-					\f]</p>
-					<p>N is a Poisson process with the intensity \f$ \lambda
-						\f$. When a jump occurs the magnitude J has the probability
-					density function \f$ \omega(J) \f$.</p>
+					$$</p>
+					<p>N is a Poisson process with the intensity $ \lambda
+						$. When a jump occurs the magnitude J has the probability
+					density function $ \omega(J) $.</p>
 					<p>1.1 Log-Normal Jump Diffusion: BatesEngine</p>
 					<p>Logarithm of the jump size J is normally distributed
-						\f[
+						$$
 						\omega(J) = \frac{1}{\sqrt{2\pi \delta^2}}
 						\exp\left[-\frac{(J-\nu)^2}{2\delta^2}\right]
-					\f]</p>
+					$$</p>
 					<p>1.2  Double-Exponential Jump Diffusion: BatesDoubleExpEngine</p>
 					<p>The jump size has an asymmetric double exponential distribution
-						\f[
+						$$
 						\begin{array}{rcl}
 						\omega(J)&amp;=&amp;  p\frac{1}{\eta_u}e^{-\frac{1}{\eta_u}J} 1_{J&gt;0}
 						+ q\frac{1}{\eta_d}e^{\frac{1}{\eta_d}J} 1_{J&lt;0} \
 						p + q &amp;=&amp; 1
 						\end{array}
-					\f]</p>
+					$$</p>
 					<ol start="2">
 						<li>Stochastic Volatility with Jump Diffusion
 						and Deterministic Jump Intensity</li>
 					</ol>
-					<p>\f[
+					<p>$$
 						\begin{array}{rcl}
 						dS(t, S)  &amp;=&amp; (r-d-\lambda m) S dt +\sqrt{v} S dW_1 + (e^J - 1) S dN \
 						dv(t, S)  &amp;=&amp; \kappa (\theta - v) dt + \sigma \sqrt{v} dW_2 \
 						d\lambda(t) &amp;=&amp; \kappa_\lambda(\theta_\lambda-\lambda) dt \
 						dW_1 dW_2 &amp;=&amp; \rho dt
 						\end{array}
-					\f]</p>
+					$$</p>
 					<p>2.1 Log-Normal Jump Diffusion with Deterministic Jump Intensity
 					BatesDetJumpEngine</p>
 					<p>2.2 Double-Exponential Jump Diffusion with Deterministic Jump Intensity

@@ -75,14 +75,14 @@
 					<div class="lead">
 						<p>This class describes a Ornstein Uhlenbeck model plus exp jump,
 							an extension of the Lucia and Schwartz model
-							\f[
+							$$
 							\begin{array}{rcl}
 							S &amp;=&amp; exp(X_t + Y_t) \
 							dX_t  &amp;=&amp; \alpha(\mu(t)-X_t)dt + \sigma dW_t \
 							dY_t  &amp;=&amp; -\beta Y_{t-}dt + J_tdN_t \
 							\omega(J)&amp;=&amp; \eta_u e^{-\eta_u J}
 							\end{array}
-						\f]</p>
+						$$</p>
 					</div>
 					<p>References:
 						T. Kluge, 2008. Pricing Swing Options and other
@@ -643,7 +643,7 @@
 									<p>returns the covariance
 										$$ V(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>
@@ -806,7 +806,7 @@
 									<p>returns the expectation
 										$$ E(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>
@@ -961,7 +961,7 @@
 									<p>returns the standard deviation
 										$$ S(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>

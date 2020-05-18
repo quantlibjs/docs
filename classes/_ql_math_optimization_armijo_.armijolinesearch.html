@@ -75,15 +75,15 @@
 					<div class="lead">
 						<p>Armijo line search.</p>
 					</div>
-					<p>Let \f$ \alpha \f$ and \f$ \beta \f$ be 2 scalars in \f$ [0,1]
-						\f$.  Let \f$ x \f$ be the current value of the unknown, \f$ d
-						\f$ the search direction and \f$ t \f$ the step. Let \f$ f \f$
-						be the function to minimize.  The line search stops when \f$ t
-						\f$ verifies
-						\f[ f(x + t \cdot d) - f(x) \leq -\alpha t f&#39;(x+t \cdot d) \f]
+					<p>Let $ \alpha $ and $ \beta $ be 2 scalars in $ [0,1]
+						$.  Let $ x $ be the current value of the unknown, $ d
+						$ the search direction and $ t $ the step. Let $ f $
+						be the function to minimize.  The line search stops when $ t
+						$ verifies
+						$$ f(x + t \cdot d) - f(x) \leq -\alpha t f&#39;(x+t \cdot d) $$
 						and
-						\f[ f(x+\frac{t}{\beta} \cdot d) - f(x) &gt; -\frac{\alpha}{\beta}
-					t f&#39;(x+t \cdot d) \f]</p>
+						$$ f(x+\frac{t}{\beta} \cdot d) - f(x) &gt; -\frac{\alpha}{\beta}
+					t f&#39;(x+t \cdot d) $$</p>
 					<p>(see Polak, Algorithms and consistent approximations, Optimization,
 						volume 124 of Applied Mathematical Sciences, Springer-Verlag, NY,
 					1997)</p>

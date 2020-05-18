@@ -276,7 +276,7 @@
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>averaged shortfallness, defined as
-									\f[ \mathrm{E}\left[ t-x ;|; x&lt;t \right] \f]</p>
+									$$ \mathrm{E}\left[ t-x ;|; x&lt;t \right] $$</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -362,8 +362,8 @@
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>returns the variance of observations below 0.0,
-										\f[ \frac{N}{N-1}
-									\mathrm{E}\left[ x^2 ;|; x &lt; 0\right]. \f]</p>
+										$$ \frac{N}{N-1}
+									\mathrm{E}\left[ x^2 ;|; x &lt; 0\right]. $$</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_ql_types_.html#real" class="tsd-signature-type">Real</a></h4>
@@ -472,9 +472,9 @@
 										returns the expected loss in case that the loss exceeded
 									a VaR threshold,</p>
 								</div>
-								<p>\f[ \mathrm{E}\left[ x ;|; x &lt; \mathrm{VaR}(p) \right], \f]</p>
+								<p>$$ \mathrm{E}\left[ x ;|; x &lt; \mathrm{VaR}(p) \right], $$</p>
 								<p>that is the average of observations below the
-									given percentile \f$ p \f$.
+									given percentile $ p $.
 								Also know as conditional value-at-risk.</p>
 								<p>See Artzner, Delbaen, Eber and Heath,
 								&quot;Coherent measures of risk&quot;, Mathematical Finance 9 (1999)</p>
@@ -842,9 +842,9 @@
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>returns the variance of observations below target,
-										\f[ \frac{N}{N-1}
+										$$ \frac{N}{N-1}
 										\mathrm{E}\left[ (x-t)^2 ;|;
-									x &lt; t \right]. \f]</p>
+									x &lt; t \right]. $$</p>
 								</div>
 								<p>See Dembo and Freeman, &quot;The Rules Of Risk&quot;, Wiley (2001).</p>
 							</div>
@@ -977,9 +977,9 @@
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>returns the variance of observations below the mean,
-										\f[ \frac{N}{N-1}
+										$$ \frac{N}{N-1}
 										\mathrm{E}\left[ (x-\langle x \rangle)^2 ;|;
-									x &lt; \langle x \rangle \right]. \f]</p>
+									x &lt; \langle x \rangle \right]. $$</p>
 								</div>
 								<p>  See Markowitz (1959).</p>
 							</div>
@@ -1003,14 +1003,14 @@
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>probability of missing the given target, defined as
-										\f[ \mathrm{E}\left[ \Theta ;|; (-\infty,\infty) \right] \f]
+										$$ \mathrm{E}\left[ \Theta ;|; (-\infty,\infty) \right] $$
 										where
-										\f[ \Theta(x) = \left{
+										$$ \Theta(x) = \left{
 										\begin{array}{ll}
 										1 &amp; x &lt; t \
 										0 &amp; x \geq t
 										\end{array}
-									\right. \f]</p>
+									\right. $$</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>

@@ -76,24 +76,24 @@
 						<p>collateralized debt obligation</p>
 					</div>
 					<p>The instrument prices a mezzanine CDO tranche with loss given
-						default between attachment point \f$ D_1\f$ and detachment
-					point \f$ D_2 &gt; D_1 \f$.</p>
+						default between attachment point $ D_1$ and detachment
+					point $ D_2 &gt; D_1 $.</p>
 					<p>For purchased protection, the instrument value is given by the
-						difference of the protection value \f$ V_1 \f$ and premium
-					value \f$ V_2 \f$,</p>
-					<p>\f[ V = V_1 - V_2. \f]</p>
+						difference of the protection value $ V_1 $ and premium
+					value $ V_2 $,</p>
+					<p>$$ V = V_1 - V_2. $$</p>
 					<p>The protection leg is priced as follows:</p>
 					<ul>
 						<li><p>Build the probability distribution for volume of defaults
-								\f$ L \f$ (before recovery) or Loss Given Default \f$ LGD =
-								(1-r),L \f$ at times/dates \f$ t_i, i=1, ..., N\f$ (premium
+								$ L $ (before recovery) or Loss Given Default $ LGD =
+								(1-r),L $ at times/dates $ t_i, i=1, ..., N$ (premium
 							schedule times with intermediate steps)</p>
 						</li>
 						<li><p>Determine the expected value
-								\f$ E_i = E_{t_i},\left[Pay(LGD)\right] \f$
-								of the protection payoff \f$ Pay(LGD) \f$ at each time
-								\f$ t_i\f$ where
-								\f[
+								$ E_i = E_{t_i},\left[Pay(LGD)\right] $
+								of the protection payoff $ Pay(LGD) $ at each time
+								$ t_i$ where
+								$$
 								Pay(L) = min (D_1, LGD) - min (D_2, LGD) = \left{
 								\begin{array}{lcl}
 								\displaystyle 0 &amp;;&amp; LGD &lt; D_1 \
@@ -101,25 +101,25 @@
 								\displaystyle D_2 - D_1 &amp;;&amp; LGD &gt; D_2
 								\end{array}
 								\right.
-							\f]</p>
+							$$</p>
 						</li>
 						<li><p>The protection value is then calculated as
-								\f[ V_1 :=: \sum_{i=1}^N (E_i - E_{i-1}) \cdot  d_i \f]
-							where \f$ d_i\f$ is the discount factor at time/date \f$ t_i \f$</p>
+								$$ V_1 :=: \sum_{i=1}^N (E_i - E_{i-1}) \cdot  d_i $$
+							where $ d_i$ is the discount factor at time/date $ t_i $</p>
 							<p>The premium is paid on the protected notional amount,
-								initially \f$ D_2 - D_1. \f$ This notional amount is reduced
-								by the expected protection payments \f$ E_i \f$ at times
-							\f$ t_i, \f$ so that the premium value is calculated as</p>
-							<p>\f[
+								initially $ D_2 - D_1. $ This notional amount is reduced
+								by the expected protection payments $ E_i $ at times
+							$ t_i, $ so that the premium value is calculated as</p>
+							<p>$$
 							V_2 = m , \cdot \sum_{i=1}^N ,(D_2 - D_1 - E_i)</p>
-							<pre><code>     <span class="hljs-symbol">\c</span>dot <span class="hljs-symbol">\D</span>elta_{i-1,i}<span class="hljs-symbol">\,</span>d_i</code></pre><p>\f]</p>
+							<pre><code>     <span class="hljs-symbol">\c</span>dot <span class="hljs-symbol">\D</span>elta_{i-1,i}<span class="hljs-symbol">\,</span>d_i</code></pre><p>$$</p>
 						</li>
 					</ul>
-					<p>where \f$ m \f$ is the premium rate, \f$ \Delta_{i-1, i}\f$ is
-						the day count fraction between date/time \f$ t_{i-1}\f$ and
-					\f$ t_i.\f$</p>
-					<p>The construction of the portfolio loss distribution \f$ E_i
-						\f$ is based on the probability bucketing algorithm described
+					<p>where $ m $ is the premium rate, $ \Delta_{i-1, i}$ is
+						the day count fraction between date/time $ t_{i-1}$ and
+					$ t_i.$</p>
+					<p>The construction of the portfolio loss distribution $ E_i
+						$ is based on the probability bucketing algorithm described
 					in</p>
 					<strong>
 						John Hull and Alan White, "Valuation of a CDO and nth to default CDS
@@ -129,7 +129,7 @@
 					default termstructures of the underlyings.</p>
 					<dl class="tsd-comment-tags">
 						<dt>todo</dt>
-						<dd><p>Investigate and fix cases \f$ E_{i+1} &lt; E_i. \f$</p>
+						<dd><p>Investigate and fix cases $ E_{i+1} &lt; E_i. $</p>
 						</dd>
 					</dl>
 				</div>

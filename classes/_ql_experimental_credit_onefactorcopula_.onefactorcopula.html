@@ -76,21 +76,21 @@
 						<p>Abstract base class for one-factor copula models</p>
 					</div>
 					<p>Reference: John Hull and Alan White, The Perfect Copula, June 2006</p>
-					<p>Let \f$Q_i(t)\f$ be the cumulative probability of default of
+					<p>Let $Q_i(t)$ be the cumulative probability of default of
 					counterparty i before time t.</p>
 					<p>In a one-factor model, consider random variables
-						\f[ Y_i = a_i,M+\sqrt{1-a_i^2}:Z_i \f]
-						where \f$M\f$ and \f$Z_i\f$ have independent zero-mean
-						unit-variance distributions and \f$-1\leq a_i \leq 1\f$.  The
-						correlation between \f$Y_i\f$ and \f$Y_j\f$ is then
-					\f$a_i a_j\f$.</p>
-					<p>Let \f$F_Y(y)\f$ be the cumulative distribution function of \f$Y_i\f$.
-						\f$y\f$ is mapped to \f$t\f$ such that percentiles match, i.e.
-					\f$F_Y(y)=Q_i(t)\f$ or \f$y=F_Y^{-1}(Q_i(t))\f$.</p>
-					<p>Now let \f$F_Z(z)\f$ be the cumulated distribution function of
-						\f$Z_i\f$.  For given realization of \f$M\f$, this determines
-						the distribution of \f$y\f$:
-						\f[
+						$$ Y_i = a_i,M+\sqrt{1-a_i^2}:Z_i $$
+						where $M$ and $Z_i$ have independent zero-mean
+						unit-variance distributions and $-1\leq a_i \leq 1$.  The
+						correlation between $Y_i$ and $Y_j$ is then
+					$a_i a_j$.</p>
+					<p>Let $F_Y(y)$ be the cumulative distribution function of $Y_i$.
+						$y$ is mapped to $t$ such that percentiles match, i.e.
+					$F_Y(y)=Q_i(t)$ or $y=F_Y^{-1}(Q_i(t))$.</p>
+					<p>Now let $F_Z(z)$ be the cumulated distribution function of
+						$Z_i$.  For given realization of $M$, this determines
+						the distribution of $y$:
+						$$
 						Prob ,(Y_i &lt; y|M) = F_Z \left( \frac{y-a_i,M}{\sqrt{1-a_i^2}}\right)
 						\qquad
 						\mbox{or}
@@ -98,11 +98,11 @@
 						Prob ,(t_i &lt; t|M) = F_Z \left( \frac{F_Y^{-1}(Q_i(t))-a_i,M}
 						{\sqrt{1-a_i^2}}
 						\right)
-					\f]</p>
-					<p>The distribution functions of \f$ M, Z_i \f$ are specified in
-						derived classes. The distribution function of \f$ Y \f$ is
+					$$</p>
+					<p>The distribution functions of $ M, Z_i $ are specified in
+						derived classes. The distribution function of $ Y $ is
 						then given by the convolution
-						\f[
+						$$
 						F_Y(y) = Prob,(Y&lt;y) = \int_{-\infty}^\infty,\int_{-\infty}^{\infty}:
 						D_Z(z),D_M(m) \quad
 						\Theta \left(y - a,m - \sqrt{1-a^2},z\right),dm,dz,
@@ -112,24 +112,24 @@
 						1 &amp; x \geq 0 \
 						0 &amp; x &lt; 0
 						\end{array}\right.
-						\f]
-						where \f$ D_Z(z) \f$ and \f$ D_M(m) \f$ are the probability
-					densities of \f$ Z\f$ and \f$ M, \f$ respectively.</p>
+						$$
+						where $ D_Z(z) $ and $ D_M(m) $ are the probability
+					densities of $ Z$ and $ M, $ respectively.</p>
 					<p>This convolution can also be written
-						\f[
+						$$
 						F(y) = Prob ,(Y &lt; y) =
 						\int_{-\infty}^\infty D_M(m),dm:
 						\int_{-\infty}^{g(y,a,m)} D_Z(z),dz, \qquad
 						g(y,a,m) = \frac{y - a\cdot m}{\sqrt{1-a^2}}, \qquad a &lt; 1
-					\f]</p>
+					$$</p>
 					<p>or</p>
-					<p>\f[
+					<p>$$
 						F(y) = Prob ,(Y &lt; y) =
 						\int_{-\infty}^\infty D_Z(z),dz:
 						\int_{-\infty}^{h(y,a,z)} D_M(m),dm, \qquad
 						h(y,a,z) = \frac{y - \sqrt{1 - a^2}\cdot z}{a}, \qquad a &gt; 0.
-					\f]</p>
-					<p>In general, \f$ F_Y(y) \f$ needs to be computed numerically.</p>
+					$$</p>
+					<p>In general, $ F_Y(y) $ needs to be computed numerically.</p>
 					<dl class="tsd-comment-tags">
 						<dt>todo</dt>
 						<dd><p>Improve on simple Euler integration</p>
@@ -771,9 +771,9 @@
 								<div class="lead">
 									<p>Conditional probability</p>
 								</div>
-								<p> \f[
+								<p> $$
 									\hat p(m) = F_Z \left( \frac{F_Y^{-1}(p)-a,m}{\sqrt{1-a^2}}\right)
-								\f]</p>
+								$$</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -805,10 +805,10 @@
 								<div class="lead">
 									<p>Vector of conditional probabilities</p>
 								</div>
-								<p> \f[
+								<p> $$
 									\hat p_i(m) = F_Z \left( \frac{F_Y^{-1}(p_i)-a,m}{\sqrt{1-a^2}}
 									\right)
-								\f]</p>
+								$$</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1041,13 +1041,13 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Integral over the density \f$ \rho(m) \f$ of M and the conditional</p>
+									<p>Integral over the density $ \rho(m) $ of M and the conditional</p>
 								</div>
 								<p>probability related to p:</p>
-								<p>\f[
+								<p>$$
 									\int_{-\infty}^\infty,dm,\rho(m),
 									F_Z \left( \frac{F_Y^{-1}(p)-a,m}{\sqrt{1-a^2}}\right)
-								\f]</p>
+								$$</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1074,16 +1074,16 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Integral over the density \f$ \rho(m) \f$ of M and a
-										one-dimensional function \f$ f \f$ of conditional
+									<p>Integral over the density $ \rho(m) $ of M and a
+										one-dimensional function $ f $ of conditional
 									probabilities related to the input vector of probabilities p:</p>
 								</div>
-								<p>\f[
+								<p>$$
 									\int_{-\infty}^\infty,dm,\rho(m), f (\hat p_1, \hat p_2, \dots,
 									\hat p_N), \qquad
 									\hat p_i (m) = F_Z \left( \frac{F_Y^{-1}(p_i)-a,m}{\sqrt{1-a^2}}
 									\right)
-								\f]</p>
+								$$</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1113,15 +1113,15 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Integral over the density \f$ \rho(m) \f$ of M and a
-										multi-dimensional function \f$ f \f$ of conditional
+									<p>Integral over the density $ \rho(m) $ of M and a
+										multi-dimensional function $ f $ of conditional
 									probabilities related to the input vector of probabilities p:</p>
 								</div>
-								<p>\f[
+								<p>$$
 									\int_{-\infty}^\infty,dm,\rho(m), f (\hat p_1, \hat p_2, \dots,
 									\hat p_N), \qquad
 									\hat p_i = F_Z \left( \frac{F_Y^{-1}(p_i)-a,m}{\sqrt{1-a^2}}\right)
-								\f]</p>
+								$$</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">

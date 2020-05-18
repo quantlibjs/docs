@@ -75,7 +75,7 @@
 					<div class="lead">
 						<p>This class describes a correlated Kluge - extended Ornstein-Uhlenbeck
 							process governed by
-							\f[
+							$$
 							\begin{array}{rcl}
 							P_t &amp;=&amp; \exp(p_t + X_t + Y_t) \
 							dX_t &amp;=&amp; -\alpha X_tdt + \sigma_x dW_t^x \
@@ -85,7 +85,7 @@
 							dU_t &amp;=&amp; -\kappa U_tdt + \sigma_udW_t^u \
 							\rho &amp;=&amp; \mathrm{corr} (dW_t^x, dW_t^u)
 							\end{array}
-						\f]</p>
+						$$</p>
 					</div>
 					<p>References:
 						B. Hambly, S. Howison, T. Kluge, Modelling spikes and pricing
@@ -598,7 +598,7 @@
 									<p>returns the covariance
 										$$ V(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>
@@ -744,7 +744,7 @@
 									<p>returns the expectation
 										$$ E(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>
@@ -916,7 +916,7 @@
 									<p>returns the standard deviation
 										$$ S(\mathrm{x}<em>{t_0 + \Delta t}
 										| \mathrm{x}</em>{t_0} = \mathrm{x}_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>

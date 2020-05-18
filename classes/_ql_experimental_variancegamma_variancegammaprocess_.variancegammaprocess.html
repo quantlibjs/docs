@@ -77,16 +77,16 @@
 					</div>
 					<p>This class describes the stochastic volatility
 						process.  With a Brownian motion given by
-						\f[
+						$$
 						db = \theta dt + \sigma dW_t
-						\f]
+						$$
 						then a Variance Gamma process X is defined by evaluating this
 						Brownian motion at sample times driven by a Gamma process. If T is
-						the value of a Gamma process with mean 1 and variance rate \f$ \nu
-						\f$ then the Variance Gamma process is given by
-						\f[
+						the value of a Gamma process with mean 1 and variance rate $ \nu
+						$ then the Variance Gamma process is given by
+						$$
 						X(t) = B(T)
-					\f]</p>
+					$$</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -943,7 +943,7 @@
 								<div class="lead">
 									<p>returns the expectation
 										$$ E(x_{t_0 + \Delta t} | x_{t_0} = x_0) $$
-										of the process after a time interval \f$ \Delta t \f$
+										of the process after a time interval $ \Delta t $
 										according to the given discretization. This method can be
 										overridden in derived classes which want to hard-code a
 									particular discretization.</p>
